@@ -6,6 +6,8 @@ from typing import Any, Optional
 
 from langchain_core._api.deprecation import surface_langchain_deprecation_warnings
 
+verbose = False
+
 try:
     __version__ = metadata.version(__package__)
 except metadata.PackageNotFoundError:
