@@ -28,8 +28,8 @@ from langchain_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import (
+from...core.langchain_core.language_models.chat_models import BaseChatModel
+from ...core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -39,9 +39,9 @@ from langchain_core.messages import (
     HumanMessageChunk,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.pydantic_v1 import Field, SecretStr, root_validator
-from langchain_core.utils import get_from_dict_or_env
+from ...core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from ...core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
+from ...core.langchain_core.utils import get_from_dict_or_env
 from tenacity import (
     before_sleep_log,
     retry,
