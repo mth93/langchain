@@ -3,7 +3,7 @@ import os
 from langchain.embeddings import VertexAIEmbeddings
 from langchain.llms import VertexAI
 from langchain.prompts import PromptTemplate
-from langchain.vectorstores import MatchingEngine
+from langchain.libs.langchain.langchain.vectorstores import MatchingEngine
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

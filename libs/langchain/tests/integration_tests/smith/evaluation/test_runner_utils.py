@@ -8,7 +8,7 @@ from langsmith import Client as Client
 from langsmith.schemas import DataType
 
 from langchain.chains.llm import LLMChain
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.evaluation import EvaluatorType
 from langchain.llms.openai import OpenAI
 from langchain.smith import RunEvalConfig, run_on_dataset

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from langchain.chat_models import ChatOllama, ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOllama, ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate
 from langchain.pydantic_v1 import BaseModel

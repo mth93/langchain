@@ -100,7 +100,7 @@ def test_imports() -> None:
     from langchain.agents import OpenAIFunctionsAgent  # noqa: F401
     from langchain.callbacks import OpenAICallbackHandler  # noqa: F401
     from langchain.chains import LLMChain  # noqa: F401
-    from langchain.chat_models import ChatOpenAI  # noqa: F401
+    from langchain.libs.langchain.langchain.chat_models import ChatOpenAI  # noqa: F401
     from langchain.document_loaders import BSHTMLLoader  # noqa: F401
     from langchain.embeddings import OpenAIEmbeddings  # noqa: F401
     from langchain.llms import OpenAI  # noqa: F401
@@ -110,4 +110,4 @@ def test_imports() -> None:
         SearchApiAPIWrapper,  # noqa: F401
         SerpAPIWrapper,  # noqa: F401
     )
-    from langchain.vectorstores import FAISS  # noqa: F401
+    from langchain.libs.langchain.langchain.vectorstores import FAISS  # noqa: F401

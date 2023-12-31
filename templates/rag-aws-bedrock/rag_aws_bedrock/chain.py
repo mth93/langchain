@@ -3,7 +3,7 @@ import os
 from langchain.embeddings import BedrockEmbeddings
 from langchain.llms.bedrock import Bedrock
 from langchain.prompts import ChatPromptTemplate
-from langchain.vectorstores import FAISS
+from langchain.libs.langchain.langchain.vectorstores import FAISS
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

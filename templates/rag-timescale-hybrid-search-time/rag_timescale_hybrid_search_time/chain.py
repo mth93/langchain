@@ -4,12 +4,12 @@ import os
 from datetime import timedelta
 
 from langchain.chains.query_constructor.base import AttributeInfo
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.self_query.base import SelfQueryRetriever
-from langchain.vectorstores.timescalevector import TimescaleVector
+from langchain.libs.langchain.langchain.vectorstores.timescalevector import TimescaleVector
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

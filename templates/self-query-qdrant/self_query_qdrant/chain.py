@@ -7,7 +7,7 @@ from langchain.llms import BaseLLM
 from langchain.llms.openai import OpenAI
 from langchain.retrievers import SelfQueryRetriever
 from langchain.schema import Document, StrOutputParser
-from langchain.vectorstores.qdrant import Qdrant
+from langchain.libs.langchain.langchain.vectorstores.qdrant import Qdrant
 from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

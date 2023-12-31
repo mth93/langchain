@@ -10,13 +10,13 @@ from langchain.chains.query_constructor.ir import (
     StructuredQuery,
 )
 from langchain.retrievers.self_query.redis import RedisTranslator
-from langchain.vectorstores.redis.filters import (
+from langchain.libs.langchain.langchain.vectorstores.redis.filters import (
     RedisFilterExpression,
     RedisNum,
     RedisTag,
     RedisText,
 )
-from langchain.vectorstores.redis.schema import (
+from langchain.libs.langchain.langchain.vectorstores.redis.schema import (
     NumericFieldSchema,
     RedisModel,
     TagFieldSchema,

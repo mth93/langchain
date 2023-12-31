@@ -7,7 +7,7 @@ from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain.libs.langchain.langchain.vectorstores import FAISS
 
 
 def test_retrieval_qa_saving_loading(tmp_path: Path) -> None:

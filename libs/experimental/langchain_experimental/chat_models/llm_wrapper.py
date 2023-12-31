@@ -7,7 +7,7 @@ from langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain.chat_models.base import BaseChatModel
+from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
 from langchain.llms.base import LLM
 from langchain.schema import (
     AIMessage,

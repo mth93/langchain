@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatCohere
+from langchain.libs.langchain.langchain.chat_models import ChatCohere
 from langchain.retrievers import CohereRagRetriever
 
 rag = CohereRagRetriever(llm=ChatCohere())

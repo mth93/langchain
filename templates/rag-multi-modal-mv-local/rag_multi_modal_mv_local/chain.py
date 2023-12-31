@@ -2,7 +2,7 @@ import base64
 import io
 from pathlib import Path
 
-from langchain.chat_models import ChatOllama
+from langchain.libs.langchain.langchain.chat_models import ChatOllama
 from langchain.embeddings import OllamaEmbeddings
 from langchain.pydantic_v1 import BaseModel
 from langchain.retrievers.multi_vector import MultiVectorRetriever
@@ -11,7 +11,7 @@ from langchain.schema.messages import HumanMessage
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.storage import LocalFileStore
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from PIL import Image
 
 

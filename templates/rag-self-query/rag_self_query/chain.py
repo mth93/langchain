@@ -2,11 +2,11 @@ import os
 from operator import itemgetter
 from typing import List, Tuple
 
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.retrievers import SelfQueryRetriever
 from langchain.schema import format_document
-from langchain.vectorstores.elasticsearch import ElasticsearchStore
+from langchain.libs.langchain.langchain.vectorstores.elasticsearch import ElasticsearchStore
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

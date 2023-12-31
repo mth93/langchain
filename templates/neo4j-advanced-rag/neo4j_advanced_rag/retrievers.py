@@ -1,5 +1,5 @@
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import Neo4jVector
+from langchain.libs.langchain.langchain.vectorstores import Neo4jVector
 
 # Typical RAG retriever
 

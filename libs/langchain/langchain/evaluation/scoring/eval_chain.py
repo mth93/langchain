@@ -13,8 +13,8 @@ from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
 from langchain.chains.llm import LLMChain
-from langchain.chat_models.azure_openai import AzureChatOpenAI
-from langchain.chat_models.openai import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models.azure_openai import AzureChatOpenAI
+from langchain.libs.langchain.langchain.chat_models.openai import ChatOpenAI
 from langchain.evaluation.criteria.eval_chain import (
     CRITERIA_TYPE,
     Criteria,
@@ -152,7 +152,7 @@ class ScoreStringEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
         output_parser (BaseOutputParser): The output parser for the chain.
 
     Example:
-        >>> from langchain.chat_models import ChatOpenAI
+        >>> from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
         >>> from langchain.evaluation.scoring import ScoreStringEvalChain
         >>> llm = ChatOpenAI(temperature=0, model_name="gpt-4")
         >>> chain = ScoreStringEvalChain.from_llm(llm=llm)

@@ -2,7 +2,7 @@ from typing import List, Tuple
 
 from langchain.agents import AgentExecutor
 from langchain.agents.format_scratchpad import format_xml
-from langchain.chat_models import ChatAnthropic
+from langchain.libs.langchain.langchain.chat_models import ChatAnthropic
 from langchain.schema import AIMessage, HumanMessage
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.tools.render import render_text_description

@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.example_selectors.semantic_similarity im
     SemanticSimilarityExampleSelector,
 )
 
-from langchain.prompts.example_selector.ngram_overlap import (
+from langchain.libs.langchain.langchain.prompts.example_selector.ngram_overlap import (
     NGramOverlapExampleSelector,
 )
 

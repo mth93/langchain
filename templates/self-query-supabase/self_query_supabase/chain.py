@@ -4,7 +4,7 @@ from langchain.chains.query_constructor.base import AttributeInfo
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms.openai import OpenAI
 from langchain.retrievers.self_query.base import SelfQueryRetriever
-from langchain.vectorstores.supabase import SupabaseVectorStore
+from langchain.libs.langchain.langchain.vectorstores.supabase import SupabaseVectorStore
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from supabase.client import create_client
 

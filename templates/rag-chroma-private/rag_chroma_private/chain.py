@@ -1,10 +1,10 @@
 # Load
-from langchain.chat_models import ChatOllama
+from langchain.libs.langchain.langchain.chat_models import ChatOllama
 from langchain.document_loaders import WebBaseLoader
 from langchain.embeddings import GPT4AllEmbeddings
 from langchain.prompts import ChatPromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

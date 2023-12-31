@@ -5,7 +5,7 @@ from langchain.document_loaders import DirectoryLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms import OpenAI
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain.libs.langchain.langchain.vectorstores import FAISS
 
 
 def test_retrieval_qa_with_sources_chain_saving_loading(tmp_path: str) -> None:

@@ -1,4 +1,4 @@
-from langchain.prompts.prompt import PromptTemplate
+from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 
 PROMPT_SUFFIX = """Only use the following Elasticsearch indices:
 {indices_info}

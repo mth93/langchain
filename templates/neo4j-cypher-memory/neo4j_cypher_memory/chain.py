@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
 from langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.graphs import Neo4jGraph
 from langchain.memory import ChatMessageHistory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder

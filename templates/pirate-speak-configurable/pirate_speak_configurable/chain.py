@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatAnthropic, ChatCohere, ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatAnthropic, ChatCohere, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.libs.core.langchain_core.runnables import ConfigurableField
 

@@ -3,7 +3,7 @@ import os
 import cassio
 import langchain
 from langchain.cache import CassandraCache
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import BaseMessage
 from langchain.libs.core.langchain_core.runnables import RunnableLambda

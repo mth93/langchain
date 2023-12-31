@@ -1,7 +1,7 @@
 import os
 
 import weaviate
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.weaviate_hybrid_search import WeaviateHybridSearchRetriever
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

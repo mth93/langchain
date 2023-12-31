@@ -5,7 +5,7 @@ from langchain.agents import AgentExecutor
 from langchain.agents.format_scratchpad import format_to_openai_function_messages
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
 from langchain.callbacks.manager import CallbackManagerForRetrieverRun
-from langchain.chat_models import AzureChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import AzureChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.schema import BaseRetriever, Document
 from langchain.tools.render import format_tool_to_openai_function

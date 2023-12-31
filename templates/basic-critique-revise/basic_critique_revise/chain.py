@@ -5,7 +5,7 @@ from operator import itemgetter
 from typing import Any, Dict, Sequence
 
 from langchain.chains.openai_functions import convert_to_openai_function
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, ValidationError, conint
 from langchain.libs.core.langchain_core.runnables import (

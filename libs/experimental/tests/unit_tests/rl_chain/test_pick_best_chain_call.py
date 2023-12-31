@@ -1,8 +1,8 @@
 from typing import Any, Dict
 
 import pytest
-from langchain.chat_models import FakeListChatModel
-from langchain.prompts.prompt import PromptTemplate
+from langchain.libs.langchain.langchain.chat_models import FakeListChatModel
+from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 from test_utils import MockEncoder, MockEncoderReturnsList
 
 import langchain_experimental.rl_chain.base as rl_chain

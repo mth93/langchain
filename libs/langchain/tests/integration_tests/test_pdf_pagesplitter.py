@@ -3,7 +3,7 @@ import os
 
 from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
+from langchain.libs.langchain.langchain.vectorstores import FAISS
 
 
 def test_pdf_pagesplitter() -> None:

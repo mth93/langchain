@@ -1,6 +1,6 @@
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.retrievers.merger_retriever import MergerRetriever
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 
 
 def test_merger_retriever_get_relevant_docs() -> None:

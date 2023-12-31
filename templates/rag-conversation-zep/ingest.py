@@ -4,7 +4,7 @@ import os
 from langchain.document_loaders import WebBaseLoader
 from langchain.embeddings import FakeEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores.zep import CollectionConfig, ZepVectorStore
+from langchain.libs.langchain.langchain.vectorstores.zep import CollectionConfig, ZepVectorStore
 
 ZEP_API_URL = os.environ.get("ZEP_API_URL", "http://localhost:8000")
 ZEP_API_KEY = os.environ.get("ZEP_API_KEY", None)

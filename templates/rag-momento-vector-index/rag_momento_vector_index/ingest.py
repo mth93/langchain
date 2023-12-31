@@ -4,7 +4,7 @@ import os
 from langchain.document_loaders import WebBaseLoader
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores import MomentoVectorIndex
+from langchain.libs.langchain.langchain.vectorstores import MomentoVectorIndex
 from momento import (
     CredentialProvider,
     PreviewVectorIndexClient,

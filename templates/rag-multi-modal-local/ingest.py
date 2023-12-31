@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from langchain_experimental.open_clip import OpenCLIPEmbeddings
 
 # Load images

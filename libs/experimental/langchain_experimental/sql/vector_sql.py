@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Optional, Sequence, Union
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.llm import LLMChain
 from langchain.chains.sql_database.prompt import PROMPT, SQL_PROMPTS
-from langchain.prompts.prompt import PromptTemplate
+from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 from langchain.schema import BaseOutputParser, BasePromptTemplate
 from langchain.schema.embeddings import Embeddings
 from langchain.schema.language_model import BaseLanguageModel

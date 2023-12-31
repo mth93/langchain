@@ -1,6 +1,6 @@
 from typing import List, Tuple
 
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

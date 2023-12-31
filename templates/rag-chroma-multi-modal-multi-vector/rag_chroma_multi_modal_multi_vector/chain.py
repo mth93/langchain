@@ -3,7 +3,7 @@ import io
 import os
 from pathlib import Path
 
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.pydantic_v1 import BaseModel
 from langchain.retrievers.multi_vector import MultiVectorRetriever
@@ -12,7 +12,7 @@ from langchain.schema.messages import HumanMessage
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.storage import LocalFileStore, UpstashRedisByteStore
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from PIL import Image
 
 

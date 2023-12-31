@@ -1,5 +1,5 @@
 from langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.graphs import Neo4jGraph
 from langchain.prompts import ChatPromptTemplate
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import List, Optional
 
 from langchain.chains.llm import LLMChain
-from langchain.chat_models.base import BaseChatModel
+from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
 from langchain.memory import ChatMessageHistory
 from langchain.schema import (
     BaseChatMessageHistory,

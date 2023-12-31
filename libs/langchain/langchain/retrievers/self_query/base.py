@@ -31,7 +31,7 @@ from langchain.retrievers.self_query.supabase import SupabaseVectorTranslator
 from langchain.retrievers.self_query.timescalevector import TimescaleVectorTranslator
 from langchain.retrievers.self_query.vectara import VectaraTranslator
 from langchain.retrievers.self_query.weaviate import WeaviateTranslator
-from langchain.vectorstores import (
+from langchain.libs.langchain.langchain.vectorstores import (
     Chroma,
     DashVector,
     DeepLake,

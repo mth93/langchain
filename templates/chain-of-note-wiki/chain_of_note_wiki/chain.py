@@ -1,5 +1,5 @@
 from langchain import hub
-from langchain.chat_models import ChatAnthropic
+from langchain.libs.langchain.langchain.chat_models import ChatAnthropic
 from langchain.schema import StrOutputParser
 from langchain.utilities import WikipediaAPIWrapper
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel

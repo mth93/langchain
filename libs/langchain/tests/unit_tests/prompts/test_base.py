@@ -1,4 +1,4 @@
-from langchain.prompts.base import __all__
+from langchain.libs.langchain.langchain.prompts.base import __all__
 
 EXPECTED_ALL = [
     "BasePromptTemplate",

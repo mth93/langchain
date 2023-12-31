@@ -193,7 +193,7 @@ class CriteriaEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
 
     Examples
     --------
-    >>> from langchain.chat_models import ChatAnthropic
+    >>> from langchain.libs.langchain.langchain.chat_models import ChatAnthropic
     >>> from langchain.evaluation.criteria import CriteriaEvalChain
     >>> llm = ChatAnthropic(temperature=0)
     >>> criteria = {"my-custom-criterion": "Is the submission the most amazing ever?"}
@@ -205,7 +205,7 @@ class CriteriaEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
         'score': 0,
     }
 
-    >>> from langchain.chat_models import ChatOpenAI
+    >>> from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
     >>> from langchain.evaluation.criteria import LabeledCriteriaEvalChain
     >>> llm = ChatOpenAI(model="gpt-4", temperature=0)
     >>> criteria = "correctness"

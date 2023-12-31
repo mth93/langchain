@@ -1,7 +1,7 @@
 import time
 from typing import Any, Callable, List, cast
 
-from langchain.prompts.chat import (
+from langchain.libs.langchain.langchain.prompts.chat import (
     BaseChatPromptTemplate,
 )
 from langchain.schema.messages import BaseMessage, HumanMessage, SystemMessage

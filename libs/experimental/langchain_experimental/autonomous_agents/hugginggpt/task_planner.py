@@ -6,7 +6,7 @@ from typing import Any, Dict, List, Optional, Union
 from langchain.base_language import BaseLanguageModel
 from langchain.callbacks.manager import Callbacks
 from langchain.chains import LLMChain
-from langchain.prompts.chat import (
+from langchain.libs.langchain.langchain.prompts.chat import (
     AIMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,

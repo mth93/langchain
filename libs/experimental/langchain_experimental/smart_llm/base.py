@@ -5,8 +5,8 @@ from langchain.base_language import BaseLanguageModel
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.base import Chain
 from langchain.input import get_colored_text
-from langchain.prompts.base import BasePromptTemplate
-from langchain.prompts.chat import (
+from langchain.libs.langchain.langchain.prompts.base import BasePromptTemplate
+from langchain.libs.langchain.langchain.prompts.chat import (
     AIMessagePromptTemplate,
     BaseMessagePromptTemplate,
     ChatPromptTemplate,

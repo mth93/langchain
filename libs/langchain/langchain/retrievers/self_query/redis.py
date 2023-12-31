@@ -10,8 +10,8 @@ from langchain.chains.query_constructor.ir import (
     StructuredQuery,
     Visitor,
 )
-from langchain.vectorstores.redis import Redis
-from langchain.vectorstores.redis.filters import (
+from langchain.libs.langchain.langchain.vectorstores.redis import Redis
+from langchain.libs.langchain.langchain.vectorstores.redis.filters import (
     RedisFilterExpression,
     RedisFilterField,
     RedisFilterOperator,
@@ -19,7 +19,7 @@ from langchain.vectorstores.redis.filters import (
     RedisTag,
     RedisText,
 )
-from langchain.vectorstores.redis.schema import RedisModel
+from langchain.libs.langchain.langchain.vectorstores.redis.schema import RedisModel
 
 _COMPARATOR_TO_BUILTIN_METHOD = {
     Comparator.EQ: "__eq__",

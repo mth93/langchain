@@ -7,7 +7,7 @@ from langchain.embeddings import GPT4AllEmbeddings
 from langchain.llms.fireworks import Fireworks
 from langchain.prompts import ChatPromptTemplate
 from langchain.text_splitter import Language, RecursiveCharacterTextSplitter
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough

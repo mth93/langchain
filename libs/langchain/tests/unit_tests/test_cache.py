@@ -15,7 +15,7 @@ from langchain.cache import (
     InMemoryCache,
     SQLAlchemyCache,
 )
-from langchain.chat_models import FakeListChatModel
+from langchain.libs.langchain.langchain.chat_models import FakeListChatModel
 from langchain.globals import get_llm_cache, set_llm_cache
 from langchain.llms import FakeListLLM
 

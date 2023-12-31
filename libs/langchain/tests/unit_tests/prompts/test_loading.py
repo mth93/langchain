@@ -1,4 +1,4 @@
-from langchain.prompts.loading import __all__
+from langchain.libs.langchain.langchain.prompts.loading import __all__
 
 EXPECTED_ALL = [
     "_load_examples",

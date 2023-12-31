@@ -1,7 +1,7 @@
 import json
 from typing import Any, Dict, List, Optional
 
-from langchain.chat_models.ollama import ChatOllama
+from langchain.libs.langchain.langchain.chat_models.ollama import ChatOllama
 from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
 from langchain.libs.core.langchain_core.language_models import BaseChatModel
 from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage

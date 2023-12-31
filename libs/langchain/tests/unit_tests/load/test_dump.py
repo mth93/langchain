@@ -10,7 +10,7 @@ from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.tracers.langchain import LangChainTracer
 
 from langchain.chains.llm import LLMChain
-from langchain.chat_models.openai import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models.openai import ChatOpenAI
 from langchain.llms.openai import OpenAI
 
 

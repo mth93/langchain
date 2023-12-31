@@ -1,8 +1,8 @@
 from langchain import hub
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.load import dumps, loads
-from langchain.vectorstores import Pinecone
+from langchain.libs.langchain.langchain.vectorstores import Pinecone
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 

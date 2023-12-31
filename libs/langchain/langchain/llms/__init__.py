@@ -149,7 +149,7 @@ def _import_databricks() -> Any:
 
 
 def _import_databricks_chat() -> Any:
-    from langchain.chat_models.databricks import ChatDatabricks
+    from langchain.libs.langchain.langchain.chat_models.databricks import ChatDatabricks
 
     return ChatDatabricks
 
@@ -289,7 +289,7 @@ def _import_mlflow() -> Any:
 
 
 def _import_mlflow_chat() -> Any:
-    from langchain.chat_models.mlflow import ChatMlflow
+    from langchain.libs.langchain.langchain.chat_models.mlflow import ChatMlflow
 
     return ChatMlflow
 

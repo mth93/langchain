@@ -16,7 +16,7 @@ from langchain.chains.router.llm_router import LLMRouterChain, RouterOutputParse
 from langchain.chains.router.multi_retrieval_prompt import (
     MULTI_RETRIEVAL_ROUTER_TEMPLATE,
 )
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 
 
 class MultiRetrievalQAChain(MultiRouteChain):

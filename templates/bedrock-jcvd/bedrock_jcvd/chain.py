@@ -1,6 +1,6 @@
 import os
 
-from langchain.chat_models import BedrockChat
+from langchain.libs.langchain.langchain.chat_models import BedrockChat
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import ConfigurableField
 

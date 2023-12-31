@@ -1,5 +1,5 @@
 # flake8: noqa
-from langchain.prompts.prompt import PromptTemplate
+from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 
 template = (
     """

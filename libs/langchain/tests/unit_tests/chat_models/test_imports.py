@@ -1,4 +1,4 @@
-from langchain.chat_models import __all__
+from langchain.libs.langchain.langchain.chat_models import __all__
 
 EXPECTED_ALL = [
     "ChatOpenAI",

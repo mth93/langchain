@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import List
 
 from langchain.chains.openai_functions import create_structured_output_chain
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.graphs import Neo4jGraph

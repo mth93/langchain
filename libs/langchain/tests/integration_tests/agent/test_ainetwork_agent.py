@@ -12,7 +12,7 @@ from langchain_community.tools.ainetwork.utils import authenticate
 
 from langchain.agents import AgentType, initialize_agent
 from langchain.agents.agent_toolkits.ainetwork.toolkit import AINetworkToolkit
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 
 
 class Match(Enum):

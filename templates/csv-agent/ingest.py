@@ -1,6 +1,6 @@
 from langchain.document_loaders import CSVLoader
 from langchain.indexes import VectorstoreIndexCreator
-from langchain.vectorstores import FAISS
+from langchain.libs.langchain.langchain.vectorstores import FAISS
 
 loader = CSVLoader("/Users/harrisonchase/Downloads/titanic.csv")
 

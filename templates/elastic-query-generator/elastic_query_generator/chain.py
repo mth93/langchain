@@ -1,5 +1,5 @@
 from elasticsearch import Elasticsearch
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.output_parsers.json import SimpleJsonOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 

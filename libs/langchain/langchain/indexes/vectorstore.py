@@ -12,7 +12,7 @@ from langchain.document_loaders.base import BaseLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.llms.openai import OpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
-from langchain.vectorstores.chroma import Chroma
+from langchain.libs.langchain.langchain.vectorstores.chroma import Chroma
 
 
 def _get_default_text_splitter() -> TextSplitter:

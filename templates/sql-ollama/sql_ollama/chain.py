@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from langchain.chat_models import ChatOllama
+from langchain.libs.langchain.langchain.chat_models import ChatOllama
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.utilities import SQLDatabase

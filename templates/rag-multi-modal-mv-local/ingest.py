@@ -5,13 +5,13 @@ import uuid
 from io import BytesIO
 from pathlib import Path
 
-from langchain.chat_models import ChatOllama
+from langchain.libs.langchain.langchain.chat_models import ChatOllama
 from langchain.embeddings import OllamaEmbeddings
 from langchain.retrievers.multi_vector import MultiVectorRetriever
 from langchain.schema.document import Document
 from langchain.schema.messages import HumanMessage
 from langchain.storage import LocalFileStore
-from langchain.vectorstores import Chroma
+from langchain.libs.langchain.langchain.vectorstores import Chroma
 from PIL import Image
 
 

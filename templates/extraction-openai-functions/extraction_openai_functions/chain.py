@@ -1,7 +1,7 @@
 import json
 from typing import List, Optional
 
-from langchain.chat_models import ChatOpenAI
+from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.utils.openai_functions import convert_pydantic_to_openai_function
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel

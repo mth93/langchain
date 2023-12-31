@@ -6,8 +6,8 @@ from typing import Any, DefaultDict, Dict, List, Optional, cast
 from langchain.callbacks.manager import (
     CallbackManagerForLLMRun,
 )
-from langchain.chat_models.anthropic import ChatAnthropic
-from langchain.chat_models.base import BaseChatModel
+from langchain.libs.langchain.langchain.chat_models.anthropic import ChatAnthropic
+from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
 from langchain.schema import (
     ChatGeneration,
     ChatResult,

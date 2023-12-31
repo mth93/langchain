@@ -1,4 +1,4 @@
-from langchain.prompts.pipeline import __all__
+from langchain.libs.langchain.langchain.prompts.pipeline import __all__
 
 EXPECTED_ALL = ["PipelinePromptTemplate", "_get_inputs"]
 
