@@ -24,9 +24,9 @@ from langchain.agents import BaseMultiActionAgent
 from langchain.agents.format_scratchpad.openai_functions import (
     format_to_openai_function_messages,
 )
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.callbacks.manager import Callbacks
-from langchain.tools import BaseTool
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.tools import BaseTool
 
 # For backwards compatibility
 _FunctionsAgentAction = AgentActionMessageLog

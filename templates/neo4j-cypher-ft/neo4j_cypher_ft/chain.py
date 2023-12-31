@@ -1,9 +1,9 @@
 from typing import List, Optional
 
-from langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
-from langchain.chains.openai_functions import create_structured_output_chain
+from langchain.libs.langchain.langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
+from langchain.libs.langchain.langchain.chains.openai_functions import create_structured_output_chain
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
-from langchain.graphs import Neo4jGraph
+from langchain.libs.langchain.langchain.graphs import Neo4jGraph
 from langchain.prompts import ChatPromptTemplate
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field

@@ -10,8 +10,8 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langsmith.client import Client
 from langsmith.schemas import Dataset, Example
 
-from langchain.chains.base import Chain
-from langchain.chains.transform import TransformChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.transform import TransformChain
 from langchain.smith.evaluation.runner_utils import (
     InputFormatError,
     _get_messages,

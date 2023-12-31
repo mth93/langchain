@@ -5,15 +5,15 @@ from langchain.libs.core.langchain_core.messages import BaseMessage, SystemMessa
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.chains.llm import LLMChain
-from langchain.graphs import NetworkxEntityGraph
-from langchain.graphs.networkx_graph import KnowledgeTriple, get_entities, parse_triples
-from langchain.memory.chat_memory import BaseChatMemory
-from langchain.memory.prompt import (
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.graphs import NetworkxEntityGraph
+from langchain.libs.langchain.langchain.graphs.networkx_graph import KnowledgeTriple, get_entities, parse_triples
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory
+from langchain.libs.langchain.langchain.memory.prompt import (
     ENTITY_EXTRACTION_PROMPT,
     KNOWLEDGE_TRIPLE_EXTRACTION_PROMPT,
 )
-from langchain.memory.utils import get_prompt_input_key
+from langchain.libs.langchain.langchain.memory.utils import get_prompt_input_key
 
 
 class ConversationKGMemory(BaseChatMemory):

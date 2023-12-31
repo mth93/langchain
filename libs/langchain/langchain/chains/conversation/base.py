@@ -5,9 +5,9 @@ from langchain.libs.core.langchain_core.memory import BaseMemory
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
 
-from langchain.chains.conversation.prompt import PROMPT
-from langchain.chains.llm import LLMChain
-from langchain.memory.buffer import ConversationBufferMemory
+from langchain.libs.langchain.langchain.chains.conversation.prompt import PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.memory.buffer import ConversationBufferMemory
 
 
 class ConversationChain(LLMChain):
@@ -16,8 +16,8 @@ class ConversationChain(LLMChain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import ConversationChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import ConversationChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
 
             conversation = ConversationChain(llm=OpenAI())
     """

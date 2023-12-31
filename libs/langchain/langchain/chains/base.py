@@ -25,21 +25,21 @@ from langchain.libs.core.langchain_core.runnables import (
     run_in_executor,
 )
 
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManager,
     AsyncCallbackManagerForChainRun,
     CallbackManager,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 
 logger = logging.getLogger(__name__)
 
 
 def _get_verbosity() -> bool:
-    from langchain.globals import get_verbose
+    from langchain.libs.langchain.langchain.globals import get_verbose
 
     return get_verbose()
 

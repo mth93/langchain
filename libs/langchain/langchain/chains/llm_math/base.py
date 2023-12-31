@@ -10,13 +10,13 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.llm_math.prompt import PROMPT
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm_math.prompt import PROMPT
 
 
 class LLMMathChain(Chain):
@@ -25,8 +25,8 @@ class LLMMathChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import LLMMathChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMMathChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
             llm_math = LLMMathChain.from_llm(OpenAI())
     """
 

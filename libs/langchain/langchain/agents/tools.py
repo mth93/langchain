@@ -3,7 +3,7 @@ from typing import List, Optional
 
 from langchain.libs.core.langchain_core.tools import BaseTool, Tool, tool
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )

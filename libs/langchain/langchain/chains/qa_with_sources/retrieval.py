@@ -6,12 +6,12 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.qa_with_sources.base import BaseQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.base import BaseQAWithSourcesChain
 
 
 class RetrievalQAWithSourcesChain(BaseQAWithSourcesChain):

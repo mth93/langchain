@@ -8,19 +8,19 @@ from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.chains import LLMChain
-from langchain.chains.prompt_selector import ConditionalPromptSelector
+from langchain.libs.langchain.langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.chains.prompt_selector import ConditionalPromptSelector
 from langchain.document_loaders import AsyncHtmlLoader
 from langchain.document_transformers import Html2TextTransformer
-from langchain.llms import LlamaCpp
-from langchain.llms.base import BaseLLM
-from langchain.output_parsers.pydantic import PydanticOutputParser
-from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
-from langchain.utilities import GoogleSearchAPIWrapper
+from langchain.libs.langchain.langchain.llms import LlamaCpp
+from langchain.libs.langchain.langchain.llms.base import BaseLLM
+from langchain.libs.langchain.langchain.output_parsers.pydantic import PydanticOutputParser
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
+from langchain.libs.langchain.langchain.utilities import GoogleSearchAPIWrapper
 
 logger = logging.getLogger(__name__)
 

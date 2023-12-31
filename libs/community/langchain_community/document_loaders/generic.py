@@ -22,7 +22,7 @@ from langchain_community.document_loaders.blob_loaders import (
 from langchain_community.document_loaders.parsers.registry import get_parser
 
 if TYPE_CHECKING:
-    from langchain.text_splitter import TextSplitter
+    from langchain.libs.langchain.langchain.text_splitter import TextSplitter
 
 _PathLike = Union[str, Path]
 

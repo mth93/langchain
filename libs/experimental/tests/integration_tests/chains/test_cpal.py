@@ -6,8 +6,8 @@ from typing import Type
 from unittest import mock
 
 import pytest
-from langchain.llms import OpenAI
-from langchain.output_parsers import PydanticOutputParser
+from langchain.libs.langchain.langchain.llms import OpenAI
+from langchain.libs.langchain.langchain.output_parsers import PydanticOutputParser
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 
 from langchain_experimental import pydantic_v1 as pydantic

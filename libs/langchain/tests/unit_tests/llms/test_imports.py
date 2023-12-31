@@ -1,5 +1,5 @@
 from langchain import llms
-from langchain.llms.base import BaseLLM
+from langchain.libs.langchain.langchain.llms.base import BaseLLM
 
 EXPECT_ALL = [
     "AI21",

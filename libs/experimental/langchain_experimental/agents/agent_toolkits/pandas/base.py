@@ -5,12 +5,12 @@ from langchain.agents.agent import AgentExecutor, BaseSingleActionAgent
 from langchain.agents.mrkl.base import ZeroShotAgent
 from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
 from langchain.agents.types import AgentType
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.chains.llm import LLMChain
-from langchain.schema import BasePromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
-from langchain.schema.messages import SystemMessage
-from langchain.tools import BaseTool
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.schema import BasePromptTemplate
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.schema.messages import SystemMessage
+from langchain.libs.langchain.langchain.tools import BaseTool
 
 from langchain_experimental.agents.agent_toolkits.pandas.prompt import (
     FUNCTIONS_WITH_DF,

@@ -4,9 +4,9 @@ from typing import Any, Dict, List, Optional
 import pytest
 from langchain.libs.core.langchain_core.memory import BaseMemory
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

@@ -7,8 +7,8 @@ from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.router.base import RouterChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.router.base import RouterChain
 
 
 class EmbeddingRouterChain(RouterChain):

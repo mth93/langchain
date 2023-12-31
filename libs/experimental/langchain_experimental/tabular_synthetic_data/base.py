@@ -1,11 +1,11 @@
 import asyncio
 from typing import Any, Dict, List, Optional, Union
 
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.libs.langchain.langchain.prompts.few_shot import FewShotPromptTemplate
-from langchain.pydantic_v1 import BaseModel, root_validator
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel, root_validator
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 
 class SyntheticDataGenerator(BaseModel):

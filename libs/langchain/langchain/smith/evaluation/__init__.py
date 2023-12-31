@@ -11,7 +11,7 @@ For more information on the LangSmith API, see the `LangSmith API documentation 
 
     from langsmith import Client
     from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
-    from langchain.chains import LLMChain
+    from langchain.libs.langchain.langchain.chains import LLMChain
     from langchain.smith import EvaluatorType, RunEvalConfig, run_on_dataset
 
     def construct_chain():

@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Dict, Optional
 
-from langchain.memory import ConversationBufferMemory
-from langchain.memory.chat_message_histories import ZepChatMessageHistory
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.chat_message_histories import ZepChatMessageHistory
 
 
 class ZepMemory(ConversationBufferMemory):

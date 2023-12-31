@@ -1,13 +1,13 @@
 from typing import List
 
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.chains import LLMChain
 from langchain.libs.langchain.langchain.chat_models import ChatOllama, ChatOpenAI
 from langchain.document_loaders import WebBaseLoader
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.output_parsers import PydanticOutputParser
+from langchain.libs.langchain.langchain.output_parsers import PydanticOutputParser
 from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain.retrievers.multi_query import MultiQueryRetriever
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.libs.langchain.langchain.vectorstores import Chroma
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field

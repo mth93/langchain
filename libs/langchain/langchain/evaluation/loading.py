@@ -3,7 +3,7 @@ from typing import Any, Dict, List, Optional, Sequence, Type, Union
 
 from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.base import Chain
 from langchain.libs.langchain.langchain.chat_models.openai import ChatOpenAI
 from langchain.evaluation.agents.trajectory_eval_chain import TrajectoryEvalChain
 from langchain.evaluation.comparison import PairwiseStringEvalChain

@@ -42,7 +42,7 @@ class RetryOutputParser(BaseOutputParser[T]):
 
     parser: BaseOutputParser[T]
     """The parser to use to parse the output."""
-    # Should be an LLMChain but we want to avoid top-level imports from langchain.chains
+    # Should be an LLMChain but we want to avoid top-level imports from langchain.libs.langchain.langchain.chains
     retry_chain: Any
     """The LLMChain to use to retry the completion."""
     max_retries: int = 1
@@ -67,7 +67,7 @@ class RetryOutputParser(BaseOutputParser[T]):
         Returns:
             RetryOutputParser
         """
-        from langchain.chains.llm import LLMChain
+        from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
         chain = LLMChain(llm=llm, prompt=prompt)
         return cls(parser=parser, retry_chain=chain, max_retries=max_retries)
@@ -149,7 +149,7 @@ class RetryWithErrorOutputParser(BaseOutputParser[T]):
 
     parser: BaseOutputParser[T]
     """The parser to use to parse the output."""
-    # Should be an LLMChain but we want to avoid top-level imports from langchain.chains
+    # Should be an LLMChain but we want to avoid top-level imports from langchain.libs.langchain.langchain.chains
     retry_chain: Any
     """The LLMChain to use to retry the completion."""
     max_retries: int = 1
@@ -174,7 +174,7 @@ class RetryWithErrorOutputParser(BaseOutputParser[T]):
         Returns:
             A RetryWithErrorOutputParser.
         """
-        from langchain.chains.llm import LLMChain
+        from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
         chain = LLMChain(llm=llm, prompt=prompt)
         return cls(parser=parser, retry_chain=chain, max_retries=max_retries)

@@ -13,8 +13,8 @@ from langchain.agents.agent_types import AgentType
 from langchain.agents.conversational.output_parser import ConvoOutputParser
 from langchain.agents.conversational.prompt import FORMAT_INSTRUCTIONS, PREFIX, SUFFIX
 from langchain.agents.utils import validate_tools_single_input
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.chains import LLMChain
 
 
 class ConversationalAgent(Agent):

@@ -3,11 +3,11 @@ from typing import Any, Dict, List, Tuple, Union
 import pytest
 from langchain.libs.core.langchain_core.documents import Document
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.chains.query_constructor.ir import (
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import (
     Comparator,
     Comparison,
     Operation,
@@ -15,7 +15,7 @@ from langchain.chains.query_constructor.ir import (
     StructuredQuery,
     Visitor,
 )
-from langchain.chains.query_constructor.schema import AttributeInfo
+from langchain.libs.langchain.langchain.chains.query_constructor.schema import AttributeInfo
 from langchain.retrievers import SelfQueryRetriever
 from tests.unit_tests.indexes.test_indexing import InMemoryVectorStore
 from tests.unit_tests.llms.fake_llm import FakeLLM

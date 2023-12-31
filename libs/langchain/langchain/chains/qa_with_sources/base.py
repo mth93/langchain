@@ -12,18 +12,18 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains import ReduceDocumentsChain
-from langchain.chains.base import Chain
-from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.chains.qa_with_sources.loading import load_qa_with_sources_chain
-from langchain.chains.qa_with_sources.map_reduce_prompt import (
+from langchain.libs.langchain.langchain.chains import ReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.combine_documents.base import BaseCombineDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.loading import load_qa_with_sources_chain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.map_reduce_prompt import (
     COMBINE_PROMPT,
     EXAMPLE_PROMPT,
     QUESTION_PROMPT,

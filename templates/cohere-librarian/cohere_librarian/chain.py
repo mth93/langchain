@@ -1,4 +1,4 @@
-from langchain.pydantic_v1 import BaseModel
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel
 
 from .router import branched_chain
 

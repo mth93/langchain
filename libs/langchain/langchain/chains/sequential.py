@@ -4,11 +4,11 @@ from typing import Any, Dict, List, Optional
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 from langchain.libs.core.langchain_core.utils.input import get_color_mapping
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.base import Chain
 
 
 class SequentialChain(Chain):

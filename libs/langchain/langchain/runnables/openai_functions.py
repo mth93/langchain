@@ -6,7 +6,7 @@ from langchain.libs.core.langchain_core.runnables import RouterRunnable, Runnabl
 from langchain.libs.core.langchain_core.runnables.base import RunnableBindingBase
 from typing_extensions import TypedDict
 
-from langchain.output_parsers.openai_functions import JsonOutputFunctionsParser
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import JsonOutputFunctionsParser
 
 
 class OpenAIFunction(TypedDict):

@@ -6,8 +6,8 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langchain.libs.core.langchain_core.vectorstores import VectorStoreRetriever
 
-from langchain.memory.chat_memory import BaseMemory
-from langchain.memory.utils import get_prompt_input_key
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseMemory
+from langchain.libs.langchain.langchain.memory.utils import get_prompt_input_key
 
 
 class VectorStoreRetrieverMemory(BaseMemory):

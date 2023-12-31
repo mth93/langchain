@@ -4,15 +4,15 @@ from __future__ import annotations
 import warnings
 from typing import Any, Dict, List, Optional
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.sql_database.prompt import DECIDER_PROMPT, PROMPT, SQL_PROMPTS
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.sql_database.prompt import DECIDER_PROMPT, PROMPT, SQL_PROMPTS
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
-from langchain.schema import BasePromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
-from langchain.tools.sql_database.prompt import QUERY_CHECKER
-from langchain.utilities.sql_database import SQLDatabase
+from langchain.libs.langchain.langchain.schema import BasePromptTemplate
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.tools.sql_database.prompt import QUERY_CHECKER
+from langchain.libs.langchain.langchain.utilities.sql_database import SQLDatabase
 
 from langchain_experimental.pydantic_v1 import Extra, Field, root_validator
 
@@ -27,7 +27,7 @@ class SQLDatabaseChain(Chain):
         .. code-block:: python
 
             from langchain_experimental.sql import SQLDatabaseChain
-            from langchain.llms import OpenAI, SQLDatabase
+            from langchain.libs.langchain.langchain.llms import OpenAI, SQLDatabase
             db = SQLDatabase(...)
             db_chain = SQLDatabaseChain.from_llm(OpenAI(), db)
 

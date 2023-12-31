@@ -6,8 +6,8 @@ from langchain.libs.core.langchain_core.tracers.stdout import (
     FunctionCallbackHandler,
 )
 
-from langchain.callbacks.tracers.logging import LoggingCallbackHandler
-from langchain.callbacks.tracers.wandb import WandbTracer
+from langchain.libs.langchain.langchain.callbacks.tracers.logging import LoggingCallbackHandler
+from langchain.libs.langchain.langchain.callbacks.tracers.wandb import WandbTracer
 
 __all__ = [
     "ConsoleCallbackHandler",

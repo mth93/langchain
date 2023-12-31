@@ -12,8 +12,8 @@ from typing import Iterator
 import pytest
 from langchain.libs.core.langchain_core.messages import message_to_dict
 
-from langchain.memory import ConversationBufferMemory
-from langchain.memory.chat_message_histories import MomentoChatMessageHistory
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.chat_message_histories import MomentoChatMessageHistory
 
 
 def random_string() -> str:

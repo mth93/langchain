@@ -1,7 +1,7 @@
 import os
 
 from langchain.embeddings import VertexAIEmbeddings
-from langchain.llms import VertexAI
+from langchain.libs.langchain.langchain.llms import VertexAI
 from langchain.prompts import PromptTemplate
 from langchain.libs.langchain.langchain.vectorstores import MatchingEngine
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
-from langchain.base_language import BaseLanguageModel
-from langchain.callbacks.manager import Callbacks
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
 
 

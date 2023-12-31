@@ -4,7 +4,7 @@ from typing import List
 
 import pytest
 
-from langchain.memory import CombinedMemory, ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory import CombinedMemory, ConversationBufferMemory
 
 
 @pytest.fixture()

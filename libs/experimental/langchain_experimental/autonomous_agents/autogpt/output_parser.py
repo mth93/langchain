@@ -3,7 +3,7 @@ import re
 from abc import abstractmethod
 from typing import Dict, NamedTuple
 
-from langchain.schema import BaseOutputParser
+from langchain.libs.langchain.langchain.schema import BaseOutputParser
 
 
 class AutoGPTAction(NamedTuple):

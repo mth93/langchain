@@ -5,7 +5,7 @@ from typing import List, Tuple
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
-from langchain.schema import AIMessage, HumanMessage, format_document
+from langchain.libs.langchain.langchain.schema import AIMessage, HumanMessage, format_document
 from langchain.libs.langchain.langchain.vectorstores.zep import CollectionConfig, ZepVectorStore
 from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.messages import BaseMessage

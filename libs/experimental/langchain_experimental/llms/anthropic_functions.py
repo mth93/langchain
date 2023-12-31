@@ -3,16 +3,16 @@ from collections import defaultdict
 from html.parser import HTMLParser
 from typing import Any, DefaultDict, Dict, List, Optional, cast
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     CallbackManagerForLLMRun,
 )
 from langchain.libs.langchain.langchain.chat_models.anthropic import ChatAnthropic
 from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
-from langchain.schema import (
+from langchain.libs.langchain.langchain.schema import (
     ChatGeneration,
     ChatResult,
 )
-from langchain.schema.messages import (
+from langchain.libs.langchain.langchain.schema.messages import (
     AIMessage,
     BaseMessage,
     SystemMessage,

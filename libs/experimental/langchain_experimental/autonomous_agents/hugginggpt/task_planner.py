@@ -3,16 +3,16 @@ import re
 from abc import abstractmethod
 from typing import Any, Dict, List, Optional, Union
 
-from langchain.base_language import BaseLanguageModel
-from langchain.callbacks.manager import Callbacks
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains import LLMChain
 from langchain.libs.langchain.langchain.prompts.chat import (
     AIMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain.tools.base import BaseTool
+from langchain.libs.langchain.langchain.tools.base import BaseTool
 
 from langchain_experimental.pydantic_v1 import BaseModel
 

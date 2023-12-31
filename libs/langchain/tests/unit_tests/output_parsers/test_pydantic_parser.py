@@ -5,7 +5,7 @@ from typing import Optional
 from langchain.libs.core.langchain_core.exceptions import OutputParserException
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
-from langchain.output_parsers.pydantic import PydanticOutputParser
+from langchain.libs.langchain.langchain.output_parsers.pydantic import PydanticOutputParser
 
 
 class Actions(Enum):

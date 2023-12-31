@@ -7,13 +7,13 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.chains import ConversationChain
-from langchain.chains.base import Chain
-from langchain.chains.conversation.prompt import DEFAULT_TEMPLATE
-from langchain.chains.retrieval_qa.base import BaseRetrievalQA, RetrievalQA
-from langchain.chains.router.base import MultiRouteChain
-from langchain.chains.router.llm_router import LLMRouterChain, RouterOutputParser
-from langchain.chains.router.multi_retrieval_prompt import (
+from langchain.libs.langchain.langchain.chains import ConversationChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.conversation.prompt import DEFAULT_TEMPLATE
+from langchain.libs.langchain.langchain.chains.retrieval_qa.base import BaseRetrievalQA, RetrievalQA
+from langchain.libs.langchain.langchain.chains.router.base import MultiRouteChain
+from langchain.libs.langchain.langchain.chains.router.llm_router import LLMRouterChain, RouterOutputParser
+from langchain.libs.langchain.langchain.chains.router.multi_retrieval_prompt import (
     MULTI_RETRIEVAL_ROUTER_TEMPLATE,
 )
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI

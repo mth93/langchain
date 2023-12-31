@@ -22,14 +22,14 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import Runnable
 
-from langchain.base_language import BaseLanguageModel
-from langchain.chains import LLMChain
-from langchain.output_parsers.openai_functions import (
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import (
     JsonOutputFunctionsParser,
     PydanticAttrOutputFunctionsParser,
     PydanticOutputFunctionsParser,
 )
-from langchain.utils.openai_functions import convert_pydantic_to_openai_function
+from langchain.libs.langchain.langchain.utils.openai_functions import convert_pydantic_to_openai_function
 
 PYTHON_TO_JSON_TYPES = {
     "str": "string",
@@ -242,7 +242,7 @@ def create_openai_fn_runnable(
 
                 from typing import Optional
 
-                from langchain.chains.openai_functions import create_openai_fn_chain
+                from langchain.libs.langchain.langchain.chains.openai_functions import create_openai_fn_chain
                 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
                 from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
                 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
@@ -316,7 +316,7 @@ def create_structured_output_runnable(
 
                 from typing import Optional
 
-                from langchain.chains.openai_functions import create_structured_output_chain
+                from langchain.libs.langchain.langchain.chains.openai_functions import create_structured_output_chain
                 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
                 from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
                 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
@@ -417,7 +417,7 @@ def create_openai_fn_chain(
 
                 from typing import Optional
 
-                from langchain.chains.openai_functions import create_openai_fn_chain
+                from langchain.libs.langchain.langchain.chains.openai_functions import create_openai_fn_chain
                 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
                 from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
@@ -504,7 +504,7 @@ def create_structured_output_chain(
 
                 from typing import Optional
 
-                from langchain.chains.openai_functions import create_structured_output_chain
+                from langchain.libs.langchain.langchain.chains.openai_functions import create_structured_output_chain
                 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
                 from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 

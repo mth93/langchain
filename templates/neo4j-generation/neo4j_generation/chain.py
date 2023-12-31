@@ -1,13 +1,13 @@
 from typing import List, Optional
 
-from langchain.chains.openai_functions import (
+from langchain.libs.langchain.langchain.chains.openai_functions import (
     create_structured_output_chain,
 )
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
-from langchain.graphs import Neo4jGraph
-from langchain.graphs.graph_document import GraphDocument
+from langchain.libs.langchain.langchain.graphs import Neo4jGraph
+from langchain.libs.langchain.langchain.graphs.graph_document import GraphDocument
 from langchain.prompts import ChatPromptTemplate
-from langchain.schema import Document
+from langchain.libs.langchain.langchain.schema import Document
 
 from neo4j_generation.utils import (
     KnowledgeGraph,

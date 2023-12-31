@@ -38,17 +38,17 @@ from langchain.libs.core.langchain_core.utils.input import get_color_mapping
 from langchain.agents.agent_iterator import AgentExecutorIterator
 from langchain.agents.agent_types import AgentType
 from langchain.agents.tools import InvalidTool
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     AsyncCallbackManagerForToolRun,
     CallbackManagerForChainRun,
     CallbackManagerForToolRun,
     Callbacks,
 )
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.utilities.asyncio import asyncio_timeout
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.utilities.asyncio import asyncio_timeout
 
 logger = logging.getLogger(__name__)
 

@@ -1,7 +1,7 @@
 import re
 from typing import Any, Callable, Dict, Tuple
 
-from langchain.chains.query_constructor.ir import (
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import (
     Comparator,
     Comparison,
     Operation,

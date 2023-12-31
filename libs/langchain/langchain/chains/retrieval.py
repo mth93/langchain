@@ -40,8 +40,8 @@ def create_retrieval_chain(
             # pip install -U langchain langchain-community
 
             from langchain_community.chat_models import ChatOpenAI
-            from langchain.chains.combine_documents import create_stuff_documents_chain
-            from langchain.chains import create_retrieval_chain
+            from langchain.libs.langchain.langchain.chains.combine_documents import create_stuff_documents_chain
+            from langchain.libs.langchain.langchain.chains import create_retrieval_chain
             from langchain import hub
 
             retrieval_qa_chat_prompt = hub.pull("langchain-ai/retrieval-qa-chat")

@@ -4,7 +4,7 @@ from typing import Type
 
 import pytest
 
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.evaluation.qa.eval_chain import (
     ContextQAEvalChain,
     CotQAEvalChain,

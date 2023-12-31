@@ -95,7 +95,7 @@ class QuerySQLCheckerTool(BaseSQLDatabaseTool, BaseTool):
     @root_validator(pre=True)
     def initialize_llm_chain(cls, values: Dict[str, Any]) -> Dict[str, Any]:
         if "llm_chain" not in values:
-            from langchain.chains.llm import LLMChain
+            from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
             values["llm_chain"] = LLMChain(
                 llm=values.get("llm"),

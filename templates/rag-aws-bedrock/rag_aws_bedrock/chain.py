@@ -1,7 +1,7 @@
 import os
 
 from langchain.embeddings import BedrockEmbeddings
-from langchain.llms.bedrock import Bedrock
+from langchain.libs.langchain.langchain.llms.bedrock import Bedrock
 from langchain.prompts import ChatPromptTemplate
 from langchain.libs.langchain.langchain.vectorstores import FAISS
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

@@ -1,6 +1,6 @@
 """Test SQL Database Chain."""
-from langchain.llms.openai import OpenAI
-from langchain.utilities.sql_database import SQLDatabase
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.utilities.sql_database import SQLDatabase
 from sqlalchemy import Column, Integer, MetaData, String, Table, create_engine, insert
 
 from langchain_experimental.sql.base import (

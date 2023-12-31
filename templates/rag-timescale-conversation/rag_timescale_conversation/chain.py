@@ -8,7 +8,7 @@ from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
-from langchain.schema import AIMessage, HumanMessage, format_document
+from langchain.libs.langchain.langchain.schema import AIMessage, HumanMessage, format_document
 from langchain.libs.langchain.langchain.vectorstores.timescalevector import TimescaleVector
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field

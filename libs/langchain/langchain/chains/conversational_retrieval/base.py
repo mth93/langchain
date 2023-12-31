@@ -16,17 +16,17 @@ from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.runnables import RunnableConfig
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.chains.base import Chain
-from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.conversational_retrieval.prompts import CONDENSE_QUESTION_PROMPT
-from langchain.chains.llm import LLMChain
-from langchain.chains.question_answering import load_qa_chain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.combine_documents.base import BaseCombineDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.conversational_retrieval.prompts import CONDENSE_QUESTION_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.question_answering import load_qa_chain
 
 # Depending on the memory type and configuration, the chat history format may differ.
 # This needs to be consolidated.
@@ -256,11 +256,11 @@ class ConversationalRetrievalChain(BaseConversationalRetrievalChain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import (
+            from langchain.libs.langchain.langchain.chains import (
                 StuffDocumentsChain, LLMChain, ConversationalRetrievalChain
             )
             from langchain.libs.core.langchain_core.prompts import PromptTemplate
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.llms import OpenAI
 
             combine_docs_chain = StuffDocumentsChain(...)
             vectorstore = ...
@@ -408,7 +408,7 @@ class ChatVectorDBChain(BaseConversationalRetrievalChain):
     def raise_deprecation(cls, values: Dict) -> Dict:
         warnings.warn(
             "`ChatVectorDBChain` is deprecated - "
-            "please use `from langchain.chains import ConversationalRetrievalChain`"
+            "please use `from langchain.libs.langchain.langchain.chains import ConversationalRetrievalChain`"
         )
         return values
 

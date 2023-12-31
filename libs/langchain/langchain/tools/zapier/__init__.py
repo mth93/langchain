@@ -1,6 +1,6 @@
 """Zapier Tool."""
 
-from langchain.tools.zapier.tool import ZapierNLAListActions, ZapierNLARunAction
+from langchain.libs.langchain.langchain.tools.zapier.tool import ZapierNLAListActions, ZapierNLARunAction
 
 __all__ = [
     "ZapierNLARunAction",

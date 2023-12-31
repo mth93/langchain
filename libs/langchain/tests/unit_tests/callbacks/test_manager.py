@@ -1,4 +1,4 @@
-from langchain.callbacks.manager import __all__
+from langchain.libs.langchain.langchain.callbacks.manager import __all__
 
 EXPECTED_ALL = [
     "BaseRunManager",

@@ -5,10 +5,10 @@ from typing import Any
 
 import pytest
 
-from langchain.chains.api.base import APIChain
-from langchain.chains.api.prompt import API_RESPONSE_PROMPT, API_URL_PROMPT
-from langchain.chains.llm import LLMChain
-from langchain.utilities.requests import TextRequestsWrapper
+from langchain.libs.langchain.langchain.chains.api.base import APIChain
+from langchain.libs.langchain.langchain.chains.api.prompt import API_RESPONSE_PROMPT, API_URL_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.utilities.requests import TextRequestsWrapper
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

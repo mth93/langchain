@@ -5,7 +5,7 @@ from langchain.libs.core.langchain_core.exceptions import OutputParserException
 from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 from langchain.libs.core.langchain_core.outputs import ChatGeneration
 
-from langchain.output_parsers.openai_functions import (
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import (
     JsonOutputFunctionsParser,
 )
 

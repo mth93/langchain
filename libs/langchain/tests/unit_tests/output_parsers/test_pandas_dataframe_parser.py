@@ -1,8 +1,8 @@
 """Test PandasDataframeParser"""
 import pandas as pd
 
-from langchain.output_parsers.pandas_dataframe import PandasDataFrameOutputParser
-from langchain.schema import OutputParserException
+from langchain.libs.langchain.langchain.output_parsers.pandas_dataframe import PandasDataFrameOutputParser
+from langchain.libs.langchain.langchain.schema import OutputParserException
 
 df = pd.DataFrame(
     {"chicken": [1, 2, 3, 4], "veggies": [5, 4, 3, 2], "steak": [9, 8, 7, 6]}

@@ -1,6 +1,6 @@
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
-from langchain.utils.openai_functions import convert_pydantic_to_openai_function
+from langchain.libs.langchain.langchain.utils.openai_functions import convert_pydantic_to_openai_function
 
 
 def test_convert_pydantic_to_openai_function() -> None:

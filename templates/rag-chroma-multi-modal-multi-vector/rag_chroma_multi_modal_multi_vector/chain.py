@@ -5,12 +5,12 @@ from pathlib import Path
 
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.pydantic_v1 import BaseModel
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel
 from langchain.retrievers.multi_vector import MultiVectorRetriever
-from langchain.schema.document import Document
-from langchain.schema.messages import HumanMessage
-from langchain.schema.output_parser import StrOutputParser
-from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
+from langchain.libs.langchain.langchain.schema.document import Document
+from langchain.libs.langchain.langchain.schema.messages import HumanMessage
+from langchain.libs.langchain.langchain.schema.output_parser import StrOutputParser
+from langchain.libs.langchain.langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.storage import LocalFileStore, UpstashRedisByteStore
 from langchain.libs.langchain.langchain.vectorstores import Chroma
 from PIL import Image

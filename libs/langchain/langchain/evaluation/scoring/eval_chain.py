@@ -10,9 +10,9 @@ from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.libs.langchain.langchain.chat_models.azure_openai import AzureChatOpenAI
 from langchain.libs.langchain.langchain.chat_models.openai import ChatOpenAI
 from langchain.evaluation.criteria.eval_chain import (
@@ -26,7 +26,7 @@ from langchain.evaluation.scoring.prompt import (
     SCORING_TEMPLATE,
     SCORING_TEMPLATE_WITH_REFERENCE,
 )
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 
 logger = logging.getLogger(__name__)
 

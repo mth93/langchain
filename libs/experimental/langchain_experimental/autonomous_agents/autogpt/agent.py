@@ -2,17 +2,17 @@ from __future__ import annotations
 
 from typing import List, Optional
 
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
-from langchain.memory import ChatMessageHistory
-from langchain.schema import (
+from langchain.libs.langchain.langchain.memory import ChatMessageHistory
+from langchain.libs.langchain.langchain.schema import (
     BaseChatMessageHistory,
     Document,
 )
-from langchain.schema.messages import AIMessage, HumanMessage, SystemMessage
-from langchain.schema.vectorstore import VectorStoreRetriever
-from langchain.tools.base import BaseTool
-from langchain.tools.human.tool import HumanInputRun
+from langchain.libs.langchain.langchain.schema.messages import AIMessage, HumanMessage, SystemMessage
+from langchain.libs.langchain.langchain.schema.vectorstore import VectorStoreRetriever
+from langchain.libs.langchain.langchain.tools.base import BaseTool
+from langchain.libs.langchain.langchain.tools.human.tool import HumanInputRun
 
 from langchain_experimental.autonomous_agents.autogpt.output_parser import (
     AutoGPTOutputParser,

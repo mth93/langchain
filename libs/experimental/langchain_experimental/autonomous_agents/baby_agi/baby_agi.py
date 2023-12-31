@@ -2,10 +2,10 @@
 from collections import deque
 from typing import Any, Dict, List, Optional
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.schema.language_model import BaseLanguageModel
-from langchain.schema.vectorstore import VectorStore
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.schema.vectorstore import VectorStore
 
 from langchain_experimental.autonomous_agents.baby_agi.task_creation import (
     TaskCreationChain,

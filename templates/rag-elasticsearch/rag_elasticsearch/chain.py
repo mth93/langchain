@@ -3,7 +3,7 @@ from typing import List, Optional, Tuple
 
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.schema import BaseMessage, format_document
+from langchain.libs.langchain.langchain.schema import BaseMessage, format_document
 from langchain.libs.langchain.langchain.vectorstores.elasticsearch import ElasticsearchStore
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field

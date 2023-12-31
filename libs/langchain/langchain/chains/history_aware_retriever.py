@@ -35,7 +35,7 @@ def create_history_aware_retriever(
             # pip install -U langchain langchain-community
 
             from langchain_community.chat_models import ChatOpenAI
-            from langchain.chains import create_history_aware_retriever
+            from langchain.libs.langchain.langchain.chains import create_history_aware_retriever
             from langchain import hub
 
             rephrase_prompt = hub.pull("langchain-ai/chat-langchain-rephrase")

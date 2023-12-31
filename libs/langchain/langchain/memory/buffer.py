@@ -3,8 +3,8 @@ from typing import Any, Dict, List, Optional
 from langchain.libs.core.langchain_core.messages import BaseMessage, get_buffer_string
 from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
-from langchain.memory.chat_memory import BaseChatMemory, BaseMemory
-from langchain.memory.utils import get_prompt_input_key
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory, BaseMemory
+from langchain.libs.langchain.langchain.memory.utils import get_prompt_input_key
 
 
 class ConversationBufferMemory(BaseChatMemory):

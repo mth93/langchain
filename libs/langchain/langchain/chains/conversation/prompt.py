@@ -1,5 +1,5 @@
 # flake8: noqa
-from langchain.memory.prompt import (
+from langchain.libs.langchain.langchain.memory.prompt import (
     ENTITY_EXTRACTION_PROMPT,
     ENTITY_MEMORY_CONVERSATION_TEMPLATE,
     ENTITY_SUMMARIZATION_PROMPT,

@@ -9,7 +9,7 @@ from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain.agents.react.base import ReActChain, ReActDocstoreAgent
 from langchain.docstore.base import Docstore
-from langchain.llms.fake import FakeListLLM
+from langchain.libs.langchain.langchain.llms.fake import FakeListLLM
 
 _PAGE_CONTENT = """This is a page about LangChain.
 

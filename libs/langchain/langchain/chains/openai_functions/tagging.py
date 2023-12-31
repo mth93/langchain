@@ -3,10 +3,10 @@ from typing import Any, Optional
 from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.openai_functions.utils import _convert_schema, get_llm_kwargs
-from langchain.output_parsers.openai_functions import (
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.openai_functions.utils import _convert_schema, get_llm_kwargs
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import (
     JsonOutputFunctionsParser,
     PydanticOutputFunctionsParser,
 )

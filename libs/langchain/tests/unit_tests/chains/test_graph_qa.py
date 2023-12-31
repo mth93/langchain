@@ -3,16 +3,16 @@ from typing import Any, Dict, List
 import pandas as pd
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
-from langchain.chains.graph_qa.cypher import (
+from langchain.libs.langchain.langchain.chains.graph_qa.cypher import (
     GraphCypherQAChain,
     construct_schema,
     extract_cypher,
 )
-from langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
-from langchain.chains.graph_qa.prompts import CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT
-from langchain.graphs.graph_document import GraphDocument
-from langchain.graphs.graph_store import GraphStore
-from langchain.memory import ConversationBufferMemory, ReadOnlySharedMemory
+from langchain.libs.langchain.langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
+from langchain.libs.langchain.langchain.chains.graph_qa.prompts import CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT
+from langchain.libs.langchain.langchain.graphs.graph_document import GraphDocument
+from langchain.libs.langchain.langchain.graphs.graph_store import GraphStore
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory, ReadOnlySharedMemory
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

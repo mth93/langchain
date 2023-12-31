@@ -5,12 +5,12 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.chains.llm import LLMChain
-from langchain.llms.base import BaseLLM
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.llms.base import BaseLLM
 
 logger = logging.getLogger(__name__)
 

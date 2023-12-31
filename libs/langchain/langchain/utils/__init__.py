@@ -21,9 +21,9 @@ from langchain.libs.core.langchain_core.utils.utils import (
     xor_args,
 )
 
-from langchain.utils.env import get_from_dict_or_env, get_from_env
-from langchain.utils.math import cosine_similarity, cosine_similarity_top_k
-from langchain.utils.strings import comma_list, stringify_dict, stringify_value
+from langchain.libs.langchain.langchain.utils.env import get_from_dict_or_env, get_from_env
+from langchain.libs.langchain.langchain.utils.math import cosine_similarity, cosine_similarity_top_k
+from langchain.libs.langchain.langchain.utils.strings import comma_list, stringify_dict, stringify_value
 
 __all__ = [
     "StrictFormatter",

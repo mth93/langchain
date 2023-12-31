@@ -4,7 +4,7 @@ from typing import Any, Dict, Optional, TextIO, cast
 from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
 from langchain.libs.core.langchain_core.utils.input import print_text
 
-from langchain.callbacks.base import BaseCallbackHandler
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackHandler
 
 
 class FileCallbackHandler(BaseCallbackHandler):

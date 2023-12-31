@@ -1,9 +1,9 @@
 from typing import Any, Dict, List, Optional
 
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 from langchain_experimental.synthetic_data.prompts import SENTENCE_PROMPT
 

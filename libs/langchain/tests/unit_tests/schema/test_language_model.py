@@ -1,4 +1,4 @@
-from langchain.schema.language_model import __all__
+from langchain.libs.langchain.langchain.schema.language_model import __all__
 
 EXPECTED_ALL = [
     "BaseLanguageModel",

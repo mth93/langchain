@@ -26,12 +26,12 @@ from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field
 from langchain.libs.core.langchain_core.tools import BaseTool
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.evaluation.agents.trajectory_eval_prompt import (
     EVAL_CHAT_PROMPT,
     TOOL_FREE_EVAL_CHAT_PROMPT,
@@ -111,7 +111,7 @@ class TrajectoryEvalChain(AgentTrajectoryEvaluator, LLMEvalChain):
         from langchain.agents import AgentType, initialize_agent
         from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
         from langchain.evaluation import TrajectoryEvalChain
-        from langchain.tools import tool
+        from langchain.libs.langchain.langchain.tools import tool
 
         @tool
         def geography_answers(country: str, question: str) -> str:

@@ -10,8 +10,8 @@ from langchain.agents.openai_functions_agent.agent_token_buffer_memory import (
     AgentTokenBufferMemory,
 )
 from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
-from langchain.memory.token_buffer import ConversationTokenBufferMemory
-from langchain.tools.base import BaseTool
+from langchain.libs.langchain.langchain.memory.token_buffer import ConversationTokenBufferMemory
+from langchain.libs.langchain.langchain.tools.base import BaseTool
 
 
 def _get_default_system_message() -> SystemMessage:

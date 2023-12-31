@@ -6,16 +6,16 @@ import numpy as np
 from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.base import Chain
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.evaluation.schema import PairwiseStringEvaluator, StringEvaluator
-from langchain.schema import RUN_KEY
-from langchain.utils.math import cosine_similarity
+from langchain.libs.langchain.langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.utils.math import cosine_similarity
 
 
 class EmbeddingDistance(str, Enum):

@@ -2,7 +2,7 @@ from typing import Any, AsyncIterator, Iterator
 
 from langchain.libs.core.langchain_core.messages import AIMessageChunk
 
-from langchain.output_parsers.openai_functions import JsonOutputFunctionsParser
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import JsonOutputFunctionsParser
 
 GOOD_JSON = """```json
 {

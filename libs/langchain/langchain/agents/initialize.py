@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.tools import BaseTool
 from langchain.agents.agent import AgentExecutor
 from langchain.agents.agent_types import AgentType
 from langchain.agents.loading import AGENT_TO_CLASS, load_agent
-from langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
 
 
 def initialize_agent(

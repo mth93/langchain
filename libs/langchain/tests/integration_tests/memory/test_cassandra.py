@@ -4,8 +4,8 @@ from typing import Optional
 
 from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
-from langchain.memory import ConversationBufferMemory
-from langchain.memory.chat_message_histories.cassandra import (
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.chat_message_histories.cassandra import (
     CassandraChatMessageHistory,
 )
 

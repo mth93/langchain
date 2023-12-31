@@ -3,11 +3,11 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.schema import BasePromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.schema import BasePromptTemplate
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 from langchain_experimental.fallacy_removal.fallacies import FALLACIES
 from langchain_experimental.fallacy_removal.models import LogicalFallacy
@@ -25,8 +25,8 @@ class FallacyChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.llms import OpenAI
-            from langchain.chains import LLMChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMChain
             from langchain_experimental.fallacy import FallacyChain
             from langchain_experimental.fallacy_removal.models import LogicalFallacy
 

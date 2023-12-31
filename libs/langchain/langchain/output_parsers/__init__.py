@@ -12,31 +12,31 @@
 
     Serializable, Generation, PromptValue
 """  # noqa: E501
-from langchain.output_parsers.boolean import BooleanOutputParser
-from langchain.output_parsers.combining import CombiningOutputParser
-from langchain.output_parsers.datetime import DatetimeOutputParser
-from langchain.output_parsers.enum import EnumOutputParser
-from langchain.output_parsers.fix import OutputFixingParser
-from langchain.output_parsers.list import (
+from langchain.libs.langchain.langchain.output_parsers.boolean import BooleanOutputParser
+from langchain.libs.langchain.langchain.output_parsers.combining import CombiningOutputParser
+from langchain.libs.langchain.langchain.output_parsers.datetime import DatetimeOutputParser
+from langchain.libs.langchain.langchain.output_parsers.enum import EnumOutputParser
+from langchain.libs.langchain.langchain.output_parsers.fix import OutputFixingParser
+from langchain.libs.langchain.langchain.output_parsers.list import (
     CommaSeparatedListOutputParser,
     ListOutputParser,
     MarkdownListOutputParser,
     NumberedListOutputParser,
 )
-from langchain.output_parsers.openai_tools import (
+from langchain.libs.langchain.langchain.output_parsers.openai_tools import (
     JsonOutputKeyToolsParser,
     JsonOutputToolsParser,
     PydanticToolsParser,
 )
-from langchain.output_parsers.pandas_dataframe import PandasDataFrameOutputParser
-from langchain.output_parsers.pydantic import PydanticOutputParser
-from langchain.output_parsers.rail_parser import GuardrailsOutputParser
-from langchain.output_parsers.regex import RegexParser
-from langchain.output_parsers.regex_dict import RegexDictParser
-from langchain.output_parsers.retry import RetryOutputParser, RetryWithErrorOutputParser
-from langchain.output_parsers.structured import ResponseSchema, StructuredOutputParser
-from langchain.output_parsers.xml import XMLOutputParser
-from langchain.output_parsers.yaml import YamlOutputParser
+from langchain.libs.langchain.langchain.output_parsers.pandas_dataframe import PandasDataFrameOutputParser
+from langchain.libs.langchain.langchain.output_parsers.pydantic import PydanticOutputParser
+from langchain.libs.langchain.langchain.output_parsers.rail_parser import GuardrailsOutputParser
+from langchain.libs.langchain.langchain.output_parsers.regex import RegexParser
+from langchain.libs.langchain.langchain.output_parsers.regex_dict import RegexDictParser
+from langchain.libs.langchain.langchain.output_parsers.retry import RetryOutputParser, RetryWithErrorOutputParser
+from langchain.libs.langchain.langchain.output_parsers.structured import ResponseSchema, StructuredOutputParser
+from langchain.libs.langchain.langchain.output_parsers.xml import XMLOutputParser
+from langchain.libs.langchain.langchain.output_parsers.yaml import YamlOutputParser
 
 __all__ = [
     "BooleanOutputParser",

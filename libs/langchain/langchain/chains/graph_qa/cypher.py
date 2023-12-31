@@ -8,12 +8,12 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
-from langchain.chains.graph_qa.prompts import CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT
-from langchain.chains.llm import LLMChain
-from langchain.graphs.graph_store import GraphStore
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.graph_qa.cypher_utils import CypherQueryCorrector, Schema
+from langchain.libs.langchain.langchain.chains.graph_qa.prompts import CYPHER_GENERATION_PROMPT, CYPHER_QA_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.graphs.graph_store import GraphStore
 
 INTERMEDIATE_STEPS_KEY = "intermediate_steps"
 

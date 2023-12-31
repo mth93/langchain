@@ -16,8 +16,8 @@ from langchain.cache import (
     SQLAlchemyCache,
 )
 from langchain.libs.langchain.langchain.chat_models import FakeListChatModel
-from langchain.globals import get_llm_cache, set_llm_cache
-from langchain.llms import FakeListLLM
+from langchain.libs.langchain.langchain.globals import get_llm_cache, set_llm_cache
+from langchain.libs.langchain.langchain.llms import FakeListLLM
 
 
 def get_sqlite_cache() -> SQLAlchemyCache:

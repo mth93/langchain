@@ -9,8 +9,8 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.retrievers.document_compressors.base import BaseDocumentCompressor
 from langchain.retrievers.document_compressors.chain_extract_prompt import (
     prompt_template,

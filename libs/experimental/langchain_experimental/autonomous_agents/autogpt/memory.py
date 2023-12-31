@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
-from langchain.memory.chat_memory import BaseChatMemory, get_prompt_input_key
-from langchain.schema.vectorstore import VectorStoreRetriever
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory, get_prompt_input_key
+from langchain.libs.langchain.langchain.schema.vectorstore import VectorStoreRetriever
 
 from langchain_experimental.pydantic_v1 import Field
 

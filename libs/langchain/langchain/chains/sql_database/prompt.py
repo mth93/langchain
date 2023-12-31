@@ -1,5 +1,5 @@
 # flake8: noqa
-from langchain.output_parsers.list import CommaSeparatedListOutputParser
+from langchain.libs.langchain.langchain.output_parsers.list import CommaSeparatedListOutputParser
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 

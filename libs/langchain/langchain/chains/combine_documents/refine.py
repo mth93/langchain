@@ -9,11 +9,11 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, forma
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.combine_documents.base import (
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.combine_documents.base import (
     BaseCombineDocumentsChain,
 )
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 def _get_default_document_prompt() -> PromptTemplate:
@@ -35,9 +35,9 @@ class RefineDocumentsChain(BaseCombineDocumentsChain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import RefineDocumentsChain, LLMChain
+            from langchain.libs.langchain.langchain.chains import RefineDocumentsChain, LLMChain
             from langchain.libs.core.langchain_core.prompts import PromptTemplate
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,
             # it will be passed to `format_document` - see that function for more

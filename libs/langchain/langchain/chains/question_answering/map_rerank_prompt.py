@@ -1,5 +1,5 @@
 # flake8: noqa
-from langchain.output_parsers.regex import RegexParser
+from langchain.libs.langchain.langchain.output_parsers.regex import RegexParser
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 output_parser = RegexParser(

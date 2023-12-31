@@ -98,15 +98,15 @@ def test_imports() -> None:
     from langchain.libs.core.langchain_core.prompts import BasePromptTemplate  # noqa: F401
 
     from langchain.agents import OpenAIFunctionsAgent  # noqa: F401
-    from langchain.callbacks import OpenAICallbackHandler  # noqa: F401
-    from langchain.chains import LLMChain  # noqa: F401
+    from langchain.libs.langchain.langchain.callbacks import OpenAICallbackHandler  # noqa: F401
+    from langchain.libs.langchain.langchain.chains import LLMChain  # noqa: F401
     from langchain.libs.langchain.langchain.chat_models import ChatOpenAI  # noqa: F401
     from langchain.document_loaders import BSHTMLLoader  # noqa: F401
     from langchain.embeddings import OpenAIEmbeddings  # noqa: F401
-    from langchain.llms import OpenAI  # noqa: F401
+    from langchain.libs.langchain.langchain.llms import OpenAI  # noqa: F401
     from langchain.retrievers import VespaRetriever  # noqa: F401
-    from langchain.tools import DuckDuckGoSearchResults  # noqa: F401
-    from langchain.utilities import (
+    from langchain.libs.langchain.langchain.tools import DuckDuckGoSearchResults  # noqa: F401
+    from langchain.libs.langchain.langchain.utilities import (
         SearchApiAPIWrapper,  # noqa: F401
         SerpAPIWrapper,  # noqa: F401
     )

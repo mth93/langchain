@@ -1,6 +1,6 @@
 import os
 
-from langchain.llms.bedrock import Bedrock
+from langchain.libs.langchain.langchain.llms.bedrock import Bedrock
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers import AmazonKendraRetriever
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser

@@ -9,16 +9,16 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts.base import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.graph_qa.prompts import (
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.graph_qa.prompts import (
     SPARQL_GENERATION_SELECT_PROMPT,
     SPARQL_GENERATION_UPDATE_PROMPT,
     SPARQL_INTENT_PROMPT,
     SPARQL_QA_PROMPT,
 )
-from langchain.chains.llm import LLMChain
-from langchain.graphs.rdf_graph import RdfGraph
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.graphs.rdf_graph import RdfGraph
 
 
 class GraphSparqlQAChain(Chain):

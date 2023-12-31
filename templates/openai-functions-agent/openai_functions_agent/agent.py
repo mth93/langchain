@@ -5,9 +5,9 @@ from langchain.agents.format_scratchpad import format_to_openai_function_message
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.tools.render import format_tool_to_openai_function
-from langchain.tools.tavily_search import TavilySearchResults
-from langchain.utilities.tavily_search import TavilySearchAPIWrapper
+from langchain.libs.langchain.langchain.tools.render import format_tool_to_openai_function
+from langchain.libs.langchain.langchain.tools.tavily_search import TavilySearchResults
+from langchain.libs.langchain.langchain.utilities.tavily_search import TavilySearchAPIWrapper
 from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 

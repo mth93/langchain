@@ -7,11 +7,11 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.qa_generation.prompt import PROMPT_SELECTOR
-from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.qa_generation.prompt import PROMPT_SELECTOR
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
 
 
 class QAGenerationChain(Chain):

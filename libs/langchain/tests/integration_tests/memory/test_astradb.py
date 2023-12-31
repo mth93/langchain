@@ -4,8 +4,8 @@ from typing import Iterable
 import pytest
 from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
-from langchain.memory import ConversationBufferMemory
-from langchain.memory.chat_message_histories.astradb import (
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.chat_message_histories.astradb import (
     AstraDBChatMessageHistory,
 )
 

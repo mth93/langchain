@@ -17,7 +17,7 @@ except ImportError:
     Transformer = object  # type: ignore
     Lark = object  # type: ignore
 
-from langchain.chains.query_constructor.ir import (
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import (
     Comparator,
     Comparison,
     FilterDirective,

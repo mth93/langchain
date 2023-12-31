@@ -13,17 +13,17 @@ from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_va
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.chains.base import Chain
-from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.chains.question_answering import load_qa_chain
-from langchain.chains.question_answering.stuff_prompt import PROMPT_SELECTOR
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.combine_documents.base import BaseCombineDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.question_answering import load_qa_chain
+from langchain.libs.langchain.langchain.chains.question_answering.stuff_prompt import PROMPT_SELECTOR
 
 
 class BaseRetrievalQA(Chain):
@@ -200,8 +200,8 @@ class RetrievalQA(BaseRetrievalQA):
     Example:
         .. code-block:: python
 
-            from langchain.llms import OpenAI
-            from langchain.chains import RetrievalQA
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import RetrievalQA
             from langchain.libs.langchain.langchain.vectorstores import FAISS
             from langchain.libs.core.langchain_core.vectorstores import VectorStoreRetriever
             retriever = VectorStoreRetriever(vectorstore=FAISS(...))
@@ -255,7 +255,7 @@ class VectorDBQA(BaseRetrievalQA):
     def raise_deprecation(cls, values: Dict) -> Dict:
         warnings.warn(
             "`VectorDBQA` is deprecated - "
-            "please use `from langchain.chains import RetrievalQA`"
+            "please use `from langchain.libs.langchain.langchain.chains import RetrievalQA`"
         )
         return values
 

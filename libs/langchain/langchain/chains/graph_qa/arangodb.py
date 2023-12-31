@@ -7,16 +7,16 @@ from typing import Any, Dict, List, Optional
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.base_language import BaseLanguageModel
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.graph_qa.prompts import (
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.graph_qa.prompts import (
     AQL_FIX_PROMPT,
     AQL_GENERATION_PROMPT,
     AQL_QA_PROMPT,
 )
-from langchain.chains.llm import LLMChain
-from langchain.graphs.arangodb_graph import ArangoGraph
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.graphs.arangodb_graph import ArangoGraph
 
 
 class ArangoGraphQAChain(Chain):

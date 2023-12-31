@@ -4,13 +4,13 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, List, Optional
 
-from langchain.base_language import BaseLanguageModel
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.libs.langchain.langchain.prompts.base import BasePromptTemplate
 
 from langchain_experimental.llm_symbolic_math.prompt import PROMPT
@@ -23,8 +23,8 @@ class LLMSymbolicMathChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import LLMSymbolicMathChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMSymbolicMathChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
             llm_symbolic_math = LLMSymbolicMathChain.from_llm(OpenAI())
     """
 

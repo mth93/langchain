@@ -4,7 +4,7 @@ from operator import eq
 from typing import Any, Callable, Optional, Union, cast
 
 from langchain.evaluation.schema import StringEvaluator
-from langchain.output_parsers.json import parse_json_markdown
+from langchain.libs.langchain.langchain.output_parsers.json import parse_json_markdown
 
 
 class JsonValidityEvaluator(StringEvaluator):

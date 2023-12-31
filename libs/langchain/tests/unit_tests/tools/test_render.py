@@ -3,7 +3,7 @@ from typing import List
 import pytest
 from langchain.libs.core.langchain_core.tools import BaseTool, tool
 
-from langchain.tools.render import (
+from langchain.libs.langchain.langchain.tools.render import (
     render_text_description,
     render_text_description_and_args,
 )

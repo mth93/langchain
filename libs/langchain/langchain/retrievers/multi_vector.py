@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.stores import BaseStore, ByteStore
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import CallbackManagerForRetrieverRun
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForRetrieverRun
 from langchain.storage._lc_store import create_kv_docstore
 
 

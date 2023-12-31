@@ -8,7 +8,7 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )

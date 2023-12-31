@@ -25,16 +25,16 @@ from langchain.libs.core.langchain_core.outputs import RunInfo
 from langchain.libs.core.langchain_core.runnables.utils import AddableDict
 from langchain.libs.core.langchain_core.utils.input import get_color_mapping
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManager,
     AsyncCallbackManagerForChainRun,
     CallbackManager,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.schema import RUN_KEY
-from langchain.tools import BaseTool
-from langchain.utilities.asyncio import asyncio_timeout
+from langchain.libs.langchain.langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.tools import BaseTool
+from langchain.libs.langchain.langchain.utilities.asyncio import asyncio_timeout
 
 if TYPE_CHECKING:
     from langchain.agents.agent import AgentExecutor, NextStepOutput

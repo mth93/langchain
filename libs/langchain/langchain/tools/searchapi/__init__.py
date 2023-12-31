@@ -1,4 +1,4 @@
-from langchain.tools.searchapi.tool import SearchAPIResults, SearchAPIRun
+from langchain.libs.langchain.langchain.tools.searchapi.tool import SearchAPIResults, SearchAPIRun
 
 """SearchApi.io API Toolkit."""
 """Tool for the SearchApi.io Google SERP API."""

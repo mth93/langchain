@@ -1,7 +1,7 @@
 from typing import Literal, Optional, Type, TypedDict
 
-from langchain.pydantic_v1 import BaseModel
-from langchain.utils.json_schema import dereference_refs
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel
+from langchain.libs.langchain.langchain.utils.json_schema import dereference_refs
 
 
 class FunctionDescription(TypedDict):

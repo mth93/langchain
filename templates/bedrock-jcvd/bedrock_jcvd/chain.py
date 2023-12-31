@@ -2,7 +2,7 @@ import os
 
 from langchain.libs.langchain.langchain.chat_models import BedrockChat
 from langchain.prompts import ChatPromptTemplate
-from langchain.schema.runnable import ConfigurableField
+from langchain.libs.langchain.langchain.schema.runnable import ConfigurableField
 
 # For a description of each inference parameter, see
 # https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-claude.html

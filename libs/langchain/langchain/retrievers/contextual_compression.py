@@ -3,7 +3,7 @@ from typing import Any, List
 from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )

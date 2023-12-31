@@ -36,7 +36,7 @@ if "OPENAI_API_KEY" not in os.environ:
 DEBUG = get_boolean_env_var("DEBUG", False)
 # Set DEBUG env var to "true" if you wish to enable LC debugging module
 if DEBUG:
-    import langchain
+    import langchain.libs.langchain.langchain
 
     langchain.debug = True
 

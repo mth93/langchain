@@ -5,8 +5,8 @@ from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHisto
 from langchain.libs.core.langchain_core.memory import BaseMemory
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.memory.chat_message_histories.in_memory import ChatMessageHistory
-from langchain.memory.utils import get_prompt_input_key
+from langchain.libs.langchain.langchain.memory.chat_message_histories.in_memory import ChatMessageHistory
+from langchain.libs.langchain.langchain.memory.utils import get_prompt_input_key
 
 
 class BaseChatMemory(BaseMemory, ABC):

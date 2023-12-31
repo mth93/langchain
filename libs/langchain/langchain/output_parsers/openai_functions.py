@@ -11,7 +11,7 @@ from langchain.libs.core.langchain_core.output_parsers import (
 from langchain.libs.core.langchain_core.outputs import ChatGeneration, Generation
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
 
-from langchain.output_parsers.json import parse_partial_json
+from langchain.libs.langchain.langchain.output_parsers.json import parse_partial_json
 
 
 class OutputFunctionsParser(BaseGenerationOutputParser[Any]):

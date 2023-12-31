@@ -1,4 +1,4 @@
-from langchain.chains import __all__
+from langchain.libs.langchain.langchain.chains import __all__
 
 EXPECTED_ALL = [
     "APIChain",

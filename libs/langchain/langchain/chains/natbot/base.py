@@ -7,11 +7,11 @@ from typing import Any, Dict, List, Optional
 from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.natbot.prompt import PROMPT
-from langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.natbot.prompt import PROMPT
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
 
 
 class NatBotChain(Chain):
@@ -33,7 +33,7 @@ class NatBotChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import NatBotChain
+            from langchain.libs.langchain.langchain.chains import NatBotChain
             natbot = NatBotChain.from_default("Buy me a new hat.")
     """
 

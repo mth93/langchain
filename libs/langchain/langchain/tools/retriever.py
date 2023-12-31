@@ -1,7 +1,7 @@
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.tools import Tool
+from langchain.libs.langchain.langchain.tools import Tool
 
 
 class RetrieverInput(BaseModel):

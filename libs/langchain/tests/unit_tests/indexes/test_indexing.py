@@ -18,7 +18,7 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.vectorstores import VST, VectorStore
 
-import langchain.vectorstores
+import langchain.libs.langchain.langchain.vectorstores
 from langchain.document_loaders.base import BaseLoader
 from langchain.indexes import aindex, index
 from langchain.indexes._api import _abatch

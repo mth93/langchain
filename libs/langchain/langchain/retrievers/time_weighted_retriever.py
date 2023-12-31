@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import CallbackManagerForRetrieverRun
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForRetrieverRun
 
 
 def _get_hours_passed(time: datetime.datetime, ref_time: datetime.datetime) -> float:

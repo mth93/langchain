@@ -3,10 +3,10 @@ import pytest
 from langchain.libs.core.langchain_core.memory import BaseMemory
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
-from langchain.chains.conversation.base import ConversationChain
-from langchain.memory.buffer import ConversationBufferMemory
-from langchain.memory.buffer_window import ConversationBufferWindowMemory
-from langchain.memory.summary import ConversationSummaryMemory
+from langchain.libs.langchain.langchain.chains.conversation.base import ConversationChain
+from langchain.libs.langchain.langchain.memory.buffer import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.buffer_window import ConversationBufferWindowMemory
+from langchain.libs.langchain.langchain.memory.summary import ConversationSummaryMemory
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 

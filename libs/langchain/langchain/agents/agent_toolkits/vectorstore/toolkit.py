@@ -6,9 +6,9 @@ from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain.agents.agent_toolkits.base import BaseToolkit
-from langchain.llms.openai import OpenAI
-from langchain.tools import BaseTool
-from langchain.tools.vectorstore.tool import (
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.tools import BaseTool
+from langchain.libs.langchain.langchain.tools.vectorstore.tool import (
     VectorStoreQATool,
     VectorStoreQAWithSourcesTool,
 )

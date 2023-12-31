@@ -35,7 +35,7 @@ def create_pbi_agent(
     """Construct a Power BI agent from an LLM and tools."""
     from langchain.agents import AgentExecutor
     from langchain.agents.mrkl.base import ZeroShotAgent
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     if toolkit is None:
         if powerbi is None:

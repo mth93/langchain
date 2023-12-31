@@ -4,7 +4,7 @@ from typing import Any, Dict, List, Optional
 
 from langchain.libs.core.langchain_core.outputs import LLMResult
 
-from langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler
+from langchain.libs.langchain.langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler
 
 DEFAULT_ANSWER_PREFIX_TOKENS = ["Final", "Answer", ":"]
 

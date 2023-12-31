@@ -4,7 +4,7 @@ from typing import List, Optional
 from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.retrievers import MultiVectorRetriever
-from langchain.text_splitter import TextSplitter
+from langchain.libs.langchain.langchain.text_splitter import TextSplitter
 
 
 class ParentDocumentRetriever(MultiVectorRetriever):
@@ -34,7 +34,7 @@ class ParentDocumentRetriever(MultiVectorRetriever):
             # Imports
             from langchain.libs.langchain.langchain.vectorstores import Chroma
             from langchain.embeddings import OpenAIEmbeddings
-            from langchain.text_splitter import RecursiveCharacterTextSplitter
+            from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter
             from langchain.storage import InMemoryStore
 
             # This text splitter is used to create the parent documents

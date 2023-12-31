@@ -1,6 +1,6 @@
 from langchain.prompts import ChatPromptTemplate
-from langchain.schema.output_parser import StrOutputParser
-from langchain.schema.runnable import RunnableBranch
+from langchain.libs.langchain.langchain.schema.output_parser import StrOutputParser
+from langchain.libs.langchain.langchain.schema.runnable import RunnableBranch
 
 from .blurb_matcher import book_rec_chain
 from .chat import chat

@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from langchain.llms import Replicate
+from langchain.libs.langchain.langchain.llms import Replicate
 from langchain.prompts import ChatPromptTemplate
-from langchain.utilities import SQLDatabase
+from langchain.libs.langchain.langchain.utilities import SQLDatabase
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnablePassthrough

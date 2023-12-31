@@ -1,5 +1,5 @@
-from langchain.memory import ConversationBufferMemory
-from langchain.output_parsers.list import CommaSeparatedListOutputParser
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.output_parsers.list import CommaSeparatedListOutputParser
 from langchain.prompts import PromptTemplate
 from langchain.sql_database import SQLDatabase
 

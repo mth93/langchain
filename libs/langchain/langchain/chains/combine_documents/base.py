@@ -8,12 +8,12 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, Promp
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, create_model
 from langchain.libs.core.langchain_core.runnables.config import RunnableConfig
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
-from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
 
 DEFAULT_DOCUMENT_SEPARATOR = "\n\n"
 DOCUMENTS_KEY = "context"

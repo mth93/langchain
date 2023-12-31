@@ -1,12 +1,12 @@
 import os
 from typing import List, Optional
 
-from langchain.chains.query_constructor.schema import AttributeInfo
+from langchain.libs.langchain.langchain.chains.query_constructor.schema import AttributeInfo
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.llms import BaseLLM
-from langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.llms import BaseLLM
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
 from langchain.retrievers import SelfQueryRetriever
-from langchain.schema import Document, StrOutputParser
+from langchain.libs.langchain.langchain.schema import Document, StrOutputParser
 from langchain.libs.langchain.langchain.vectorstores.qdrant import Qdrant
 from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel

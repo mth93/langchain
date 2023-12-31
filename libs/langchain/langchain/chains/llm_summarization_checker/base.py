@@ -10,10 +10,10 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.sequential import SequentialChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.sequential import SequentialChain
 
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 
@@ -71,8 +71,8 @@ class LLMSummarizationCheckerChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.llms import OpenAI
-            from langchain.chains import LLMSummarizationCheckerChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMSummarizationCheckerChain
             llm = OpenAI(temperature=0.0)
             checker_chain = LLMSummarizationCheckerChain.from_llm(llm)
     """

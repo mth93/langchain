@@ -12,7 +12,7 @@ from langchain_community.tools.openapi.utils.openapi_utils import OpenAPISpec
 from langchain_community.utilities.requests import Requests
 
 if TYPE_CHECKING:
-    from langchain.chains.api.openapi.chain import OpenAPIEndpointChain
+    from langchain.libs.langchain.langchain.chains.api.openapi.chain import OpenAPIEndpointChain
 
 
 class NLATool(Tool):

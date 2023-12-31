@@ -8,9 +8,9 @@ from langchain.libs.core.langchain_core.messages import BaseMessage, SystemMessa
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
 
-from langchain.chains.llm import LLMChain
-from langchain.memory.chat_memory import BaseChatMemory
-from langchain.memory.prompt import SUMMARY_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory
+from langchain.libs.langchain.langchain.memory.prompt import SUMMARY_PROMPT
 
 
 class SummarizerMixin(BaseModel):

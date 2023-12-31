@@ -1,4 +1,4 @@
-from langchain.schema.exceptions import __all__
+from langchain.libs.langchain.langchain.schema.exceptions import __all__
 
 EXPECTED_ALL = ["LangChainException"]
 

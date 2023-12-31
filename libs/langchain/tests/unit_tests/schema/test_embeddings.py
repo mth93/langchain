@@ -1,4 +1,4 @@
-from langchain.schema.embeddings import __all__
+from langchain.libs.langchain.langchain.schema.embeddings import __all__
 
 EXPECTED_ALL = ["Embeddings"]
 

@@ -46,7 +46,7 @@ class VectorStoreQATool(BaseVectorStoreTool, BaseTool):
         run_manager: Optional[CallbackManagerForToolRun] = None,
     ) -> str:
         """Use the tool."""
-        from langchain.chains.retrieval_qa.base import RetrievalQA
+        from langchain.libs.langchain.langchain.chains.retrieval_qa.base import RetrievalQA
 
         chain = RetrievalQA.from_chain_type(
             self.llm, retriever=self.vectorstore.as_retriever()
@@ -79,7 +79,7 @@ class VectorStoreQAWithSourcesTool(BaseVectorStoreTool, BaseTool):
     ) -> str:
         """Use the tool."""
 
-        from langchain.chains.qa_with_sources.retrieval import (
+        from langchain.libs.langchain.langchain.chains.qa_with_sources.retrieval import (
             RetrievalQAWithSourcesChain,
         )
 

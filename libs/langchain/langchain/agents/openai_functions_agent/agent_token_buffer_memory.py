@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.messages import BaseMessage, get_buffer_
 from langchain.agents.format_scratchpad.openai_functions import (
     format_to_openai_function_messages,
 )
-from langchain.memory.chat_memory import BaseChatMemory
+from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory
 
 
 class AgentTokenBufferMemory(BaseChatMemory):

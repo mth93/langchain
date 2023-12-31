@@ -1,4 +1,4 @@
-from langchain.tools.render import format_tool_to_openai_function
+from langchain.libs.langchain.langchain.tools.render import format_tool_to_openai_function
 
 # For backwards compatibility
 __all__ = ["format_tool_to_openai_function"]

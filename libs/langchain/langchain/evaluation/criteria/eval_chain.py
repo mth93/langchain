@@ -9,12 +9,12 @@ from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.evaluation.criteria.prompt import PROMPT, PROMPT_WITH_REFERENCES
 from langchain.evaluation.schema import LLMEvalChain, StringEvaluator
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 
 
 class Criteria(str, Enum):
@@ -344,7 +344,7 @@ class CriteriaEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
 
         Examples
         --------
-        >>> from langchain.llms import OpenAI
+        >>> from langchain.libs.langchain.langchain.llms import OpenAI
         >>> from langchain.evaluation.criteria import LabeledCriteriaEvalChain
         >>> llm = OpenAI()
         >>> criteria = {
@@ -432,7 +432,7 @@ class CriteriaEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
 
         Examples
         --------
-        >>> from langchain.llms import OpenAI
+        >>> from langchain.libs.langchain.langchain.llms import OpenAI
         >>> from langchain.evaluation.criteria import CriteriaEvalChain
         >>> llm = OpenAI()
         >>> criteria = "conciseness"
@@ -487,7 +487,7 @@ class CriteriaEvalChain(StringEvaluator, LLMEvalChain, LLMChain):
 
         Examples
         --------
-        >>> from langchain.llms import OpenAI
+        >>> from langchain.libs.langchain.langchain.llms import OpenAI
         >>> from langchain.evaluation.criteria import CriteriaEvalChain
         >>> llm = OpenAI()
         >>> criteria = "conciseness"
@@ -568,7 +568,7 @@ class LabeledCriteriaEvalChain(CriteriaEvalChain):
 
         Examples
         --------
-        >>> from langchain.llms import OpenAI
+        >>> from langchain.libs.langchain.langchain.llms import OpenAI
         >>> from langchain.evaluation.criteria import LabeledCriteriaEvalChain
         >>> llm = OpenAI()
         >>> criteria = {

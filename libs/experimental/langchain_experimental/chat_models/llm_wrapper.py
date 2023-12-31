@@ -3,13 +3,13 @@ for Llama-2-chat, Llama-2-instruct and Vicuna models.
 """
 from typing import Any, List, Optional, cast
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
 from langchain.libs.langchain.langchain.chat_models.base import BaseChatModel
-from langchain.llms.base import LLM
-from langchain.schema import (
+from langchain.libs.langchain.langchain.llms.base import LLM
+from langchain.libs.langchain.langchain.schema import (
     AIMessage,
     BaseMessage,
     ChatGeneration,

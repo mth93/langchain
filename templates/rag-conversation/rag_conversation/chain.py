@@ -6,7 +6,7 @@ from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
-from langchain.schema import AIMessage, HumanMessage, format_document
+from langchain.libs.langchain.langchain.schema import AIMessage, HumanMessage, format_document
 from langchain.libs.langchain.langchain.vectorstores import Pinecone
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
@@ -32,7 +32,7 @@ PINECONE_INDEX_NAME = os.environ.get("PINECONE_INDEX", "langchain-test")
 # data = loader.load()
 
 # # Split
-# from langchain.text_splitter import RecursiveCharacterTextSplitter
+# from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter
 # text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
 # all_splits = text_splitter.split_documents(data)
 

@@ -1,4 +1,4 @@
-from langchain.graphs import __all__
+from langchain.libs.langchain.langchain.graphs import __all__
 
 EXPECTED_ALL = [
     "MemgraphGraph",

@@ -1,12 +1,12 @@
 from typing import Any, List, Optional
 
 import pytest
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain.llms.base import LLM
-from langchain.schema import AIMessage, HumanMessage, SystemMessage
+from langchain.libs.langchain.langchain.llms.base import LLM
+from langchain.libs.langchain.langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 from langchain_experimental.chat_models import Llama2Chat
 from langchain_experimental.chat_models.llm_wrapper import DEFAULT_SYSTEM_PROMPT

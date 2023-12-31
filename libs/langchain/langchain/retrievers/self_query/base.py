@@ -9,13 +9,13 @@ from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 from langchain.libs.core.langchain_core.runnables import Runnable
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.chains.query_constructor.base import load_query_constructor_runnable
-from langchain.chains.query_constructor.ir import StructuredQuery, Visitor
-from langchain.chains.query_constructor.schema import AttributeInfo
+from langchain.libs.langchain.langchain.chains.query_constructor.base import load_query_constructor_runnable
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import StructuredQuery, Visitor
+from langchain.libs.langchain.langchain.chains.query_constructor.schema import AttributeInfo
 from langchain.retrievers.self_query.chroma import ChromaTranslator
 from langchain.retrievers.self_query.dashvector import DashvectorTranslator
 from langchain.retrievers.self_query.deeplake import DeepLakeTranslator

@@ -10,8 +10,8 @@ from langchain.retrievers import (
     PubMedRetriever,
     WikipediaRetriever,
 )
-from langchain.schema import StrOutputParser
-from langchain.utils.math import cosine_similarity
+from langchain.libs.langchain.langchain.schema import StrOutputParser
+from langchain.libs.langchain.langchain.utils.math import cosine_similarity
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import (
     RunnableParallel,

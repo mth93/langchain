@@ -41,8 +41,8 @@ from langsmith.utils import LangSmithError
 from requests import HTTPError
 from typing_extensions import TypedDict
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.base import Chain
 from langchain.evaluation.loading import load_evaluator
 from langchain.evaluation.schema import (
     EvaluatorType,
@@ -1303,7 +1303,7 @@ Examples
 
     from langsmith import Client
     from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
-    from langchain.chains import LLMChain
+    from langchain.libs.langchain.langchain.chains import LLMChain
     from langchain.smith import smith_eval.RunEvalConfig, run_on_dataset
 
     # Chains may have memory. Passing in a constructor function lets the

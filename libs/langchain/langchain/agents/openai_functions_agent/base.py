@@ -25,9 +25,9 @@ from langchain.agents.format_scratchpad.openai_functions import (
 from langchain.agents.output_parsers.openai_functions import (
     OpenAIFunctionsAgentOutputParser,
 )
-from langchain.callbacks.base import BaseCallbackManager
-from langchain.callbacks.manager import Callbacks
-from langchain.tools.render import format_tool_to_openai_function
+from langchain.libs.langchain.langchain.callbacks.base import BaseCallbackManager
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.tools.render import format_tool_to_openai_function
 
 
 class OpenAIFunctionsAgent(BaseSingleActionAgent):

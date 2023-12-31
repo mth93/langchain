@@ -9,11 +9,11 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.evaluation.qa.eval_prompt import CONTEXT_PROMPT, COT_PROMPT, PROMPT
 from langchain.evaluation.schema import LLMEvalChain, StringEvaluator
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 
 
 def _get_score(text: str) -> Optional[Tuple[str, int]]:

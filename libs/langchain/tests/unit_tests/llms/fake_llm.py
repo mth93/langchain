@@ -4,7 +4,7 @@ from typing import Any, Dict, List, Mapping, Optional, cast
 from langchain.libs.core.langchain_core.language_models.llms import LLM
 from langchain.libs.core.langchain_core.pydantic_v1 import validator
 
-from langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForLLMRun
 
 
 class FakeLLM(LLM):

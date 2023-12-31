@@ -16,7 +16,7 @@ from langchain_community.utilities.powerbi import PowerBIDataset
 if TYPE_CHECKING:
     from langchain.agents import AgentExecutor
     from langchain.agents.agent import AgentOutputParser
-    from langchain.memory.chat_memory import BaseChatMemory
+    from langchain.libs.langchain.langchain.memory.chat_memory import BaseChatMemory
 
 
 def create_pbi_chat_agent(
@@ -41,7 +41,7 @@ def create_pbi_chat_agent(
     """
     from langchain.agents import AgentExecutor
     from langchain.agents.conversational_chat.base import ConversationalChatAgent
-    from langchain.memory import ConversationBufferMemory
+    from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
 
     if toolkit is None:
         if powerbi is None:

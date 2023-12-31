@@ -7,13 +7,13 @@ from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.chains.llm import LLMChain
-from langchain.llms.base import BaseLLM
-from langchain.output_parsers.pydantic import PydanticOutputParser
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.llms.base import BaseLLM
+from langchain.libs.langchain.langchain.output_parsers.pydantic import PydanticOutputParser
 
 logger = logging.getLogger(__name__)
 

@@ -4,7 +4,7 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 TEST_GEN_TEMPLATE_SUFFIX = "Add another example."
 

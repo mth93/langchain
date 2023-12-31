@@ -13,19 +13,19 @@ from typing import (
     cast,
 )
 
-from langchain.base_language import BaseLanguageModel
-from langchain.chains import LLMChain
-from langchain.output_parsers.ernie_functions import (
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.output_parsers.ernie_functions import (
     JsonOutputFunctionsParser,
     PydanticAttrOutputFunctionsParser,
     PydanticOutputFunctionsParser,
 )
 from langchain.prompts import BasePromptTemplate
-from langchain.pydantic_v1 import BaseModel
-from langchain.schema import BaseLLMOutputParser
-from langchain.schema.output_parser import BaseGenerationOutputParser, BaseOutputParser
-from langchain.schema.runnable import Runnable
-from langchain.utils.ernie_functions import convert_pydantic_to_ernie_function
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel
+from langchain.libs.langchain.langchain.schema import BaseLLMOutputParser
+from langchain.libs.langchain.langchain.schema.output_parser import BaseGenerationOutputParser, BaseOutputParser
+from langchain.libs.langchain.langchain.schema.runnable import Runnable
+from langchain.libs.langchain.langchain.utils.ernie_functions import convert_pydantic_to_ernie_function
 
 PYTHON_TO_JSON_TYPES = {
     "str": "string",
@@ -234,10 +234,10 @@ def create_ernie_fn_runnable(
 
                 from typing import Optional
 
-                from langchain.chains.ernie_functions import create_ernie_fn_chain
+                from langchain.libs.langchain.langchain.chains.ernie_functions import create_ernie_fn_chain
                 from langchain.libs.langchain.langchain.chat_models import ErnieBotChat
                 from langchain.prompts import ChatPromptTemplate
-                from langchain.pydantic_v1 import BaseModel, Field
+                from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel, Field
 
 
                 class RecordPerson(BaseModel):
@@ -308,10 +308,10 @@ def create_structured_output_runnable(
 
                 from typing import Optional
 
-                from langchain.chains.ernie_functions import create_structured_output_chain
+                from langchain.libs.langchain.langchain.chains.ernie_functions import create_structured_output_chain
                 from langchain.libs.langchain.langchain.chat_models import ErnieBotChat
                 from langchain.prompts import ChatPromptTemplate
-                from langchain.pydantic_v1 import BaseModel, Field
+                from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel, Field
 
                 class Dog(BaseModel):
                     \"\"\"Identifying information about a dog.\"\"\"
@@ -405,11 +405,11 @@ def create_ernie_fn_chain(
 
                 from typing import Optional
 
-                from langchain.chains.ernie_functions import create_ernie_fn_chain
+                from langchain.libs.langchain.langchain.chains.ernie_functions import create_ernie_fn_chain
                 from langchain.libs.langchain.langchain.chat_models import ErnieBotChat
                 from langchain.prompts import ChatPromptTemplate
 
-                from langchain.pydantic_v1 import BaseModel, Field
+                from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel, Field
 
 
                 class RecordPerson(BaseModel):
@@ -492,11 +492,11 @@ def create_structured_output_chain(
 
                 from typing import Optional
 
-                from langchain.chains.ernie_functions import create_structured_output_chain
+                from langchain.libs.langchain.langchain.chains.ernie_functions import create_structured_output_chain
                 from langchain.libs.langchain.langchain.chat_models import ErnieBotChat
                 from langchain.prompts import ChatPromptTemplate
 
-                from langchain.pydantic_v1 import BaseModel, Field
+                from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel, Field
 
                 class Dog(BaseModel):
                     \"\"\"Identifying information about a dog.\"\"\"

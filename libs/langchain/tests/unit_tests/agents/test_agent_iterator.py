@@ -9,8 +9,8 @@ from langchain.agents import (
     AgentType,
     initialize_agent,
 )
-from langchain.llms import FakeListLLM
-from langchain.schema import RUN_KEY
+from langchain.libs.langchain.langchain.llms import FakeListLLM
+from langchain.libs.langchain.langchain.schema import RUN_KEY
 from tests.unit_tests.agents.test_agent import _get_agent
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 

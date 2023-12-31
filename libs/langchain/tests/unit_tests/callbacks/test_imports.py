@@ -1,4 +1,4 @@
-from langchain.callbacks import __all__
+from langchain.libs.langchain.langchain.callbacks import __all__
 
 EXPECTED_ALL = [
     "AimCallbackHandler",

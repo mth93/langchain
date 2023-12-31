@@ -12,14 +12,14 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
-from langchain.callbacks.manager import CallbackManagerForChainRun, Callbacks
-from langchain.chains import ReduceDocumentsChain
-from langchain.chains.base import Chain
-from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.text_splitter import TextSplitter
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun, Callbacks
+from langchain.libs.langchain.langchain.chains import ReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.combine_documents.base import BaseCombineDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.text_splitter import TextSplitter
 
 
 class MapReduceChain(Chain):

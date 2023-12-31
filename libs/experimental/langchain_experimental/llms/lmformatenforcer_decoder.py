@@ -3,9 +3,9 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Optional
 
-from langchain.callbacks.manager import CallbackManagerForLLMRun
-from langchain.llms.huggingface_pipeline import HuggingFacePipeline
-from langchain.schema import LLMResult
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.libs.langchain.langchain.llms.huggingface_pipeline import HuggingFacePipeline
+from langchain.libs.langchain.langchain.schema import LLMResult
 
 from langchain_experimental.pydantic_v1 import Field
 

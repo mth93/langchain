@@ -7,12 +7,12 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.qa_with_sources.base import BaseQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.base import BaseQAWithSourcesChain
 
 
 class VectorDBQAWithSourcesChain(BaseQAWithSourcesChain):
@@ -65,7 +65,7 @@ class VectorDBQAWithSourcesChain(BaseQAWithSourcesChain):
     def raise_deprecation(cls, values: Dict) -> Dict:
         warnings.warn(
             "`VectorDBQAWithSourcesChain` is deprecated - "
-            "please use `from langchain.chains import RetrievalQAWithSourcesChain`"
+            "please use `from langchain.libs.langchain.langchain.chains import RetrievalQAWithSourcesChain`"
         )
         return values
 

@@ -1,12 +1,12 @@
 from pathlib import Path
 
 from langchain.libs.langchain.langchain.chat_models import ChatOllama, ChatOpenAI
-from langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate
-from langchain.pydantic_v1 import BaseModel
-from langchain.schema.output_parser import StrOutputParser
-from langchain.schema.runnable import RunnablePassthrough
-from langchain.utilities import SQLDatabase
+from langchain.libs.langchain.langchain.pydantic_v1 import BaseModel
+from langchain.libs.langchain.langchain.schema.output_parser import StrOutputParser
+from langchain.libs.langchain.langchain.schema.runnable import RunnablePassthrough
+from langchain.libs.langchain.langchain.utilities import SQLDatabase
 
 # Add the LLM downloaded from Ollama
 ollama_llm = "llama2"

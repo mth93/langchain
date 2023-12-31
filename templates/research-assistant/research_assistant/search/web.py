@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.tavily_search_api import TavilySearchAPIRetriever
-from langchain.utilities import DuckDuckGoSearchAPIWrapper
+from langchain.libs.langchain.langchain.utilities import DuckDuckGoSearchAPIWrapper
 from langchain.libs.core.langchain_core.messages import SystemMessage
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.runnables import (

@@ -1,4 +1,4 @@
-from langchain.graphs import Neo4jGraph
+from langchain.libs.langchain.langchain.graphs import Neo4jGraph
 
 graph = Neo4jGraph()
 

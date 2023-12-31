@@ -8,16 +8,16 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import PromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.llm_checker.prompt import (
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm_checker.prompt import (
     CHECK_ASSERTIONS_PROMPT,
     CREATE_DRAFT_ANSWER_PROMPT,
     LIST_ASSERTIONS_PROMPT,
     REVISED_ANSWER_PROMPT,
 )
-from langchain.chains.sequential import SequentialChain
+from langchain.libs.langchain.langchain.chains.sequential import SequentialChain
 
 
 def _load_question_to_checked_assertions_chain(
@@ -68,8 +68,8 @@ class LLMCheckerChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.llms import OpenAI
-            from langchain.chains import LLMCheckerChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMCheckerChain
             llm = OpenAI(temperature=0.7)
             checker_chain = LLMCheckerChain.from_llm(llm)
     """

@@ -1,4 +1,4 @@
-from langchain.output_parsers import __all__
+from langchain.libs.langchain.langchain.output_parsers import __all__
 
 EXPECTED_ALL = [
     "BooleanOutputParser",

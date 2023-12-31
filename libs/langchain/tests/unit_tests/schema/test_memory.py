@@ -1,4 +1,4 @@
-from langchain.schema.memory import __all__
+from langchain.libs.langchain.langchain.schema.memory import __all__
 
 EXPECTED_ALL = ["BaseMemory"]
 

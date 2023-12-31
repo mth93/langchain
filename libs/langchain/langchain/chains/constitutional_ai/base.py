@@ -4,12 +4,12 @@ from typing import Any, Dict, List, Optional
 from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
-from langchain.chains.constitutional_ai.principles import PRINCIPLES
-from langchain.chains.constitutional_ai.prompts import CRITIQUE_PROMPT, REVISION_PROMPT
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
+from langchain.libs.langchain.langchain.chains.constitutional_ai.principles import PRINCIPLES
+from langchain.libs.langchain.langchain.chains.constitutional_ai.prompts import CRITIQUE_PROMPT, REVISION_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 class ConstitutionalChain(Chain):
@@ -18,9 +18,9 @@ class ConstitutionalChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.llms import OpenAI
-            from langchain.chains import LLMChain, ConstitutionalChain
-            from langchain.chains.constitutional_ai.models \
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMChain, ConstitutionalChain
+            from langchain.libs.langchain.langchain.chains.constitutional_ai.models \
                 import ConstitutionalPrinciple
 
             llm = OpenAI()

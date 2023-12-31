@@ -4,7 +4,7 @@ import uuid
 import pytest
 from langchain.libs.core.langchain_core.outputs import Generation, LLMResult
 
-import langchain
+import langchain.libs.langchain.langchain
 from langchain.cache import UpstashRedisCache
 from tests.unit_tests.llms.fake_chat_model import FakeChatModel
 from tests.unit_tests.llms.fake_llm import FakeLLM

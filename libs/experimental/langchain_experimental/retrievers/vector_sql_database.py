@@ -1,11 +1,11 @@
 """Vector SQL Database Chain Retriever"""
 from typing import Any, Dict, List
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from langchain.schema import BaseRetriever, Document
+from langchain.libs.langchain.langchain.schema import BaseRetriever, Document
 
 from langchain_experimental.sql.vector_sql import VectorSQLDatabaseChain
 

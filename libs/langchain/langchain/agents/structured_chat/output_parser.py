@@ -12,7 +12,7 @@ from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain.agents.agent import AgentOutputParser
 from langchain.agents.structured_chat.prompt import FORMAT_INSTRUCTIONS
-from langchain.output_parsers import OutputFixingParser
+from langchain.libs.langchain.langchain.output_parsers import OutputFixingParser
 
 logger = logging.getLogger(__name__)
 

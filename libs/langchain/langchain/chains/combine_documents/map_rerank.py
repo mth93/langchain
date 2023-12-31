@@ -8,10 +8,10 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, create_model, root_validator
 from langchain.libs.core.langchain_core.runnables.config import RunnableConfig
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
-from langchain.chains.llm import LLMChain
-from langchain.output_parsers.regex import RegexParser
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.combine_documents.base import BaseCombineDocumentsChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.output_parsers.regex import RegexParser
 
 
 class MapRerankDocumentsChain(BaseCombineDocumentsChain):
@@ -24,10 +24,10 @@ class MapRerankDocumentsChain(BaseCombineDocumentsChain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import StuffDocumentsChain, LLMChain
+            from langchain.libs.langchain.langchain.chains import StuffDocumentsChain, LLMChain
             from langchain.libs.core.langchain_core.prompts import PromptTemplate
-            from langchain.llms import OpenAI
-            from langchain.output_parsers.regex import RegexParser
+            from langchain.libs.langchain.langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.output_parsers.regex import RegexParser
 
             document_variable_name = "context"
             llm = OpenAI()

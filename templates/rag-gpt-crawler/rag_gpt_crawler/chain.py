@@ -4,8 +4,8 @@ from pathlib import Path
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate
-from langchain.schema import Document
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.libs.langchain.langchain.schema import Document
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.libs.langchain.langchain.vectorstores import Chroma
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel

@@ -4,7 +4,7 @@ from typing import List, Tuple
 from langchain.agents import AgentExecutor
 from langchain.agents.format_scratchpad import format_to_openai_function_messages
 from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
-from langchain.tools.render import format_tool_to_openai_function
+from langchain.libs.langchain.langchain.tools.render import format_tool_to_openai_function
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.tools.gmail import (
     GmailCreateDraft,

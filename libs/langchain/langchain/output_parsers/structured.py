@@ -5,11 +5,11 @@ from typing import Any, List
 from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
-from langchain.output_parsers.format_instructions import (
+from langchain.libs.langchain.langchain.output_parsers.format_instructions import (
     STRUCTURED_FORMAT_INSTRUCTIONS,
     STRUCTURED_FORMAT_SIMPLE_INSTRUCTIONS,
 )
-from langchain.output_parsers.json import parse_and_check_json_markdown
+from langchain.libs.langchain.langchain.output_parsers.json import parse_and_check_json_markdown
 
 line_template = '\t"{name}": {type}  // {description}'
 
@@ -48,7 +48,7 @@ class StructuredOutputParser(BaseOutputParser):
 
         example:
         ```python
-        from langchain.output_parsers.structured import (
+        from langchain.libs.langchain.langchain.output_parsers.structured import (
             StructuredOutputParser, ResponseSchema
         )
 

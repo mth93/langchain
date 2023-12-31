@@ -11,8 +11,8 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
 from langchain.libs.core.langchain_core.runnables import Runnable
 
-from langchain.chains.llm import LLMChain
-from langchain.chains.query_constructor.ir import (
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import (
     Comparator,
     Comparison,
     FilterDirective,
@@ -20,8 +20,8 @@ from langchain.chains.query_constructor.ir import (
     Operator,
     StructuredQuery,
 )
-from langchain.chains.query_constructor.parser import get_parser
-from langchain.chains.query_constructor.prompt import (
+from langchain.libs.langchain.langchain.chains.query_constructor.parser import get_parser
+from langchain.libs.langchain.langchain.chains.query_constructor.prompt import (
     DEFAULT_EXAMPLES,
     DEFAULT_PREFIX,
     DEFAULT_SCHEMA_PROMPT,
@@ -33,8 +33,8 @@ from langchain.chains.query_constructor.prompt import (
     SUFFIX_WITHOUT_DATA_SOURCE,
     USER_SPECIFIED_EXAMPLE_PROMPT,
 )
-from langchain.chains.query_constructor.schema import AttributeInfo
-from langchain.output_parsers.json import parse_and_check_json_markdown
+from langchain.libs.langchain.langchain.chains.query_constructor.schema import AttributeInfo
+from langchain.libs.langchain.langchain.output_parsers.json import parse_and_check_json_markdown
 
 
 class StructuredQueryOutputParser(BaseOutputParser[StructuredQuery]):

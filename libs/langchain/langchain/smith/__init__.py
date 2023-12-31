@@ -11,7 +11,7 @@ An example of this is shown below, assuming you've created a LangSmith dataset c
 
     from langsmith import Client
     from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
-    from langchain.chains import LLMChain
+    from langchain.libs.langchain.langchain.chains import LLMChain
     from langchain.smith import RunEvalConfig, run_on_dataset
 
     # Chains may have memory. Passing in a constructor function lets the

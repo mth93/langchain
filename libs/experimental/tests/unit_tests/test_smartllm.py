@@ -1,6 +1,6 @@
 """Test SmartLLM."""
 from langchain.libs.langchain.langchain.chat_models import FakeListChatModel
-from langchain.llms import FakeListLLM
+from langchain.libs.langchain.langchain.llms import FakeListLLM
 from langchain.libs.langchain.langchain.prompts.prompt import PromptTemplate
 
 from langchain_experimental.smart_llm import SmartLLMChain

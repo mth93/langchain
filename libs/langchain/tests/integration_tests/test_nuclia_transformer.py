@@ -6,7 +6,7 @@ from unittest import mock
 from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.document_transformers.nuclia_text_transform import NucliaTextTransformer
-from langchain.tools.nuclia.tool import NucliaUnderstandingAPI
+from langchain.libs.langchain.langchain.tools.nuclia.tool import NucliaUnderstandingAPI
 
 
 def fakerun(**args: Any) -> Any:

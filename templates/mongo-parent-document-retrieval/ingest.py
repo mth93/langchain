@@ -3,7 +3,7 @@ import uuid
 
 from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.libs.langchain.langchain.vectorstores import MongoDBAtlasVectorSearch
 from pymongo import MongoClient
 

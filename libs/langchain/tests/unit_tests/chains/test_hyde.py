@@ -6,12 +6,12 @@ from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 from langchain.libs.core.langchain_core.outputs import Generation, LLMResult
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain.chains.hyde.base import HypotheticalDocumentEmbedder
-from langchain.chains.hyde.prompts import PROMPT_MAP
+from langchain.libs.langchain.langchain.chains.hyde.base import HypotheticalDocumentEmbedder
+from langchain.libs.langchain.langchain.chains.hyde.prompts import PROMPT_MAP
 
 
 class FakeEmbeddings(Embeddings):

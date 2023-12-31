@@ -12,10 +12,10 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.hyde.prompts import PROMPT_MAP
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.hyde.prompts import PROMPT_MAP
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 class HypotheticalDocumentEmbedder(Chain, Embeddings):

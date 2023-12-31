@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 
 import requests
-from langchain.llms import LlamaCpp
-from langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.llms import LlamaCpp
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.utilities import SQLDatabase
+from langchain.libs.langchain.langchain.utilities import SQLDatabase
 from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough

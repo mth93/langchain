@@ -3,10 +3,10 @@
 import os
 from datetime import timedelta
 
-from langchain.chains.query_constructor.base import AttributeInfo
+from langchain.libs.langchain.langchain.chains.query_constructor.base import AttributeInfo
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.llms import OpenAI
+from langchain.libs.langchain.langchain.llms import OpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain.libs.langchain.langchain.vectorstores.timescalevector import TimescaleVector
@@ -17,7 +17,7 @@ from langchain.libs.core.langchain_core.runnables import RunnableParallel, Runna
 from .load_sample_dataset import load_ts_git_dataset
 
 # to enable debug uncomment the following lines:
-# from langchain.globals import set_debug
+# from langchain.libs.langchain.langchain.globals import set_debug
 # set_debug(True)
 
 # from dotenv import find_dotenv, load_dotenv

@@ -8,7 +8,7 @@ from langchain.libs.core.langchain_core.tools import BaseTool
 from langchain.agents.format_scratchpad import format_log_to_messages
 from langchain.agents.json_chat.prompt import TEMPLATE_TOOL_RESPONSE
 from langchain.agents.output_parsers import JSONAgentOutputParser
-from langchain.tools.render import render_text_description
+from langchain.libs.langchain.langchain.tools.render import render_text_description
 
 
 def create_json_chat_agent(

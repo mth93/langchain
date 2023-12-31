@@ -2,7 +2,7 @@ from enum import Enum
 
 from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
-from langchain.output_parsers.enum import EnumOutputParser
+from langchain.libs.langchain.langchain.output_parsers.enum import EnumOutputParser
 
 
 class Colors(Enum):

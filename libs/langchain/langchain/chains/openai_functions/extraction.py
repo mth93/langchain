@@ -4,14 +4,14 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.chains.openai_functions.utils import (
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.openai_functions.utils import (
     _convert_schema,
     _resolve_schema_references,
     get_llm_kwargs,
 )
-from langchain.output_parsers.openai_functions import (
+from langchain.libs.langchain.langchain.output_parsers.openai_functions import (
     JsonKeyOutputFunctionsParser,
     PydanticAttrOutputFunctionsParser,
 )

@@ -5,11 +5,11 @@ import logging
 import warnings
 from typing import Any, Dict, List, Optional
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.schema import BasePromptTemplate, OutputParserException
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.schema import BasePromptTemplate, OutputParserException
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 from langchain_experimental.llm_bash.bash import BashProcess
 from langchain_experimental.llm_bash.prompt import PROMPT
@@ -24,8 +24,8 @@ class LLMBashChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import LLMBashChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMBashChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
             llm_bash = LLMBashChain.from_llm(OpenAI())
     """
 

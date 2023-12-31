@@ -4,8 +4,8 @@ from typing import Any, Dict, List, Optional
 
 from langchain.libs.core.langchain_core.language_models.llms import LLM
 
-from langchain.callbacks.manager import CallbackManagerForLLMRun
-from langchain.chains.natbot.base import NatBotChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.libs.langchain.langchain.chains.natbot.base import NatBotChain
 
 
 class FakeLLM(LLM):

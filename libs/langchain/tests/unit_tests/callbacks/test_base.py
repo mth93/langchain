@@ -1,4 +1,4 @@
-from langchain.callbacks.base import __all__
+from langchain.libs.langchain.langchain.callbacks.base import __all__
 
 EXPECTED_ALL = [
     "RetrieverManagerMixin",

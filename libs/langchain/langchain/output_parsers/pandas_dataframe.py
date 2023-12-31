@@ -1,11 +1,11 @@
 import re
 from typing import Any, Dict, List, Tuple, Union
 
-from langchain.output_parsers.format_instructions import (
+from langchain.libs.langchain.langchain.output_parsers.format_instructions import (
     PANDAS_DATAFRAME_FORMAT_INSTRUCTIONS,
 )
-from langchain.pydantic_v1 import validator
-from langchain.schema import BaseOutputParser, OutputParserException
+from langchain.libs.langchain.langchain.pydantic_v1 import validator
+from langchain.libs.langchain.langchain.schema import BaseOutputParser, OutputParserException
 
 
 class PandasDataFrameOutputParser(BaseOutputParser):

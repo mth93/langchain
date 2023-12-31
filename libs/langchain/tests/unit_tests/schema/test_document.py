@@ -1,4 +1,4 @@
-from langchain.schema.document import __all__
+from langchain.libs.langchain.langchain.schema.document import __all__
 
 EXPECTED_ALL = ["BaseDocumentTransformer", "Document"]
 

@@ -48,7 +48,7 @@ def create_sql_agent(
     from langchain.agents.agent_types import AgentType
     from langchain.agents.mrkl.base import ZeroShotAgent
     from langchain.agents.openai_functions_agent.base import OpenAIFunctionsAgent
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     agent_type = agent_type or AgentType.ZERO_SHOT_REACT_DESCRIPTION
     tools = toolkit.get_tools() + list(extra_tools)

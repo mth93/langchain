@@ -109,9 +109,9 @@ def test_tracing_v2_context_manager() -> None:
 
 
 def test_tracing_v2_chain_with_tags() -> None:
-    from langchain.chains.constitutional_ai.base import ConstitutionalChain
-    from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.constitutional_ai.base import ConstitutionalChain
+    from langchain.libs.langchain.langchain.chains.constitutional_ai.models import ConstitutionalPrinciple
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     llm = OpenAI(temperature=0)
     chain = ConstitutionalChain.from_llm(
@@ -169,7 +169,7 @@ async def test_tracing_v2_async_agent_with_metadata() -> None:
 
 
 def test_trace_as_group() -> None:
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     llm = OpenAI(temperature=0.9)
     prompt = PromptTemplate(
@@ -189,7 +189,7 @@ def test_trace_as_group() -> None:
 
 
 def test_trace_as_group_with_env_set() -> None:
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     os.environ["LANGCHAIN_TRACING_V2"] = "true"
     llm = OpenAI(temperature=0.9)
@@ -214,7 +214,7 @@ def test_trace_as_group_with_env_set() -> None:
 
 
 async def test_trace_as_group_async() -> None:
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     llm = OpenAI(temperature=0.9)
     prompt = PromptTemplate(

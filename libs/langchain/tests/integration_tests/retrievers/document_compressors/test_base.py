@@ -7,7 +7,7 @@ from langchain.retrievers.document_compressors import (
     DocumentCompressorPipeline,
     EmbeddingsFilter,
 )
-from langchain.text_splitter import CharacterTextSplitter
+from langchain.libs.langchain.langchain.text_splitter import CharacterTextSplitter
 
 
 def test_document_compressor_pipeline() -> None:

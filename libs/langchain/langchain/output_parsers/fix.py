@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 
-from langchain.output_parsers.prompts import NAIVE_FIX_PROMPT
+from langchain.libs.langchain.langchain.output_parsers.prompts import NAIVE_FIX_PROMPT
 
 T = TypeVar("T")
 
@@ -21,7 +21,7 @@ class OutputFixingParser(BaseOutputParser[T]):
 
     parser: BaseOutputParser[T]
     """The parser to use to parse the output."""
-    # Should be an LLMChain but we want to avoid top-level imports from langchain.chains
+    # Should be an LLMChain but we want to avoid top-level imports from langchain.libs.langchain.langchain.chains
     retry_chain: Any
     """The LLMChain to use to retry the completion."""
     max_retries: int = 1
@@ -46,7 +46,7 @@ class OutputFixingParser(BaseOutputParser[T]):
         Returns:
             OutputFixingParser
         """
-        from langchain.chains.llm import LLMChain
+        from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
         chain = LLMChain(llm=llm, prompt=prompt)
         return cls(parser=parser, retry_chain=chain, max_retries=max_retries)

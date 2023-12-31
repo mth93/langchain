@@ -8,7 +8,7 @@ from langchain.libs.core.langchain_core.exceptions import OutputParserException
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langchain.libs.core.langchain_core.tools import tool
 
-from langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.evaluation.agents.trajectory_eval_chain import (
     TrajectoryEval,
     TrajectoryEvalChain,

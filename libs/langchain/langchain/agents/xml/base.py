@@ -11,9 +11,9 @@ from langchain.agents.agent import BaseSingleActionAgent
 from langchain.agents.format_scratchpad import format_xml
 from langchain.agents.output_parsers import XMLAgentOutputParser
 from langchain.agents.xml.prompt import agent_instructions
-from langchain.callbacks.base import Callbacks
-from langchain.chains.llm import LLMChain
-from langchain.tools.render import render_text_description
+from langchain.libs.langchain.langchain.callbacks.base import Callbacks
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.tools.render import render_text_description
 
 
 class XMLAgent(BaseSingleActionAgent):

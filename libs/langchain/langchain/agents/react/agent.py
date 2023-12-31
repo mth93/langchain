@@ -9,7 +9,7 @@ from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.format_scratchpad import format_log_to_str
 from langchain.agents.output_parsers import ReActSingleInputOutputParser
-from langchain.tools.render import render_text_description
+from langchain.libs.langchain.langchain.tools.render import render_text_description
 
 
 def create_react_agent(
@@ -22,7 +22,7 @@ def create_react_agent(
         .. code-block:: python
 
             from langchain import hub
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.llms import OpenAI
             from langchain.agents import AgentExecutor, create_react_agent
 
             prompt = hub.pull("hwchase17/react")

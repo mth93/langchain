@@ -4,9 +4,9 @@ from typing import Any, Callable, List, cast
 from langchain.libs.langchain.langchain.prompts.chat import (
     BaseChatPromptTemplate,
 )
-from langchain.schema.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain.schema.vectorstore import VectorStoreRetriever
-from langchain.tools.base import BaseTool
+from langchain.libs.langchain.langchain.schema.messages import BaseMessage, HumanMessage, SystemMessage
+from langchain.libs.langchain.langchain.schema.vectorstore import VectorStoreRetriever
+from langchain.libs.langchain.langchain.tools.base import BaseTool
 
 from langchain_experimental.autonomous_agents.autogpt.prompt_generator import get_prompt
 from langchain_experimental.pydantic_v1 import BaseModel

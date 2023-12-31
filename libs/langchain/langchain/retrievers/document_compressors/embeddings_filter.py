@@ -5,7 +5,7 @@ from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.embeddings import Embeddings
 from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
-from langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
 from langchain.document_transformers.embeddings_redundant_filter import (
     _get_embeddings_from_stateful_docs,
     get_stateful_documents,
@@ -13,7 +13,7 @@ from langchain.document_transformers.embeddings_redundant_filter import (
 from langchain.retrievers.document_compressors.base import (
     BaseDocumentCompressor,
 )
-from langchain.utils.math import cosine_similarity
+from langchain.libs.langchain.langchain.utils.math import cosine_similarity
 
 
 class EmbeddingsFilter(BaseDocumentCompressor):

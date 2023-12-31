@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Dict, Tuple, Union
 
-from langchain.chains.query_constructor.ir import (
+from langchain.libs.langchain.langchain.chains.query_constructor.ir import (
     Comparator,
     Comparison,
     Operation,

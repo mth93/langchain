@@ -6,7 +6,7 @@ from uuid import UUID
 from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.outputs import LLMResult
 
-from langchain.callbacks import base as base_callbacks
+from langchain.libs.langchain.langchain.callbacks import base as base_callbacks
 
 
 class ProgressBarCallback(base_callbacks.BaseCallbackHandler):

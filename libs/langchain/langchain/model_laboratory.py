@@ -7,8 +7,8 @@ from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 from langchain.libs.core.langchain_core.utils.input import get_color_mapping, print_text
 
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 class ModelLaboratory:

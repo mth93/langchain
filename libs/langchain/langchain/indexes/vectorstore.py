@@ -6,12 +6,12 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field
 from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
-from langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain.libs.langchain.langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain.document_loaders.base import BaseLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.llms.openai import OpenAI
-from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
 from langchain.libs.langchain.langchain.vectorstores.chroma import Chroma
 
 

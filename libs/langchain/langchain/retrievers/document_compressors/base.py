@@ -6,7 +6,7 @@ from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
-from langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
 
 
 class BaseDocumentCompressor(BaseModel, ABC):

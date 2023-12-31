@@ -8,11 +8,11 @@ from langchain.libs.core.langchain_core.output_parsers import BaseLLMOutputParse
 from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.elasticsearch_database.prompts import ANSWER_PROMPT, DSL_PROMPT
-from langchain.chains.llm import LLMChain
-from langchain.output_parsers.json import SimpleJsonOutputParser
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.elasticsearch_database.prompts import ANSWER_PROMPT, DSL_PROMPT
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.output_parsers.json import SimpleJsonOutputParser
 
 if TYPE_CHECKING:
     from elasticsearch import Elasticsearch
@@ -26,8 +26,8 @@ class ElasticsearchDatabaseChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import ElasticsearchDatabaseChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import ElasticsearchDatabaseChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
             from elasticsearch import Elasticsearch
 
             database = Elasticsearch("http://localhost:9200")

@@ -8,8 +8,8 @@ from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain.agents import AgentExecutor, AgentType, initialize_agent
-from langchain.callbacks.manager import CallbackManagerForLLMRun
-from langchain.schema.runnable.utils import add
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForLLMRun
+from langchain.libs.langchain.langchain.schema.runnable.utils import add
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

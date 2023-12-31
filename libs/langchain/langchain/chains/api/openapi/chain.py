@@ -8,13 +8,13 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from requests import Response
 
-from langchain.callbacks.manager import CallbackManagerForChainRun, Callbacks
-from langchain.chains.api.openapi.requests_chain import APIRequesterChain
-from langchain.chains.api.openapi.response_chain import APIResponderChain
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
-from langchain.tools.openapi.utils.api_models import APIOperation
-from langchain.utilities.requests import Requests
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun, Callbacks
+from langchain.libs.langchain.langchain.chains.api.openapi.requests_chain import APIRequesterChain
+from langchain.libs.langchain.langchain.chains.api.openapi.response_chain import APIResponderChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.tools.openapi.utils.api_models import APIOperation
+from langchain.libs.langchain.langchain.utilities.requests import Requests
 
 
 class _ParamMapping(NamedTuple):

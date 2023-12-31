@@ -1,6 +1,6 @@
 import csv
 
-from langchain.chains.question_answering import load_qa_chain
+from langchain.libs.langchain.langchain.chains.question_answering import load_qa_chain
 from langchain.embeddings import CohereEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.libs.langchain.langchain.vectorstores import Chroma

@@ -4,7 +4,7 @@ import pytest
 test_script = """
     import json
     import streamlit as st
-    from langchain.memory import ConversationBufferMemory
+    from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
     from langchain_community.chat_message_histories import StreamlitChatMessageHistory
     from langchain.libs.core.langchain_core.messages import message_to_dict
 

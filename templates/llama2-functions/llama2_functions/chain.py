@@ -1,4 +1,4 @@
-from langchain.llms import Replicate
+from langchain.libs.langchain.langchain.llms import Replicate
 from langchain.prompts import ChatPromptTemplate
 
 # LLM

@@ -1,7 +1,7 @@
 from string import Formatter
 from typing import List
 
-from langchain.schema import Document
+from langchain.libs.langchain.langchain.schema import Document
 
 document_template = """
 PASSAGE: {page_content}

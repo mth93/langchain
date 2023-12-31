@@ -1,7 +1,7 @@
 from typing import List
 
-from langchain.base_language import BaseLanguageModel
-from langchain.tools.base import BaseTool
+from langchain.libs.langchain.langchain.base_language import BaseLanguageModel
+from langchain.libs.langchain.langchain.tools.base import BaseTool
 
 from langchain_experimental.autonomous_agents.hugginggpt.repsonse_generator import (
     load_response_generator,

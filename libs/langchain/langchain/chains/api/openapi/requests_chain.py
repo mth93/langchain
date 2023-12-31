@@ -8,8 +8,8 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
-from langchain.chains.api.openapi.prompts import REQUEST_TEMPLATE
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.api.openapi.prompts import REQUEST_TEMPLATE
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 class APIRequesterOutputParser(BaseOutputParser):

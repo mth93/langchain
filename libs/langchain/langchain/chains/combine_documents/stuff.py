@@ -8,15 +8,15 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, forma
 from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
 from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
 
-from langchain.callbacks.manager import Callbacks
-from langchain.chains.combine_documents.base import (
+from langchain.libs.langchain.langchain.callbacks.manager import Callbacks
+from langchain.libs.langchain.langchain.chains.combine_documents.base import (
     DEFAULT_DOCUMENT_PROMPT,
     DEFAULT_DOCUMENT_SEPARATOR,
     DOCUMENTS_KEY,
     BaseCombineDocumentsChain,
     _validate_prompt,
 )
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
 
 def create_stuff_documents_chain(
@@ -55,7 +55,7 @@ def create_stuff_documents_chain(
             from langchain_community.chat_models import ChatOpenAI
             from langchain.libs.core.langchain_core.documents import Document
             from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
-            from langchain.chains.combine_documents import create_stuff_documents_chain
+            from langchain.libs.langchain.langchain.chains.combine_documents import create_stuff_documents_chain
 
             prompt = ChatPromptTemplate.from_messages(
                 [("system", "What are everyone's favorite colors:\n\n{context}")]
@@ -102,9 +102,9 @@ class StuffDocumentsChain(BaseCombineDocumentsChain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import StuffDocumentsChain, LLMChain
+            from langchain.libs.langchain.langchain.chains import StuffDocumentsChain, LLMChain
             from langchain.libs.core.langchain_core.prompts import PromptTemplate
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,
             # it will be passed to `format_document` - see that function for more

@@ -2,9 +2,9 @@ import re
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 from langchain_experimental.generative_agents.memory import GenerativeAgentMemory
 from langchain_experimental.pydantic_v1 import BaseModel, Field

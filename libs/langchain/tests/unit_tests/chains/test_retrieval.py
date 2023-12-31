@@ -2,8 +2,8 @@
 from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
-from langchain.chains import create_retrieval_chain
-from langchain.llms.fake import FakeListLLM
+from langchain.libs.langchain.langchain.chains import create_retrieval_chain
+from langchain.libs.langchain.langchain.llms.fake import FakeListLLM
 from tests.unit_tests.retrievers.parrot_retriever import FakeParrotRetriever
 
 

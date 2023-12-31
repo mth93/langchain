@@ -10,25 +10,25 @@ from langchain.libs.core.langchain_core.prompts.loading import (
     load_prompt_from_config,
 )
 
-from langchain.chains import ReduceDocumentsChain
-from langchain.chains.api.base import APIChain
-from langchain.chains.base import Chain
-from langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
-from langchain.chains.combine_documents.map_rerank import MapRerankDocumentsChain
-from langchain.chains.combine_documents.refine import RefineDocumentsChain
-from langchain.chains.combine_documents.stuff import StuffDocumentsChain
-from langchain.chains.graph_qa.cypher import GraphCypherQAChain
-from langchain.chains.hyde.base import HypotheticalDocumentEmbedder
-from langchain.chains.llm import LLMChain
-from langchain.chains.llm_checker.base import LLMCheckerChain
-from langchain.chains.llm_math.base import LLMMathChain
-from langchain.chains.llm_requests import LLMRequestsChain
-from langchain.chains.qa_with_sources.base import QAWithSourcesChain
-from langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
-from langchain.chains.qa_with_sources.vector_db import VectorDBQAWithSourcesChain
-from langchain.chains.retrieval_qa.base import RetrievalQA, VectorDBQA
-from langchain.llms.loading import load_llm, load_llm_from_config
-from langchain.utilities.loading import try_load_from_hub
+from langchain.libs.langchain.langchain.chains import ReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.api.base import APIChain
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.combine_documents.map_reduce import MapReduceDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.map_rerank import MapRerankDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.refine import RefineDocumentsChain
+from langchain.libs.langchain.langchain.chains.combine_documents.stuff import StuffDocumentsChain
+from langchain.libs.langchain.langchain.chains.graph_qa.cypher import GraphCypherQAChain
+from langchain.libs.langchain.langchain.chains.hyde.base import HypotheticalDocumentEmbedder
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm_checker.base import LLMCheckerChain
+from langchain.libs.langchain.langchain.chains.llm_math.base import LLMMathChain
+from langchain.libs.langchain.langchain.chains.llm_requests import LLMRequestsChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.base import QAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.retrieval import RetrievalQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.qa_with_sources.vector_db import VectorDBQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.retrieval_qa.base import RetrievalQA, VectorDBQA
+from langchain.libs.langchain.langchain.llms.loading import load_llm, load_llm_from_config
+from langchain.libs.langchain.langchain.utilities.loading import try_load_from_hub
 
 URL_BASE = "https://raw.githubusercontent.com/hwchase17/langchain-hub/master/chains/"
 

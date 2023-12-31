@@ -5,7 +5,7 @@ from langchain.libs.core.langchain_core.language_models.chat_models import Simpl
 from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage
 from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatResult
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )

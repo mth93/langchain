@@ -48,9 +48,9 @@ from langchain.libs.core.langchain_core.tracers.context import (
 )
 from langchain.libs.core.langchain_core.tracers.langchain import LangChainTracer
 
-from langchain.callbacks.file import FileCallbackHandler
-from langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler
-from langchain.callbacks.streaming_stdout_final_only import (
+from langchain.libs.langchain.langchain.callbacks.file import FileCallbackHandler
+from langchain.libs.langchain.langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler
+from langchain.libs.langchain.langchain.callbacks.streaming_stdout_final_only import (
     FinalStreamingStdOutCallbackHandler,
 )
 

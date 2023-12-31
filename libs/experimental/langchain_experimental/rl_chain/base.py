@@ -16,9 +16,9 @@ from typing import (
     Union,
 )
 
-from langchain.callbacks.manager import CallbackManagerForChainRun
-from langchain.chains.base import Chain
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.callbacks.manager import CallbackManagerForChainRun
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.prompts import (
     BasePromptTemplate,
     ChatPromptTemplate,

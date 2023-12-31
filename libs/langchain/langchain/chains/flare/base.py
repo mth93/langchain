@@ -11,17 +11,17 @@ from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
-from langchain.chains.flare.prompts import (
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.flare.prompts import (
     PROMPT,
     QUESTION_GENERATOR_PROMPT,
     FinishedOutputParser,
 )
-from langchain.chains.llm import LLMChain
-from langchain.llms.openai import OpenAI
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.llms.openai import OpenAI
 
 
 class _ResponseChain(LLMChain):

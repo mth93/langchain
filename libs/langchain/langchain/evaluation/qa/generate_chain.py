@@ -7,9 +7,9 @@ from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.output_parsers import BaseLLMOutputParser
 from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
-from langchain.chains.llm import LLMChain
+from langchain.libs.langchain.langchain.chains.llm import LLMChain
 from langchain.evaluation.qa.generate_prompt import PROMPT
-from langchain.output_parsers.regex import RegexParser
+from langchain.libs.langchain.langchain.output_parsers.regex import RegexParser
 
 _QA_OUTPUT_PARSER = RegexParser(
     regex=r"QUESTION: (.*?)\n+ANSWER: (.*)", output_keys=["query", "answer"]

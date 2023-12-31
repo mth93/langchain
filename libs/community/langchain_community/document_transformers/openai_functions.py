@@ -127,7 +127,7 @@ def create_metadata_tagger(
 
                 enhanced_documents = document_transformer.transform_documents(original_documents)
     """  # noqa: E501
-    from langchain.chains.openai_functions import create_tagging_chain
+    from langchain.libs.langchain.langchain.chains.openai_functions import create_tagging_chain
 
     metadata_schema = (
         metadata_schema

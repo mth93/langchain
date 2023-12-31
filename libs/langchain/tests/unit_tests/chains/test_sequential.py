@@ -3,14 +3,14 @@ from typing import Dict, List, Optional
 
 import pytest
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
     CallbackManagerForChainRun,
 )
-from langchain.chains.base import Chain
-from langchain.chains.sequential import SequentialChain, SimpleSequentialChain
-from langchain.memory import ConversationBufferMemory
-from langchain.memory.simple import SimpleMemory
+from langchain.libs.langchain.langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.sequential import SequentialChain, SimpleSequentialChain
+from langchain.libs.langchain.langchain.memory import ConversationBufferMemory
+from langchain.libs.langchain.langchain.memory.simple import SimpleMemory
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler
 
 

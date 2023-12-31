@@ -7,7 +7,7 @@ from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
 from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.agents.agent import AgentOutputParser
-from langchain.output_parsers.json import parse_json_markdown
+from langchain.libs.langchain.langchain.output_parsers.json import parse_json_markdown
 
 logger = logging.getLogger(__name__)
 

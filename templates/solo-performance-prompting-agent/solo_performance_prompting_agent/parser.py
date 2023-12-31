@@ -1,4 +1,4 @@
-from langchain.schema import AgentAction, AgentFinish
+from langchain.libs.langchain.langchain.schema import AgentAction, AgentFinish
 
 
 def parse_output(message: str):

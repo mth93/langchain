@@ -1,4 +1,4 @@
-from langchain.schema.output import __all__
+from langchain.libs.langchain.langchain.schema.output import __all__
 
 EXPECTED_ALL = [
     "ChatGeneration",

@@ -1,4 +1,4 @@
-from langchain.schema.runnable import __all__
+from langchain.libs.langchain.langchain.schema.runnable import __all__
 
 EXPECTED_ALL = [
     "ConfigurableField",

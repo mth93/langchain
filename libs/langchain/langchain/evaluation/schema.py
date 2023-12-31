@@ -11,7 +11,7 @@ from langchain.libs.core.langchain_core.agents import AgentAction
 from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.base import Chain
 
 logger = logging.getLogger(__name__)
 

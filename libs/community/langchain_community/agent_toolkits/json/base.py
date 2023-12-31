@@ -28,7 +28,7 @@ def create_json_agent(
     """Construct a json agent from an LLM and tools."""
     from langchain.agents.agent import AgentExecutor
     from langchain.agents.mrkl.base import ZeroShotAgent
-    from langchain.chains.llm import LLMChain
+    from langchain.libs.langchain.langchain.chains.llm import LLMChain
 
     tools = toolkit.get_tools()
     prompt_params = (

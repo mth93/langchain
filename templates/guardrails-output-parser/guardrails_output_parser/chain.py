@@ -1,5 +1,5 @@
-from langchain.llms import OpenAI
-from langchain.output_parsers import GuardrailsOutputParser
+from langchain.libs.langchain.langchain.llms import OpenAI
+from langchain.libs.langchain.langchain.output_parsers import GuardrailsOutputParser
 from langchain.prompts import PromptTemplate
 
 # Define rail string

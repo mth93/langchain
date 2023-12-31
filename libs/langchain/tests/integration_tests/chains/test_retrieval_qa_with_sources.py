@@ -1,10 +1,10 @@
 """Test RetrievalQA functionality."""
-from langchain.chains import RetrievalQAWithSourcesChain
-from langchain.chains.loading import load_chain
+from langchain.libs.langchain.langchain.chains import RetrievalQAWithSourcesChain
+from langchain.libs.langchain.langchain.chains.loading import load_chain
 from langchain.document_loaders import DirectoryLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.llms import OpenAI
-from langchain.text_splitter import CharacterTextSplitter
+from langchain.libs.langchain.langchain.llms import OpenAI
+from langchain.libs.langchain.langchain.text_splitter import CharacterTextSplitter
 from langchain.libs.langchain.langchain.vectorstores import FAISS
 
 

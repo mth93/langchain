@@ -5,7 +5,7 @@ from langchain.agents import AgentExecutor, OpenAIFunctionsAgent
 from langchain.libs.langchain.langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain.tools.retriever import create_retriever_tool
+from langchain.libs.langchain.langchain.tools.retriever import create_retriever_tool
 from langchain.libs.langchain.langchain.vectorstores import FAISS
 from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_experimental.tools import PythonAstREPLTool

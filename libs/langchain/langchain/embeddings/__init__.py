@@ -137,9 +137,9 @@ class HypotheticalDocumentEmbedder:
     def __init__(self, *args: Any, **kwargs: Any):
         logger.warning(
             "Using a deprecated class. Please use "
-            "`from langchain.chains import HypotheticalDocumentEmbedder` instead"
+            "`from langchain.libs.langchain.langchain.chains import HypotheticalDocumentEmbedder` instead"
         )
-        from langchain.chains.hyde.base import HypotheticalDocumentEmbedder as H
+        from langchain.libs.langchain.langchain.chains.hyde.base import HypotheticalDocumentEmbedder as H
 
         return H(*args, **kwargs)  # type: ignore
 
@@ -147,8 +147,8 @@ class HypotheticalDocumentEmbedder:
     def from_llm(cls, *args: Any, **kwargs: Any) -> Any:
         logger.warning(
             "Using a deprecated class. Please use "
-            "`from langchain.chains import HypotheticalDocumentEmbedder` instead"
+            "`from langchain.libs.langchain.langchain.chains import HypotheticalDocumentEmbedder` instead"
         )
-        from langchain.chains.hyde.base import HypotheticalDocumentEmbedder as H
+        from langchain.libs.langchain.langchain.chains.hyde.base import HypotheticalDocumentEmbedder as H
 
         return H.from_llm(*args, **kwargs)

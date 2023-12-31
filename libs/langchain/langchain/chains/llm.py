@@ -24,14 +24,14 @@ from langchain.libs.core.langchain_core.runnables import (
 from langchain.libs.core.langchain_core.runnables.configurable import DynamicRunnable
 from langchain.libs.core.langchain_core.utils.input import get_colored_text
 
-from langchain.callbacks.manager import (
+from langchain.libs.langchain.langchain.callbacks.manager import (
     AsyncCallbackManager,
     AsyncCallbackManagerForChainRun,
     CallbackManager,
     CallbackManagerForChainRun,
     Callbacks,
 )
-from langchain.chains.base import Chain
+from langchain.libs.langchain.langchain.chains.base import Chain
 
 
 class LLMChain(Chain):
@@ -40,8 +40,8 @@ class LLMChain(Chain):
     Example:
         .. code-block:: python
 
-            from langchain.chains import LLMChain
-            from langchain.llms import OpenAI
+            from langchain.libs.langchain.langchain.chains import LLMChain
+            from langchain.libs.langchain.langchain.llms import OpenAI
             from langchain.libs.core.langchain_core.prompts import PromptTemplate
             prompt_template = "Tell me a {adjective} joke"
             prompt = PromptTemplate(

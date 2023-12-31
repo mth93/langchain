@@ -6,7 +6,7 @@ from typing import List
 import pytest
 from langchain.libs.core.langchain_core.documents import Document
 
-from langchain.text_splitter import (
+from langchain.libs.langchain.langchain.text_splitter import (
     CharacterTextSplitter,
     HTMLHeaderTextSplitter,
     Language,

@@ -1,6 +1,6 @@
-from langchain.chains import LLMChain
+from langchain.libs.langchain.langchain.chains import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain.schema.language_model import BaseLanguageModel
+from langchain.libs.langchain.langchain.schema.language_model import BaseLanguageModel
 
 
 class TaskCreationChain(LLMChain):

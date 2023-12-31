@@ -6,11 +6,11 @@ import pytest
 from langchain.libs.core.langchain_core.documents import Document
 from langchain.libs.core.langchain_core.prompts import PromptTemplate, format_document
 
-from langchain.chains.combine_documents.reduce import (
+from langchain.libs.langchain.langchain.chains.combine_documents.reduce import (
     collapse_docs,
     split_list_of_docs,
 )
-from langchain.chains.qa_with_sources import load_qa_with_sources_chain
+from langchain.libs.langchain.langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from tests.unit_tests.llms.fake_llm import FakeLLM
 
 
