@@ -90,7 +90,7 @@ class GoogleGenerativeAI(BaseLLM, BaseModel):
     Example:
         .. code-block:: python
 
-            from langchain_google_genai import GoogleGenerativeAI
+            libs.partners.google_genai import GoogleGenerativeAI
             llm = GoogleGenerativeAI(model="gemini-pro")
     """
 

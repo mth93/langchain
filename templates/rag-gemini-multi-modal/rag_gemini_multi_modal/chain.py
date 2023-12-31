@@ -9,7 +9,7 @@ from libs.core.langchain_core.output_parsers import StrOutputParser
 from libs.core.langchain_core.pydantic_v1 import BaseModel
 from libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_experimental.open_clip import OpenCLIPEmbeddings
-from langchain_google_genai import ChatGoogleGenerativeAI
+libs.partners.google_genai import ChatGoogleGenerativeAI
 from PIL import Image
 
 

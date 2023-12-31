@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from langchain_google_genai._common import GoogleGenerativeAIError
-from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
+libs.partners.google_genai._common import GoogleGenerativeAIError
+libs.partners.google_genai.embeddings import GoogleGenerativeAIEmbeddings
 
 _MODEL = "models/embedding-001"
 

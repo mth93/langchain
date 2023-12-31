@@ -2,7 +2,7 @@
 from libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture
 
-from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
+libs.partners.google_genai.embeddings import GoogleGenerativeAIEmbeddings
 
 
 def test_integration_initialization() -> None:

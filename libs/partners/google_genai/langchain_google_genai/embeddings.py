@@ -6,7 +6,7 @@ from libs.core.langchain_core.embeddings import Embeddings
 from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, SecretStr, root_validator
 from libs.core.langchain_core.utils import get_from_dict_or_env
 
-from langchain_google_genai._common import GoogleGenerativeAIError
+libs.partners.google_genai._common import GoogleGenerativeAIError
 
 
 class GoogleGenerativeAIEmbeddings(BaseModel, Embeddings):
@@ -21,7 +21,7 @@ class GoogleGenerativeAIEmbeddings(BaseModel, Embeddings):
     Example:
         .. code-block:: python
 
-            from langchain_google_genai import GoogleGenerativeAIEmbeddings
+            libs.partners.google_genai import GoogleGenerativeAIEmbeddings
 
             embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
             embeddings.embed_query("What's our Q1 revenue?")

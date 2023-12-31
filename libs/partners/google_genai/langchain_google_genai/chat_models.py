@@ -421,7 +421,7 @@ class ChatGoogleGenerativeAI(BaseChatModel):
     Example:
         .. code-block:: python
 
-            from langchain_google_genai import ChatGoogleGenerativeAI
+            libs.partners.google_genai import ChatGoogleGenerativeAI
             chat = ChatGoogleGenerativeAI(model="gemini-pro")
             chat.invoke("Write me a ballad about LangChain")
 

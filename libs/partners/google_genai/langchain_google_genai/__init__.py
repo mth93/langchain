@@ -26,7 +26,7 @@ pip install -U langchain-google-genai
 After setting up your environment with the required API key, you can interact with the Google Gemini models.
 
 ```python
-from langchain_google_genai import ChatGoogleGenerativeAI
+libs.partners.google_genai import ChatGoogleGenerativeAI
 
 llm = ChatGoogleGenerativeAI(model="gemini-pro")
 llm.invoke("Sing a ballad of LangChain.")
@@ -37,7 +37,7 @@ llm.invoke("Sing a ballad of LangChain.")
 The package also supports generating text with Google's models.
     
 ```python
-from langchain_google_genai import GoogleGenerativeAI
+libs.partners.google_genai import GoogleGenerativeAI
 
 llm = GoogleGenerativeAI(model="gemini-pro")
 llm.invoke("Once upon a time, a library called LangChain")
@@ -48,7 +48,7 @@ llm.invoke("Once upon a time, a library called LangChain")
 The package also supports creating embeddings with Google's models, useful for textual similarity and other NLP applications.
 
 ```python
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+libs.partners.google_genai import GoogleGenerativeAIEmbeddings
 
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 embeddings.embed_query("hello, world!")

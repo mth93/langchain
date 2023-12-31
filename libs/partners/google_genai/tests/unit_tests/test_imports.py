@@ -1,4 +1,4 @@
-from langchain_google_genai import __all__
+libs.partners.google_genai import __all__
 
 EXPECTED_ALL = [
     "ChatGoogleGenerativeAI",

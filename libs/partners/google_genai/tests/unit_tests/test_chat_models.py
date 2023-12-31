@@ -3,7 +3,7 @@ from libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMes
 from libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture
 
-from langchain_google_genai.chat_models import (
+libs.partners.google_genai.chat_models import (
     ChatGoogleGenerativeAI,
     _parse_chat_history,
 )

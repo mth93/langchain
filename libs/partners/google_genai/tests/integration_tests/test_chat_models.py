@@ -2,7 +2,7 @@
 import pytest
 from libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
-from langchain_google_genai.chat_models import (
+libs.partners.google_genai.chat_models import (
     ChatGoogleGenerativeAI,
     ChatGoogleGenerativeAIError,
 )
