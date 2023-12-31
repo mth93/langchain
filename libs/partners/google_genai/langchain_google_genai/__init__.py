@@ -54,9 +54,9 @@ embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 embeddings.embed_query("hello, world!")
 ```
 """  # noqa: E501
-from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
-from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
-from langchain_google_genai.llms import GoogleGenerativeAI
+from libs.partners.google_genai.langchain_google_genai.chat_models import ChatGoogleGenerativeAI
+from libs.partners.google_genai.langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
+from libs.partners.google_genai.langchain_google_genai.llms import GoogleGenerativeAI
 
 __all__ = [
     "ChatGoogleGenerativeAI",
