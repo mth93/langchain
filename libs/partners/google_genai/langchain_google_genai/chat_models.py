@@ -50,7 +50,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from langchain_google_genai._common import GoogleGenerativeAIError
+from libs.partners.google_genai.langchain_google_genai._common import GoogleGenerativeAIError
 
 IMAGE_TYPES: Tuple = ()
 try:
