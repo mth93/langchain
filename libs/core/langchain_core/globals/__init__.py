@@ -16,65 +16,65 @@ _debug: bool = False
 _llm_cache: Optional["BaseCache"] = None
 
 
-def set_verbose(value: bool) -> None:
-    """Set a new value for the `verbose` global setting."""
-    try:
-        import langchain  # type: ignore[import]
+# def set_verbose(value: bool) -> None:
+#     """Set a new value for the `verbose` global setting."""
+#     try:
+#         import langchain  # type: ignore[import]
 
-        # We're about to run some deprecated code, don't report warnings from it.
-        # The user called the correct (non-deprecated) code path and shouldn't get warnings.
-        with warnings.catch_warnings():
-            warnings.filterwarnings(
-                "ignore",
-                message=(
-                    "Importing verbose from langchain root module is no longer supported"
-                ),
-            )
-            # N.B.: This is a workaround for an unfortunate quirk of Python's
-            #       module-level `__getattr__()` implementation:
-            # https://github.com/langchain-ai/langchain/pull/11311#issuecomment-1743780004
-            #
-            # Remove it once `langchain.verbose` is no longer supported, and once all users
-            # have migrated to using `set_verbose()` here.
-            langchain.verbose = value
-    except ImportError:
-        pass
+#         # We're about to run some deprecated code, don't report warnings from it.
+#         # The user called the correct (non-deprecated) code path and shouldn't get warnings.
+#         with warnings.catch_warnings():
+#             warnings.filterwarnings(
+#                 "ignore",
+#                 message=(
+#                     "Importing verbose from langchain root module is no longer supported"
+#                 ),
+#             )
+#             # N.B.: This is a workaround for an unfortunate quirk of Python's
+#             #       module-level `__getattr__()` implementation:
+#             # https://github.com/langchain-ai/langchain/pull/11311#issuecomment-1743780004
+#             #
+#             # Remove it once `langchain.verbose` is no longer supported, and once all users
+#             # have migrated to using `set_verbose()` here.
+#             langchain.verbose = value
+#     except ImportError:
+#         pass
 
-    global _verbose
-    _verbose = value
+#     global _verbose
+#     _verbose = value
 
 
-def get_verbose() -> bool:
-    """Get the value of the `verbose` global setting."""
-    try:
-        import langchain  # type: ignore[import]
+# def get_verbose() -> bool:
+#     """Get the value of the `verbose` global setting."""
+#     try:
+#         import langchain  # type: ignore[import]
 
-        # We're about to run some deprecated code, don't report warnings from it.
-        # The user called the correct (non-deprecated) code path and shouldn't get warnings.
-        with warnings.catch_warnings():
-            warnings.filterwarnings(
-                "ignore",
-                message=(
-                    ".*Importing verbose from langchain root module is no longer supported"
-                ),
-            )
-            # N.B.: This is a workaround for an unfortunate quirk of Python's
-            #       module-level `__getattr__()` implementation:
-            # https://github.com/langchain-ai/langchain/pull/11311#issuecomment-1743780004
-            #
-            # Remove it once `langchain.verbose` is no longer supported, and once all users
-            # have migrated to using `set_verbose()` here.
-            #
-            # In the meantime, the `verbose` setting is considered True if either the old
-            # or the new value are True. This accommodates users who haven't migrated
-            # to using `set_verbose()` yet. Those users are getting deprecation warnings
-            # directing them to use `set_verbose()` when they import `langhchain.verbose`.
-            old_verbose = langchain.verbose
-    except ImportError:
-        old_verbose = False
+#         # We're about to run some deprecated code, don't report warnings from it.
+#         # The user called the correct (non-deprecated) code path and shouldn't get warnings.
+#         with warnings.catch_warnings():
+#             warnings.filterwarnings(
+#                 "ignore",
+#                 message=(
+#                     ".*Importing verbose from langchain root module is no longer supported"
+#                 ),
+#             )
+#             # N.B.: This is a workaround for an unfortunate quirk of Python's
+#             #       module-level `__getattr__()` implementation:
+#             # https://github.com/langchain-ai/langchain/pull/11311#issuecomment-1743780004
+#             #
+#             # Remove it once `langchain.verbose` is no longer supported, and once all users
+#             # have migrated to using `set_verbose()` here.
+#             #
+#             # In the meantime, the `verbose` setting is considered True if either the old
+#             # or the new value are True. This accommodates users who haven't migrated
+#             # to using `set_verbose()` yet. Those users are getting deprecation warnings
+#             # directing them to use `set_verbose()` when they import `langhchain.verbose`.
+#             old_verbose = langchain.verbose
+#     except ImportError:
+#         old_verbose = False
 
-    global _verbose
-    return _verbose or old_verbose
+#     global _verbose
+#     return _verbose or old_verbose
 
 
 def set_debug(value: bool) -> None:
