@@ -16,7 +16,7 @@ from typing import (
     cast,
 )
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManager,
     AsyncCallbackManagerForLLMRun,
     BaseCallbackManager,
@@ -24,10 +24,10 @@ from langchain_core.callbacks import (
     CallbackManagerForLLMRun,
     Callbacks,
 )
-from langchain_core.globals import get_llm_cache
-from langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
-from langchain_core.load import dumpd, dumps
-from langchain_core.messages import (
+from libs.core.langchain_core.globals import get_llm_cache
+from libs.core.langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
+from libs.core.langchain_core.load import dumpd, dumps
+from libs.core.langchain_core.messages import (
     AIMessage,
     AnyMessage,
     BaseMessage,
@@ -35,23 +35,23 @@ from langchain_core.messages import (
     HumanMessage,
     message_chunk_to_message,
 )
-from langchain_core.outputs import (
+from libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
     LLMResult,
     RunInfo,
 )
-from langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
-from langchain_core.pydantic_v1 import Field, root_validator
-from langchain_core.runnables.config import ensure_config, run_in_executor
+from libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.runnables.config import ensure_config, run_in_executor
 
 if TYPE_CHECKING:
-    from langchain_core.runnables import RunnableConfig
+    from libs.core.langchain_core.runnables import RunnableConfig
 
 
 def _get_verbosity() -> bool:
-    from langchain_core.globals import get_verbose
+    from libs.core.langchain_core.globals import get_verbose
 
     return get_verbose()
 

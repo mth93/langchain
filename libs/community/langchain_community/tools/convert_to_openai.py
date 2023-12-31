@@ -1,4 +1,4 @@
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utils.openai_functions import (
     FunctionDescription,

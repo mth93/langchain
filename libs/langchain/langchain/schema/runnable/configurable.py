@@ -1,4 +1,4 @@
-from langchain_core.runnables.configurable import (
+from libs.core.langchain_core.runnables.configurable import (
     DynamicRunnable,
     RunnableConfigurableAlternatives,
     RunnableConfigurableFields,

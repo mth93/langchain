@@ -14,7 +14,7 @@ creating more responsive UX.
 
 This module contains schema and implementation of LangChain Runnables primitives.
 """
-from langchain_core.runnables.base import (
+from libs.core.langchain_core.runnables.base import (
     Runnable,
     RunnableBinding,
     RunnableGenerator,
@@ -24,22 +24,22 @@ from langchain_core.runnables.base import (
     RunnableSequence,
     RunnableSerializable,
 )
-from langchain_core.runnables.branch import RunnableBranch
-from langchain_core.runnables.config import (
+from libs.core.langchain_core.runnables.branch import RunnableBranch
+from libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     ensure_config,
     get_config_list,
     patch_config,
     run_in_executor,
 )
-from langchain_core.runnables.fallbacks import RunnableWithFallbacks
-from langchain_core.runnables.passthrough import (
+from libs.core.langchain_core.runnables.fallbacks import RunnableWithFallbacks
+from libs.core.langchain_core.runnables.passthrough import (
     RunnableAssign,
     RunnablePassthrough,
     RunnablePick,
 )
-from langchain_core.runnables.router import RouterInput, RouterRunnable
-from langchain_core.runnables.utils import (
+from libs.core.langchain_core.runnables.router import RouterInput, RouterRunnable
+from libs.core.langchain_core.runnables.utils import (
     AddableDict,
     ConfigurableField,
     ConfigurableFieldMultiOption,

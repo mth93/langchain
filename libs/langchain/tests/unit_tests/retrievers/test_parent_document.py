@@ -1,6 +1,6 @@
 from typing import Any, List, Sequence
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain.retrievers import ParentDocumentRetriever
 from langchain.storage import InMemoryStore

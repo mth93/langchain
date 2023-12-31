@@ -1,6 +1,6 @@
 """Serialization and deserialization."""
-from langchain_core.load.dump import dumpd, dumps
-from langchain_core.load.load import load, loads
+from libs.core.langchain_core.load.dump import dumpd, dumps
+from libs.core.langchain_core.load.load import load, loads
 
 __all__ = [
     "dumpd",

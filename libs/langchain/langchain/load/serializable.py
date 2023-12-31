@@ -1,4 +1,4 @@
-from langchain_core.load.serializable import (
+from libs.core.langchain_core.load.serializable import (
     BaseSerialized,
     Serializable,
     SerializedConstructor,

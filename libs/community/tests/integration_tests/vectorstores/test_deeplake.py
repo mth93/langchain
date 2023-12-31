@@ -1,6 +1,6 @@
 """Test Deep Lake functionality."""
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 from pytest import FixtureRequest
 
 from langchain_community.vectorstores import DeepLake

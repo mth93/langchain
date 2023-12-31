@@ -18,13 +18,13 @@ from typing import (
     Union,
 )
 
-from langchain_core.runnables.base import (
+from libs.core.langchain_core.runnables.base import (
     Runnable,
     RunnableSerializable,
     coerce_to_runnable,
 )
-from langchain_core.runnables.config import RunnableConfig, ensure_config, patch_config
-from langchain_core.runnables.utils import ConfigurableFieldSpec, Input, Output
+from libs.core.langchain_core.runnables.config import RunnableConfig, ensure_config, patch_config
+from libs.core.langchain_core.runnables.utils import ConfigurableFieldSpec, Input, Output
 
 T = TypeVar("T")
 Values = Dict[Union[asyncio.Event, threading.Event], Any]

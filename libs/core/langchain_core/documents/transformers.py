@@ -3,10 +3,10 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING, Any, Sequence
 
-from langchain_core.runnables.config import run_in_executor
+from libs.core.langchain_core.runnables.config import run_in_executor
 
 if TYPE_CHECKING:
-    from langchain_core.documents import Document
+    from libs.core.langchain_core.documents import Document
 
 
 class BaseDocumentTransformer(ABC):

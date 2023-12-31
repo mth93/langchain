@@ -1,4 +1,4 @@
-from langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 # For backwards compatibility.
 Prompt = PromptTemplate

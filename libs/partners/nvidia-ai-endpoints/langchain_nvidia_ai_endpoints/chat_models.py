@@ -18,13 +18,13 @@ from typing import (
 )
 
 import requests
-from langchain_core.callbacks.manager import (
+from libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import SimpleChatModel
-from langchain_core.messages import BaseMessage, ChatMessage, ChatMessageChunk
-from langchain_core.outputs import ChatGenerationChunk
+from libs.core.langchain_core.language_models.chat_models import SimpleChatModel
+from libs.core.langchain_core.messages import BaseMessage, ChatMessage, ChatMessageChunk
+from libs.core.langchain_core.outputs import ChatGenerationChunk
 
 from langchain_nvidia_ai_endpoints import _common as nvidia_ai_endpoints
 

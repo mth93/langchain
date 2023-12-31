@@ -2,13 +2,13 @@ from typing import Any, Callable, List, NamedTuple, Union
 
 import pytest
 
-from langchain_core.beta.runnables.context import Context
-from langchain_core.output_parsers.string import StrOutputParser
-from langchain_core.prompt_values import StringPromptValue
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.runnables.base import Runnable, RunnableLambda
-from langchain_core.runnables.passthrough import RunnablePassthrough
-from langchain_core.runnables.utils import aadd, add
+from libs.core.langchain_core.beta.runnables.context import Context
+from libs.core.langchain_core.output_parsers.string import StrOutputParser
+from libs.core.langchain_core.prompt_values import StringPromptValue
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.runnables.base import Runnable, RunnableLambda
+from libs.core.langchain_core.runnables.passthrough import RunnablePassthrough
+from libs.core.langchain_core.runnables.utils import aadd, add
 from tests.unit_tests.fake.llm import FakeListLLM, FakeStreamingListLLM
 
 

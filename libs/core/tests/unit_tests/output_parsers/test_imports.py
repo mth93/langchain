@@ -1,4 +1,4 @@
-from langchain_core.output_parsers import __all__
+from libs.core.langchain_core.output_parsers import __all__
 
 EXPECTED_ALL = [
     "BaseLLMOutputParser",

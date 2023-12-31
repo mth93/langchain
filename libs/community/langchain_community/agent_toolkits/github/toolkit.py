@@ -1,7 +1,7 @@
 """GitHub Toolkit."""
 from typing import Dict, List
 
-from langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.tools import BaseTool

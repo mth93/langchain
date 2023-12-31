@@ -2,10 +2,10 @@ from typing import List, Tuple
 
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import AIMessage, HumanMessage
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import RunnablePassthrough
+from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from libs.core.langchain_core.output_parsers import StrOutputParser
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import RunnablePassthrough
 from presidio_analyzer import AnalyzerEngine
 
 

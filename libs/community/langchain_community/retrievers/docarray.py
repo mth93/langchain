@@ -2,10 +2,10 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Union
 
 import numpy as np
-from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain_community.vectorstores.utils import maximal_marginal_relevance
 

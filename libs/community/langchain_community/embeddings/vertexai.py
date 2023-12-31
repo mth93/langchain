@@ -5,9 +5,9 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, wait
 from typing import Any, Dict, List, Literal, Optional, Tuple
 
-from langchain_core.embeddings import Embeddings
-from langchain_core.language_models.llms import create_base_retry_decorator
-from langchain_core.pydantic_v1 import root_validator
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.language_models.llms import create_base_retry_decorator
+from libs.core.langchain_core.pydantic_v1 import root_validator
 
 from langchain_community.llms.vertexai import _VertexAICommon
 from langchain_community.utilities.vertexai import raise_vertex_import_error

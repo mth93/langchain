@@ -3,7 +3,7 @@ from typing import List
 
 import numpy as np
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.singlestoredb import SingleStoreDB
 from langchain_community.vectorstores.utils import DistanceStrategy

@@ -1,5 +1,5 @@
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain.indexes._api import _HashedDocument
 

@@ -2,9 +2,9 @@ import re
 import xml.etree.ElementTree as ET
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
 
-from langchain_core.messages import BaseMessage
-from langchain_core.output_parsers.transform import BaseTransformOutputParser
-from langchain_core.runnables.utils import AddableDict
+from libs.core.langchain_core.messages import BaseMessage
+from libs.core.langchain_core.output_parsers.transform import BaseTransformOutputParser
+from libs.core.langchain_core.runnables.utils import AddableDict
 
 XML_FORMAT_INSTRUCTIONS = """The output should be formatted as a XML file.
 1. Output should conform to the tags below. 

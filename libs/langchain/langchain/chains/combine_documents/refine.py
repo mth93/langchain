@@ -4,10 +4,10 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Tuple
 
-from langchain_core.documents import Document
-from langchain_core.prompts import BasePromptTemplate, format_document
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.pydantic_v1 import Extra, Field, root_validator
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.prompts import BasePromptTemplate, format_document
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.combine_documents.base import (
@@ -36,7 +36,7 @@ class RefineDocumentsChain(BaseCombineDocumentsChain):
         .. code-block:: python
 
             from langchain.chains import RefineDocumentsChain, LLMChain
-            from langchain_core.prompts import PromptTemplate
+            from libs.core.langchain_core.prompts import PromptTemplate
             from langchain.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,

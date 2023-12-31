@@ -3,8 +3,8 @@ from enum import Enum
 from typing import Any, Dict, List, Optional
 
 import numpy as np
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

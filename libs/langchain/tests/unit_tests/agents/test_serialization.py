@@ -1,7 +1,7 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from langchain_core.tools import Tool
+from libs.core.langchain_core.tools import Tool
 
 from langchain.agents.agent_types import AgentType
 from langchain.agents.initialize import initialize_agent, load_agent

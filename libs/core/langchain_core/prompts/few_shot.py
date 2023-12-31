@@ -4,19 +4,19 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional, Union
 
-from langchain_core.messages import BaseMessage, get_buffer_string
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.messages import BaseMessage, get_buffer_string
+from libs.core.langchain_core.prompts.chat import (
     BaseChatPromptTemplate,
     BaseMessagePromptTemplate,
 )
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.prompts.string import (
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.prompts.string import (
     DEFAULT_FORMATTER_MAPPING,
     StringPromptTemplate,
     check_valid_template,
     get_template_variables,
 )
-from langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
 
 
 class _FewShotPromptTemplateMixin(BaseModel):
@@ -196,7 +196,7 @@ class FewShotChatMessagePromptTemplate(
 
         .. code-block:: python
 
-            from langchain_core.prompts import (
+            from libs.core.langchain_core.prompts import (
                 FewShotChatMessagePromptTemplate,
                 ChatPromptTemplate
             )
@@ -229,9 +229,9 @@ class FewShotChatMessagePromptTemplate(
 
         .. code-block:: python
 
-            from langchain_core.prompts import SemanticSimilarityExampleSelector
-            from langchain_core.embeddings import OpenAIEmbeddings
-            from langchain_core.vectorstores import Chroma
+            from libs.core.langchain_core.prompts import SemanticSimilarityExampleSelector
+            from libs.core.langchain_core.embeddings import OpenAIEmbeddings
+            from libs.core.langchain_core.vectorstores import Chroma
 
             examples = [
                 {"input": "2+2", "output": "4"},
@@ -252,9 +252,9 @@ class FewShotChatMessagePromptTemplate(
                 vectorstore=vectorstore
             )
 
-            from langchain_core import SystemMessage
-            from langchain_core.prompts import HumanMessagePromptTemplate
-            from langchain_core.prompts.few_shot import FewShotChatMessagePromptTemplate
+            from libs.core.langchain_core import SystemMessage
+            from libs.core.langchain_core.prompts import HumanMessagePromptTemplate
+            from libs.core.langchain_core.prompts.few_shot import FewShotChatMessagePromptTemplate
 
             few_shot_prompt = FewShotChatMessagePromptTemplate(
                 # Which variable(s) will be passed to the example selector.
@@ -280,7 +280,7 @@ class FewShotChatMessagePromptTemplate(
             print(final_prompt.format_messages(input="What's 3+3?"))
 
             # Use within an LLM
-            from langchain_core.chat_models import ChatAnthropic
+            from libs.core.langchain_core.chat_models import ChatAnthropic
             chain = final_prompt | ChatAnthropic()
             chain.invoke({"input": "What's 3+3?"})
     """

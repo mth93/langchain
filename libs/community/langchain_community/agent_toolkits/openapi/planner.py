@@ -5,11 +5,11 @@ from functools import partial
 from typing import Any, Callable, Dict, List, Optional
 
 import yaml
-from langchain_core.callbacks import BaseCallbackManager
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate, PromptTemplate
-from langchain_core.pydantic_v1 import Field
-from langchain_core.tools import BaseTool, Tool
+from libs.core.langchain_core.callbacks import BaseCallbackManager
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate, PromptTemplate
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.tools import BaseTool, Tool
 
 from langchain_community.agent_toolkits.openapi.planner_prompt import (
     API_CONTROLLER_PROMPT,

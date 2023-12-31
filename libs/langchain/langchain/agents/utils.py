@@ -1,6 +1,6 @@
 from typing import Sequence
 
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.tools import BaseTool
 
 
 def validate_tools_single_input(class_name: str, tools: Sequence[BaseTool]) -> None:

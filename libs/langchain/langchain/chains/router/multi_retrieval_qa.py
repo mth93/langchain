@@ -3,9 +3,9 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Mapping, Optional
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import PromptTemplate
-from langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import PromptTemplate
+from libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain.chains import ConversationChain
 from langchain.chains.base import Chain

@@ -2,11 +2,11 @@
 from typing import List
 
 import pytest
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     CallbackManager,
 )
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.outputs import ChatGeneration, LLMResult
+from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from libs.core.langchain_core.outputs import ChatGeneration, LLMResult
 
 from langchain_community.chat_models.gpt_router import GPTRouter, GPTRouterModel
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

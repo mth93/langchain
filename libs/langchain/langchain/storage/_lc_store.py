@@ -1,9 +1,9 @@
 """Create a key-value store for any langchain serializable object."""
 from typing import Callable, Optional
 
-from langchain_core.documents import Document
-from langchain_core.load import Serializable, dumps, loads
-from langchain_core.stores import BaseStore, ByteStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.load import Serializable, dumps, loads
+from libs.core.langchain_core.stores import BaseStore, ByteStore
 
 from langchain.storage.encoder_backed import EncoderBackedStore
 

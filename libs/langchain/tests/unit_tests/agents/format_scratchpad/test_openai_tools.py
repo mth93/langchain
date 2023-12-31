@@ -1,4 +1,4 @@
-from langchain_core.messages import AIMessage, ToolMessage
+from libs.core.langchain_core.messages import AIMessage, ToolMessage
 
 from langchain.agents.format_scratchpad.openai_tools import (
     format_to_openai_tool_messages,

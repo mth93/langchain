@@ -2,8 +2,8 @@
 import threading
 from typing import Any, Dict, List
 
-from langchain_core.callbacks import BaseCallbackHandler
-from langchain_core.outputs import LLMResult
+from libs.core.langchain_core.callbacks import BaseCallbackHandler
+from libs.core.langchain_core.outputs import LLMResult
 
 MODEL_COST_PER_1K_TOKENS = {
     # GPT-4 input

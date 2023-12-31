@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Any, Generator, Tuple
 
 import pytest
-from langchain_core.messages import AIMessage, HumanMessage
+from libs.core.langchain_core.messages import AIMessage, HumanMessage
 from sqlalchemy import Column, Integer, Text
 from sqlalchemy.orm import DeclarativeBase
 

@@ -3,8 +3,8 @@
 from typing import Any, List
 
 import pytest
-from langchain_core.documents import Document
-from langchain_core.prompts import PromptTemplate, format_document
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.prompts import PromptTemplate, format_document
 
 from langchain.chains.combine_documents.reduce import (
     collapse_docs,

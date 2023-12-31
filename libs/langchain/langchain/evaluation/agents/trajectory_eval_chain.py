@@ -18,13 +18,13 @@ from typing import (
     cast,
 )
 
-from langchain_core.agents import AgentAction
-from langchain_core.exceptions import OutputParserException
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.output_parsers import BaseOutputParser
-from langchain_core.pydantic_v1 import Extra, Field
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.agents import AgentAction
+from libs.core.langchain_core.exceptions import OutputParserException
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.output_parsers import BaseOutputParser
+from libs.core.langchain_core.pydantic_v1 import Extra, Field
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

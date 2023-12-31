@@ -3,7 +3,7 @@ import os
 from typing import List
 
 import sqlalchemy
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 from sqlalchemy.orm import Session
 
 from langchain_community.vectorstores.pgvector import PGVector

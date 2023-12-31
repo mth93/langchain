@@ -1,6 +1,6 @@
 """Test formatting functionality."""
 import pytest
-from langchain_core.utils import formatter
+from libs.core.langchain_core.utils import formatter
 
 
 def test_valid_formatting() -> None:

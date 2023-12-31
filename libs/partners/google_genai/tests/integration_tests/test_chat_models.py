@@ -1,6 +1,6 @@
 """Test ChatGoogleGenerativeAI chat model."""
 import pytest
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 
 from langchain_google_genai.chat_models import (
     ChatGoogleGenerativeAI,

@@ -1,6 +1,6 @@
 from typing import Union
 
-from langchain_core.agents import AgentAction, AgentFinish
+from libs.core.langchain_core.agents import AgentAction, AgentFinish
 
 from langchain.agents import AgentOutputParser
 

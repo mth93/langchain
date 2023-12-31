@@ -4,9 +4,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder, PromptTemplate
 from langchain.vectorstores import Neo4jVector
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import RunnablePassthrough
+from libs.core.langchain_core.output_parsers import StrOutputParser
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import RunnablePassthrough
 
 from neo4j_vector_memory.history import get_history, save_history
 

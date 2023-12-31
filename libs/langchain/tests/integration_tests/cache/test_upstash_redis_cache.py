@@ -2,7 +2,7 @@
 import uuid
 
 import pytest
-from langchain_core.outputs import Generation, LLMResult
+from libs.core.langchain_core.outputs import Generation, LLMResult
 
 import langchain
 from langchain.cache import UpstashRedisCache

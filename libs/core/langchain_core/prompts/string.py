@@ -6,9 +6,9 @@ from abc import ABC
 from string import Formatter
 from typing import Any, Callable, Dict, List, Set
 
-from langchain_core.prompt_values import PromptValue, StringPromptValue
-from langchain_core.prompts.base import BasePromptTemplate
-from langchain_core.utils.formatting import formatter
+from libs.core.langchain_core.prompt_values import PromptValue, StringPromptValue
+from libs.core.langchain_core.prompts.base import BasePromptTemplate
+from libs.core.langchain_core.utils.formatting import formatter
 
 
 def jinja2_formatter(template: str, **kwargs: Any) -> str:

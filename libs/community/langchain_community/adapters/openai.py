@@ -13,8 +13,8 @@ from typing import (
     overload,
 )
 
-from langchain_core.chat_sessions import ChatSession
-from langchain_core.messages import (
+from libs.core.langchain_core.chat_sessions import ChatSession
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -25,7 +25,7 @@ from langchain_core.messages import (
     SystemMessage,
     ToolMessage,
 )
-from langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.pydantic_v1 import BaseModel
 from typing_extensions import Literal
 
 

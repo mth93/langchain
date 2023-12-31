@@ -1,6 +1,6 @@
 from typing import List, Literal
 
-from langchain_core.messages.base import BaseMessage, BaseMessageChunk
+from libs.core.langchain_core.messages.base import BaseMessage, BaseMessageChunk
 
 
 class SystemMessage(BaseMessage):

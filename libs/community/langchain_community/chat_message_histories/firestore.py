@@ -4,8 +4,8 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, List, Optional
 
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.messages import (
+from libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from libs.core.langchain_core.messages import (
     BaseMessage,
     messages_from_dict,
     messages_to_dict,

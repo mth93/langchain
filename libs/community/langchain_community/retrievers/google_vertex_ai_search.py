@@ -3,11 +3,11 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Sequence
 
-from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.documents import Document
-from langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.utils import get_from_dict_or_env
+from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from libs.core.langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.utilities.vertexai import get_client_info
 

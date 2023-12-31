@@ -3,11 +3,11 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, Optional
 
-from langchain_core.callbacks.base import BaseCallbackHandler
-from langchain_core.utils import print_text
+from libs.core.langchain_core.callbacks.base import BaseCallbackHandler
+from libs.core.langchain_core.utils import print_text
 
 if TYPE_CHECKING:
-    from langchain_core.agents import AgentAction, AgentFinish
+    from libs.core.langchain_core.agents import AgentAction, AgentFinish
 
 
 class StdOutCallbackHandler(BaseCallbackHandler):

@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 from uuid import uuid4
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 from pytest_mock import MockerFixture
 
 from langchain_community.vectorstores import ZepVectorStore

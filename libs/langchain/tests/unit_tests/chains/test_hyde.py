@@ -2,9 +2,9 @@
 from typing import Any, List, Optional
 
 import numpy as np
-from langchain_core.embeddings import Embeddings
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.outputs import Generation, LLMResult
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.language_models.llms import BaseLLM
+from libs.core.langchain_core.outputs import Generation, LLMResult
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,

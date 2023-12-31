@@ -1,11 +1,11 @@
 from typing import Any, Callable, Dict, List, Optional, Sequence, Union
 
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables.base import RunnableLambda
-from langchain_core.runnables.config import RunnableConfig
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.runnables.utils import ConfigurableFieldSpec
+from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables.base import RunnableLambda
+from libs.core.langchain_core.runnables.config import RunnableConfig
+from libs.core.langchain_core.runnables.history import RunnableWithMessageHistory
+from libs.core.langchain_core.runnables.utils import ConfigurableFieldSpec
 from tests.unit_tests.fake.memory import ChatMessageHistory
 
 

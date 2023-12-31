@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Literal, Optional
 
-from langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.embeddings import Embeddings
 
 from langchain_community.vectorstores.docarray.base import (
     DocArrayIndex,

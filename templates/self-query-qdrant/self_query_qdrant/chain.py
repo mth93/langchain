@@ -8,9 +8,9 @@ from langchain.llms.openai import OpenAI
 from langchain.retrievers import SelfQueryRetriever
 from langchain.schema import Document, StrOutputParser
 from langchain.vectorstores.qdrant import Qdrant
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from qdrant_client import QdrantClient
 
 from self_query_qdrant import defaults, helper, prompts

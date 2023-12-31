@@ -1,4 +1,4 @@
-from langchain_core.agents import AgentAction, AgentFinish
+from libs.core.langchain_core.agents import AgentAction, AgentFinish
 
 from langchain.agents.output_parsers.xml import XMLAgentOutputParser
 

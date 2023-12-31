@@ -1,6 +1,6 @@
 from typing import Any, AsyncIterator, Iterator
 
-from langchain_core.messages import AIMessageChunk
+from libs.core.langchain_core.messages import AIMessageChunk
 
 from langchain.output_parsers.openai_functions import JsonOutputFunctionsParser
 

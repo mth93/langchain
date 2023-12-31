@@ -1,5 +1,5 @@
 """Test embeddings model integration."""
-from langchain_core.pydantic_v1 import SecretStr
+from libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture
 
 from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Literal, Optional
 
-from langchain_core.load import Serializable
+from libs.core.langchain_core.load import Serializable
 
 
 class Generation(Serializable):

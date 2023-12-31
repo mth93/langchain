@@ -22,35 +22,35 @@ from pytest_mock import MockerFixture
 from syrupy import SnapshotAssertion
 from typing_extensions import TypedDict
 
-from langchain_core.callbacks.manager import (
+from libs.core.langchain_core.callbacks.manager import (
     Callbacks,
     atrace_as_chain_group,
     trace_as_chain_group,
 )
-from langchain_core.documents import Document
-from langchain_core.load import dumpd, dumps
-from langchain_core.messages import (
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.load import dumpd, dumps
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.output_parsers import (
+from libs.core.langchain_core.output_parsers import (
     BaseOutputParser,
     CommaSeparatedListOutputParser,
     StrOutputParser,
 )
-from langchain_core.prompt_values import ChatPromptValue, StringPromptValue
-from langchain_core.prompts import (
+from libs.core.langchain_core.prompt_values import ChatPromptValue, StringPromptValue
+from libs.core.langchain_core.prompts import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
     PromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import (
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.runnables import (
     AddableDict,
     ConfigurableField,
     ConfigurableFieldMultiOption,
@@ -69,15 +69,15 @@ from langchain_core.runnables import (
     RunnableWithFallbacks,
     add,
 )
-from langchain_core.tools import BaseTool, tool
-from langchain_core.tracers import (
+from libs.core.langchain_core.tools import BaseTool, tool
+from libs.core.langchain_core.tracers import (
     BaseTracer,
     ConsoleCallbackHandler,
     Run,
     RunLog,
     RunLogPatch,
 )
-from langchain_core.tracers.context import collect_runs
+from libs.core.langchain_core.tracers.context import collect_runs
 from tests.unit_tests.fake.chat_model import FakeListChatModel
 from tests.unit_tests.fake.llm import FakeListLLM, FakeStreamingListLLM
 

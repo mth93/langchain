@@ -3,9 +3,9 @@ import os
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models.llms import LLM
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from libs.core.langchain_core.language_models.llms import LLM
+from libs.core.langchain_core.pydantic_v1 import Field
 
 logger = logging.getLogger(__name__)
 

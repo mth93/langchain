@@ -5,8 +5,8 @@ from abc import abstractmethod
 from collections import deque
 from typing import AsyncIterator, Deque, Iterator, List, TypeVar, Union
 
-from langchain_core.messages import BaseMessage
-from langchain_core.output_parsers.transform import BaseTransformOutputParser
+from libs.core.langchain_core.messages import BaseMessage
+from libs.core.langchain_core.output_parsers.transform import BaseTransformOutputParser
 
 T = TypeVar("T")
 

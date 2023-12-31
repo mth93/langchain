@@ -1,7 +1,7 @@
 from typing import cast
 
 import pytest
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     ChatMessage,
@@ -10,7 +10,7 @@ from langchain_core.messages import (
     HumanMessageChunk,
     SystemMessage,
 )
-from langchain_core.pydantic_v1 import SecretStr
+from libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
 from langchain_community.chat_models.baichuan import (

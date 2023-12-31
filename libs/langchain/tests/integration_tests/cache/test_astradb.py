@@ -14,7 +14,7 @@ import os
 from typing import Iterator
 
 import pytest
-from langchain_core.outputs import Generation, LLMResult
+from libs.core.langchain_core.outputs import Generation, LLMResult
 
 from langchain.cache import AstraDBCache, AstraDBSemanticCache
 from langchain.globals import get_llm_cache, set_llm_cache

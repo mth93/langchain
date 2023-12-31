@@ -1,4 +1,4 @@
-from langchain_core.exceptions import OutputParserException
+from libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.output_parsers import ResponseSchema, StructuredOutputParser
 

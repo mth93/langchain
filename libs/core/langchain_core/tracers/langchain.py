@@ -17,13 +17,13 @@ from tenacity import (
     wait_exponential_jitter,
 )
 
-from langchain_core.env import get_runtime_environment
-from langchain_core.load import dumpd
-from langchain_core.tracers.base import BaseTracer
-from langchain_core.tracers.schemas import Run
+from libs.core.langchain_core.env import get_runtime_environment
+from libs.core.langchain_core.load import dumpd
+from libs.core.langchain_core.tracers.base import BaseTracer
+from libs.core.langchain_core.tracers.schemas import Run
 
 if TYPE_CHECKING:
-    from langchain_core.messages import BaseMessage
+    from libs.core.langchain_core.messages import BaseMessage
 
 logger = logging.getLogger(__name__)
 _LOGGED = set()

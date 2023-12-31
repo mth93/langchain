@@ -4,7 +4,7 @@ from langchain_community.callbacks.manager import (
     get_openai_callback,
     wandb_tracing_enabled,
 )
-from langchain_core.callbacks.manager import (
+from libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManager,
     AsyncCallbackManagerForChainGroup,
     AsyncCallbackManagerForChainRun,
@@ -28,11 +28,11 @@ from langchain_core.callbacks.manager import (
     handle_event,
     trace_as_chain_group,
 )
-from langchain_core.tracers.context import (
+from libs.core.langchain_core.tracers.context import (
     collect_runs,
     tracing_v2_enabled,
 )
-from langchain_core.utils.env import env_var_is_set
+from libs.core.langchain_core.utils.env import env_var_is_set
 
 __all__ = [
     "BaseRunManager",

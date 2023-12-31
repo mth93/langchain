@@ -1,6 +1,6 @@
 """Test the initialize module."""
 
-from langchain_core.tools import tool
+from libs.core.langchain_core.tools import tool
 
 from langchain.agents.agent_types import AgentType
 from langchain.agents.initialize import initialize_agent

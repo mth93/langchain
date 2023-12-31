@@ -15,13 +15,13 @@ from typing import (
 
 from typing_extensions import get_args
 
-from langchain_core.messages import AnyMessage, BaseMessage
-from langchain_core.outputs import ChatGeneration, Generation
-from langchain_core.runnables import RunnableConfig, RunnableSerializable
-from langchain_core.runnables.config import run_in_executor
+from libs.core.langchain_core.messages import AnyMessage, BaseMessage
+from libs.core.langchain_core.outputs import ChatGeneration, Generation
+from libs.core.langchain_core.runnables import RunnableConfig, RunnableSerializable
+from libs.core.langchain_core.runnables.config import run_in_executor
 
 if TYPE_CHECKING:
-    from langchain_core.prompt_values import PromptValue
+    from libs.core.langchain_core.prompt_values import PromptValue
 
 T = TypeVar("T")
 

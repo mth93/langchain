@@ -2,7 +2,7 @@
 from typing import List
 
 import pytest
-from langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.embeddings import Embeddings
 
 from langchain.embeddings import CacheBackedEmbeddings
 from langchain.storage.in_memory import InMemoryStore

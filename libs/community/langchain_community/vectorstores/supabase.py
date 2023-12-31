@@ -15,9 +15,9 @@ from typing import (
 )
 
 import numpy as np
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community.vectorstores.utils import maximal_marginal_relevance
 
@@ -46,7 +46,7 @@ class SupabaseVectorStore(VectorStore):
     .. code-block:: python
 
         from langchain_community.embeddings.openai import OpenAIEmbeddings
-        from langchain_core.documents import Document
+        from libs.core.langchain_core.documents import Document
         from langchain_community.vectorstores import SupabaseVectorStore
         from supabase.client import create_client
 

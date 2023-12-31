@@ -2,10 +2,10 @@
 
 from typing import Any, Dict, List, Optional
 
-from langchain_core.agents import AgentAction, AgentStep
-from langchain_core.language_models.llms import LLM
-from langchain_core.messages import AIMessage, HumanMessage
-from langchain_core.tools import Tool
+from libs.core.langchain_core.agents import AgentAction, AgentStep
+from libs.core.langchain_core.language_models.llms import LLM
+from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from libs.core.langchain_core.tools import Tool
 
 from langchain.agents import AgentExecutor, AgentType, initialize_agent
 from langchain.callbacks.manager import CallbackManagerForLLMRun

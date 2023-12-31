@@ -3,10 +3,10 @@ from __future__ import annotations
 from typing import Any, Dict, List, Optional, cast
 from uuid import uuid4
 
-from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.documents import Document
-from langchain_core.pydantic_v1 import root_validator
-from langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.pydantic_v1 import root_validator
+from libs.core.langchain_core.retrievers import BaseRetriever
 
 
 class WeaviateHybridSearchRetriever(BaseRetriever):

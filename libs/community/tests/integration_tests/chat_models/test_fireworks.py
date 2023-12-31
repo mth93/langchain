@@ -3,8 +3,8 @@ import sys
 from typing import cast
 
 import pytest
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
+from libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from libs.core.langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from langchain_community.chat_models.fireworks import ChatFireworks
 

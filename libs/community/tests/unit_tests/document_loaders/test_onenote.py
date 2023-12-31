@@ -4,7 +4,7 @@ from unittest.mock import Mock
 
 import pytest
 from _pytest.monkeypatch import MonkeyPatch
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 from pytest_mock import MockerFixture
 
 from langchain_community.document_loaders.onenote import OneNoteLoader

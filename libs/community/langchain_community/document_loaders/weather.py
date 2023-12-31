@@ -4,7 +4,7 @@ from __future__ import annotations
 from datetime import datetime
 from typing import Iterator, List, Optional, Sequence
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 from langchain_community.utilities.openweathermap import OpenWeatherMapAPIWrapper

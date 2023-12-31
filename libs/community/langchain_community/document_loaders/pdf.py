@@ -10,8 +10,8 @@ from typing import Any, Dict, Iterator, List, Mapping, Optional, Sequence, Union
 from urllib.parse import urlparse
 
 import requests
-from langchain_core.documents import Document
-from langchain_core.utils import get_from_dict_or_env
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.document_loaders.base import BaseLoader
 from langchain_community.document_loaders.blob_loaders import Blob

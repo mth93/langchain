@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod
 from typing import Callable, List, Tuple
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.language_models.llms import BaseLLM
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 
 class BasePromptSelector(BaseModel, ABC):

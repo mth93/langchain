@@ -15,15 +15,15 @@ from typing import (
     Union,
 )
 
-from langchain_core.agents import (
+from libs.core.langchain_core.agents import (
     AgentAction,
     AgentFinish,
     AgentStep,
 )
-from langchain_core.load.dump import dumpd
-from langchain_core.outputs import RunInfo
-from langchain_core.runnables.utils import AddableDict
-from langchain_core.utils.input import get_color_mapping
+from libs.core.langchain_core.load.dump import dumpd
+from libs.core.langchain_core.outputs import RunInfo
+from libs.core.langchain_core.runnables.utils import AddableDict
+from libs.core.langchain_core.utils.input import get_color_mapping
 
 from langchain.callbacks.manager import (
     AsyncCallbackManager,

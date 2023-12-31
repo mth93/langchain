@@ -3,19 +3,19 @@ from __future__ import annotations
 
 from typing import Any, List, Optional, Sequence, Tuple
 
-from langchain_core.agents import AgentAction
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from langchain_core.output_parsers import BaseOutputParser
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.agents import AgentAction
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from libs.core.langchain_core.output_parsers import BaseOutputParser
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from langchain_core.pydantic_v1 import Field
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.agent import Agent, AgentOutputParser
 from langchain.agents.conversational_chat.output_parser import ConvoOutputParser

@@ -7,10 +7,10 @@ from uuid import UUID
 from tenacity import RetryCallState
 
 if TYPE_CHECKING:
-    from langchain_core.agents import AgentAction, AgentFinish
-    from langchain_core.documents import Document
-    from langchain_core.messages import BaseMessage
-    from langchain_core.outputs import ChatGenerationChunk, GenerationChunk, LLMResult
+    from libs.core.langchain_core.agents import AgentAction, AgentFinish
+    from libs.core.langchain_core.documents import Document
+    from libs.core.langchain_core.messages import BaseMessage
+    from libs.core.langchain_core.outputs import ChatGenerationChunk, GenerationChunk, LLMResult
 
 
 class RetrieverManagerMixin:

@@ -33,10 +33,10 @@ from typing import (
 
 from typing_extensions import Literal, get_args
 
-from langchain_core.load.dump import dumpd, dumps
-from langchain_core.load.serializable import Serializable
-from langchain_core.pydantic_v1 import BaseConfig, BaseModel, Field, create_model
-from langchain_core.runnables.config import (
+from libs.core.langchain_core.load.dump import dumpd, dumps
+from libs.core.langchain_core.load.serializable import Serializable
+from libs.core.langchain_core.pydantic_v1 import BaseConfig, BaseModel, Field, create_model
+from libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     acall_func_with_variable_args,
     call_func_with_variable_args,
@@ -49,8 +49,8 @@ from langchain_core.runnables.config import (
     patch_config,
     run_in_executor,
 )
-from langchain_core.runnables.graph import Graph
-from langchain_core.runnables.utils import (
+from libs.core.langchain_core.runnables.graph import Graph
+from libs.core.langchain_core.runnables.utils import (
     AddableDict,
     AnyConfigurableField,
     ConfigurableField,
@@ -66,19 +66,19 @@ from langchain_core.runnables.utils import (
     get_unique_config_specs,
     indent_lines_after_first,
 )
-from langchain_core.utils.aiter import atee, py_anext
-from langchain_core.utils.iter import safetee
+from libs.core.langchain_core.utils.aiter import atee, py_anext
+from libs.core.langchain_core.utils.iter import safetee
 
 if TYPE_CHECKING:
-    from langchain_core.callbacks.manager import (
+    from libs.core.langchain_core.callbacks.manager import (
         AsyncCallbackManagerForChainRun,
         CallbackManagerForChainRun,
     )
-    from langchain_core.runnables.fallbacks import (
+    from libs.core.langchain_core.runnables.fallbacks import (
         RunnableWithFallbacks as RunnableWithFallbacksT,
     )
-    from langchain_core.tracers.log_stream import RunLog, RunLogPatch
-    from langchain_core.tracers.root_listeners import Listener
+    from libs.core.langchain_core.tracers.log_stream import RunLog, RunLogPatch
+    from libs.core.langchain_core.tracers.root_listeners import Listener
 
 
 Other = TypeVar("Other")
@@ -136,7 +136,7 @@ class Runnable(Generic[Input, Output], ABC):
 
     .. code-block:: python
 
-        from langchain_core.runnables import RunnableLambda
+        from libs.core.langchain_core.runnables import RunnableLambda
 
         # A RunnableSequence constructed using the `|` operator
         sequence = RunnableLambda(lambda x: x + 1) | RunnableLambda(lambda x: x * 2)
@@ -164,7 +164,7 @@ class Runnable(Generic[Input, Output], ABC):
 
     .. code-block:: python
 
-        from langchain_core.runnables import RunnableLambda
+        from libs.core.langchain_core.runnables import RunnableLambda
 
         import random
 
@@ -201,14 +201,14 @@ class Runnable(Generic[Input, Output], ABC):
 
         .. code-block:: python
 
-            from langchain_core.globals import set_debug
+            from libs.core.langchain_core.globals import set_debug
             set_debug(True)
 
     Alternatively, you can pass existing or custom callbacks to any given chain:
 
         .. code-block:: python
 
-            from langchain_core.tracers import ConsoleCallbackHandler
+            from libs.core.langchain_core.tracers import ConsoleCallbackHandler
 
             chain.invoke(
                 ...,
@@ -379,7 +379,7 @@ class Runnable(Generic[Input, Output], ABC):
 
     def get_graph(self, config: Optional[RunnableConfig] = None) -> Graph:
         """Return a graph representation of this runnable."""
-        from langchain_core.runnables.graph import Graph
+        from libs.core.langchain_core.runnables.graph import Graph
 
         graph = Graph()
         input_node = graph.add_node(self.get_input_schema(config))
@@ -424,7 +424,7 @@ class Runnable(Generic[Input, Output], ABC):
     def pick(self, keys: Union[str, List[str]]) -> RunnableSerializable[Any, Any]:
         """Pick keys from the dict output of this runnable.
         Returns a new runnable."""
-        from langchain_core.runnables.passthrough import RunnablePick
+        from libs.core.langchain_core.runnables.passthrough import RunnablePick
 
         return self | RunnablePick(keys)
 
@@ -441,7 +441,7 @@ class Runnable(Generic[Input, Output], ABC):
     ) -> RunnableSerializable[Any, Any]:
         """Assigns new fields to the dict output of this runnable.
         Returns a new runnable."""
-        from langchain_core.runnables.passthrough import RunnableAssign
+        from libs.core.langchain_core.runnables.passthrough import RunnableAssign
 
         return self | RunnableAssign(RunnableParallel(kwargs))
 
@@ -644,8 +644,8 @@ class Runnable(Generic[Input, Output], ABC):
         """
         import jsonpatch  # type: ignore[import]
 
-        from langchain_core.callbacks.base import BaseCallbackManager
-        from langchain_core.tracers.log_stream import (
+        from libs.core.langchain_core.callbacks.base import BaseCallbackManager
+        from libs.core.langchain_core.tracers.log_stream import (
             LogStreamCallbackHandler,
             RunLog,
             RunLogPatch,
@@ -831,7 +831,7 @@ class Runnable(Generic[Input, Output], ABC):
         type, input, output, error, start_time, end_time, and any tags or metadata
         added to the run.
         """
-        from langchain_core.tracers.root_listeners import RootListenersTracer
+        from libs.core.langchain_core.tracers.root_listeners import RootListenersTracer
 
         return RunnableBinding(
             bound=self,
@@ -883,7 +883,7 @@ class Runnable(Generic[Input, Output], ABC):
         Returns:
             A new Runnable that retries the original runnable on exceptions.
         """
-        from langchain_core.runnables.retry import RunnableRetry
+        from libs.core.langchain_core.runnables.retry import RunnableRetry
 
         return RunnableRetry(
             bound=self,
@@ -917,7 +917,7 @@ class Runnable(Generic[Input, Output], ABC):
             A new Runnable that will try the original runnable, and then each
             fallback in order, upon failures.
         """
-        from langchain_core.runnables.fallbacks import RunnableWithFallbacks
+        from libs.core.langchain_core.runnables.fallbacks import RunnableWithFallbacks
 
         return RunnableWithFallbacks(
             runnable=self,
@@ -1298,7 +1298,7 @@ class RunnableSerializable(Serializable, Runnable[Input, Output]):
     def configurable_fields(
         self, **kwargs: AnyConfigurableField
     ) -> RunnableSerializable[Input, Output]:
-        from langchain_core.runnables.configurable import RunnableConfigurableFields
+        from libs.core.langchain_core.runnables.configurable import RunnableConfigurableFields
 
         for key in kwargs:
             if key not in self.__fields__:
@@ -1317,7 +1317,7 @@ class RunnableSerializable(Serializable, Runnable[Input, Output]):
         prefix_keys: bool = False,
         **kwargs: Union[Runnable[Input, Output], Callable[[], Runnable[Input, Output]]],
     ) -> RunnableSerializable[Input, Output]:
-        from langchain_core.runnables.configurable import (
+        from libs.core.langchain_core.runnables.configurable import (
             RunnableConfigurableAlternatives,
         )
 
@@ -1333,7 +1333,7 @@ class RunnableSerializable(Serializable, Runnable[Input, Output]):
 def _seq_input_schema(
     steps: List[Runnable[Any, Any]], config: Optional[RunnableConfig]
 ) -> Type[BaseModel]:
-    from langchain_core.runnables.passthrough import RunnableAssign, RunnablePick
+    from libs.core.langchain_core.runnables.passthrough import RunnableAssign, RunnablePick
 
     first = steps[0]
     if len(steps) == 1:
@@ -1360,7 +1360,7 @@ def _seq_input_schema(
 def _seq_output_schema(
     steps: List[Runnable[Any, Any]], config: Optional[RunnableConfig]
 ) -> Type[BaseModel]:
-    from langchain_core.runnables.passthrough import RunnableAssign, RunnablePick
+    from libs.core.langchain_core.runnables.passthrough import RunnableAssign, RunnablePick
 
     last = steps[-1]
     if len(steps) == 1:
@@ -1448,7 +1448,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
 
         .. code-block:: python
 
-            from langchain_core.runnables import RunnableLambda
+            from libs.core.langchain_core.runnables import RunnableLambda
 
             def add_one(x: int) -> int:
                 return x + 1
@@ -1471,8 +1471,8 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
 
         .. code-block:: python
 
-            from langchain_core.output_parsers.json import SimpleJsonOutputParser
-            from langchain_core.chat_models.openai import ChatOpenAI
+            from libs.core.langchain_core.output_parsers.json import SimpleJsonOutputParser
+            from libs.core.langchain_core.chat_models.openai import ChatOpenAI
 
             prompt = PromptTemplate.from_template(
                 'In JSON format, give me a list of {topic} and their '
@@ -1568,7 +1568,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
 
     @property
     def config_specs(self) -> List[ConfigurableFieldSpec]:
-        from langchain_core.beta.runnables.context import (
+        from libs.core.langchain_core.beta.runnables.context import (
             CONTEXT_CONFIG_PREFIX,
             _key_from_id,
         )
@@ -1613,7 +1613,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         return get_unique_config_specs(spec for spec, _ in all_specs)
 
     def get_graph(self, config: Optional[RunnableConfig] = None) -> Graph:
-        from langchain_core.runnables.graph import Graph
+        from libs.core.langchain_core.runnables.graph import Graph
 
         graph = Graph()
         for step in self.steps:
@@ -1695,7 +1695,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
             )
 
     def invoke(self, input: Input, config: Optional[RunnableConfig] = None) -> Output:
-        from langchain_core.beta.runnables.context import config_with_context
+        from libs.core.langchain_core.beta.runnables.context import config_with_context
 
         # setup callbacks and context
         config = config_with_context(ensure_config(config), self.steps)
@@ -1729,7 +1729,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         config: Optional[RunnableConfig] = None,
         **kwargs: Optional[Any],
     ) -> Output:
-        from langchain_core.beta.runnables.context import aconfig_with_context
+        from libs.core.langchain_core.beta.runnables.context import aconfig_with_context
 
         # setup callbacks and context
         config = aconfig_with_context(ensure_config(config), self.steps)
@@ -1765,8 +1765,8 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         return_exceptions: bool = False,
         **kwargs: Optional[Any],
     ) -> List[Output]:
-        from langchain_core.beta.runnables.context import config_with_context
-        from langchain_core.callbacks.manager import CallbackManager
+        from libs.core.langchain_core.beta.runnables.context import config_with_context
+        from libs.core.langchain_core.callbacks.manager import CallbackManager
 
         if not inputs:
             return []
@@ -1888,8 +1888,8 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         return_exceptions: bool = False,
         **kwargs: Optional[Any],
     ) -> List[Output]:
-        from langchain_core.beta.runnables.context import aconfig_with_context
-        from langchain_core.callbacks.manager import AsyncCallbackManager
+        from libs.core.langchain_core.beta.runnables.context import aconfig_with_context
+        from libs.core.langchain_core.callbacks.manager import AsyncCallbackManager
 
         if not inputs:
             return []
@@ -2012,7 +2012,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         run_manager: CallbackManagerForChainRun,
         config: RunnableConfig,
     ) -> Iterator[Output]:
-        from langchain_core.beta.runnables.context import config_with_context
+        from libs.core.langchain_core.beta.runnables.context import config_with_context
 
         steps = [self.first] + self.middle + [self.last]
         config = config_with_context(config, self.steps)
@@ -2039,7 +2039,7 @@ class RunnableSequence(RunnableSerializable[Input, Output]):
         run_manager: AsyncCallbackManagerForChainRun,
         config: RunnableConfig,
     ) -> AsyncIterator[Output]:
-        from langchain_core.beta.runnables.context import aconfig_with_context
+        from libs.core.langchain_core.beta.runnables.context import aconfig_with_context
 
         steps = [self.first] + self.middle + [self.last]
         config = aconfig_with_context(config, self.steps)
@@ -2204,7 +2204,7 @@ class RunnableParallel(RunnableSerializable[Input, Dict[str, Any]]):
         )
 
     def get_graph(self, config: Optional[RunnableConfig] = None) -> Graph:
-        from langchain_core.runnables.graph import Graph
+        from libs.core.langchain_core.runnables.graph import Graph
 
         graph = Graph()
         input_node = graph.add_node(self.get_input_schema(config))
@@ -2238,7 +2238,7 @@ class RunnableParallel(RunnableSerializable[Input, Dict[str, Any]]):
     def invoke(
         self, input: Input, config: Optional[RunnableConfig] = None
     ) -> Dict[str, Any]:
-        from langchain_core.callbacks.manager import CallbackManager
+        from libs.core.langchain_core.callbacks.manager import CallbackManager
 
         # setup callbacks
         config = ensure_config(config)
@@ -2617,7 +2617,7 @@ class RunnableLambda(Runnable[Input, Output]):
         .. code-block:: python
 
             # This is a RunnableLambda
-            from langchain_core.runnables import RunnableLambda
+            from libs.core.langchain_core.runnables import RunnableLambda
 
             def add_one(x: int) -> int:
                 return x + 1
@@ -3620,7 +3620,7 @@ class RunnableBinding(RunnableBindingBase[Input, Output]):
             type, input, output, error, start_time, end_time, and any tags or metadata
             added to the run.
         """
-        from langchain_core.tracers.root_listeners import RootListenersTracer
+        from libs.core.langchain_core.tracers.root_listeners import RootListenersTracer
 
         return self.__class__(
             bound=self.bound,

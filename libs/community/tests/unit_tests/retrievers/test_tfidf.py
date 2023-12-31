@@ -3,7 +3,7 @@ from datetime import datetime
 from tempfile import TemporaryDirectory
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.retrievers.tfidf import TFIDFRetriever
 

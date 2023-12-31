@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
 import requests
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models import LLM
-from langchain_core.pydantic_v1 import (
+from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from libs.core.langchain_core.language_models import LLM
+from libs.core.langchain_core.pydantic_v1 import (
     BaseModel,
     Extra,
     Field,

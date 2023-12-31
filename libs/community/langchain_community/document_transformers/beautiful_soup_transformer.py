@@ -1,6 +1,6 @@
 from typing import Any, Iterator, List, Sequence, cast
 
-from langchain_core.documents import BaseDocumentTransformer, Document
+from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
 
 
 class BeautifulSoupTransformer(BaseDocumentTransformer):

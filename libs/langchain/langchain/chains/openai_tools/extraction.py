@@ -1,9 +1,9 @@
 from typing import List, Type, Union
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import Runnable
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import ChatPromptTemplate
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import Runnable
 
 from langchain.output_parsers import PydanticToolsParser
 from langchain.utils.openai_functions import convert_pydantic_to_openai_function

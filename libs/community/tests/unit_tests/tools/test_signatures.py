@@ -6,7 +6,7 @@ import re
 from typing import List, Type
 
 import pytest
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.tools.amadeus.base import AmadeusBaseTool
 from langchain_community.tools.gmail.base import GmailBaseTool

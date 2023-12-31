@@ -2,7 +2,7 @@
 from typing import Dict
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.marqo import Marqo
 

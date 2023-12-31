@@ -9,7 +9,7 @@ from enum import Enum
 from pathlib import Path
 from typing import TYPE_CHECKING, Dict, Iterable, List, Sequence, Union
 
-from langchain_core.pydantic_v1 import (
+from libs.core.langchain_core.pydantic_v1 import (
     BaseModel,
     BaseSettings,
     Field,

@@ -3,8 +3,8 @@ import uuid
 from typing import Sequence
 
 from bs4 import BeautifulSoup as Soup
-from langchain_core.documents import Document
-from langchain_core.runnables import Runnable
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.runnables import Runnable
 
 from propositional_retrieval.constants import DOCSTORE_ID_KEY
 from propositional_retrieval.proposal_chain import proposition_chain

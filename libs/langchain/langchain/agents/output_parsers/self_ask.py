@@ -1,7 +1,7 @@
 from typing import Sequence, Union
 
-from langchain_core.agents import AgentAction, AgentFinish
-from langchain_core.exceptions import OutputParserException
+from libs.core.langchain_core.agents import AgentAction, AgentFinish
+from libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.agents.agent import AgentOutputParser
 

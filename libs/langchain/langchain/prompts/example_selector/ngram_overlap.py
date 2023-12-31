@@ -6,9 +6,9 @@ https://aclanthology.org/P02-1040.pdf
 from typing import Dict, List
 
 import numpy as np
-from langchain_core.example_selectors.base import BaseExampleSelector
-from langchain_core.prompts import PromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, root_validator
+from libs.core.langchain_core.example_selectors.base import BaseExampleSelector
+from libs.core.langchain_core.prompts import PromptTemplate
+from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
 
 
 def ngram_overlap_score(source: List[str], example: List[str]) -> float:

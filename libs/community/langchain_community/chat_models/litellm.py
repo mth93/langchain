@@ -16,17 +16,17 @@ from typing import (
     Union,
 )
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import (
+from libs.core.langchain_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from langchain_core.language_models.llms import create_base_retry_decorator
-from langchain_core.messages import (
+from libs.core.langchain_core.language_models.llms import create_base_retry_decorator
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -40,13 +40,13 @@ from langchain_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from langchain_core.outputs import (
+from libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
 )
-from langchain_core.pydantic_v1 import Field, root_validator
-from langchain_core.utils import get_from_dict_or_env
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.utils import get_from_dict_or_env
 
 logger = logging.getLogger(__name__)
 

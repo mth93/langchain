@@ -18,15 +18,15 @@ from uuid import UUID
 from langsmith import utils as ls_utils
 from langsmith.run_helpers import get_run_tree_context
 
-from langchain_core.tracers.langchain import LangChainTracer
-from langchain_core.tracers.run_collector import RunCollectorCallbackHandler
-from langchain_core.utils.env import env_var_is_set
+from libs.core.langchain_core.tracers.langchain import LangChainTracer
+from libs.core.langchain_core.tracers.run_collector import RunCollectorCallbackHandler
+from libs.core.langchain_core.utils.env import env_var_is_set
 
 if TYPE_CHECKING:
     from langsmith import Client as LangSmithClient
 
-    from langchain_core.callbacks.base import BaseCallbackHandler, Callbacks
-    from langchain_core.callbacks.manager import AsyncCallbackManager, CallbackManager
+    from libs.core.langchain_core.callbacks.base import BaseCallbackHandler, Callbacks
+    from libs.core.langchain_core.callbacks.manager import AsyncCallbackManager, CallbackManager
 
 tracing_v2_callback_var: ContextVar[Optional[LangChainTracer]] = ContextVar(  # noqa: E501
     "tracing_callback_v2", default=None
@@ -112,7 +112,7 @@ def _get_trace_callbacks(
             example_id=example_id,
         )
         if callback_manager is None:
-            from langchain_core.callbacks.base import Callbacks
+            from libs.core.langchain_core.callbacks.base import Callbacks
 
             cb = cast(Callbacks, [tracer])
         else:
@@ -191,7 +191,7 @@ def register_configure_hook(
         raise ValueError(
             "If env_var is set, handle_class must also be set to a non-None value."
         )
-    from langchain_core.callbacks.base import BaseCallbackHandler
+    from libs.core.langchain_core.callbacks.base import BaseCallbackHandler
 
     _configure_hooks.append(
         (

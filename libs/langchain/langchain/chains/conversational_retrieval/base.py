@@ -7,14 +7,14 @@ from abc import abstractmethod
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Tuple, Type, Union
 
-from langchain_core.documents import Document
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.messages import BaseMessage
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables import RunnableConfig
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.messages import BaseMessage
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from libs.core.langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.runnables import RunnableConfig
+from libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,
@@ -259,7 +259,7 @@ class ConversationalRetrievalChain(BaseConversationalRetrievalChain):
             from langchain.chains import (
                 StuffDocumentsChain, LLMChain, ConversationalRetrievalChain
             )
-            from langchain_core.prompts import PromptTemplate
+            from libs.core.langchain_core.prompts import PromptTemplate
             from langchain.llms import OpenAI
 
             combine_docs_chain = StuffDocumentsChain(...)

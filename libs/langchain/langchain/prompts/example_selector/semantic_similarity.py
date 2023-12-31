@@ -1,4 +1,4 @@
-from langchain_core.example_selectors.semantic_similarity import (
+from libs.core.langchain_core.example_selectors.semantic_similarity import (
     MaxMarginalRelevanceExampleSelector,
     SemanticSimilarityExampleSelector,
     sorted_values,

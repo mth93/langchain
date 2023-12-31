@@ -1,5 +1,5 @@
 """Test ChatNVIDIA chat model."""
-from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
 
 from langchain_nvidia_ai_endpoints.chat_models import ChatNVIDIA
 

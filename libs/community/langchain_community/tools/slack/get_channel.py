@@ -2,7 +2,7 @@ import json
 import logging
 from typing import Optional
 
-from langchain_core.callbacks import CallbackManagerForToolRun
+from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
 
 from langchain_community.tools.slack.base import SlackBaseTool
 

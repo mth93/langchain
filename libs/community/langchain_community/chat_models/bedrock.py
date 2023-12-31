@@ -1,12 +1,12 @@
 from typing import Any, Dict, Iterator, List, Optional
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import AIMessage, AIMessageChunk, BaseMessage
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.pydantic_v1 import Extra
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.messages import AIMessage, AIMessageChunk, BaseMessage
+from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from libs.core.langchain_core.pydantic_v1 import Extra
 
 from langchain_community.chat_models.anthropic import (
     convert_messages_to_prompt_anthropic,

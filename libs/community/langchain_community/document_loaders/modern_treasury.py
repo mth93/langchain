@@ -3,8 +3,8 @@ import urllib.request
 from base64 import b64encode
 from typing import List, Optional
 
-from langchain_core.documents import Document
-from langchain_core.utils import get_from_env, stringify_value
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.utils import get_from_env, stringify_value
 
 from langchain_community.document_loaders.base import BaseLoader
 

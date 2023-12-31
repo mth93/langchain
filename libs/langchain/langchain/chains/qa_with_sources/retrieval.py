@@ -2,9 +2,9 @@
 
 from typing import Any, Dict, List
 
-from langchain_core.documents import Document
-from langchain_core.pydantic_v1 import Field
-from langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

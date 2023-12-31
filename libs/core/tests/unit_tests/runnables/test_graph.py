@@ -1,10 +1,10 @@
 from syrupy import SnapshotAssertion
 
-from langchain_core.output_parsers.list import CommaSeparatedListOutputParser
-from langchain_core.output_parsers.string import StrOutputParser
-from langchain_core.output_parsers.xml import XMLOutputParser
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.runnables.base import Runnable
+from libs.core.langchain_core.output_parsers.list import CommaSeparatedListOutputParser
+from libs.core.langchain_core.output_parsers.string import StrOutputParser
+from libs.core.langchain_core.output_parsers.xml import XMLOutputParser
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.runnables.base import Runnable
 from tests.unit_tests.fake.llm import FakeListLLM
 
 

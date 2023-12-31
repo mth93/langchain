@@ -12,8 +12,8 @@ from langchain.retrievers import (
 )
 from langchain.schema import StrOutputParser
 from langchain.utils.math import cosine_similarity
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import (
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import (
     RunnableParallel,
     RunnablePassthrough,
 )

@@ -1,5 +1,5 @@
-from langchain_core.agents import AgentActionMessageLog
-from langchain_core.messages import AIMessage, FunctionMessage
+from libs.core.langchain_core.agents import AgentActionMessageLog
+from libs.core.langchain_core.messages import AIMessage, FunctionMessage
 
 from langchain.agents.format_scratchpad.openai_functions import (
     format_to_openai_function_messages,

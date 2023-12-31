@@ -3,9 +3,9 @@ from pathlib import Path
 from langchain.llms import Replicate
 from langchain.prompts import ChatPromptTemplate
 from langchain.utilities import SQLDatabase
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import RunnablePassthrough
+from libs.core.langchain_core.output_parsers import StrOutputParser
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import RunnablePassthrough
 
 # make sure to set REPLICATE_API_TOKEN in your environment
 # use llama-2-13b model in replicate

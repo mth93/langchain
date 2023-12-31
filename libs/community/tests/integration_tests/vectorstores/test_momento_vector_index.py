@@ -4,7 +4,7 @@ import uuid
 from typing import Generator, Iterator, List
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders import TextLoader
 from langchain_community.embeddings import OpenAIEmbeddings

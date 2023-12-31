@@ -1,7 +1,7 @@
 import pytest
 
-from langchain_core.outputs.llm_result import LLMResult
-from langchain_core.tracers.context import collect_runs
+from libs.core.langchain_core.outputs.llm_result import LLMResult
+from libs.core.langchain_core.tracers.context import collect_runs
 from tests.unit_tests.fake.callbacks import (
     BaseFakeCallbackHandler,
     FakeAsyncCallbackHandler,

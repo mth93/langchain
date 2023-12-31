@@ -1,8 +1,8 @@
 """Load summarizing chains."""
 from typing import Any, Mapping, Optional, Protocol
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.combine_documents.base import BaseCombineDocumentsChain

@@ -3,9 +3,9 @@ from __future__ import annotations
 import uuid
 from typing import Any, Iterable, List, Optional
 
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.vectorstores import VectorStore
 
 
 class LanceDB(VectorStore):

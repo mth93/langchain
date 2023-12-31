@@ -8,7 +8,7 @@ import warnings
 from datetime import datetime, timezone
 from typing import TYPE_CHECKING, Any, Iterator, List, Optional, Union
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

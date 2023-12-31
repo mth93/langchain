@@ -1,4 +1,4 @@
-from langchain_core.output_parsers.json import (
+from libs.core.langchain_core.output_parsers.json import (
     SimpleJsonOutputParser,
     parse_and_check_json_markdown,
     parse_json_markdown,

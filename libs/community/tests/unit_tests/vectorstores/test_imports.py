@@ -1,4 +1,4 @@
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community import vectorstores
 

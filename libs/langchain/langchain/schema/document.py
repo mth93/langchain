@@ -1,3 +1,3 @@
-from langchain_core.documents import BaseDocumentTransformer, Document
+from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
 
 __all__ = ["Document", "BaseDocumentTransformer"]

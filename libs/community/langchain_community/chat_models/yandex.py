@@ -4,18 +4,18 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Optional, cast
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import (
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatResult
+from libs.core.langchain_core.outputs import ChatGeneration, ChatResult
 from tenacity import (
     before_sleep_log,
     retry,

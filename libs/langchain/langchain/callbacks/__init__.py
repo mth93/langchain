@@ -38,15 +38,15 @@ from langchain_community.callbacks.streamlit import (
 from langchain_community.callbacks.trubrics_callback import TrubricsCallbackHandler
 from langchain_community.callbacks.wandb_callback import WandbCallbackHandler
 from langchain_community.callbacks.whylabs_callback import WhyLabsCallbackHandler
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     StdOutCallbackHandler,
     StreamingStdOutCallbackHandler,
 )
-from langchain_core.tracers.context import (
+from libs.core.langchain_core.tracers.context import (
     collect_runs,
     tracing_v2_enabled,
 )
-from langchain_core.tracers.langchain import LangChainTracer
+from libs.core.langchain_core.tracers.langchain import LangChainTracer
 
 from langchain.callbacks.file import FileCallbackHandler
 from langchain.callbacks.streaming_aiter import AsyncIteratorCallbackHandler

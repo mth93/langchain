@@ -14,7 +14,7 @@ export DATA_STORE_ID=... - the ID of the search engine to use for the test
 import os
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.retrievers.google_vertex_ai_search import (
     GoogleCloudEnterpriseSearchRetriever,

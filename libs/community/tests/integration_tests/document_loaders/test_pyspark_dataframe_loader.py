@@ -1,7 +1,7 @@
 import random
 import string
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.pyspark_dataframe import (
     PySparkDataFrameLoader,

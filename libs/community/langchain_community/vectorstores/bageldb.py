@@ -18,10 +18,10 @@ if TYPE_CHECKING:
     import bagel.config
     from bagel.api.types import ID, OneOrMany, Where, WhereDocument
 
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.utils import xor_args
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.utils import xor_args
+from libs.core.langchain_core.vectorstores import VectorStore
 
 DEFAULT_K = 5
 

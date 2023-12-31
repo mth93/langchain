@@ -1,7 +1,7 @@
 import logging
 import os
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders import RocksetLoader
 

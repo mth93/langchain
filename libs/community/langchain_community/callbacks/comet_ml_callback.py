@@ -3,9 +3,9 @@ from copy import deepcopy
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Sequence
 
-from langchain_core.agents import AgentAction, AgentFinish
-from langchain_core.callbacks import BaseCallbackHandler
-from langchain_core.outputs import Generation, LLMResult
+from libs.core.langchain_core.agents import AgentAction, AgentFinish
+from libs.core.langchain_core.callbacks import BaseCallbackHandler
+from libs.core.langchain_core.outputs import Generation, LLMResult
 
 import langchain_community
 from langchain_community.callbacks.utils import (

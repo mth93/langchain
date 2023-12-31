@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from langchain_core.callbacks import BaseCallbackManager
-from langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.callbacks import BaseCallbackManager
+from libs.core.langchain_core.language_models import BaseLanguageModel
 
 from langchain_community.agent_toolkits.json.prompt import JSON_PREFIX, JSON_SUFFIX
 from langchain_community.agent_toolkits.json.toolkit import JsonToolkit

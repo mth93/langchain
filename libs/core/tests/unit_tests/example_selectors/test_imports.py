@@ -1,4 +1,4 @@
-from langchain_core.example_selectors import __all__
+from libs.core.langchain_core.example_selectors import __all__
 
 EXPECTED_ALL = [
     "BaseExampleSelector",

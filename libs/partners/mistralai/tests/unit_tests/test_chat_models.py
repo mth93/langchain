@@ -2,7 +2,7 @@
 import os
 
 import pytest
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,

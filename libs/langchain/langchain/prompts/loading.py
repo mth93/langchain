@@ -1,4 +1,4 @@
-from langchain_core.prompts.loading import (
+from libs.core.langchain_core.prompts.loading import (
     _load_examples,
     _load_few_shot_prompt,
     _load_output_parser,
@@ -8,7 +8,7 @@ from langchain_core.prompts.loading import (
     load_prompt,
     load_prompt_from_config,
 )
-from langchain_core.utils.loading import try_load_from_hub
+from libs.core.langchain_core.utils.loading import try_load_from_hub
 
 __all__ = [
     "load_prompt_from_config",

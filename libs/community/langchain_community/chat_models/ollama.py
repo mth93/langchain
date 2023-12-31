@@ -1,13 +1,13 @@
 import json
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
 
-from langchain_core._api import deprecated
-from langchain_core.callbacks import (
+from libs.core.langchain_core._api import deprecated
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import (
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -15,7 +15,7 @@ from langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
 
 from langchain_community.llms.ollama import OllamaEndpointNotFoundError, _OllamaCommon
 

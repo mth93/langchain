@@ -6,7 +6,7 @@ from langchain.chat_models import ChatAnthropic
 from langchain.schema import AIMessage, HumanMessage
 from langchain.tools import DuckDuckGoSearchRun
 from langchain.tools.render import render_text_description
-from langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from xml_agent.prompts import conversational_prompt, parse_output
 

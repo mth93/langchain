@@ -1,4 +1,4 @@
-from langchain_core.exceptions import LangChainException
+from libs.core.langchain_core.exceptions import LangChainException
 
 
 class InvalidKeyException(LangChainException):

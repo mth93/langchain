@@ -1,4 +1,4 @@
-from langchain_core.prompts.few_shot import (
+from libs.core.langchain_core.prompts.few_shot import (
     FewShotChatMessagePromptTemplate,
     FewShotPromptTemplate,
     _FewShotPromptTemplateMixin,

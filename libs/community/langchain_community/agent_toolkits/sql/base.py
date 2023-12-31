@@ -3,10 +3,10 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Sequence
 
-from langchain_core.callbacks import BaseCallbackManager
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.messages import AIMessage, SystemMessage
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.callbacks import BaseCallbackManager
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.messages import AIMessage, SystemMessage
+from libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,

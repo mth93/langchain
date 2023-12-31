@@ -4,7 +4,7 @@ import uuid
 from typing import Generator, Union
 
 import pytest
-from langchain_core.messages import message_to_dict
+from libs.core.langchain_core.messages import message_to_dict
 
 from langchain.memory import ConversationBufferMemory
 from langchain.memory.chat_message_histories import ElasticsearchChatMessageHistory

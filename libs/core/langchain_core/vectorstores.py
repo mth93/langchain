@@ -19,17 +19,17 @@ from typing import (
     TypeVar,
 )
 
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import Field, root_validator
-from langchain_core.retrievers import BaseRetriever
-from langchain_core.runnables.config import run_in_executor
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.runnables.config import run_in_executor
 
 if TYPE_CHECKING:
-    from langchain_core.callbacks.manager import (
+    from libs.core.langchain_core.callbacks.manager import (
         AsyncCallbackManagerForRetrieverRun,
         CallbackManagerForRetrieverRun,
     )
-    from langchain_core.documents import Document
+    from libs.core.langchain_core.documents import Document
 
 logger = logging.getLogger(__name__)
 

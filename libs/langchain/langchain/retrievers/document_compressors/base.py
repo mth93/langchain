@@ -2,9 +2,9 @@ from abc import ABC, abstractmethod
 from inspect import signature
 from typing import List, Optional, Sequence, Union
 
-from langchain_core.documents import BaseDocumentTransformer, Document
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables.config import run_in_executor
+from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables.config import run_in_executor
 
 from langchain.callbacks.manager import Callbacks
 

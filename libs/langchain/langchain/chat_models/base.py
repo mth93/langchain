@@ -1,4 +1,4 @@
-from langchain_core.language_models.chat_models import (
+from libs.core.langchain_core.language_models.chat_models import (
     BaseChatModel,
     SimpleChatModel,
     agenerate_from_stream,

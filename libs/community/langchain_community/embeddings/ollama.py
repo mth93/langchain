@@ -2,8 +2,8 @@ import logging
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import BaseModel, Extra
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
 
 logger = logging.getLogger(__name__)
 

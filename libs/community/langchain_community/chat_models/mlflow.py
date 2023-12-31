@@ -2,11 +2,11 @@ import logging
 from typing import Any, Dict, List, Mapping, Optional
 from urllib.parse import urlparse
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import BaseChatModel
-from langchain_core.messages import (
+from libs.core.langchain_core.language_models import BaseChatModel
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -14,8 +14,8 @@ from langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatResult
-from langchain_core.pydantic_v1 import (
+from libs.core.langchain_core.outputs import ChatGeneration, ChatResult
+from libs.core.langchain_core.pydantic_v1 import (
     Field,
     PrivateAttr,
 )

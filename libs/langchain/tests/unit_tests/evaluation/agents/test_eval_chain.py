@@ -3,10 +3,10 @@
 from typing import Any, Dict, List, Optional, Tuple
 
 import pytest
-from langchain_core.agents import AgentAction, BaseMessage
-from langchain_core.exceptions import OutputParserException
-from langchain_core.pydantic_v1 import Field
-from langchain_core.tools import tool
+from libs.core.langchain_core.agents import AgentAction, BaseMessage
+from libs.core.langchain_core.exceptions import OutputParserException
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.tools import tool
 
 from langchain.callbacks.manager import CallbackManagerForLLMRun
 from langchain.evaluation.agents.trajectory_eval_chain import (

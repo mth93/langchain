@@ -20,14 +20,14 @@ from typing import (
     cast,
 )
 
-from langchain_core.pydantic_v1 import BaseModel, create_model
-from langchain_core.runnables.base import (
+from libs.core.langchain_core.pydantic_v1 import BaseModel, create_model
+from libs.core.langchain_core.runnables.base import (
     Other,
     Runnable,
     RunnableParallel,
     RunnableSerializable,
 )
-from langchain_core.runnables.config import (
+from libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     acall_func_with_variable_args,
     call_func_with_variable_args,
@@ -35,13 +35,13 @@ from langchain_core.runnables.config import (
     get_executor_for_config,
     patch_config,
 )
-from langchain_core.runnables.graph import Graph
-from langchain_core.runnables.utils import AddableDict, ConfigurableFieldSpec
-from langchain_core.utils.aiter import atee, py_anext
-from langchain_core.utils.iter import safetee
+from libs.core.langchain_core.runnables.graph import Graph
+from libs.core.langchain_core.runnables.utils import AddableDict, ConfigurableFieldSpec
+from libs.core.langchain_core.utils.aiter import atee, py_anext
+from libs.core.langchain_core.utils.iter import safetee
 
 if TYPE_CHECKING:
-    from langchain_core.callbacks.manager import (
+    from libs.core.langchain_core.callbacks.manager import (
         AsyncCallbackManagerForChainRun,
         CallbackManagerForChainRun,
     )
@@ -72,7 +72,7 @@ class RunnablePassthrough(RunnableSerializable[Other, Other]):
 
         .. code-block:: python
 
-            from langchain_core.runnables import (
+            from libs.core.langchain_core.runnables import (
                 RunnableLambda,
                 RunnableParallel,
                 RunnablePassthrough,
@@ -101,7 +101,7 @@ class RunnablePassthrough(RunnableSerializable[Other, Other]):
 
         .. code-block:: python
 
-            from langchain_core.runnables import RunnablePassthrough, RunnableParallel
+            from libs.core.langchain_core.runnables import RunnablePassthrough, RunnableParallel
 
             def fake_llm(prompt: str) -> str: # Fake LLM for the example
                 return "completion"

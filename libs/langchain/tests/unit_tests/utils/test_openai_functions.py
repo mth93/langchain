@@ -1,4 +1,4 @@
-from langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain.utils.openai_functions import convert_pydantic_to_openai_function
 

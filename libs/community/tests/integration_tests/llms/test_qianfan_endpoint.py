@@ -1,7 +1,7 @@
 """Test Baidu Qianfan LLM Endpoint."""
 from typing import Generator
 
-from langchain_core.outputs import LLMResult
+from libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.llms.baidu_qianfan_endpoint import QianfanLLMEndpoint
 

@@ -1,3 +1,3 @@
-from langchain_core.tracers.base import BaseTracer, TracerException
+from libs.core.langchain_core.tracers.base import BaseTracer, TracerException
 
 __all__ = ["TracerException", "BaseTracer"]

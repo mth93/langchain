@@ -18,9 +18,9 @@ from typing import (
     overload,
 )
 
-from langchain_core._api import deprecated
-from langchain_core.load import Serializable
-from langchain_core.messages import (
+from libs.core.langchain_core._api import deprecated
+from libs.core.langchain_core.load import Serializable
+from libs.core.langchain_core.messages import (
     AIMessage,
     AnyMessage,
     BaseMessage,
@@ -28,11 +28,11 @@ from langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.prompt_values import ChatPromptValue, PromptValue
-from langchain_core.prompts.base import BasePromptTemplate
-from langchain_core.prompts.prompt import PromptTemplate
-from langchain_core.prompts.string import StringPromptTemplate
-from langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue
+from libs.core.langchain_core.prompts.base import BasePromptTemplate
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.prompts.string import StringPromptTemplate
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 
 class BaseMessagePromptTemplate(Serializable, ABC):
@@ -389,7 +389,7 @@ class ChatPromptTemplate(BaseChatPromptTemplate):
 
         .. code-block:: python
 
-            from langchain_core.prompts import ChatPromptTemplate
+            from libs.core.langchain_core.prompts import ChatPromptTemplate
 
             template = ChatPromptTemplate.from_messages([
                 ("system", "You are a helpful AI bot. Your name is {name}."),
@@ -632,7 +632,7 @@ class ChatPromptTemplate(BaseChatPromptTemplate):
 
             .. code-block:: python
 
-                from langchain_core.prompts import ChatPromptTemplate
+                from libs.core.langchain_core.prompts import ChatPromptTemplate
 
                 template = ChatPromptTemplate.from_messages(
                     [

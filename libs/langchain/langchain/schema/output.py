@@ -1,4 +1,4 @@
-from langchain_core.outputs import (
+from libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,

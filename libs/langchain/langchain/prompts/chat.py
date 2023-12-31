@@ -1,5 +1,5 @@
-from langchain_core.prompt_values import ChatPromptValue, ChatPromptValueConcrete
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.prompt_values import ChatPromptValue, ChatPromptValueConcrete
+from libs.core.langchain_core.prompts.chat import (
     AIMessagePromptTemplate,
     BaseChatPromptTemplate,
     BaseMessagePromptTemplate,

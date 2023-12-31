@@ -4,7 +4,7 @@ import time
 from typing import Any, Iterator, Tuple
 
 import pytest
-from langchain_core.outputs import Generation, LLMResult
+from libs.core.langchain_core.outputs import Generation, LLMResult
 
 from langchain.cache import CassandraCache, CassandraSemanticCache
 from langchain.globals import get_llm_cache, set_llm_cache

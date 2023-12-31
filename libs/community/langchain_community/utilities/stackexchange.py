@@ -1,7 +1,7 @@
 import html
 from typing import Any, Dict, Literal
 
-from langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
 
 
 class StackExchangeAPIWrapper(BaseModel):

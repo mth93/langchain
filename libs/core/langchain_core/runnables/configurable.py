@@ -19,16 +19,16 @@ from typing import (
 )
 from weakref import WeakValueDictionary
 
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables.base import Runnable, RunnableSerializable
-from langchain_core.runnables.config import (
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables.base import Runnable, RunnableSerializable
+from libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     ensure_config,
     get_config_list,
     get_executor_for_config,
 )
-from langchain_core.runnables.graph import Graph
-from langchain_core.runnables.utils import (
+from libs.core.langchain_core.runnables.graph import Graph
+from libs.core.langchain_core.runnables.utils import (
     AnyConfigurableField,
     ConfigurableField,
     ConfigurableFieldMultiOption,

@@ -3,7 +3,7 @@ import functools
 import logging
 from typing import Any, Awaitable, Callable, Dict, List, Optional
 
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

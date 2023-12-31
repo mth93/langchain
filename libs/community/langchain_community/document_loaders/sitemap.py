@@ -3,7 +3,7 @@ import re
 from typing import Any, Callable, Generator, Iterable, List, Optional, Tuple
 from urllib.parse import urlparse
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.web_base import WebBaseLoader
 

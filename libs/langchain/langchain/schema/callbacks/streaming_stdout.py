@@ -1,3 +1,3 @@
-from langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from libs.core.langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 __all__ = ["StreamingStdOutCallbackHandler"]

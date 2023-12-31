@@ -2,7 +2,7 @@
 from typing import List
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.retrievers import PubMedRetriever
 

@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import BaseModel, root_validator
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
 
 
 class AwaEmbeddings(BaseModel, Embeddings):

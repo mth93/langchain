@@ -18,7 +18,7 @@ tool for the job.
 """
 from typing import Any
 
-from langchain_core.tools import BaseTool, StructuredTool, Tool, tool
+from libs.core.langchain_core.tools import BaseTool, StructuredTool, Tool, tool
 
 # Used for internal purposes
 _DEPRECATED_TOOLS = {"PythonAstREPLTool", "PythonREPLTool"}

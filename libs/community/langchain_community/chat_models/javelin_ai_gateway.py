@@ -1,12 +1,12 @@
 import logging
 from typing import Any, Dict, List, Mapping, Optional, cast
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.messages import (
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -14,11 +14,11 @@ from langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import (
+from libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatResult,
 )
-from langchain_core.pydantic_v1 import BaseModel, Extra, SecretStr
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, SecretStr
 
 logger = logging.getLogger(__name__)
 

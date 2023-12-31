@@ -2,7 +2,7 @@ import asyncio
 import logging
 from typing import Iterator, List
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

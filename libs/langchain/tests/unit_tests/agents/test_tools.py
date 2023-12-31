@@ -4,7 +4,7 @@ from typing import Any, Type
 from unittest.mock import MagicMock, Mock
 
 import pytest
-from langchain_core.tools import Tool, ToolException, tool
+from libs.core.langchain_core.tools import Tool, ToolException, tool
 
 from langchain.agents import load_tools
 from langchain.agents.agent import Agent

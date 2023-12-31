@@ -3,16 +3,16 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional, Union
 
-from langchain_core.callbacks import BaseCallbackManager
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.language_models.chat_models import BaseChatModel
-from langchain_core.prompts import PromptTemplate
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.callbacks import BaseCallbackManager
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from libs.core.langchain_core.prompts import PromptTemplate
+from libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.tools import BaseTool

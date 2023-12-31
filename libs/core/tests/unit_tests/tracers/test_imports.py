@@ -1,4 +1,4 @@
-from langchain_core.tracers import __all__
+from libs.core.langchain_core.tracers import __all__
 
 EXPECTED_ALL = [
     "BaseTracer",

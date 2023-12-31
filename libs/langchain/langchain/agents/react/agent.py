@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import Sequence
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.runnables import Runnable, RunnablePassthrough
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.format_scratchpad import format_log_to_str
 from langchain.agents.output_parsers import ReActSingleInputOutputParser
@@ -35,7 +35,7 @@ def create_react_agent(
             agent_executor.invoke({"input": "hi"})
 
             # Use with chat history
-            from langchain_core.messages import AIMessage, HumanMessage
+            from libs.core.langchain_core.messages import AIMessage, HumanMessage
             agent_executor.invoke(
                 {
                     "input": "what's my name?",

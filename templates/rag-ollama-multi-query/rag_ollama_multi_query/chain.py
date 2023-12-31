@@ -9,9 +9,9 @@ from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Chroma
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
-from langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from libs.core.langchain_core.output_parsers import StrOutputParser
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 # Load
 loader = WebBaseLoader("https://lilianweng.github.io/posts/2023-06-23-agent/")

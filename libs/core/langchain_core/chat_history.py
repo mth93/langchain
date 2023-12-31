@@ -3,7 +3,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import List, Union
 
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,

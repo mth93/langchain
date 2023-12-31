@@ -1,7 +1,7 @@
 import os
 from typing import Any, List
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 from langchain_community.document_loaders.unstructured import (

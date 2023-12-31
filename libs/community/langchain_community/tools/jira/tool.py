@@ -20,9 +20,9 @@ toolkit = JiraToolkit.from_jira_api_wrapper(jira)
 """
 from typing import Optional
 
-from langchain_core.callbacks import CallbackManagerForToolRun
-from langchain_core.pydantic_v1 import Field
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utilities.jira import JiraAPIWrapper
 

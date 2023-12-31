@@ -2,7 +2,7 @@
 import os
 from typing import List
 
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.neo4j_vector import (
     Neo4jVector,

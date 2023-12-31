@@ -3,7 +3,7 @@ from typing import Any, AsyncIterator, Iterator, Tuple
 
 import pytest
 
-from langchain_core.output_parsers.json import (
+from libs.core.langchain_core.output_parsers.json import (
     SimpleJsonOutputParser,
     parse_json_markdown,
     parse_partial_json,

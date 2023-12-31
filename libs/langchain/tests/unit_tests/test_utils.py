@@ -1,5 +1,5 @@
 import pytest
-from langchain_core.utils import check_package_version
+from libs.core.langchain_core.utils import check_package_version
 
 
 def test_check_package_version_pass() -> None:

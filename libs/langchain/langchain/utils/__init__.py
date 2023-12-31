@@ -4,14 +4,14 @@
 These functions do not depend on any other LangChain module.
 """
 
-from langchain_core.utils.formatting import StrictFormatter, formatter
-from langchain_core.utils.input import (
+from libs.core.langchain_core.utils.formatting import StrictFormatter, formatter
+from libs.core.langchain_core.utils.input import (
     get_bolded_text,
     get_color_mapping,
     get_colored_text,
     print_text,
 )
-from langchain_core.utils.utils import (
+from libs.core.langchain_core.utils.utils import (
     check_package_version,
     convert_to_secret_str,
     get_pydantic_field_names,

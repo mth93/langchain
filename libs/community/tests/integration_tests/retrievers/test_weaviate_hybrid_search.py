@@ -6,7 +6,7 @@ from typing import Generator, Union
 from uuid import uuid4
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.retrievers.weaviate_hybrid_search import (
     WeaviateHybridSearchRetriever,

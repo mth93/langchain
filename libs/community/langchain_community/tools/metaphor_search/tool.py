@@ -2,11 +2,11 @@
 
 from typing import Dict, List, Optional, Union
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utilities.metaphor_search import MetaphorSearchAPIWrapper
 

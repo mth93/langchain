@@ -8,10 +8,10 @@ from hashlib import md5
 from typing import Any, Iterable, List, Optional, Tuple, Type
 
 import requests
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import Field
-from langchain_core.vectorstores import VectorStore, VectorStoreRetriever
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.vectorstores import VectorStore, VectorStoreRetriever
 
 logger = logging.getLogger(__name__)
 

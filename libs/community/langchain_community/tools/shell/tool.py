@@ -2,11 +2,11 @@ import platform
 import warnings
 from typing import Any, List, Optional, Type, Union
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     CallbackManagerForToolRun,
 )
-from langchain_core.pydantic_v1 import BaseModel, Field, root_validator
-from langchain_core.tools import BaseTool
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from libs.core.langchain_core.tools import BaseTool
 
 
 class ShellInput(BaseModel):

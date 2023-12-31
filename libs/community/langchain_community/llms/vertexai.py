@@ -3,13 +3,13 @@ from __future__ import annotations
 from concurrent.futures import Executor, ThreadPoolExecutor
 from typing import TYPE_CHECKING, Any, ClassVar, Dict, Iterator, List, Optional, Union
 
-from langchain_core.callbacks.manager import (
+from libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.llms import BaseLLM
-from langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from libs.core.langchain_core.language_models.llms import BaseLLM
+from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
 
 from langchain_community.utilities.vertexai import (
     create_retry_decorator,

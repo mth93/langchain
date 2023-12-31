@@ -29,7 +29,7 @@ from uuid import UUID
 from langsmith.run_helpers import get_run_tree_context
 from tenacity import RetryCallState
 
-from langchain_core.callbacks.base import (
+from libs.core.langchain_core.callbacks.base import (
     BaseCallbackHandler,
     BaseCallbackManager,
     Callbacks,
@@ -39,20 +39,20 @@ from langchain_core.callbacks.base import (
     RunManagerMixin,
     ToolManagerMixin,
 )
-from langchain_core.callbacks.stdout import StdOutCallbackHandler
-from langchain_core.messages import BaseMessage, get_buffer_string
-from langchain_core.utils.env import env_var_is_set
+from libs.core.langchain_core.callbacks.stdout import StdOutCallbackHandler
+from libs.core.langchain_core.messages import BaseMessage, get_buffer_string
+from libs.core.langchain_core.utils.env import env_var_is_set
 
 if TYPE_CHECKING:
-    from langchain_core.agents import AgentAction, AgentFinish
-    from langchain_core.documents import Document
-    from langchain_core.outputs import ChatGenerationChunk, GenerationChunk, LLMResult
+    from libs.core.langchain_core.agents import AgentAction, AgentFinish
+    from libs.core.langchain_core.documents import Document
+    from libs.core.langchain_core.outputs import ChatGenerationChunk, GenerationChunk, LLMResult
 
 logger = logging.getLogger(__name__)
 
 
 def _get_debug() -> bool:
-    from langchain_core.globals import get_debug
+    from libs.core.langchain_core.globals import get_debug
 
     return get_debug()
 
@@ -98,7 +98,7 @@ def trace_as_chain_group(
                 res = llm.predict(llm_input, callbacks=manager)
                 manager.on_chain_end({"output": res})
     """  # noqa: E501
-    from langchain_core.tracers.context import _get_trace_callbacks
+    from libs.core.langchain_core.tracers.context import _get_trace_callbacks
 
     cb = _get_trace_callbacks(
         project_name, example_id, callback_manager=callback_manager
@@ -171,7 +171,7 @@ async def atrace_as_chain_group(
                 res = await llm.apredict(llm_input, callbacks=manager)
                 await manager.on_chain_end({"output": res})
     """  # noqa: E501
-    from langchain_core.tracers.context import _get_trace_callbacks
+    from libs.core.langchain_core.tracers.context import _get_trace_callbacks
 
     cb = _get_trace_callbacks(
         project_name, example_id, callback_manager=callback_manager
@@ -1843,7 +1843,7 @@ def _configure(
     Returns:
         T: The configured callback manager.
     """
-    from langchain_core.tracers.context import (
+    from libs.core.langchain_core.tracers.context import (
         _configure_hooks,
         _get_tracer_project,
         _tracing_v2_is_enabled,
@@ -1890,8 +1890,8 @@ def _configure(
     tracer_project = _get_tracer_project()
     debug = _get_debug()
     if verbose or debug or tracing_v2_enabled_:
-        from langchain_core.tracers.langchain import LangChainTracer
-        from langchain_core.tracers.stdout import ConsoleCallbackHandler
+        from libs.core.langchain_core.tracers.langchain import LangChainTracer
+        from libs.core.langchain_core.tracers.stdout import ConsoleCallbackHandler
 
         if verbose and not any(
             isinstance(handler, StdOutCallbackHandler)

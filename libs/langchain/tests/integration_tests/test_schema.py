@@ -1,6 +1,6 @@
 """Test formatting functionality."""
 
-from langchain_core.language_models.base import _get_token_ids_default_method
+from libs.core.langchain_core.language_models.base import _get_token_ids_default_method
 
 
 class TestTokenCountingWithGPT2Tokenizer:

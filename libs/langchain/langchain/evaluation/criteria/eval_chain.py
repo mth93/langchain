@@ -4,10 +4,10 @@ import re
 from enum import Enum
 from typing import Any, Dict, List, Mapping, Optional, Union
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.output_parsers import BaseOutputParser
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.pydantic_v1 import Extra, Field
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.output_parsers import BaseOutputParser
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.pydantic_v1 import Extra, Field
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple

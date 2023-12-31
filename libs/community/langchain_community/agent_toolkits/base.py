@@ -2,7 +2,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.pydantic_v1 import BaseModel
 
 from langchain_community.tools import BaseTool
 

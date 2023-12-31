@@ -5,13 +5,13 @@ import warnings
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional, Union
 
-from langchain_core.prompts.string import (
+from libs.core.langchain_core.prompts.string import (
     DEFAULT_FORMATTER_MAPPING,
     StringPromptTemplate,
     check_valid_template,
     get_template_variables,
 )
-from langchain_core.pydantic_v1 import root_validator
+from libs.core.langchain_core.pydantic_v1 import root_validator
 
 
 class PromptTemplate(StringPromptTemplate):
@@ -38,7 +38,7 @@ class PromptTemplate(StringPromptTemplate):
 
         .. code-block:: python
 
-            from langchain_core.prompts import PromptTemplate
+            from libs.core.langchain_core.prompts import PromptTemplate
 
             # Instantiation using from_template (recommended)
             prompt = PromptTemplate.from_template("Say {foo}")

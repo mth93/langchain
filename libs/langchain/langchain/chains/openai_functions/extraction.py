@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
-from langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
+from libs.core.langchain_core.pydantic_v1 import BaseModel
 
 from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain

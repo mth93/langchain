@@ -1,4 +1,4 @@
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     AnyMessage,

@@ -6,10 +6,10 @@ from hashlib import sha1
 from threading import Thread
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.pydantic_v1 import BaseSettings
-from langchain_core.vectorstores import VectorStore
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.pydantic_v1 import BaseSettings
+from libs.core.langchain_core.vectorstores import VectorStore
 
 logger = logging.getLogger()
 DEBUG = False

@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import List, Literal
 
-from langchain_core.load.serializable import Serializable
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.load.serializable import Serializable
+from libs.core.langchain_core.pydantic_v1 import Field
 
 
 class Document(Serializable):

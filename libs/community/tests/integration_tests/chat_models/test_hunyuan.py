@@ -1,4 +1,4 @@
-from langchain_core.messages import AIMessage, HumanMessage
+from libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain_community.chat_models.hunyuan import ChatHunyuan
 

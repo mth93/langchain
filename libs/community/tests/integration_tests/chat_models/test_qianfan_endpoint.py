@@ -2,15 +2,15 @@
 
 from typing import Any
 
-from langchain_core.callbacks import CallbackManager
-from langchain_core.messages import (
+from libs.core.langchain_core.callbacks import CallbackManager
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     FunctionMessage,
     HumanMessage,
 )
-from langchain_core.outputs import ChatGeneration, LLMResult
-from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from libs.core.langchain_core.outputs import ChatGeneration, LLMResult
+from libs.core.langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 
 from langchain_community.chat_models.baidu_qianfan_endpoint import QianfanChatEndpoint
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

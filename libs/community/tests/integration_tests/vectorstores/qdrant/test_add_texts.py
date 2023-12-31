@@ -2,7 +2,7 @@ import uuid
 from typing import Optional
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores import Qdrant
 from tests.integration_tests.vectorstores.fake_embeddings import (

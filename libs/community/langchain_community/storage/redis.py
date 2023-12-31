@@ -1,6 +1,6 @@
 from typing import Any, Iterator, List, Optional, Sequence, Tuple, cast
 
-from langchain_core.stores import ByteStore
+from libs.core.langchain_core.stores import ByteStore
 
 from langchain_community.utilities.redis import get_client
 

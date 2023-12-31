@@ -1,6 +1,6 @@
 from typing import List
 
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,

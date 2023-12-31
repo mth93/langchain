@@ -4,15 +4,15 @@ from typing import Any, Callable, Dict, Iterator, List, Optional, Union
 
 import google.api_core
 import google.generativeai as genai  # type: ignore[import]
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models import LanguageModelInput
-from langchain_core.language_models.llms import BaseLLM, create_base_retry_decorator
-from langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from langchain_core.pydantic_v1 import BaseModel, Field, SecretStr, root_validator
-from langchain_core.utils import get_from_dict_or_env
+from libs.core.langchain_core.language_models import LanguageModelInput
+from libs.core.langchain_core.language_models.llms import BaseLLM, create_base_retry_decorator
+from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, SecretStr, root_validator
+from libs.core.langchain_core.utils import get_from_dict_or_env
 
 
 def _create_retry_decorator(

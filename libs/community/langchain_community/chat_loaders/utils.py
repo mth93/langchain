@@ -2,8 +2,8 @@
 from copy import deepcopy
 from typing import Iterable, Iterator, List
 
-from langchain_core.chat_sessions import ChatSession
-from langchain_core.messages import AIMessage, BaseMessage
+from libs.core.langchain_core.chat_sessions import ChatSession
+from libs.core.langchain_core.messages import AIMessage, BaseMessage
 
 
 def merge_chat_runs_in_session(

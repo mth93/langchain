@@ -1,9 +1,9 @@
 from copy import deepcopy
 from typing import Any, Dict, List, Optional
 
-from langchain_core.agents import AgentAction, AgentFinish
-from langchain_core.callbacks import BaseCallbackHandler
-from langchain_core.outputs import LLMResult
+from libs.core.langchain_core.agents import AgentAction, AgentFinish
+from libs.core.langchain_core.callbacks import BaseCallbackHandler
+from libs.core.langchain_core.outputs import LLMResult
 
 
 def import_aim() -> Any:

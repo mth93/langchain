@@ -15,12 +15,12 @@ from typing import (
     overload,
 )
 
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.llms import LLM
-from langchain_core.pydantic_v1 import PrivateAttr
+from libs.core.langchain_core.language_models.llms import LLM
+from libs.core.langchain_core.pydantic_v1 import PrivateAttr
 
 if TYPE_CHECKING:
     import openllm

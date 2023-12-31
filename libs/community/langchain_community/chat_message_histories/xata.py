@@ -1,8 +1,8 @@
 import json
 from typing import List
 
-from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_core.messages import (
+from libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from libs.core.langchain_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

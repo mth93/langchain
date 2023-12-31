@@ -22,12 +22,12 @@ from typing import (
 
 import numpy as np
 import yaml
-from langchain_core._api import deprecated
-from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.utils import get_from_dict_or_env
-from langchain_core.vectorstores import VectorStore, VectorStoreRetriever
+from libs.core.langchain_core._api import deprecated
+from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.utils import get_from_dict_or_env
+from libs.core.langchain_core.vectorstores import VectorStore, VectorStoreRetriever
 
 from langchain_community.utilities.redis import (
     _array_to_buffer,

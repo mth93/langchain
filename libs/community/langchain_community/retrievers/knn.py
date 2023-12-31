@@ -8,10 +8,10 @@ import concurrent.futures
 from typing import Any, List, Optional
 
 import numpy as np
-from langchain_core.callbacks import CallbackManagerForRetrieverRun
-from langchain_core.documents import Document
-from langchain_core.embeddings import Embeddings
-from langchain_core.retrievers import BaseRetriever
+from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.embeddings import Embeddings
+from libs.core.langchain_core.retrievers import BaseRetriever
 
 
 def create_index(contexts: List[str], embeddings: Embeddings) -> np.ndarray:

@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from langchain_core.callbacks import BaseCallbackManager, Callbacks
-from langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.callbacks import BaseCallbackManager, Callbacks
+from libs.core.langchain_core.language_models import BaseLanguageModel
 
 from langchain_community.agent_toolkits.spark_sql.prompt import SQL_PREFIX, SQL_SUFFIX
 from langchain_community.agent_toolkits.spark_sql.toolkit import SparkSQLToolkit

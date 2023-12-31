@@ -9,23 +9,23 @@ from typing import TYPE_CHECKING, Any, Dict, Iterator, List, Optional, Union, ca
 from urllib.parse import urlparse
 
 import requests
-from langchain_core.callbacks import (
+from libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from langchain_core.language_models.chat_models import (
+from libs.core.langchain_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from langchain_core.messages import (
+from libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from langchain_core.pydantic_v1 import root_validator
+from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from libs.core.langchain_core.pydantic_v1 import root_validator
 
 from langchain_community.llms.vertexai import (
     _VertexAICommon,

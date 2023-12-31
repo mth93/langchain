@@ -1,3 +1,3 @@
-from langchain_core.runnables.fallbacks import RunnableWithFallbacks
+from libs.core.langchain_core.runnables.fallbacks import RunnableWithFallbacks
 
 __all__ = ["RunnableWithFallbacks"]

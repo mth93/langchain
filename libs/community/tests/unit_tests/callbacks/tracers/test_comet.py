@@ -2,7 +2,7 @@ import uuid
 from types import SimpleNamespace
 from unittest import mock
 
-from langchain_core.outputs import LLMResult
+from libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.callbacks.tracers import comet
 

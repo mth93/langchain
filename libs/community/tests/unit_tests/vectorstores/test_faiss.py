@@ -5,7 +5,7 @@ import tempfile
 from typing import Union
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.docstore.base import Docstore
 from langchain_community.docstore.in_memory import InMemoryDocstore

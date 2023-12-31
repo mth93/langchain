@@ -1,7 +1,7 @@
 """Tracers that record execution of LangChain runs."""
 
-from langchain_core.tracers.langchain import LangChainTracer
-from langchain_core.tracers.stdout import (
+from libs.core.langchain_core.tracers.langchain import LangChainTracer
+from libs.core.langchain_core.tracers.stdout import (
     ConsoleCallbackHandler,
     FunctionCallbackHandler,
 )

@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import Iterator, List, Optional, Sequence
 
-from langchain_core.documents import Document
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain_community.document_loaders.base_o365 import (
     O365BaseLoader,

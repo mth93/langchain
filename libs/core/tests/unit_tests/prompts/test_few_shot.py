@@ -3,19 +3,19 @@ from typing import Any, Dict, List, Sequence, Tuple
 
 import pytest
 
-from langchain_core.example_selectors import BaseExampleSelector
-from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from langchain_core.prompts import (
+from libs.core.langchain_core.example_selectors import BaseExampleSelector
+from libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from libs.core.langchain_core.prompts import (
     AIMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
 )
-from langchain_core.prompts.chat import SystemMessagePromptTemplate
-from langchain_core.prompts.few_shot import (
+from libs.core.langchain_core.prompts.chat import SystemMessagePromptTemplate
+from libs.core.langchain_core.prompts.few_shot import (
     FewShotChatMessagePromptTemplate,
     FewShotPromptTemplate,
 )
-from langchain_core.prompts.prompt import PromptTemplate
+from libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 EXAMPLE_PROMPT = PromptTemplate(
     input_variables=["question", "answer"], template="{question}: {answer}"

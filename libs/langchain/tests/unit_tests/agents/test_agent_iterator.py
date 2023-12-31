@@ -1,7 +1,7 @@
 from uuid import UUID
 
 import pytest
-from langchain_core.tools import Tool
+from libs.core.langchain_core.tools import Tool
 
 from langchain.agents import (
     AgentExecutor,

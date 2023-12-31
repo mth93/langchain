@@ -6,9 +6,9 @@ from collections import defaultdict
 from typing import TYPE_CHECKING, Any, Callable, Dict, List, Optional, Tuple, Union
 
 import requests
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
-from langchain_core.utils.input import get_colored_text
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate, ChatPromptTemplate
+from libs.core.langchain_core.utils.input import get_colored_text
 from requests import Response
 
 from langchain.callbacks.manager import CallbackManagerForChainRun

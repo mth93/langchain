@@ -1,6 +1,6 @@
 """Integration test for Kay.ai API Wrapper."""
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.retrievers import KayAiRetriever
 

@@ -3,7 +3,7 @@ from typing import List
 
 import pytest
 import responses
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain_community.utilities import OutlineAPIWrapper
 

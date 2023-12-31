@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import List
 
 import pytest
-from langchain_core.documents import Document
+from libs.core.langchain_core.documents import Document
 
 from langchain.text_splitter import (
     CharacterTextSplitter,

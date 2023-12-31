@@ -1,16 +1,16 @@
 import re
 from typing import Any, List, Optional, Sequence, Tuple
 
-from langchain_core.agents import AgentAction
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.prompts import BasePromptTemplate
-from langchain_core.prompts.chat import (
+from libs.core.langchain_core.agents import AgentAction
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.prompts import BasePromptTemplate
+from libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from langchain_core.pydantic_v1 import Field
-from langchain_core.runnables import Runnable, RunnablePassthrough
+from libs.core.langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
 
 from langchain.agents.agent import Agent, AgentOutputParser
 from langchain.agents.format_scratchpad import format_log_to_str
@@ -172,7 +172,7 @@ def create_structured_chat_agent(
             agent_executor.invoke({"input": "hi"})
 
             # Using with chat history
-            from langchain_core.messages import AIMessage, HumanMessage
+            from libs.core.langchain_core.messages import AIMessage, HumanMessage
             agent_executor.invoke(
                 {
                     "input": "what's my name?",

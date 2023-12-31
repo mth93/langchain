@@ -4,12 +4,12 @@ import logging
 from pathlib import Path
 from typing import TYPE_CHECKING, Any, Dict, Iterator, List, Optional, Union
 
-from langchain_core.callbacks import CallbackManagerForLLMRun
-from langchain_core.language_models.llms import LLM
-from langchain_core.outputs import GenerationChunk
-from langchain_core.pydantic_v1 import Field, root_validator
-from langchain_core.utils import get_pydantic_field_names
-from langchain_core.utils.utils import build_extra_kwargs
+from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from libs.core.langchain_core.language_models.llms import LLM
+from libs.core.langchain_core.outputs import GenerationChunk
+from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from libs.core.langchain_core.utils import get_pydantic_field_names
+from libs.core.langchain_core.utils.utils import build_extra_kwargs
 
 if TYPE_CHECKING:
     from llama_cpp import LlamaGrammar

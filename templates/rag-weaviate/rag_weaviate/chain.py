@@ -6,9 +6,9 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Weaviate
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel
-from langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from libs.core.langchain_core.output_parsers import StrOutputParser
+from libs.core.langchain_core.pydantic_v1 import BaseModel
+from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 if os.environ.get("WEAVIATE_API_KEY", None) is None:
     raise Exception("Missing `WEAVIATE_API_KEY` environment variable.")

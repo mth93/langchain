@@ -1,4 +1,4 @@
-from langchain_core.load import __all__
+from libs.core.langchain_core.load import __all__
 
 EXPECTED_ALL = ["dumpd", "dumps", "load", "loads", "Serializable"]
 

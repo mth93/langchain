@@ -1,6 +1,6 @@
 from typing import List, Type
 
-from langchain_core.tools import BaseTool, StructuredTool
+from libs.core.langchain_core.tools import BaseTool, StructuredTool
 
 import langchain_community.tools
 from langchain_community.tools import _DEPRECATED_TOOLS

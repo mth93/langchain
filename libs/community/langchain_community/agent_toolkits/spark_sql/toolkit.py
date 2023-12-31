@@ -1,8 +1,8 @@
 """Toolkit for interacting with Spark SQL."""
 from typing import List
 
-from langchain_core.language_models import BaseLanguageModel
-from langchain_core.pydantic_v1 import Field
+from libs.core.langchain_core.language_models import BaseLanguageModel
+from libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.tools import BaseTool

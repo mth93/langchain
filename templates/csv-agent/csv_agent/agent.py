@@ -7,7 +7,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.tools.retriever import create_retriever_tool
 from langchain.vectorstores import FAISS
-from langchain_core.pydantic_v1 import BaseModel, Field
+from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_experimental.tools import PythonAstREPLTool
 
 MAIN_DIR = Path(__file__).parents[1]

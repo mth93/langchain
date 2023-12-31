@@ -1,7 +1,7 @@
 from typing import List
 
 import pytest
-from langchain_core.utils.iter import batch_iterate
+from libs.core.langchain_core.utils.iter import batch_iterate
 
 
 @pytest.mark.parametrize(

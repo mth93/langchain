@@ -21,11 +21,11 @@ from tenacity import (
     wait_exponential_jitter,
 )
 
-from langchain_core.runnables.base import Input, Output, RunnableBindingBase
-from langchain_core.runnables.config import RunnableConfig, patch_config
+from libs.core.langchain_core.runnables.base import Input, Output, RunnableBindingBase
+from libs.core.langchain_core.runnables.config import RunnableConfig, patch_config
 
 if TYPE_CHECKING:
-    from langchain_core.callbacks.manager import (
+    from libs.core.langchain_core.callbacks.manager import (
         AsyncCallbackManagerForChainRun,
         CallbackManagerForChainRun,
     )
@@ -84,8 +84,8 @@ class RunnableRetry(RunnableBindingBase[Input, Output]):
 
         .. code-block:: python
 
-            from langchain_core.chat_models import ChatOpenAI
-            from langchain_core.prompts import PromptTemplate
+            from libs.core.langchain_core.chat_models import ChatOpenAI
+            from libs.core.langchain_core.prompts import PromptTemplate
 
             template = PromptTemplate.from_template("tell me a joke about {topic}.")
             model = ChatOpenAI(temperature=0.5)

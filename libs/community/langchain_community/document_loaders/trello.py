@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, List, Literal, Optional, Tuple
 
-from langchain_core.documents import Document
-from langchain_core.utils import get_from_env
+from libs.core.langchain_core.documents import Document
+from libs.core.langchain_core.utils import get_from_env
 
 from langchain_community.document_loaders.base import BaseLoader
 

@@ -1,9 +1,9 @@
 import warnings
 
-from langchain_core.globals import get_debug as core_get_debug
-from langchain_core.globals import get_verbose as core_get_verbose
-from langchain_core.globals import set_debug as core_set_debug
-from langchain_core.globals import set_verbose as core_set_verbose
+from libs.core.langchain_core.globals import get_debug as core_get_debug
+from libs.core.langchain_core.globals import get_verbose as core_get_verbose
+from libs.core.langchain_core.globals import set_debug as core_set_debug
+from libs.core.langchain_core.globals import set_verbose as core_set_verbose
 
 from langchain.globals import get_debug, get_verbose, set_debug, set_verbose
 
@@ -23,7 +23,7 @@ def test_no_warning() -> None:
 
 
 def test_debug_is_settable_directly() -> None:
-    from langchain_core.callbacks.manager import _get_debug
+    from libs.core.langchain_core.callbacks.manager import _get_debug
 
     import langchain
 
@@ -54,7 +54,7 @@ def test_debug_is_settable_directly() -> None:
 
 
 def test_debug_is_settable_via_setter() -> None:
-    from langchain_core.callbacks.manager import _get_debug
+    from libs.core.langchain_core.callbacks.manager import _get_debug
 
     from langchain import globals
 
