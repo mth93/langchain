@@ -1,5 +1,5 @@
 """Test for CombinedMemory class"""
-# from libs.core.langchain_core.prompts import PromptTemplate
+# from langchain.libs.core.langchain_core.prompts import PromptTemplate
 from typing import List
 
 import pytest

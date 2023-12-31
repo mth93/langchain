@@ -1,4 +1,4 @@
-from libs.core.langchain_core.example_selectors.length_based import (
+from langchain.libs.core.langchain_core.example_selectors.length_based import (
     LengthBasedExampleSelector,
 )
 

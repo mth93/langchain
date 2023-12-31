@@ -1,7 +1,7 @@
 from typing import Any, List, Optional
 from urllib.parse import urljoin, urlparse
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.web_base import WebBaseLoader
 

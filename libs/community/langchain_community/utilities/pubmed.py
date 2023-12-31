@@ -6,8 +6,8 @@ import urllib.parse
 import urllib.request
 from typing import Any, Dict, Iterator, List
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
 
 logger = logging.getLogger(__name__)
 

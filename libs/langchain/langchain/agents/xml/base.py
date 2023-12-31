@@ -1,11 +1,11 @@
 from typing import Any, List, Sequence, Tuple, Union
 
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts.base import BasePromptTemplate
-from libs.core.langchain_core.prompts.chat import AIMessagePromptTemplate, ChatPromptTemplate
-from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts.base import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.chat import AIMessagePromptTemplate, ChatPromptTemplate
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.agent import BaseSingleActionAgent
 from langchain.agents.format_scratchpad import format_xml
@@ -129,7 +129,7 @@ def create_xml_agent(
             agent_executor.invoke({"input": "hi"})
 
             # Use with chat history
-            from libs.core.langchain_core.messages import AIMessage, HumanMessage
+            from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
             agent_executor.invoke(
                 {
                     "input": "what's my name?",

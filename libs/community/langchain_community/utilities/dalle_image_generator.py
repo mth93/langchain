@@ -3,8 +3,8 @@ import logging
 import os
 from typing import Any, Dict, Mapping, Optional, Tuple, Union
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
-from libs.core.langchain_core.utils import (
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import (
     get_from_dict_or_env,
     get_pydantic_field_names,
 )

@@ -5,8 +5,8 @@ import json
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
 import requests
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 if TYPE_CHECKING:
     from github.Issue import Issue

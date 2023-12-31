@@ -8,10 +8,10 @@ import uuid
 from typing import Any, Iterable, List, Optional, Tuple
 
 import requests
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import Field
-from libs.core.langchain_core.vectorstores import VectorStore, VectorStoreRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.vectorstores import VectorStore, VectorStoreRetriever
 
 
 class LLMRails(VectorStore):

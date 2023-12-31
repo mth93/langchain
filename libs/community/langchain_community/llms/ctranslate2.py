@@ -1,9 +1,9 @@
 from typing import Any, Dict, List, Optional, Union
 
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import BaseLLM
-from libs.core.langchain_core.outputs import Generation, LLMResult
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.outputs import Generation, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 
 class CTranslate2(BaseLLM):

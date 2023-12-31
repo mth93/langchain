@@ -4,9 +4,9 @@ import logging
 from typing import Any, Optional
 from uuid import UUID
 
-from libs.core.langchain_core.exceptions import TracerException
-from libs.core.langchain_core.tracers.stdout import FunctionCallbackHandler
-from libs.core.langchain_core.utils.input import get_bolded_text, get_colored_text
+from langchain.libs.core.langchain_core.exceptions import TracerException
+from langchain.libs.core.langchain_core.tracers.stdout import FunctionCallbackHandler
+from langchain.libs.core.langchain_core.utils.input import get_bolded_text, get_colored_text
 
 
 class LoggingCallbackHandler(FunctionCallbackHandler):

@@ -1,6 +1,6 @@
 """Test vector store utility functions."""
 import numpy as np
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.utils import (
     filter_complex_metadata,

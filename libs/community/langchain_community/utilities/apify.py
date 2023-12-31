@@ -1,8 +1,8 @@
 from typing import TYPE_CHECKING, Any, Callable, Dict, Optional
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 if TYPE_CHECKING:
     from langchain_community.document_loaders import ApifyDatasetLoader

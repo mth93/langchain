@@ -1,6 +1,6 @@
 # Backwards compatibility.
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.language_models.llms import (
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.language_models.llms import (
     LLM,
     BaseLLM,
 )

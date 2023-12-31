@@ -19,9 +19,9 @@ from typing import (
 )
 
 import numpy as np
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env, get_pydantic_field_names
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env, get_pydantic_field_names
 from tenacity import (
     AsyncRetrying,
     before_sleep_log,

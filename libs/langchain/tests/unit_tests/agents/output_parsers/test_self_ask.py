@@ -1,4 +1,4 @@
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
 
 from langchain.agents.output_parsers.self_ask import SelfAskOutputParser
 

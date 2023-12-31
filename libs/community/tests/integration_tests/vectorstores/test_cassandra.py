@@ -2,7 +2,7 @@
 import time
 from typing import List, Optional, Type
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores import Cassandra
 from tests.integration_tests.vectorstores.fake_embeddings import (

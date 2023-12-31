@@ -15,14 +15,14 @@ from typing import (
 
 from typing_extensions import TypeAlias
 
-from libs.core.langchain_core.messages import AnyMessage, BaseMessage, get_buffer_string
-from libs.core.langchain_core.prompt_values import PromptValue
-from libs.core.langchain_core.runnables import Runnable, RunnableSerializable
-from libs.core.langchain_core.utils import get_pydantic_field_names
+from langchain.libs.core.langchain_core.messages import AnyMessage, BaseMessage, get_buffer_string
+from langchain.libs.core.langchain_core.prompt_values import PromptValue
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnableSerializable
+from langchain.libs.core.langchain_core.utils import get_pydantic_field_names
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.callbacks import Callbacks
-    from libs.core.langchain_core.outputs import LLMResult
+    from langchain.libs.core.langchain_core.callbacks import Callbacks
+    from langchain.libs.core.langchain_core.outputs import LLMResult
 
 
 @lru_cache(maxsize=None)  # Cache the tokenizer
@@ -76,7 +76,7 @@ class BaseLanguageModel(
     @property
     def InputType(self) -> TypeAlias:
         """Get the input type for this runnable."""
-        from libs.core.langchain_core.prompt_values import (
+        from langchain.libs.core.langchain_core.prompt_values import (
             ChatPromptValueConcrete,
             StringPromptValue,
         )

@@ -1,4 +1,4 @@
-from libs.core.langchain_core.callbacks.base import (
+from langchain.libs.core.langchain_core.callbacks.base import (
     AsyncCallbackHandler,
     BaseCallbackHandler,
     BaseCallbackManager,

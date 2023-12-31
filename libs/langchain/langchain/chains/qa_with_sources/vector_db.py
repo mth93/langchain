@@ -3,9 +3,9 @@
 import warnings
 from typing import Any, Dict, List
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

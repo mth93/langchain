@@ -2,13 +2,13 @@
 from textwrap import dedent
 from typing import Any, Tuple
 
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.prompts.chat import (
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     SystemMessagePromptTemplate,
 )
-from libs.core.langchain_core.tools import Tool
+from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain.agents.structured_chat.base import StructuredChatAgent
 from langchain.agents.structured_chat.output_parser import StructuredChatOutputParser

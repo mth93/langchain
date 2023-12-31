@@ -15,7 +15,7 @@ from typing import (
     TypeVar,
 )
 
-from libs.core.langchain_core.stores import BaseStore
+from langchain.libs.core.langchain_core.stores import BaseStore
 
 V = TypeVar("V")
 

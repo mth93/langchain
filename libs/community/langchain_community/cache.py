@@ -52,13 +52,13 @@ try:
 except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
 
-from libs.core.langchain_core.caches import RETURN_VAL_TYPE, BaseCache
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.language_models.llms import LLM, get_prompts
-from libs.core.langchain_core.load.dump import dumps
-from libs.core.langchain_core.load.load import loads
-from libs.core.langchain_core.outputs import ChatGeneration, Generation
-from libs.core.langchain_core.utils import get_from_env
+from langchain.libs.core.langchain_core.caches import RETURN_VAL_TYPE, BaseCache
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.language_models.llms import LLM, get_prompts
+from langchain.libs.core.langchain_core.load.dump import dumps
+from langchain.libs.core.langchain_core.load.load import loads
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, Generation
+from langchain.libs.core.langchain_core.utils import get_from_env
 
 from langchain_community.vectorstores.redis import Redis as RedisVectorstore
 

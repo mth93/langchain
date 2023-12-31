@@ -1,11 +1,11 @@
 """Test Anthropic API wrapper."""
 from typing import List
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     CallbackManager,
 )
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from libs.core.langchain_core.outputs import ChatGeneration, LLMResult
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, LLMResult
 
 from langchain_community.chat_models.litellm import ChatLiteLLM
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

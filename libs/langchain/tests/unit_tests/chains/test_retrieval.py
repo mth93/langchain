@@ -1,6 +1,6 @@
 """Test conversation chain and memory."""
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 from langchain.chains import create_retrieval_chain
 from langchain.llms.fake import FakeListLLM

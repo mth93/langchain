@@ -4,10 +4,10 @@ from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate
 from langchain.vectorstores import MongoDBAtlasVectorSearch
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from pymongo import MongoClient
 
 MONGO_URI = os.environ["MONGO_URI"]

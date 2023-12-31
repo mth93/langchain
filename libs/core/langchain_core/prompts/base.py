@@ -17,17 +17,17 @@ from typing import (
 
 import yaml
 
-from libs.core.langchain_core.output_parsers.base import BaseOutputParser
-from libs.core.langchain_core.prompt_values import (
+from langchain.libs.core.langchain_core.output_parsers.base import BaseOutputParser
+from langchain.libs.core.langchain_core.prompt_values import (
     ChatPromptValueConcrete,
     PromptValue,
     StringPromptValue,
 )
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, create_model, root_validator
-from libs.core.langchain_core.runnables import RunnableConfig, RunnableSerializable
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, create_model, root_validator
+from langchain.libs.core.langchain_core.runnables import RunnableConfig, RunnableSerializable
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.documents import Document
+    from langchain.libs.core.langchain_core.documents import Document
 
 
 class BasePromptTemplate(RunnableSerializable[Dict, PromptValue], ABC):
@@ -236,8 +236,8 @@ def format_document(doc: Document, prompt: BasePromptTemplate) -> str:
     Example:
         .. code-block:: python
 
-            from libs.core.langchain_core import Document
-            from libs.core.langchain_core.prompts import PromptTemplate
+            from langchain.libs.core.langchain_core import Document
+            from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
             doc = Document(page_content="This is a joke", metadata={"page": "1"})
             prompt = PromptTemplate.from_template("Page {page}: {page_content}")

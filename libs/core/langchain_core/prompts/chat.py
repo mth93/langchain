@@ -18,9 +18,9 @@ from typing import (
     overload,
 )
 
-from libs.core.langchain_core._api import deprecated
-from libs.core.langchain_core.load import Serializable
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core._api import deprecated
+from langchain.libs.core.langchain_core.load import Serializable
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AnyMessage,
     BaseMessage,
@@ -28,11 +28,11 @@ from libs.core.langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue
-from libs.core.langchain_core.prompts.base import BasePromptTemplate
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.prompts.string import StringPromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue
+from langchain.libs.core.langchain_core.prompts.base import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.string import StringPromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 
 class BaseMessagePromptTemplate(Serializable, ABC):
@@ -389,7 +389,7 @@ class ChatPromptTemplate(BaseChatPromptTemplate):
 
         .. code-block:: python
 
-            from libs.core.langchain_core.prompts import ChatPromptTemplate
+            from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
             template = ChatPromptTemplate.from_messages([
                 ("system", "You are a helpful AI bot. Your name is {name}."),
@@ -632,7 +632,7 @@ class ChatPromptTemplate(BaseChatPromptTemplate):
 
             .. code-block:: python
 
-                from libs.core.langchain_core.prompts import ChatPromptTemplate
+                from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
                 template = ChatPromptTemplate.from_messages(
                     [

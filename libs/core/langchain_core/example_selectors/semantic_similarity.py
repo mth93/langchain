@@ -3,12 +3,12 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional, Type
 
-from libs.core.langchain_core.example_selectors.base import BaseExampleSelector
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.example_selectors.base import BaseExampleSelector
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.embeddings import Embeddings
+    from langchain.libs.core.langchain_core.embeddings import Embeddings
 
 
 def sorted_values(values: Dict[str, str]) -> List[Any]:

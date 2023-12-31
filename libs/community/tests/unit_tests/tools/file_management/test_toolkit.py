@@ -3,7 +3,7 @@
 from tempfile import TemporaryDirectory
 
 import pytest
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.agent_toolkits.file_management.toolkit import (
     FileManagementToolkit,

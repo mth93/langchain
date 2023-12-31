@@ -3,7 +3,7 @@ from pathlib import Path
 from typing import Generator
 
 import pytest
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain_community.chat_message_histories import FileChatMessageHistory
 

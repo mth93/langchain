@@ -2,7 +2,7 @@ from typing import Dict, List
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.mongodb import MongodbLoader
 

@@ -1,5 +1,5 @@
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain.agents.format_scratchpad.log_to_messages import format_log_to_messages
 

@@ -1,7 +1,7 @@
 import importlib
 import pkgutil
 
-from libs.core.langchain_core.load.mapping import SERIALIZABLE_MAPPING
+from langchain.libs.core.langchain_core.load.mapping import SERIALIZABLE_MAPPING
 
 
 def import_all_modules(package_name: str) -> dict:

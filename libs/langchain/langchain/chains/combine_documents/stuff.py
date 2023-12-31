@@ -1,12 +1,12 @@
 """Chain that combines documents by stuffing into context."""
 from typing import Any, Dict, List, Optional, Tuple
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.language_models import LanguageModelLike
-from libs.core.langchain_core.output_parsers import BaseOutputParser, StrOutputParser
-from libs.core.langchain_core.prompts import BasePromptTemplate, format_document
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
-from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.language_models import LanguageModelLike
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser, StrOutputParser
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, format_document
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.combine_documents.base import (
@@ -53,8 +53,8 @@ def create_stuff_documents_chain(
             # pip install -U langchain langchain-community
 
             from langchain_community.chat_models import ChatOpenAI
-            from libs.core.langchain_core.documents import Document
-            from libs.core.langchain_core.prompts import ChatPromptTemplate
+            from langchain.libs.core.langchain_core.documents import Document
+            from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
             from langchain.chains.combine_documents import create_stuff_documents_chain
 
             prompt = ChatPromptTemplate.from_messages(
@@ -103,7 +103,7 @@ class StuffDocumentsChain(BaseCombineDocumentsChain):
         .. code-block:: python
 
             from langchain.chains import StuffDocumentsChain, LLMChain
-            from libs.core.langchain_core.prompts import PromptTemplate
+            from langchain.libs.core.langchain_core.prompts import PromptTemplate
             from langchain.llms import OpenAI
 
             # This controls how each document will be formatted. Specifically,

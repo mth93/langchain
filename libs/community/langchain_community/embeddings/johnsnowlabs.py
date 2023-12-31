@@ -2,8 +2,8 @@ import os
 import sys
 from typing import Any, List
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
 
 
 class JohnSnowLabsEmbeddings(BaseModel, Embeddings):

@@ -3,9 +3,9 @@ from __future__ import annotations
 from typing import Any, Dict, List, Mapping, Optional
 from urllib.parse import urlparse
 
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models import LLM
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, PrivateAttr
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models import LLM
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, PrivateAttr
 
 
 # Ignoring type because below is valid pydantic code

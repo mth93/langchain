@@ -3,10 +3,10 @@
 from abc import ABC, abstractmethod
 from typing import Any, Dict, List, Optional, Tuple, Type
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.prompts import BasePromptTemplate, PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, create_model
-from libs.core.langchain_core.runnables.config import RunnableConfig
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, create_model
+from langchain.libs.core.langchain_core.runnables.config import RunnableConfig
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

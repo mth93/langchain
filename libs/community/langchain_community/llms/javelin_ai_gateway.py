@@ -2,12 +2,12 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Mapping, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
 
 
 # Ignoring type because below is valid pydantic code

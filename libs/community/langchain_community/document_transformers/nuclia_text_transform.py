@@ -3,7 +3,7 @@ import json
 import uuid
 from typing import Any, Sequence
 
-from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer, Document
 
 from langchain_community.tools.nuclia.tool import NucliaUnderstandingAPI
 

@@ -1,6 +1,6 @@
 from typing import Any, Dict, List
 
-from libs.core.langchain_core.memory import BaseMemory
+from langchain.libs.core.langchain_core.memory import BaseMemory
 
 
 class SimpleMemory(BaseMemory):

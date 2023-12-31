@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import List, Optional
 
-from libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.tools import BaseTool

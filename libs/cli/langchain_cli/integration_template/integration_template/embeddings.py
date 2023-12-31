@@ -1,6 +1,6 @@
 from typing import List
 
-from libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.embeddings import Embeddings
 
 
 class __ModuleName__Embeddings(Embeddings):

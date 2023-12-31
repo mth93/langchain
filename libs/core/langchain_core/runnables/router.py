@@ -14,19 +14,19 @@ from typing import (
 
 from typing_extensions import TypedDict
 
-from libs.core.langchain_core.runnables.base import (
+from langchain.libs.core.langchain_core.runnables.base import (
     Input,
     Output,
     Runnable,
     RunnableSerializable,
     coerce_to_runnable,
 )
-from libs.core.langchain_core.runnables.config import (
+from langchain.libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     get_config_list,
     get_executor_for_config,
 )
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.runnables.utils import (
     ConfigurableFieldSpec,
     gather_with_concurrency,
     get_unique_config_specs,

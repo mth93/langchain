@@ -5,9 +5,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.schema import BaseMessage, format_document
 from langchain.vectorstores.elasticsearch import ElasticsearchStore
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 from .connection import es_connection_details
 from .prompts import CONDENSE_QUESTION_PROMPT, DOCUMENT_PROMPT, LLM_CONTEXT_PROMPT

@@ -1,5 +1,5 @@
 """Test functionality related to prompt utils."""
-from libs.core.langchain_core.example_selectors import sorted_values
+from langchain.libs.core.langchain_core.example_selectors import sorted_values
 
 
 def test_sorted_vals() -> None:

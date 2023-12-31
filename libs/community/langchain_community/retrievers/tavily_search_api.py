@@ -2,9 +2,9 @@ import os
 from enum import Enum
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 
 class SearchDepth(Enum):

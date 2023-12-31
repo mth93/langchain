@@ -2,12 +2,12 @@
 import datetime
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.messages import BaseMessage
-from libs.core.langchain_core.outputs import ChatResult
+from langchain.libs.core.langchain_core.messages import BaseMessage
+from langchain.libs.core.langchain_core.outputs import ChatResult
 
 from langchain_community.chat_models import ChatOpenAI
 

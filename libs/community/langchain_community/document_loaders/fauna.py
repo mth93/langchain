@@ -1,6 +1,6 @@
 from typing import Iterator, List, Optional, Sequence
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

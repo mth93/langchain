@@ -5,11 +5,11 @@ from abc import abstractmethod
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 import numpy as np
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.outputs import Generation
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Field
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.outputs import Generation
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain.callbacks.manager import (
     CallbackManagerForChainRun,

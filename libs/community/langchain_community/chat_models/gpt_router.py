@@ -17,20 +17,20 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import (
+from langchain.libs.core.langchain_core.language_models.chat_models import (
     BaseChatModel,
     agenerate_from_stream,
     generate_from_stream,
 )
-from libs.core.langchain_core.language_models.llms import create_base_retry_decorator
-from libs.core.langchain_core.messages import AIMessageChunk, BaseMessage
-from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.language_models.llms import create_base_retry_decorator
+from langchain.libs.core.langchain_core.messages import AIMessageChunk, BaseMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.adapters.openai import (
     convert_dict_to_message,

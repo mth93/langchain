@@ -14,22 +14,22 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core.load.dump import dumpd
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables.base import (
+from langchain.libs.core.langchain_core.load.dump import dumpd
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables.base import (
     Runnable,
     RunnableLike,
     RunnableSerializable,
     coerce_to_runnable,
 )
-from libs.core.langchain_core.runnables.config import (
+from langchain.libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     ensure_config,
     get_async_callback_manager_for_config,
     get_callback_manager_for_config,
     patch_config,
 )
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.runnables.utils import (
     ConfigurableFieldSpec,
     Input,
     Output,
@@ -52,7 +52,7 @@ class RunnableBranch(RunnableSerializable[Input, Output]):
 
         .. code-block:: python
 
-            from libs.core.langchain_core.runnables import RunnableBranch
+            from langchain.libs.core.langchain_core.runnables import RunnableBranch
 
             branch = RunnableBranch(
                 (lambda x: isinstance(x, str), lambda x: x.upper()),
@@ -151,7 +151,7 @@ class RunnableBranch(RunnableSerializable[Input, Output]):
 
     @property
     def config_specs(self) -> List[ConfigurableFieldSpec]:
-        from libs.core.langchain_core.beta.runnables.context import (
+        from langchain.libs.core.langchain_core.beta.runnables.context import (
             CONTEXT_CONFIG_PREFIX,
             CONTEXT_CONFIG_SUFFIX_SET,
         )

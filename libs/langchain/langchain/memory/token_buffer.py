@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.messages import BaseMessage, get_buffer_string
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.messages import BaseMessage, get_buffer_string
 
 from langchain.memory.chat_memory import BaseChatMemory
 

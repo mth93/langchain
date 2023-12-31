@@ -4,7 +4,7 @@ import copy
 from typing import TYPE_CHECKING, List
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 from pytest_mock import MockerFixture
 
 from langchain_community.retrievers import ZepRetriever

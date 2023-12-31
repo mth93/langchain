@@ -2,14 +2,14 @@ import json
 from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
 import aiohttp
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.outputs import GenerationChunk
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.utilities.requests import Requests
 

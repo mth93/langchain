@@ -3,9 +3,9 @@ import logging
 from typing import Any, Dict, List, Optional
 
 import requests
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 logger = logging.getLogger(__name__)
 

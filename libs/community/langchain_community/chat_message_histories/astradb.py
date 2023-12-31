@@ -9,8 +9,8 @@ from typing import List, Optional
 if typing.TYPE_CHECKING:
     from astrapy.db import AstraDB as LibAstraDB
 
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

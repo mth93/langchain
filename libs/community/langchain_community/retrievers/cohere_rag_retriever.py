@@ -2,18 +2,18 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import HumanMessage
-from libs.core.langchain_core.pydantic_v1 import Field
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import HumanMessage
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.messages import BaseMessage
+    from langchain.libs.core.langchain_core.messages import BaseMessage
 
 
 def _get_docs(response: Any) -> List[Document]:

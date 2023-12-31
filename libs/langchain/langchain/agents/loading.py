@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any, List, Optional, Union
 
 import yaml
-from libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 
 from langchain.agents.agent import BaseMultiActionAgent, BaseSingleActionAgent
 from langchain.agents.tools import Tool

@@ -3,11 +3,11 @@
 import json
 from typing import Any, Dict, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.tools import BaseTool
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community.llms.openai import OpenAI
 

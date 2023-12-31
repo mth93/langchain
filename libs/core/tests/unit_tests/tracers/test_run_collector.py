@@ -2,7 +2,7 @@
 
 import uuid
 
-from libs.core.langchain_core.tracers.context import collect_runs
+from langchain.libs.core.langchain_core.tracers.context import collect_runs
 from tests.unit_tests.fake.llm import FakeListLLM
 
 

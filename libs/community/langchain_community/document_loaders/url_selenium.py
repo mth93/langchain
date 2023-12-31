@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, List, Literal, Optional, Union
 if TYPE_CHECKING:
     from selenium.webdriver import Chrome, Firefox
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

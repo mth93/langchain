@@ -3,8 +3,8 @@ from __future__ import annotations
 import tempfile
 from typing import TYPE_CHECKING, Any, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utilities.vertexai import get_client_info
 

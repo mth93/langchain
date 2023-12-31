@@ -1,8 +1,8 @@
 """Reorder documents"""
 from typing import Any, List, Sequence
 
-from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
 
 def _litm_reordering(documents: List[Document]) -> List[Document]:

@@ -3,12 +3,12 @@ import logging
 from typing import Any, AsyncIterator, Dict, List, Optional, cast
 
 import requests
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -16,9 +16,9 @@ from libs.core.langchain_core.messages import (
     HumanMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.llms.utils import enforce_stop_tokens
 

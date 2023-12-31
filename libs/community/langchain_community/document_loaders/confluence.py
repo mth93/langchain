@@ -4,7 +4,7 @@ from io import BytesIO
 from typing import Any, Callable, Dict, List, Optional, Union
 
 import requests
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 from tenacity import (
     before_sleep_log,
     retry,

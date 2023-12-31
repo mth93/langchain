@@ -1,4 +1,4 @@
-from libs.core.langchain_core.callbacks.manager import (
+from langchain.libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManager,
     AsyncCallbackManagerForChainGroup,
     AsyncCallbackManagerForChainRun,
@@ -19,12 +19,12 @@ from libs.core.langchain_core.callbacks.manager import (
     handle_event,
     trace_as_chain_group,
 )
-from libs.core.langchain_core.tracers.context import (
+from langchain.libs.core.langchain_core.tracers.context import (
     collect_runs,
     register_configure_hook,
     tracing_v2_enabled,
 )
-from libs.core.langchain_core.utils.env import env_var_is_set
+from langchain.libs.core.langchain_core.utils.env import env_var_is_set
 
 __all__ = [
     "tracing_v2_enabled",

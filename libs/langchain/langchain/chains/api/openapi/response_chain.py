@@ -4,9 +4,9 @@ import json
 import re
 from typing import Any
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import BaseOutputParser
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 from langchain.chains.api.openapi.prompts import RESPONSE_TEMPLATE
 from langchain.chains.llm import LLMChain

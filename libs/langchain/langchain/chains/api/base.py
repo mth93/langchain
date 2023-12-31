@@ -4,9 +4,9 @@ from __future__ import annotations
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 from urllib.parse import urlparse
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForChainRun,

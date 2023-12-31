@@ -3,22 +3,22 @@ import json
 from json import JSONDecodeError
 from typing import Any, List, Optional, Sequence, Tuple, Union
 
-from libs.core.langchain_core.agents import AgentAction, AgentActionMessageLog, AgentFinish
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentActionMessageLog, AgentFinish
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.prompts.chat import (
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.chat import (
     BaseMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
 )
-from libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
 from langchain.agents import BaseMultiActionAgent
 from langchain.agents.format_scratchpad.openai_functions import (

@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import Any, List
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.tools import Tool
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.agent_toolkits.json.base import create_json_agent

@@ -3,8 +3,8 @@ import threading
 from typing import Any, Dict, Optional, Sequence
 from uuid import UUID
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain.callbacks import base as base_callbacks
 

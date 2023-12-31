@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Literal
 
-from libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
-from libs.core.langchain_core.outputs.generation import Generation
-from libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
+from langchain.libs.core.langchain_core.outputs.generation import Generation
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
 
 class ChatGeneration(Generation):

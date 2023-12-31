@@ -4,7 +4,7 @@ from typing import Any, AsyncGenerator, Dict, Optional
 
 import aiohttp
 import requests
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra
 
 
 class Requests(BaseModel):

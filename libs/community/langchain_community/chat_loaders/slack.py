@@ -5,8 +5,8 @@ import zipfile
 from pathlib import Path
 from typing import Dict, Iterator, List, Union
 
-from libs.core.langchain_core.chat_sessions import ChatSession
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.chat_sessions import ChatSession
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain_community.chat_loaders.base import BaseChatLoader
 

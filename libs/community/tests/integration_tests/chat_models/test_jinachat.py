@@ -3,10 +3,10 @@
 from typing import cast
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from libs.core.langchain_core.outputs import ChatGeneration, LLMResult
-from libs.core.langchain_core.pydantic_v1 import SecretStr
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
 from langchain_community.chat_models.jinachat import JinaChat

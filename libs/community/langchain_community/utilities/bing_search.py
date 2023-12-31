@@ -6,8 +6,8 @@ https://levelup.gitconnected.com/api-tutorial-how-to-use-bing-web-search-api-in-
 from typing import Dict, List
 
 import requests
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 
 class BingSearchAPIWrapper(BaseModel):

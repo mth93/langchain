@@ -1,9 +1,9 @@
 from operator import itemgetter
 from typing import Any, Callable, List, Mapping, Optional, Union
 
-from libs.core.langchain_core.messages import BaseMessage
-from libs.core.langchain_core.runnables import RouterRunnable, Runnable
-from libs.core.langchain_core.runnables.base import RunnableBindingBase
+from langchain.libs.core.langchain_core.messages import BaseMessage
+from langchain.libs.core.langchain_core.runnables import RouterRunnable, Runnable
+from langchain.libs.core.langchain_core.runnables.base import RunnableBindingBase
 from typing_extensions import TypedDict
 
 from langchain.output_parsers.openai_functions import JsonOutputFunctionsParser

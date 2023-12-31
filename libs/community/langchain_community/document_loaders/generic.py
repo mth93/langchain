@@ -12,7 +12,7 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseBlobParser, BaseLoader
 from langchain_community.document_loaders.blob_loaders import (

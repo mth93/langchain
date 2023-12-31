@@ -7,7 +7,7 @@ from abc import abstractmethod
 from inspect import signature
 from typing import Any, Awaitable, Callable, Dict, List, Optional, Tuple, Type, Union
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManager,
     AsyncCallbackManagerForToolRun,
     BaseCallbackManager,
@@ -15,8 +15,8 @@ from libs.core.langchain_core.callbacks import (
     CallbackManagerForToolRun,
     Callbacks,
 )
-from libs.core.langchain_core.load.serializable import Serializable
-from libs.core.langchain_core.pydantic_v1 import (
+from langchain.libs.core.langchain_core.load.serializable import Serializable
+from langchain.libs.core.langchain_core.pydantic_v1 import (
     BaseModel,
     Extra,
     Field,
@@ -24,13 +24,13 @@ from libs.core.langchain_core.pydantic_v1 import (
     root_validator,
     validate_arguments,
 )
-from libs.core.langchain_core.runnables import (
+from langchain.libs.core.langchain_core.runnables import (
     Runnable,
     RunnableConfig,
     RunnableSerializable,
     ensure_config,
 )
-from libs.core.langchain_core.runnables.config import run_in_executor
+from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
 
 class SchemaAnnotationError(TypeError):

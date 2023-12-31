@@ -3,7 +3,7 @@ from __future__ import annotations
 import asyncio
 from typing import Any, AsyncIterator, Dict, List, Literal, Union, cast
 
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain.callbacks.base import AsyncCallbackHandler
 

@@ -1,9 +1,9 @@
 from typing import Any, Dict
 
 import pytest
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from libs.core.langchain_core.outputs import ChatGeneration
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration
 
 from langchain.output_parsers.openai_functions import (
     JsonOutputFunctionsParser,

@@ -1,9 +1,9 @@
 import json
 
 import pytest
-from libs.core.langchain_core.agents import AgentFinish
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.messages import AIMessage, SystemMessage
+from langchain.libs.core.langchain_core.agents import AgentFinish
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.messages import AIMessage, SystemMessage
 
 from langchain.agents.openai_functions_multi_agent.base import (
     _FunctionsAgentAction,

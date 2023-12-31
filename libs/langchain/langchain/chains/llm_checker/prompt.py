@@ -1,5 +1,5 @@
 # flake8: noqa
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 _CREATE_DRAFT_ANSWER_TEMPLATE = """{question}\n\n"""
 CREATE_DRAFT_ANSWER_PROMPT = PromptTemplate(

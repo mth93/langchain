@@ -1,8 +1,8 @@
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, FewShotChatMessagePromptTemplate
 from langchain.utilities import DuckDuckGoSearchAPIWrapper
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.runnables import RunnableLambda
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.runnables import RunnableLambda
 
 search = DuckDuckGoSearchAPIWrapper(max_results=4)
 

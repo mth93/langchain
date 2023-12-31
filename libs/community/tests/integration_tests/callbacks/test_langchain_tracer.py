@@ -3,9 +3,9 @@ import asyncio
 import os
 
 from aiohttp import ClientSession
-from libs.core.langchain_core.callbacks.manager import atrace_as_chain_group, trace_as_chain_group
-from libs.core.langchain_core.prompts import PromptTemplate
-from libs.core.langchain_core.tracers.context import tracing_v2_enabled
+from langchain.libs.core.langchain_core.callbacks.manager import atrace_as_chain_group, trace_as_chain_group
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.tracers.context import tracing_v2_enabled
 
 from langchain_community.chat_models import ChatOpenAI
 from langchain_community.llms import OpenAI

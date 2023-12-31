@@ -9,7 +9,7 @@ import os
 from typing import Optional
 
 import pytest
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.llms import VertexAI, VertexAIModelGarden
 

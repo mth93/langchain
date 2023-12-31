@@ -1,6 +1,6 @@
 """Utils for LLM Tests."""
 
-from libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 
 
 def assert_llm_equality(llm: BaseLLM, loaded_llm: BaseLLM) -> None:

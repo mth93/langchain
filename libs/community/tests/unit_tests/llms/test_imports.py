@@ -1,4 +1,4 @@
-from libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 
 from langchain_community import llms
 

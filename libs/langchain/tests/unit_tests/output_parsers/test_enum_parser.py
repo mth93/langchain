@@ -1,6 +1,6 @@
 from enum import Enum
 
-from libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.output_parsers.enum import EnumOutputParser
 

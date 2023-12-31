@@ -35,8 +35,8 @@ https://maker.ifttt.com/use/YOUR_IFTTT_KEY. Grab the YOUR_IFTTT_KEY value.
 from typing import Optional
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 
 class IFTTTWebhook(BaseTool):

@@ -1,8 +1,8 @@
 """Embeddings Components Derived from NVEModel/Embeddings"""
 from typing import Any, List, Literal, Optional
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
 
 import langchain_nvidia_ai_endpoints._common as nvai_common
 

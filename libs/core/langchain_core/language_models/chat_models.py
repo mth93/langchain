@@ -16,7 +16,7 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManager,
     AsyncCallbackManagerForLLMRun,
     BaseCallbackManager,
@@ -24,10 +24,10 @@ from libs.core.langchain_core.callbacks import (
     CallbackManagerForLLMRun,
     Callbacks,
 )
-from libs.core.langchain_core.globals import get_llm_cache
-from libs.core.langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
-from libs.core.langchain_core.load import dumpd, dumps
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.globals import get_llm_cache
+from langchain.libs.core.langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
+from langchain.libs.core.langchain_core.load import dumpd, dumps
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AnyMessage,
     BaseMessage,
@@ -35,23 +35,23 @@ from libs.core.langchain_core.messages import (
     HumanMessage,
     message_chunk_to_message,
 )
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
     LLMResult,
     RunInfo,
 )
-from libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
-from libs.core.langchain_core.runnables.config import ensure_config, run_in_executor
+from langchain.libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.runnables.config import ensure_config, run_in_executor
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.runnables import RunnableConfig
+    from langchain.libs.core.langchain_core.runnables import RunnableConfig
 
 
 def _get_verbosity() -> bool:
-    from libs.core.langchain_core.globals import get_verbose
+    from langchain.libs.core.langchain_core.globals import get_verbose
 
     return get_verbose()
 

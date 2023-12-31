@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Type
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import Extra
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.router.base import RouterChain

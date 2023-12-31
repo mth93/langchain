@@ -5,7 +5,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.llms.openai import OpenAI
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain.vectorstores.supabase import SupabaseVectorStore
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from supabase.client import create_client
 
 supabase_url = os.environ.get("SUPABASE_URL")

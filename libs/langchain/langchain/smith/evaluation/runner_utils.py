@@ -21,18 +21,18 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core._api import warn_deprecated
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.messages import BaseMessage, messages_from_dict
-from libs.core.langchain_core.outputs import ChatResult, LLMResult
-from libs.core.langchain_core.runnables import Runnable, RunnableConfig, RunnableLambda
-from libs.core.langchain_core.runnables import config as runnable_config
-from libs.core.langchain_core.runnables import utils as runnable_utils
-from libs.core.langchain_core.tracers.evaluation import (
+from langchain.libs.core.langchain_core._api import warn_deprecated
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.messages import BaseMessage, messages_from_dict
+from langchain.libs.core.langchain_core.outputs import ChatResult, LLMResult
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnableConfig, RunnableLambda
+from langchain.libs.core.langchain_core.runnables import config as runnable_config
+from langchain.libs.core.langchain_core.runnables import utils as runnable_utils
+from langchain.libs.core.langchain_core.tracers.evaluation import (
     EvaluatorCallbackHandler,
     wait_for_all_evaluators,
 )
-from libs.core.langchain_core.tracers.langchain import LangChainTracer
+from langchain.libs.core.langchain_core.tracers.langchain import LangChainTracer
 from langsmith.client import Client
 from langsmith.evaluation import EvaluationResult, RunEvaluator
 from langsmith.run_helpers import as_runnable, is_traceable_function

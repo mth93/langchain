@@ -1,9 +1,9 @@
 from typing import Any, Dict, List, cast
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import Field
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 
 class LlamaIndexRetriever(BaseRetriever):

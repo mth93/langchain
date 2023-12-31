@@ -2,9 +2,9 @@
 from unittest.mock import patch
 
 import pytest
-from libs.core.langchain_core.callbacks.manager import CallbackManager, trace_as_chain_group
-from libs.core.langchain_core.outputs import LLMResult
-from libs.core.langchain_core.tracers.langchain import LangChainTracer, wait_for_all_tracers
+from langchain.libs.core.langchain_core.callbacks.manager import CallbackManager, trace_as_chain_group
+from langchain.libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.tracers.langchain import LangChainTracer, wait_for_all_tracers
 
 from langchain_community.callbacks import get_openai_callback
 from langchain_community.llms.openai import BaseOpenAI

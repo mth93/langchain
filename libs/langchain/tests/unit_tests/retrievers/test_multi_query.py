@@ -1,7 +1,7 @@
 from typing import List
 
 import pytest as pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.retrievers.multi_query import _unique_documents
 

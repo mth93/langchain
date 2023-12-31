@@ -10,10 +10,10 @@ from typing import Any, Dict, Iterator, List, Optional, Sequence, Union
 import google.protobuf.json_format
 import numpy as np
 import tritonclient.grpc as grpcclient
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models import BaseLLM
-from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models import BaseLLM
+from langchain.libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 from tritonclient.grpc.service_pb2 import ModelInferResponse
 from tritonclient.utils import np_to_triton_dtype
 

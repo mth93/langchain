@@ -36,7 +36,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManager,
     AsyncCallbackManagerForLLMRun,
     BaseCallbackManager,
@@ -44,21 +44,21 @@ from libs.core.langchain_core.callbacks import (
     CallbackManagerForLLMRun,
     Callbacks,
 )
-from libs.core.langchain_core.globals import get_llm_cache
-from libs.core.langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
-from libs.core.langchain_core.load import dumpd
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, get_buffer_string
-from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult, RunInfo
-from libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator, validator
-from libs.core.langchain_core.runnables import RunnableConfig, ensure_config, get_config_list
-from libs.core.langchain_core.runnables.config import run_in_executor
+from langchain.libs.core.langchain_core.globals import get_llm_cache
+from langchain.libs.core.langchain_core.language_models.base import BaseLanguageModel, LanguageModelInput
+from langchain.libs.core.langchain_core.load import dumpd
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, get_buffer_string
+from langchain.libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult, RunInfo
+from langchain.libs.core.langchain_core.prompt_values import ChatPromptValue, PromptValue, StringPromptValue
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator, validator
+from langchain.libs.core.langchain_core.runnables import RunnableConfig, ensure_config, get_config_list
+from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
 logger = logging.getLogger(__name__)
 
 
 def _get_verbosity() -> bool:
-    from libs.core.langchain_core.globals import get_verbose
+    from langchain.libs.core.langchain_core.globals import get_verbose
 
     return get_verbose()
 

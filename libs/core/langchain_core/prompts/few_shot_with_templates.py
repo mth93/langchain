@@ -2,12 +2,12 @@
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.prompts.string import (
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.string import (
     DEFAULT_FORMATTER_MAPPING,
     StringPromptTemplate,
 )
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
 
 class FewShotPromptWithTemplates(StringPromptTemplate):

@@ -1,9 +1,9 @@
 from typing import Sequence
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts.chat import ChatPromptTemplate
-from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts.chat import ChatPromptTemplate
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.format_scratchpad.openai_tools import (
     format_to_openai_tool_messages,
@@ -36,7 +36,7 @@ def create_openai_tools_agent(
             agent_executor.invoke({"input": "hi"})
 
             # Using with chat history
-            from libs.core.langchain_core.messages import AIMessage, HumanMessage
+            from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
             agent_executor.invoke(
                 {
                     "input": "what's my name?",

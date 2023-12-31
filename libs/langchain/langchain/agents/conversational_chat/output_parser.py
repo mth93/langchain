@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Union
 
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.agents import AgentOutputParser
 from langchain.agents.conversational_chat.prompt import FORMAT_INSTRUCTIONS

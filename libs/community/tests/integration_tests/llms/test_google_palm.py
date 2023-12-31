@@ -7,7 +7,7 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
 from pathlib import Path
 
 import pytest
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.llms.google_palm import GooglePalm
 from langchain_community.llms.loading import load_llm

@@ -2,7 +2,7 @@
 import time
 from typing import List, Optional
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores import TencentVectorDB
 from langchain_community.vectorstores.tencentvectordb import ConnectionParams

@@ -6,7 +6,7 @@ from unittest import mock
 
 import pytest
 from freezegun import freeze_time
-from libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
 from langsmith.client import Client
 from langsmith.schemas import Dataset, Example
 

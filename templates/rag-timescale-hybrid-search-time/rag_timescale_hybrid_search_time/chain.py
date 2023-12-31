@@ -10,9 +10,9 @@ from langchain.llms import OpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain.vectorstores.timescalevector import TimescaleVector
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 from .load_sample_dataset import load_ts_git_dataset
 

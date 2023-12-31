@@ -1,9 +1,9 @@
 """Test for Serializable base class"""
 
 import pytest
-from libs.core.langchain_core.load.dump import dumpd, dumps
-from libs.core.langchain_core.load.load import load, loads
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.load.dump import dumpd, dumps
+from langchain.libs.core.langchain_core.load.load import load, loads
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 from langchain.chains.llm import LLMChain
 from langchain.llms.openai import OpenAI

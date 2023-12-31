@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 
 from langchain import chat_models, llms
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel, SimpleChatModel
-from libs.core.langchain_core.language_models.llms import LLM, BaseLLM
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel, SimpleChatModel
+from langchain.libs.core.langchain_core.language_models.llms import LLM, BaseLLM
 
 INTEGRATIONS_DIR = Path(os.path.abspath(__file__)).parents[1] / "docs" / "integrations"
 LLM_IGNORE = ("FakeListLLM", "OpenAIChat", "PromptLayerOpenAIChat")

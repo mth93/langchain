@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from uuid import UUID
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
 
 class RunInfo(BaseModel):

@@ -1,11 +1,11 @@
 from typing import Any, List, Optional, Type, Union
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.messages import HumanMessage, SystemMessage
-from libs.core.langchain_core.output_parsers import BaseLLMOutputParser
-from libs.core.langchain_core.prompts import PromptTemplate
-from libs.core.langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.messages import HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.output_parsers import BaseLLMOutputParser
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.chat import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain.chains.llm import LLMChain
 from langchain.chains.openai_functions.utils import get_llm_kwargs

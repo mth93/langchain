@@ -7,13 +7,13 @@ import re
 from pathlib import Path
 from typing import Dict, List, Optional, Union
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 
 def _parse_input(text: str) -> List[Union[str, int]]:

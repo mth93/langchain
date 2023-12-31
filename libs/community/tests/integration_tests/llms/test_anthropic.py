@@ -2,8 +2,8 @@
 from typing import Generator
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.llms.anthropic import Anthropic
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

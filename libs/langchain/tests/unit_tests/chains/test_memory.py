@@ -1,5 +1,5 @@
 import pytest
-from libs.core.langchain_core.memory import BaseMemory
+from langchain.libs.core.langchain_core.memory import BaseMemory
 
 from langchain.chains.conversation.memory import (
     ConversationBufferMemory,

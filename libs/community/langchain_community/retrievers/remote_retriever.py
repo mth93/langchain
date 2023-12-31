@@ -2,12 +2,12 @@ from typing import List, Optional
 
 import aiohttp
 import requests
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 
 class RemoteLangChainRetriever(BaseRetriever):

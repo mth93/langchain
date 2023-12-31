@@ -5,12 +5,12 @@ from typing import Optional, Type
 
 import requests
 import yaml
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 
 class ApiConfig(BaseModel):

@@ -3,10 +3,10 @@ from __future__ import annotations
 
 from typing import Any, List, Optional, Sequence
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Field
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents.agent import Agent, AgentOutputParser
 from langchain.agents.agent_types import AgentType

@@ -6,9 +6,9 @@ import uuid
 from typing import TYPE_CHECKING, Any, Dict, Iterable, List, Optional, Tuple, Type
 
 import numpy as np
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 if TYPE_CHECKING:
     import vearch

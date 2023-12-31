@@ -1,8 +1,8 @@
 from typing import Any, List, Optional
 
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import AIMessage, BaseMessage
-from libs.core.langchain_core.outputs import ChatGeneration, ChatResult
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatResult
 from pytest_mock import MockerFixture
 from syrupy import SnapshotAssertion
 

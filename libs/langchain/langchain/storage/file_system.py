@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from typing import Iterator, List, Optional, Sequence, Tuple, Union
 
-from libs.core.langchain_core.stores import ByteStore
+from langchain.libs.core.langchain_core.stores import ByteStore
 
 from langchain.storage.exceptions import InvalidKeyException
 

@@ -1,18 +1,18 @@
 from typing import List, Sequence, Union
 
-from libs.core.langchain_core.messages.ai import AIMessage, AIMessageChunk
-from libs.core.langchain_core.messages.base import (
+from langchain.libs.core.langchain_core.messages.ai import AIMessage, AIMessageChunk
+from langchain.libs.core.langchain_core.messages.base import (
     BaseMessage,
     BaseMessageChunk,
     merge_content,
     message_to_dict,
     messages_to_dict,
 )
-from libs.core.langchain_core.messages.chat import ChatMessage, ChatMessageChunk
-from libs.core.langchain_core.messages.function import FunctionMessage, FunctionMessageChunk
-from libs.core.langchain_core.messages.human import HumanMessage, HumanMessageChunk
-from libs.core.langchain_core.messages.system import SystemMessage, SystemMessageChunk
-from libs.core.langchain_core.messages.tool import ToolMessage, ToolMessageChunk
+from langchain.libs.core.langchain_core.messages.chat import ChatMessage, ChatMessageChunk
+from langchain.libs.core.langchain_core.messages.function import FunctionMessage, FunctionMessageChunk
+from langchain.libs.core.langchain_core.messages.human import HumanMessage, HumanMessageChunk
+from langchain.libs.core.langchain_core.messages.system import SystemMessage, SystemMessageChunk
+from langchain.libs.core.langchain_core.messages.tool import ToolMessage, ToolMessageChunk
 
 AnyMessage = Union[
     AIMessage, HumanMessage, ChatMessage, SystemMessage, FunctionMessage, ToolMessage
@@ -35,7 +35,7 @@ def get_buffer_string(
     Example:
         .. code-block:: python
 
-            from libs.core.langchain_core import AIMessage, HumanMessage
+            from langchain.libs.core.langchain_core import AIMessage, HumanMessage
 
             messages = [
                 HumanMessage(content="Hi, how are you?"),

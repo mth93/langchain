@@ -7,10 +7,10 @@ import time
 from typing import Any, Dict, List, Mapping, Optional
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 logger = logging.getLogger(__name__)
 

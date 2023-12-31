@@ -1,8 +1,8 @@
 """Chain for applying constitutional principles to the outputs of another chain."""
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
 
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.base import Chain

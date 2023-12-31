@@ -1,5 +1,5 @@
 import pytest
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain_community.chat_models.ernie import ErnieBotChat
 

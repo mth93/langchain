@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from libs.core.langchain_core.runnables.config import run_in_executor
+from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
 
 class Embeddings(ABC):

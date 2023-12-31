@@ -2,8 +2,8 @@
 
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 
 class RedditSearchAPIWrapper(BaseModel):

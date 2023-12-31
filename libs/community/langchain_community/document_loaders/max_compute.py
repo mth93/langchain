@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Iterator, List, Optional, Sequence
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 from langchain_community.utilities.max_compute import MaxComputeAPIWrapper

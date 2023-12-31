@@ -3,11 +3,11 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Any, Dict, Iterator, List, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.outputs import GenerationChunk
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 if TYPE_CHECKING:
     from replicate.prediction import Prediction

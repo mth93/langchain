@@ -9,9 +9,9 @@ from time import time
 from typing import TYPE_CHECKING, Any, DefaultDict, Dict, List, Optional
 
 import numpy as np
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.callbacks import BaseCallbackHandler
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.callbacks import BaseCallbackHandler
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 if TYPE_CHECKING:
     import arthurai

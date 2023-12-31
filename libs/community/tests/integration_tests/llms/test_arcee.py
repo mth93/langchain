@@ -1,6 +1,6 @@
 from unittest.mock import MagicMock, patch
 
-from libs.core.langchain_core.pydantic_v1 import SecretStr
+from langchain.libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
 from langchain_community.llms.arcee import Arcee

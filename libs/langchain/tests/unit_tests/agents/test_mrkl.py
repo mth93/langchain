@@ -3,10 +3,10 @@
 from typing import Tuple
 
 import pytest
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.prompts import PromptTemplate
-from libs.core.langchain_core.tools import Tool
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain.agents.mrkl.base import ZeroShotAgent
 from langchain.agents.mrkl.output_parser import MRKLOutputParser

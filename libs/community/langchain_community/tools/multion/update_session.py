@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING, Optional, Type
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 if TYPE_CHECKING:
     # This is for linting and IDE typehints

@@ -4,10 +4,10 @@ from __future__ import annotations
 import asyncio
 from typing import Any, Callable, Dict, Optional, Sequence
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import BaseOutputParser
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.llm import LLMChain

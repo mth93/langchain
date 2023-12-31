@@ -15,8 +15,8 @@ from langchain.schema import (
     StrOutputParser,
     get_buffer_string,
 )
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.runnables import Runnable
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.runnables import Runnable
 from langsmith.evaluation import EvaluationResult, RunEvaluator
 from langsmith.schemas import Example
 

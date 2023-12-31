@@ -7,11 +7,11 @@ from typing import Any, Callable, List, Optional, Type
 
 import jsonpatch  # type: ignore[import]
 
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.output_parsers.format_instructions import JSON_FORMAT_INSTRUCTIONS
-from libs.core.langchain_core.output_parsers.transform import BaseCumulativeTransformOutputParser
-from libs.core.langchain_core.outputs import Generation
-from libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.output_parsers.format_instructions import JSON_FORMAT_INSTRUCTIONS
+from langchain.libs.core.langchain_core.output_parsers.transform import BaseCumulativeTransformOutputParser
+from langchain.libs.core.langchain_core.outputs import Generation
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
 
 def _replace_new_line(match: re.Match[str]) -> str:

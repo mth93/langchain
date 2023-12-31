@@ -5,9 +5,9 @@ from __future__ import annotations
 import uuid
 from typing import Any, Iterable, List
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 
 class ElasticSearchBM25Retriever(BaseRetriever):

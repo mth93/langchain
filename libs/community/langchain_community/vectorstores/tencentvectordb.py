@@ -7,10 +7,10 @@ import time
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 import numpy as np
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.utils import guard_import
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.utils import guard_import
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community.vectorstores.utils import maximal_marginal_relevance
 

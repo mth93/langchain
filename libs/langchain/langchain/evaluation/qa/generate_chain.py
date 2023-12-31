@@ -3,9 +3,9 @@ from __future__ import annotations
 
 from typing import Any
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import BaseLLMOutputParser
-from libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import BaseLLMOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain.chains.llm import LLMChain
 from langchain.evaluation.qa.generate_prompt import PROMPT

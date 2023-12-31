@@ -3,9 +3,9 @@ import os
 from langchain.chat_models import ChatOpenAI
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain.vectorstores import Vectara
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 if os.environ.get("VECTARA_CUSTOMER_ID", None) is None:
     raise Exception("Missing `VECTARA_CUSTOMER_ID` environment variable.")

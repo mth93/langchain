@@ -2,10 +2,10 @@ import asyncio
 import logging
 from typing import List, Sequence
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,

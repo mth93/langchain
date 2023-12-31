@@ -1,8 +1,8 @@
 """Prompt for trajectory evaluation chain."""
 # flake8: noqa
-from libs.core.langchain_core.messages import HumanMessage, AIMessage, SystemMessage
+from langchain.libs.core.langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 
-from libs.core.langchain_core.prompts.chat import (
+from langchain.libs.core.langchain_core.prompts.chat import (
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
 )

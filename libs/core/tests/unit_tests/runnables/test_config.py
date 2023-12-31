@@ -1,8 +1,8 @@
-from libs.core.langchain_core.callbacks.manager import CallbackManager
-from libs.core.langchain_core.callbacks.stdout import StdOutCallbackHandler
-from libs.core.langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-from libs.core.langchain_core.runnables.config import RunnableConfig, merge_configs
-from libs.core.langchain_core.tracers.stdout import ConsoleCallbackHandler
+from langchain.libs.core.langchain_core.callbacks.manager import CallbackManager
+from langchain.libs.core.langchain_core.callbacks.stdout import StdOutCallbackHandler
+from langchain.libs.core.langchain_core.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
+from langchain.libs.core.langchain_core.runnables.config import RunnableConfig, merge_configs
+from langchain.libs.core.langchain_core.tracers.stdout import ConsoleCallbackHandler
 
 
 def test_merge_config_callbacks() -> None:

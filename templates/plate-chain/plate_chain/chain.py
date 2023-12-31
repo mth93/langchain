@@ -3,8 +3,8 @@ import json
 
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, SystemMessagePromptTemplate
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
 from langserve import CustomUserType
 
 from .prompts import (

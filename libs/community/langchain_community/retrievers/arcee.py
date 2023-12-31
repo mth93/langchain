@@ -1,10 +1,10 @@
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import Extra, SecretStr, root_validator
-from libs.core.langchain_core.retrievers import BaseRetriever
-from libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, SecretStr, root_validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
 
 from langchain_community.utilities.arcee import ArceeWrapper, DALMFilter
 

@@ -5,7 +5,7 @@ https://pypi.org/project/duckduckgo-search/
 """
 from typing import Dict, List, Optional
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
 
 
 class DuckDuckGoSearchAPIWrapper(BaseModel):

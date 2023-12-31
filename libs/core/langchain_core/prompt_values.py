@@ -3,8 +3,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import List, Literal, Sequence
 
-from libs.core.langchain_core.load.serializable import Serializable
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.load.serializable import Serializable
+from langchain.libs.core.langchain_core.messages import (
     AnyMessage,
     BaseMessage,
     HumanMessage,

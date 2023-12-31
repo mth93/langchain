@@ -1,5 +1,5 @@
 """Test ChatAnthropicMessages chat model."""
-from libs.core.langchain_core.prompts import ChatPromptTemplate
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
 from langchain_anthropic.chat_models import ChatAnthropicMessages
 

@@ -6,12 +6,12 @@ from typing import Callable, Dict, Union
 
 import yaml
 
-from libs.core.langchain_core.output_parsers.string import StrOutputParser
-from libs.core.langchain_core.prompts.base import BasePromptTemplate
-from libs.core.langchain_core.prompts.chat import ChatPromptTemplate
-from libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.utils import try_load_from_hub
+from langchain.libs.core.langchain_core.output_parsers.string import StrOutputParser
+from langchain.libs.core.langchain_core.prompts.base import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.chat import ChatPromptTemplate
+from langchain.libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.utils import try_load_from_hub
 
 URL_BASE = "https://raw.githubusercontent.com/hwchase17/langchain-hub/master/prompts/"
 logger = logging.getLogger(__name__)

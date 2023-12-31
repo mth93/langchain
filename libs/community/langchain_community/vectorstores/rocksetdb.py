@@ -4,9 +4,9 @@ import logging
 from enum import Enum
 from typing import Any, Iterable, List, Optional, Tuple
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 logger = logging.getLogger(__name__)
 

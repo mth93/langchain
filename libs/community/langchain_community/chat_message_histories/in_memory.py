@@ -1,8 +1,8 @@
 from typing import List
 
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.messages import BaseMessage
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.messages import BaseMessage
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 
 class ChatMessageHistory(BaseChatMessageHistory, BaseModel):

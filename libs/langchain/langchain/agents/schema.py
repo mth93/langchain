@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Tuple
 
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.prompts.chat import ChatPromptTemplate
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.prompts.chat import ChatPromptTemplate
 
 
 class AgentScratchPadChatPromptTemplate(ChatPromptTemplate):

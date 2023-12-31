@@ -3,11 +3,11 @@ import io
 from pathlib import Path
 
 from langchain.vectorstores import Chroma
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.messages import HumanMessage
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.messages import HumanMessage
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough
 from langchain_experimental.open_clip import OpenCLIPEmbeddings
 libs.partners.google_genai import ChatGoogleGenerativeAI
 from PIL import Image

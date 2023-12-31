@@ -1,6 +1,6 @@
 from typing import Callable, Union
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.docstore.base import Docstore
 

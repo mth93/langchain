@@ -1,7 +1,7 @@
 from typing import Any, Callable, List
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import Extra
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
 from langchain_community.llms.self_hosted import SelfHostedPipeline
 

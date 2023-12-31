@@ -2,8 +2,8 @@ from langchain import hub
 from langchain.chat_models import ChatAnthropic
 from langchain.schema import StrOutputParser
 from langchain.utilities import WikipediaAPIWrapper
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableLambda, RunnablePassthrough
 
 
 class Question(BaseModel):

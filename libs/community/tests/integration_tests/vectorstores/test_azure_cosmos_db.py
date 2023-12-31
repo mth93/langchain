@@ -5,7 +5,7 @@ from time import sleep
 from typing import Any, Generator, Optional, Union
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores.azure_cosmos_db import (

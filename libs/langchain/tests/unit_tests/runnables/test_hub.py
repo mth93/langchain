@@ -1,8 +1,8 @@
 from typing import Any
 from unittest.mock import Mock, patch
 
-from libs.core.langchain_core.prompts import ChatPromptTemplate
-from libs.core.langchain_core.runnables.base import ConfigurableField
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
+from langchain.libs.core.langchain_core.runnables.base import ConfigurableField
 
 from langchain.runnables.hub import HubRunnable
 

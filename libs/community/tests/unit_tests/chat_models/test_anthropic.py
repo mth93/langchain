@@ -3,7 +3,7 @@ import os
 from typing import List
 
 import pytest
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
 
 from langchain_community.chat_models import ChatAnthropic
 from langchain_community.chat_models.anthropic import (

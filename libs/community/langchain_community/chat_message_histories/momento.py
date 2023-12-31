@@ -4,13 +4,13 @@ import json
 from datetime import timedelta
 from typing import TYPE_CHECKING, Any, Optional
 
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,
 )
-from libs.core.langchain_core.utils import get_from_env
+from langchain.libs.core.langchain_core.utils import get_from_env
 
 if TYPE_CHECKING:
     import momento

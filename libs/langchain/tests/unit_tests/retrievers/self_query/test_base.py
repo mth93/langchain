@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Tuple, Union
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,

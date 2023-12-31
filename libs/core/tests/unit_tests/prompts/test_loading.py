@@ -6,9 +6,9 @@ from typing import Iterator
 
 import pytest
 
-from libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
-from libs.core.langchain_core.prompts.loading import load_prompt
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
+from langchain.libs.core.langchain_core.prompts.loading import load_prompt
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
 
 EXAMPLE_DIR = Path("tests/unit_tests/examples").absolute()
 

@@ -3,14 +3,14 @@ from typing import Any, AsyncIterator, Dict, Iterator, List, Mapping, Optional
 
 import aiohttp
 import requests
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.language_models.llms import BaseLLM
-from libs.core.langchain_core.outputs import GenerationChunk, LLMResult
-from libs.core.langchain_core.pydantic_v1 import Extra
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
 
 def _stream_response_to_generation_chunk(

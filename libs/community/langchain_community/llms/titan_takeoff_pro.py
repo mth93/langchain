@@ -1,9 +1,9 @@
 from typing import Any, Iterator, List, Mapping, Optional
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
 from requests.exceptions import ConnectionError
 
 from langchain_community.llms.utils import enforce_stop_tokens

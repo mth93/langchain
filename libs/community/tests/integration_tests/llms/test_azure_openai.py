@@ -3,8 +3,8 @@ import os
 from typing import Any, Generator
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.llms import AzureOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

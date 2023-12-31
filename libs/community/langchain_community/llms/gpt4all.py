@@ -1,9 +1,9 @@
 from functools import partial
 from typing import Any, Dict, List, Mapping, Optional, Set
 
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
 
 from langchain_community.llms.utils import enforce_stop_tokens
 

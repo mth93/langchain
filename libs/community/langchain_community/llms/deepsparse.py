@@ -1,13 +1,13 @@
 # flake8: noqa
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional, Union
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.language_models.llms import LLM
 from langchain_community.llms.utils import enforce_stop_tokens
-from libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
 
 
 class DeepSparse(LLM):

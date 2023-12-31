@@ -1,18 +1,18 @@
 """Hugging Face Chat Wrapper."""
 from typing import Any, List, Optional, Union
 
-from libs.core.langchain_core.callbacks.manager import (
+from langchain.libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatResult,
     LLMResult,

@@ -2,9 +2,9 @@
 import re
 from typing import Callable, Dict, List
 
-from libs.core.langchain_core.example_selectors.base import BaseExampleSelector
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, validator
+from langchain.libs.core.langchain_core.example_selectors.base import BaseExampleSelector
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, validator
 
 
 def _get_length_based(text: str) -> int:

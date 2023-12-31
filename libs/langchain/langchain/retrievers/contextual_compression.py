@@ -1,7 +1,7 @@
 from typing import Any, List
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,

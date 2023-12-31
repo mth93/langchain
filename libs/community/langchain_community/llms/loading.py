@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Union
 
 import yaml
-from libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 
 from langchain_community.llms import get_type_to_cls_dict
 

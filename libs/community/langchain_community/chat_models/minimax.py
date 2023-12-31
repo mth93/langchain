@@ -2,17 +2,17 @@
 import logging
 from typing import Any, Dict, List, Optional, cast
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,
 )
-from libs.core.langchain_core.outputs import ChatResult
+from langchain.libs.core.langchain_core.outputs import ChatResult
 
 from langchain_community.llms.minimax import MinimaxCommon
 from langchain_community.llms.utils import enforce_stop_tokens

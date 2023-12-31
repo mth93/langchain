@@ -11,21 +11,21 @@ from typing import (
     Optional,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.outputs import GenerationChunk
-from libs.core.langchain_core.prompt_values import PromptValue
-from libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
-from libs.core.langchain_core.utils import (
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.prompt_values import PromptValue
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import (
     check_package_version,
     get_from_dict_or_env,
     get_pydantic_field_names,
 )
-from libs.core.langchain_core.utils.utils import build_extra_kwargs, convert_to_secret_str
+from langchain.libs.core.langchain_core.utils.utils import build_extra_kwargs, convert_to_secret_str
 
 
 class _AnthropicCommon(BaseLanguageModel):

@@ -69,13 +69,13 @@ toolkit = ZapierToolkit.from_zapier_nla_wrapper(zapier)
 """
 from typing import Any, Dict, Optional
 
-from libs.core.langchain_core._api import warn_deprecated
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core._api import warn_deprecated
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.tools.zapier.prompt import BASE_ZAPIER_TOOL_PROMPT
 from langchain_community.utilities.zapier import ZapierNLAWrapper

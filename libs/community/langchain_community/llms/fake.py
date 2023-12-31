@@ -2,13 +2,13 @@ import asyncio
 import time
 from typing import Any, AsyncIterator, Iterator, List, Mapping, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models import LanguageModelInput
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.runnables import RunnableConfig
+from langchain.libs.core.langchain_core.language_models import LanguageModelInput
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.runnables import RunnableConfig
 
 
 class FakeListLLM(LLM):

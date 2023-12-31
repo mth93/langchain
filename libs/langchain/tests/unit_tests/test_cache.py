@@ -3,11 +3,11 @@ from typing import Dict, Generator, List, Union
 
 import pytest
 from _pytest.fixtures import FixtureRequest
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.language_models.llms import BaseLLM
-from libs.core.langchain_core.load import dumps
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from libs.core.langchain_core.outputs import ChatGeneration, Generation
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.load import dumps
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, Generation
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 

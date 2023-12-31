@@ -3,13 +3,13 @@ from __future__ import annotations
 from enum import Enum
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 if TYPE_CHECKING:
     from zep_python.memory import MemorySearchResult

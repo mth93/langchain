@@ -1,14 +1,14 @@
 import logging
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.outputs import GenerationChunk
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
-from libs.core.langchain_core.utils import get_pydantic_field_names
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_pydantic_field_names
 
 logger = logging.getLogger(__name__)
 

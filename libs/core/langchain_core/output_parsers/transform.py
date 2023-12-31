@@ -9,9 +9,9 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
-from libs.core.langchain_core.output_parsers.base import BaseOutputParser, T
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
+from langchain.libs.core.langchain_core.output_parsers.base import BaseOutputParser, T
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     Generation,
@@ -19,7 +19,7 @@ from libs.core.langchain_core.outputs import (
 )
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.runnables import RunnableConfig
+    from langchain.libs.core.langchain_core.runnables import RunnableConfig
 
 
 class BaseTransformOutputParser(BaseOutputParser[T]):

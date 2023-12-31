@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, List, Optional, Type, cast
 
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.agent_toolkits.base import BaseToolkit
 from langchain_community.tools.playwright.base import (

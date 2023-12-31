@@ -1,7 +1,7 @@
 from typing import Any, Dict, List, Optional
 
 import requests
-from libs.core.langchain_core.messages import get_buffer_string
+from langchain.libs.core.langchain_core.messages import get_buffer_string
 
 from langchain.memory.chat_memory import BaseChatMemory
 

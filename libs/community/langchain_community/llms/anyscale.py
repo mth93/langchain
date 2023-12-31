@@ -12,13 +12,13 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
-from libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
+from langchain.libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
 
 from langchain_community.llms.openai import (
     BaseOpenAI,

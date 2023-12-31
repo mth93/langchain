@@ -1,4 +1,4 @@
-from libs.core.langchain_core.runnables import __all__
+from langchain.libs.core.langchain_core.runnables import __all__
 
 EXPECTED_ALL = [
     "AddableDict",

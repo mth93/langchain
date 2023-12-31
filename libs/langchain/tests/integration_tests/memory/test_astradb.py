@@ -2,7 +2,7 @@ import os
 from typing import Iterable
 
 import pytest
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
 
 from langchain.memory import ConversationBufferMemory
 from langchain.memory.chat_message_histories.astradb import (

@@ -5,10 +5,10 @@ import logging
 import re
 from typing import Any, Dict, List, Optional, Union
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import BaseOutputParser
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Extra, Field
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.constitutional_ai.models import ConstitutionalPrinciple

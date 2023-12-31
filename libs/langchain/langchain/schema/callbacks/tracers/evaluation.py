@@ -1,4 +1,4 @@
-from libs.core.langchain_core.tracers.evaluation import (
+from langchain.libs.core.langchain_core.tracers.evaluation import (
     EvaluatorCallbackHandler,
     wait_for_all_evaluators,
 )

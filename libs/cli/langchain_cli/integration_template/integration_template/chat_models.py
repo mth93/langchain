@@ -1,12 +1,12 @@
 from typing import Any, AsyncIterator, Iterator, List, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
-from libs.core.langchain_core.outputs import ChatGenerationChunk, ChatResult
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import BaseMessage, BaseMessageChunk
+from langchain.libs.core.langchain_core.outputs import ChatGenerationChunk, ChatResult
 
 
 class Chat__ModuleName__(BaseChatModel):

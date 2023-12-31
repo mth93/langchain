@@ -2,12 +2,12 @@
 import logging
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Type, Union
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
-from libs.core.langchain_core.retrievers import BaseRetriever
-from libs.core.langchain_core.runnables import Runnable
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, root_validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.runnables import Runnable
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForRetrieverRun,

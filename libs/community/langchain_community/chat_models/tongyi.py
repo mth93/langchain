@@ -15,12 +15,12 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -32,13 +32,13 @@ from libs.core.langchain_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     ChatResult,
 )
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 from requests.exceptions import HTTPError
 from tenacity import (
     before_sleep_log,

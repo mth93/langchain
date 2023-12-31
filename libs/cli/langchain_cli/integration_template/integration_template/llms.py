@@ -8,12 +8,12 @@ from typing import (
     Optional,
 )
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models import BaseLLM
-from libs.core.langchain_core.outputs import GenerationChunk, LLMResult
+from langchain.libs.core.langchain_core.language_models import BaseLLM
+from langchain.libs.core.langchain_core.outputs import GenerationChunk, LLMResult
 
 
 class __ModuleName__LLM(BaseLLM):

@@ -17,8 +17,8 @@ import os
 from typing import Iterable, List
 
 import pytest
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
 
 from langchain_community.vectorstores import AstraDB
 

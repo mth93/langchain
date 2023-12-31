@@ -4,14 +4,14 @@ import logging
 from functools import cached_property
 from typing import Any, AsyncIterator, Dict, Iterator, List, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import BaseLLM
-from libs.core.langchain_core.load.serializable import Serializable
-from libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
-from libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.load.serializable import Serializable
+from langchain.libs.core.langchain_core.outputs import Generation, GenerationChunk, LLMResult
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
 logger = logging.getLogger(__name__)
 

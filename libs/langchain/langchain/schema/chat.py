@@ -1,3 +1,3 @@
-from libs.core.langchain_core.chat_sessions import ChatSession
+from langchain.libs.core.langchain_core.chat_sessions import ChatSession
 
 __all__ = ["ChatSession"]

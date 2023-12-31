@@ -4,12 +4,12 @@ from __future__ import annotations
 import json
 from typing import Any, Callable, List, Optional, Sequence, Tuple, Union, cast
 
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import BaseOutputParser
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
-from libs.core.langchain_core.runnables import Runnable
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.few_shot import FewShotPromptTemplate
+from langchain.libs.core.langchain_core.runnables import Runnable
 
 from langchain.chains.llm import LLMChain
 from langchain.chains.query_constructor.ir import (

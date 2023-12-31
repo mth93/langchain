@@ -2,8 +2,8 @@ import logging
 from datetime import datetime as dt
 from typing import Dict, Optional, Type
 
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain_community.tools.amadeus.base import AmadeusBaseTool
 

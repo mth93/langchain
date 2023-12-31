@@ -1,7 +1,7 @@
 """Test Minimax llm"""
 from typing import cast
 
-from libs.core.langchain_core.pydantic_v1 import SecretStr
+from langchain.libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture, MonkeyPatch
 
 from langchain_community.llms.minimax import Minimax

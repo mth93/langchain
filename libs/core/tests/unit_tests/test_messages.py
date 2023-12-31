@@ -3,7 +3,7 @@ from typing import List
 
 import pytest
 
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     ChatMessage,

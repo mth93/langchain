@@ -3,9 +3,9 @@ import os
 from typing import Any
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.messages import BaseMessage, HumanMessage
-from libs.core.langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.messages import BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from langchain_community.chat_models import AzureChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

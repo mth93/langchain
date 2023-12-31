@@ -23,7 +23,7 @@ from typing import (
 
 from typing_extensions import ParamSpec, TypedDict
 
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.runnables.utils import (
     Input,
     Output,
     accepts_config,
@@ -31,8 +31,8 @@ from libs.core.langchain_core.runnables.utils import (
 )
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.callbacks.base import BaseCallbackManager, Callbacks
-    from libs.core.langchain_core.callbacks.manager import (
+    from langchain.libs.core.langchain_core.callbacks.base import BaseCallbackManager, Callbacks
+    from langchain.libs.core.langchain_core.callbacks.manager import (
         AsyncCallbackManager,
         AsyncCallbackManagerForChainRun,
         CallbackManager,
@@ -373,7 +373,7 @@ def get_callback_manager_for_config(config: RunnableConfig) -> CallbackManager:
     Returns:
         CallbackManager: The callback manager.
     """
-    from libs.core.langchain_core.callbacks.manager import CallbackManager
+    from langchain.libs.core.langchain_core.callbacks.manager import CallbackManager
 
     return CallbackManager.configure(
         inheritable_callbacks=config.get("callbacks"),
@@ -393,7 +393,7 @@ def get_async_callback_manager_for_config(
     Returns:
         AsyncCallbackManager: The async callback manager.
     """
-    from libs.core.langchain_core.callbacks.manager import AsyncCallbackManager
+    from langchain.libs.core.langchain_core.callbacks.manager import AsyncCallbackManager
 
     return AsyncCallbackManager.configure(
         inheritable_callbacks=config.get("callbacks"),

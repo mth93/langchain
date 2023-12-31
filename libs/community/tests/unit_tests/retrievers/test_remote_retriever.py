@@ -1,6 +1,6 @@
 from typing import Any, Dict
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 from pytest_mock import MockerFixture
 
 from langchain_community.retrievers import RemoteLangChainRetriever

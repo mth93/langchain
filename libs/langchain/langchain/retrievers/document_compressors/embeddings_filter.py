@@ -1,9 +1,9 @@
 from typing import Callable, Dict, Optional, Sequence
 
 import numpy as np
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
 
 from langchain.callbacks.manager import Callbacks
 from langchain.document_transformers.embeddings_redundant_filter import (

@@ -11,13 +11,13 @@ from typing import Optional
 from unittest.mock import MagicMock, Mock, patch
 
 import pytest
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     HumanMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.chat_models import ChatVertexAI
 from langchain_community.chat_models.vertexai import (

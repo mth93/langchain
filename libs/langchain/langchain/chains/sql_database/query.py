@@ -1,9 +1,9 @@
 from typing import List, Optional, TypedDict, Union
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.runnables import Runnable, RunnableParallel
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnableParallel
 
 from langchain.chains.sql_database.prompt import PROMPT, SQL_PROMPTS
 from langchain.utilities.sql_database import SQLDatabase

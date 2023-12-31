@@ -27,12 +27,12 @@ from multiple components. Prompt classes and functions make constructing
                     ChatPromptValue
 
 """  # noqa: E501
-from libs.core.langchain_core.example_selectors import (
+from langchain.libs.core.langchain_core.example_selectors import (
     LengthBasedExampleSelector,
     MaxMarginalRelevanceExampleSelector,
     SemanticSimilarityExampleSelector,
 )
-from libs.core.langchain_core.prompts import (
+from langchain.libs.core.langchain_core.prompts import (
     AIMessagePromptTemplate,
     BaseChatPromptTemplate,
     BasePromptTemplate,

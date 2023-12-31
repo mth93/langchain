@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Any, Union
 
 import yaml
-from libs.core.langchain_core.prompts.loading import (
+from langchain.libs.core.langchain_core.prompts.loading import (
     _load_output_parser,
     load_prompt,
     load_prompt_from_config,

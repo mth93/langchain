@@ -3,11 +3,11 @@ import json
 import os
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.load.mapping import (
+from langchain.libs.core.langchain_core.load.mapping import (
     OLD_PROMPT_TEMPLATE_FORMATS,
     SERIALIZABLE_MAPPING,
 )
-from libs.core.langchain_core.load.serializable import Serializable
+from langchain.libs.core.langchain_core.load.serializable import Serializable
 
 DEFAULT_NAMESPACES = ["langchain", "langchain_core", "langchain_community"]
 

@@ -1,6 +1,6 @@
 from typing import Any, Optional, Sequence
 
-from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer, Document
 
 from langchain_community.utilities.vertexai import get_client_info
 

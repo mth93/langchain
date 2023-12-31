@@ -13,10 +13,10 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 from langchain_community.vectorstores.qdrant import Qdrant, QdrantException
 

@@ -2,16 +2,16 @@
 """Tools for interacting with a SQL database."""
 from typing import Any, Dict, Optional
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, Field, root_validator
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 from langchain_community.utilities.sql_database import SQLDatabase
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.tools import BaseTool
 from langchain_community.tools.sql_database.prompt import QUERY_CHECKER
 
 

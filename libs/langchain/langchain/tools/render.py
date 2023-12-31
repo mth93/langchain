@@ -11,7 +11,7 @@ from langchain_community.tools.convert_to_openai import (
     format_tool_to_openai_function,
     format_tool_to_openai_tool,
 )
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 __all__ = [
     "render_text_description",

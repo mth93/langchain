@@ -5,12 +5,12 @@ import time
 from typing import Any, Dict, Iterator, List, Mapping, Optional, Type
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.chat_models import (
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.chat_models import (
     BaseChatModel,
     generate_from_stream,
 )
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -20,9 +20,9 @@ from libs.core.langchain_core.messages import (
     HumanMessage,
     HumanMessageChunk,
 )
-from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
-from libs.core.langchain_core.utils import (
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import (
     convert_to_secret_str,
     get_from_dict_or_env,
     get_pydantic_field_names,

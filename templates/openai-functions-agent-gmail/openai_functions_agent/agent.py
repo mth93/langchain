@@ -15,10 +15,10 @@ from langchain_community.tools.gmail import (
 )
 from langchain_community.tools.gmail.utils import build_resource_service
 from langchain_community.utilities.tavily_search import TavilySearchAPIWrapper
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
-from libs.core.langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.tools import tool
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.tools import tool
 
 
 @tool

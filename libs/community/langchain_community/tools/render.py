@@ -4,7 +4,7 @@ Depending on the LLM you are using and the prompting strategy you are using,
 you may want Tools to be rendered in a different way.
 This module contains various ways to render tools.
 """
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utils.openai_functions import (
     FunctionDescription,

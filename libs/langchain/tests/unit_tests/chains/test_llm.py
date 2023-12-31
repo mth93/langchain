@@ -4,8 +4,8 @@ from typing import Dict, List, Union
 from unittest.mock import patch
 
 import pytest
-from libs.core.langchain_core.output_parsers import BaseOutputParser
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.output_parsers import BaseOutputParser
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 from langchain.chains.llm import LLMChain
 from tests.unit_tests.llms.fake_llm import FakeLLM

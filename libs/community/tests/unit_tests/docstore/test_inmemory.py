@@ -1,6 +1,6 @@
 """Test in memory docstore."""
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.docstore.in_memory import InMemoryDocstore
 

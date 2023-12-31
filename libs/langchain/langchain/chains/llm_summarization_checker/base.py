@@ -6,9 +6,9 @@ import warnings
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
 
 from langchain.callbacks.manager import CallbackManagerForChainRun
 from langchain.chains.base import Chain

@@ -2,10 +2,10 @@ import re
 from abc import ABC, abstractmethod
 from typing import Any, Callable, Dict, List, Literal, Optional, Sequence, Union
 
-from libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator, validator
-from libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForRetrieverRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator, validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
 
 
 def clean_excerpt(excerpt: str) -> str:

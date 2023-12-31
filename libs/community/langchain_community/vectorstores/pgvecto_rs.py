@@ -5,9 +5,9 @@ from typing import Any, Iterable, List, Literal, Optional, Tuple, Type
 
 import numpy as np
 import sqlalchemy
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 from sqlalchemy import insert, select
 from sqlalchemy.dialects import postgresql
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column

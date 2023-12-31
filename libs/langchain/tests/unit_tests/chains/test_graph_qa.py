@@ -1,7 +1,7 @@
 from typing import Any, Dict, List
 
 import pandas as pd
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 from langchain.chains.graph_qa.cypher import (
     GraphCypherQAChain,

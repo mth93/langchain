@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, List
 
 import numpy as np
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores.pinecone import Pinecone

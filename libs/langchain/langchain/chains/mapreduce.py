@@ -7,10 +7,10 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Mapping, Optional
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Extra
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
 from langchain.callbacks.manager import CallbackManagerForChainRun, Callbacks
 from langchain.chains import ReduceDocumentsChain

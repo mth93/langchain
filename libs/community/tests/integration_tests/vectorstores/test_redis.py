@@ -3,7 +3,7 @@ import os
 from typing import Any, Dict, List, Optional
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.redis import (
     Redis,

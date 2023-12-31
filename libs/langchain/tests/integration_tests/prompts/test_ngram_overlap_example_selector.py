@@ -1,7 +1,7 @@
 """Test functionality related to ngram overlap based selector."""
 
 import pytest
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 from langchain.prompts.example_selector.ngram_overlap import (
     NGramOverlapExampleSelector,

@@ -1,5 +1,5 @@
-from libs.core.langchain_core.messages import HumanMessageChunk
-from libs.core.langchain_core.outputs import ChatGenerationChunk, GenerationChunk
+from langchain.libs.core.langchain_core.messages import HumanMessageChunk
+from langchain.libs.core.langchain_core.outputs import ChatGenerationChunk, GenerationChunk
 
 
 def test_generation_chunk() -> None:

@@ -4,9 +4,9 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Sequence, Tuple, Type, Union, cast
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, create_model, root_validator
-from libs.core.langchain_core.runnables.config import RunnableConfig
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, create_model, root_validator
+from langchain.libs.core.langchain_core.runnables.config import RunnableConfig
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.combine_documents.base import BaseCombineDocumentsChain
@@ -25,7 +25,7 @@ class MapRerankDocumentsChain(BaseCombineDocumentsChain):
         .. code-block:: python
 
             from langchain.chains import StuffDocumentsChain, LLMChain
-            from libs.core.langchain_core.prompts import PromptTemplate
+            from langchain.libs.core.langchain_core.prompts import PromptTemplate
             from langchain.llms import OpenAI
             from langchain.output_parsers.regex import RegexParser
 

@@ -24,8 +24,8 @@ from multiple components. Prompt classes and functions make constructing
                                                                       SystemMessagePromptTemplate
 
 """  # noqa: E501
-from libs.core.langchain_core.prompts.base import BasePromptTemplate, format_document
-from libs.core.langchain_core.prompts.chat import (
+from langchain.libs.core.langchain_core.prompts.base import BasePromptTemplate, format_document
+from langchain.libs.core.langchain_core.prompts.chat import (
     AIMessagePromptTemplate,
     BaseChatPromptTemplate,
     ChatMessagePromptTemplate,
@@ -34,15 +34,15 @@ from libs.core.langchain_core.prompts.chat import (
     MessagesPlaceholder,
     SystemMessagePromptTemplate,
 )
-from libs.core.langchain_core.prompts.few_shot import (
+from langchain.libs.core.langchain_core.prompts.few_shot import (
     FewShotChatMessagePromptTemplate,
     FewShotPromptTemplate,
 )
-from libs.core.langchain_core.prompts.few_shot_with_templates import FewShotPromptWithTemplates
-from libs.core.langchain_core.prompts.loading import load_prompt
-from libs.core.langchain_core.prompts.pipeline import PipelinePromptTemplate
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.prompts.string import (
+from langchain.libs.core.langchain_core.prompts.few_shot_with_templates import FewShotPromptWithTemplates
+from langchain.libs.core.langchain_core.prompts.loading import load_prompt
+from langchain.libs.core.langchain_core.prompts.pipeline import PipelinePromptTemplate
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.prompts.string import (
     StringPromptTemplate,
     check_valid_template,
     get_template_variables,

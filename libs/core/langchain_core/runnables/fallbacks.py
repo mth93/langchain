@@ -11,10 +11,10 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.load.dump import dumpd
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables.base import Runnable, RunnableSerializable
-from libs.core.langchain_core.runnables.config import (
+from langchain.libs.core.langchain_core.load.dump import dumpd
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables.base import Runnable, RunnableSerializable
+from langchain.libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     ensure_config,
     get_async_callback_manager_for_config,
@@ -22,7 +22,7 @@ from libs.core.langchain_core.runnables.config import (
     get_config_list,
     patch_config,
 )
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.runnables.utils import (
     ConfigurableFieldSpec,
     Input,
     Output,
@@ -30,7 +30,7 @@ from libs.core.langchain_core.runnables.utils import (
 )
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.callbacks.manager import AsyncCallbackManagerForChainRun
+    from langchain.libs.core.langchain_core.callbacks.manager import AsyncCallbackManagerForChainRun
 
 
 class RunnableWithFallbacks(RunnableSerializable[Input, Output]):
@@ -53,8 +53,8 @@ class RunnableWithFallbacks(RunnableSerializable[Input, Output]):
 
         .. code-block:: python
 
-            from libs.core.langchain_core.chat_models.openai import ChatOpenAI
-            from libs.core.langchain_core.chat_models.anthropic import ChatAnthropic
+            from langchain.libs.core.langchain_core.chat_models.openai import ChatOpenAI
+            from langchain.libs.core.langchain_core.chat_models.anthropic import ChatAnthropic
 
             model = ChatAnthropic().with_fallbacks([ChatOpenAI()])
             # Will usually use ChatAnthropic, but fallback to ChatOpenAI
@@ -65,9 +65,9 @@ class RunnableWithFallbacks(RunnableSerializable[Input, Output]):
             # Here if both LLM providers fail, we'll fallback to a good hardcoded
             # response.
 
-            from libs.core.langchain_core.prompts import PromptTemplate
-            from libs.core.langchain_core.output_parser import StrOutputParser
-            from libs.core.langchain_core.runnables import RunnableLambda
+            from langchain.libs.core.langchain_core.prompts import PromptTemplate
+            from langchain.libs.core.langchain_core.output_parser import StrOutputParser
+            from langchain.libs.core.langchain_core.runnables import RunnableLambda
 
             def when_all_is_lost(inputs):
                 return ("Looks like our LLM providers are down. "
@@ -209,7 +209,7 @@ class RunnableWithFallbacks(RunnableSerializable[Input, Output]):
         return_exceptions: bool = False,
         **kwargs: Optional[Any],
     ) -> List[Output]:
-        from libs.core.langchain_core.callbacks.manager import CallbackManager
+        from langchain.libs.core.langchain_core.callbacks.manager import CallbackManager
 
         if return_exceptions:
             raise NotImplementedError()
@@ -279,7 +279,7 @@ class RunnableWithFallbacks(RunnableSerializable[Input, Output]):
         return_exceptions: bool = False,
         **kwargs: Optional[Any],
     ) -> List[Output]:
-        from libs.core.langchain_core.callbacks.manager import AsyncCallbackManager
+        from langchain.libs.core.langchain_core.callbacks.manager import AsyncCallbackManager
 
         if return_exceptions:
             raise NotImplementedError()

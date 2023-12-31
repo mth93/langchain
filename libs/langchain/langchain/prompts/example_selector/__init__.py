@@ -1,8 +1,8 @@
 """Logic for selecting examples to include in prompts."""
-from libs.core.langchain_core.example_selectors.length_based import (
+from langchain.libs.core.langchain_core.example_selectors.length_based import (
     LengthBasedExampleSelector,
 )
-from libs.core.langchain_core.example_selectors.semantic_similarity import (
+from langchain.libs.core.langchain_core.example_selectors.semantic_similarity import (
     MaxMarginalRelevanceExampleSelector,
     SemanticSimilarityExampleSelector,
 )

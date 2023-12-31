@@ -1,4 +1,4 @@
-from libs.core.langchain_core.tracers.log_stream import (
+from langchain.libs.core.langchain_core.tracers.log_stream import (
     LogEntry,
     LogStreamCallbackHandler,
     RunLog,

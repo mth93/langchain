@@ -1,12 +1,12 @@
-from libs.core.langchain_core.language_models.base import (
+from langchain.libs.core.langchain_core.language_models.base import (
     BaseLanguageModel,
     LanguageModelInput,
     LanguageModelLike,
     LanguageModelOutput,
     get_tokenizer,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel, SimpleChatModel
-from libs.core.langchain_core.language_models.llms import LLM, BaseLLM
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel, SimpleChatModel
+from langchain.libs.core.langchain_core.language_models.llms import LLM, BaseLLM
 
 __all__ = [
     "BaseLanguageModel",

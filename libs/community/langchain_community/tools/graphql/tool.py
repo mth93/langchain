@@ -1,8 +1,8 @@
 import json
 from typing import Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.utilities.graphql import GraphQLAPIWrapper
 

@@ -12,8 +12,8 @@ from langchain.retrievers import (
 )
 from langchain.schema import StrOutputParser
 from langchain.utils.openai_functions import convert_pydantic_to_openai_function
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.runnables import (
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.runnables import (
     RouterRunnable,
     RunnableParallel,
     RunnablePassthrough,

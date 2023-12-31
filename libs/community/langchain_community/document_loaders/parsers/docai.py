@@ -10,8 +10,8 @@ import time
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Iterator, List, Optional, Sequence
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.utils.iter import batch_iterate
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.utils.iter import batch_iterate
 
 from langchain_community.document_loaders.base import BaseBlobParser
 from langchain_community.document_loaders.blob_loaders import Blob

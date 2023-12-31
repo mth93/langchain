@@ -3,14 +3,14 @@ from __future__ import annotations
 import logging
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.load.serializable import Serializable
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.load.serializable import Serializable
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 from tenacity import (
     before_sleep_log,
     retry,

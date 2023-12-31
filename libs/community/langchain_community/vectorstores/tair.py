@@ -5,10 +5,10 @@ import logging
 import uuid
 from typing import Any, Iterable, List, Optional, Type
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.utils import get_from_dict_or_env
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 logger = logging.getLogger(__name__)
 

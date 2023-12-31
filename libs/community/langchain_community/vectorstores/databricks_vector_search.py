@@ -5,9 +5,9 @@ import logging
 import uuid
 from typing import TYPE_CHECKING, Any, Iterable, List, Optional, Tuple, Type
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.vectorstores import VST, VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.vectorstores import VST, VectorStore
 
 if TYPE_CHECKING:
     from databricks.vector_search.client import VectorSearchIndex

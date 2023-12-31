@@ -1,6 +1,6 @@
 import json
 
-from libs.core.langchain_core.messages import message_to_dict
+from langchain.libs.core.langchain_core.messages import message_to_dict
 
 from langchain.memory import ConversationBufferMemory, SingleStoreDBChatMessageHistory
 

@@ -9,8 +9,8 @@ try:
     from sqlalchemy.orm import declarative_base
 except ImportError:
     from sqlalchemy.ext.declarative import declarative_base
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

@@ -1,6 +1,6 @@
 """Test chat model integration."""
-from libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMessage
-from libs.core.langchain_core.pydantic_v1 import SecretStr
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture
 
 libs.partners.google_genai.chat_models import (

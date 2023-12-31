@@ -1,8 +1,8 @@
 from langchain.agents import AgentExecutor
 from langchain.chat_models import ChatAnthropic
 from langchain.prompts import ChatPromptTemplate
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 from .agent_scratchpad import format_agent_scratchpad
 from .output_parser import parse_output

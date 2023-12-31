@@ -1,7 +1,7 @@
 """Test OpenSearch functionality."""
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores.opensearch_vector_search import (
     PAINLESS_SCRIPTING_SEARCH,

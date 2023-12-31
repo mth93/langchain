@@ -1,4 +1,4 @@
-from libs.core.langchain_core.runnables.base import (
+from langchain.libs.core.langchain_core.runnables.base import (
     Other,
     Runnable,
     RunnableBinding,
@@ -13,7 +13,7 @@ from libs.core.langchain_core.runnables.base import (
     RunnableSerializable,
     coerce_to_runnable,
 )
-from libs.core.langchain_core.runnables.utils import Input, Output
+from langchain.libs.core.langchain_core.runnables.utils import Input, Output
 
 # Backwards compatibility.
 RunnableMap = RunnableParallel

@@ -5,10 +5,10 @@ from enum import Enum
 from typing import Any, Dict, List, Optional, Tuple, Union
 from uuid import UUID
 
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.callbacks import BaseCallbackHandler
-from libs.core.langchain_core.messages import BaseMessage, ChatMessage
-from libs.core.langchain_core.outputs import Generation, LLMResult
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.callbacks import BaseCallbackHandler
+from langchain.libs.core.langchain_core.messages import BaseMessage, ChatMessage
+from langchain.libs.core.langchain_core.outputs import Generation, LLMResult
 
 
 class LabelStudioMode(Enum):

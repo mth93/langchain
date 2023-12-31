@@ -14,9 +14,9 @@ from typing import (
 )
 
 import requests
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, SecretStr, root_validator
-from libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
 from tenacity import (
     before_sleep_log,
     retry,

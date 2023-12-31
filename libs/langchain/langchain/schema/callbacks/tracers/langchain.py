@@ -1,4 +1,4 @@
-from libs.core.langchain_core.tracers.langchain import (
+from langchain.libs.core.langchain_core.tracers.langchain import (
     LangChainTracer,
     get_client,
     log_error_once,

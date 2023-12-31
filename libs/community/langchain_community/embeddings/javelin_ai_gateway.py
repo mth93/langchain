@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any, Iterator, List, Optional
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
 
 
 def _chunk(texts: List[str], size: int) -> Iterator[List[str]]:

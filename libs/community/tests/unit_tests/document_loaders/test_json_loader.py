@@ -2,7 +2,7 @@ import io
 from typing import Any, Dict
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 from pytest import raises
 from pytest_mock import MockerFixture
 

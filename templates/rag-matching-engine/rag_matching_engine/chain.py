@@ -4,9 +4,9 @@ from langchain.embeddings import VertexAIEmbeddings
 from langchain.llms import VertexAI
 from langchain.prompts import PromptTemplate
 from langchain.vectorstores import MatchingEngine
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 # you need to preate the index first, for example, as described here:
 # https://github.com/GoogleCloudPlatform/generative-ai/blob/main/language/use-cases/document-qa/question_answering_documents_langchain_matching_engine.ipynb

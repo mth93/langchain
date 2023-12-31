@@ -19,7 +19,7 @@ access to the large language model (**LLM**) APIs and services.
 """  # noqa: E501
 from typing import Any, Callable, Dict, Type
 
-from libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
 
 
 def _import_ai21() -> Any:

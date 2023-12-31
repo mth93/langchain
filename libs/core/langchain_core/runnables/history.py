@@ -13,21 +13,21 @@ from typing import (
     Union,
 )
 
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.load import load
-from libs.core.langchain_core.pydantic_v1 import BaseModel, create_model
-from libs.core.langchain_core.runnables.base import Runnable, RunnableBindingBase, RunnableLambda
-from libs.core.langchain_core.runnables.config import run_in_executor
-from libs.core.langchain_core.runnables.passthrough import RunnablePassthrough
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.load import load
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, create_model
+from langchain.libs.core.langchain_core.runnables.base import Runnable, RunnableBindingBase, RunnableLambda
+from langchain.libs.core.langchain_core.runnables.config import run_in_executor
+from langchain.libs.core.langchain_core.runnables.passthrough import RunnablePassthrough
+from langchain.libs.core.langchain_core.runnables.utils import (
     ConfigurableFieldSpec,
     get_unique_config_specs,
 )
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.messages import BaseMessage
-    from libs.core.langchain_core.runnables.config import RunnableConfig
-    from libs.core.langchain_core.tracers.schemas import Run
+    from langchain.libs.core.langchain_core.messages import BaseMessage
+    from langchain.libs.core.langchain_core.runnables.config import RunnableConfig
+    from langchain.libs.core.langchain_core.tracers.schemas import Run
 
 
 MessagesOrDictWithMessages = Union[Sequence["BaseMessage"], Dict[str, Any]]
@@ -49,8 +49,8 @@ class RunnableWithMessageHistory(RunnableBindingBase):
             from langchain.chat_models import ChatAnthropic
             from langchain.memory.chat_message_histories import RedisChatMessageHistory
 
-            from libs.core.langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-            from libs.core.langchain_core.runnables.history import RunnableWithMessageHistory
+            from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+            from langchain.libs.core.langchain_core.runnables.history import RunnableWithMessageHistory
 
 
             prompt = ChatPromptTemplate.from_messages([
@@ -259,7 +259,7 @@ class RunnableWithMessageHistory(RunnableBindingBase):
     ) -> Type[BaseModel]:
         super_schema = super().get_input_schema(config)
         if super_schema.__custom_root_type__ is not None:
-            from libs.core.langchain_core.messages import BaseMessage
+            from langchain.libs.core.langchain_core.messages import BaseMessage
 
             fields: Dict = {}
             if self.input_messages_key and self.history_messages_key:
@@ -281,10 +281,10 @@ class RunnableWithMessageHistory(RunnableBindingBase):
     def _get_input_messages(
         self, input_val: Union[str, BaseMessage, Sequence[BaseMessage]]
     ) -> List[BaseMessage]:
-        from libs.core.langchain_core.messages import BaseMessage
+        from langchain.libs.core.langchain_core.messages import BaseMessage
 
         if isinstance(input_val, str):
-            from libs.core.langchain_core.messages import HumanMessage
+            from langchain.libs.core.langchain_core.messages import HumanMessage
 
             return [HumanMessage(content=input_val)]
         elif isinstance(input_val, BaseMessage):
@@ -300,13 +300,13 @@ class RunnableWithMessageHistory(RunnableBindingBase):
     def _get_output_messages(
         self, output_val: Union[str, BaseMessage, Sequence[BaseMessage], dict]
     ) -> List[BaseMessage]:
-        from libs.core.langchain_core.messages import BaseMessage
+        from langchain.libs.core.langchain_core.messages import BaseMessage
 
         if isinstance(output_val, dict):
             output_val = output_val[self.output_messages_key or "output"]
 
         if isinstance(output_val, str):
-            from libs.core.langchain_core.messages import AIMessage
+            from langchain.libs.core.langchain_core.messages import AIMessage
 
             return [AIMessage(content=output_val)]
         elif isinstance(output_val, BaseMessage):

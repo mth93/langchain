@@ -1,6 +1,6 @@
 from typing import Callable, Dict, Iterator, List, Optional
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 from langchain_community.utilities.tensorflow_datasets import TensorflowDatasets

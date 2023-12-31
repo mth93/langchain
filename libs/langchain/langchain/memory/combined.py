@@ -1,8 +1,8 @@
 import warnings
 from typing import Any, Dict, List, Set
 
-from libs.core.langchain_core.memory import BaseMemory
-from libs.core.langchain_core.pydantic_v1 import validator
+from langchain.libs.core.langchain_core.memory import BaseMemory
+from langchain.libs.core.langchain_core.pydantic_v1 import validator
 
 from langchain.memory.chat_memory import BaseChatMemory
 

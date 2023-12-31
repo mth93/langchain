@@ -4,11 +4,11 @@ from dataclasses import dataclass, field
 from typing import TYPE_CHECKING, Dict, List, NamedTuple, Optional, Type, Union
 from uuid import uuid4
 
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables.graph_draw import draw
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables.graph_draw import draw
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.runnables.base import Runnable as RunnableType
+    from langchain.libs.core.langchain_core.runnables.base import Runnable as RunnableType
 
 
 class Edge(NamedTuple):
@@ -111,7 +111,7 @@ class Graph:
                 self.remove_node(last_node)
 
     def draw_ascii(self) -> str:
-        from libs.core.langchain_core.runnables.base import Runnable
+        from langchain.libs.core.langchain_core.runnables.base import Runnable
 
         def node_data(node: Node) -> str:
             if isinstance(node.data, Runnable):

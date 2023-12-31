@@ -8,9 +8,9 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.prompts.prompt import PromptTemplate
 from langchain.schema import AIMessage, HumanMessage, format_document
 from langchain.vectorstores import Pinecone
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.runnables import (
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.runnables import (
     RunnableBranch,
     RunnableLambda,
     RunnableParallel,

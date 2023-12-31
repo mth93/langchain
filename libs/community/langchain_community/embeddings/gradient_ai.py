@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Extra, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 from packaging.version import parse
 
 __all__ = ["GradientEmbeddings"]

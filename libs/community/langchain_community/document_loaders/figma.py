@@ -2,8 +2,8 @@ import json
 import urllib.request
 from typing import Any, List
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.utils import stringify_dict
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.utils import stringify_dict
 
 from langchain_community.document_loaders.base import BaseLoader
 

@@ -13,14 +13,14 @@ from typing import (
     cast,
 )
 
-from libs.core.langchain_core.output_parsers import (
+from langchain.libs.core.langchain_core.output_parsers import (
     BaseGenerationOutputParser,
     BaseLLMOutputParser,
     BaseOutputParser,
 )
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import Runnable
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import Runnable
 
 from langchain.base_language import BaseLanguageModel
 from langchain.chains import LLMChain
@@ -244,8 +244,8 @@ def create_openai_fn_runnable(
 
                 from langchain.chains.openai_functions import create_openai_fn_chain
                 from langchain.chat_models import ChatOpenAI
-                from libs.core.langchain_core.prompts import ChatPromptTemplate
-                from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+                from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
+                from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 
                 class RecordPerson(BaseModel):
@@ -318,8 +318,8 @@ def create_structured_output_runnable(
 
                 from langchain.chains.openai_functions import create_structured_output_chain
                 from langchain.chat_models import ChatOpenAI
-                from libs.core.langchain_core.prompts import ChatPromptTemplate
-                from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+                from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
+                from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
                 class Dog(BaseModel):
                     \"\"\"Identifying information about a dog.\"\"\"
@@ -419,9 +419,9 @@ def create_openai_fn_chain(
 
                 from langchain.chains.openai_functions import create_openai_fn_chain
                 from langchain.chat_models import ChatOpenAI
-                from libs.core.langchain_core.prompts import ChatPromptTemplate
+                from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
-                from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+                from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 
                 class RecordPerson(BaseModel):
@@ -506,9 +506,9 @@ def create_structured_output_chain(
 
                 from langchain.chains.openai_functions import create_structured_output_chain
                 from langchain.chat_models import ChatOpenAI
-                from libs.core.langchain_core.prompts import ChatPromptTemplate
+                from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
-                from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+                from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
                 class Dog(BaseModel):
                     \"\"\"Identifying information about a dog.\"\"\"

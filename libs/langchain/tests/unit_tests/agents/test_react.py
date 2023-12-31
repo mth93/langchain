@@ -2,10 +2,10 @@
 
 from typing import Union
 
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.tools import Tool
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain.agents.react.base import ReActChain, ReActDocstoreAgent
 from langchain.docstore.base import Docstore

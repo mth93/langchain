@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import Iterator, List
 
 import requests
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

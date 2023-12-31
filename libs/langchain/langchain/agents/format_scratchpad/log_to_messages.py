@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
 
 
 def format_log_to_messages(

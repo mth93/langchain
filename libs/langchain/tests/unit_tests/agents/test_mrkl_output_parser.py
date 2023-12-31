@@ -1,6 +1,6 @@
 import pytest
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.agents.mrkl.output_parser import (
     MISSING_ACTION_AFTER_THOUGHT_ERROR_MESSAGE,

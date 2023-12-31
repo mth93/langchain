@@ -24,12 +24,12 @@ from urllib.parse import urlparse
 # TODO: remove ignore once the google package is published with types
 import google.generativeai as genai  # type: ignore[import]
 import requests
-from libs.core.langchain_core.callbacks.manager import (
+from langchain.libs.core.langchain_core.callbacks.manager import (
     AsyncCallbackManagerForLLMRun,
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     BaseMessage,
@@ -39,9 +39,9 @@ from libs.core.langchain_core.messages import (
     HumanMessageChunk,
     SystemMessage,
 )
-from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
-from libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, ChatResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 from tenacity import (
     before_sleep_log,
     retry,
@@ -50,7 +50,7 @@ from tenacity import (
     wait_exponential,
 )
 
-from libs.partners.google_genai.langchain_google_genai._common import GoogleGenerativeAIError
+from langchain.libs.partners.google_genai.langchain_google_genai._common import GoogleGenerativeAIError
 
 IMAGE_TYPES: Tuple = ()
 try:

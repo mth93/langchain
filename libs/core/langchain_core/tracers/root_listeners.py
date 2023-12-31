@@ -1,12 +1,12 @@
 from typing import Callable, Optional, Union
 from uuid import UUID
 
-from libs.core.langchain_core.runnables.config import (
+from langchain.libs.core.langchain_core.runnables.config import (
     RunnableConfig,
     call_func_with_variable_args,
 )
-from libs.core.langchain_core.tracers.base import BaseTracer
-from libs.core.langchain_core.tracers.schemas import Run
+from langchain.libs.core.langchain_core.tracers.base import BaseTracer
+from langchain.libs.core.langchain_core.tracers.schemas import Run
 
 Listener = Union[Callable[[Run], None], Callable[[Run, RunnableConfig], None]]
 

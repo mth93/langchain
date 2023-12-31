@@ -1,8 +1,8 @@
 import json
 from typing import Optional, Type
 
-from libs.core.langchain_core.callbacks import AsyncCallbackManagerForToolRun
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.callbacks import AsyncCallbackManagerForToolRun
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain_community.tools.ainetwork.base import AINBaseTool
 

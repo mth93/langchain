@@ -1,4 +1,4 @@
-from libs.core.langchain_core._api.deprecation import (
+from langchain.libs.core.langchain_core._api.deprecation import (
     LangChainDeprecationWarning,
     LangChainPendingDeprecationWarning,
     deprecated,

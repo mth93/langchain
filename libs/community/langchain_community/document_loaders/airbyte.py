@@ -1,7 +1,7 @@
 from typing import Any, Callable, Iterator, List, Mapping, Optional
 
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.utils.utils import guard_import
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.utils.utils import guard_import
 
 from langchain_community.document_loaders.base import BaseLoader
 

@@ -3,18 +3,18 @@ from io import StringIO
 from typing import Any, Callable, Dict, List, Mapping, Optional
 
 import yaml
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     CallbackManagerForLLMRun,
 )
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     HumanMessage,
     _message_from_dict,
     messages_to_dict,
 )
-from libs.core.langchain_core.outputs import ChatGeneration, ChatResult
-from libs.core.langchain_core.pydantic_v1 import Field
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatResult
+from langchain.libs.core.langchain_core.pydantic_v1 import Field
 
 from langchain_community.llms.utils import enforce_stop_tokens
 

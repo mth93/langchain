@@ -1,7 +1,7 @@
 """Test XMLOutputParser"""
 import pytest
 
-from libs.core.langchain_core.output_parsers.xml import XMLOutputParser
+from langchain.libs.core.langchain_core.output_parsers.xml import XMLOutputParser
 
 DEF_RESULT_ENCODING = """<?xml version="1.0" encoding="UTF-8"?>
  <foo>

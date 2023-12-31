@@ -3,7 +3,7 @@ from typing import Callable
 
 import pytest
 
-from libs.core.langchain_core.runnables.utils import (
+from langchain.libs.core.langchain_core.runnables.utils import (
     get_lambda_source,
     indent_lines_after_first,
 )

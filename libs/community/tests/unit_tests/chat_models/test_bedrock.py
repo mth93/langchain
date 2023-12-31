@@ -3,7 +3,7 @@ from typing import List
 from unittest.mock import MagicMock
 
 import pytest
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     HumanMessage,

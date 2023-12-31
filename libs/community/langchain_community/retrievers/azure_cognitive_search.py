@@ -5,14 +5,14 @@ from typing import Dict, List, Optional
 
 import aiohttp
 import requests
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForRetrieverRun,
     CallbackManagerForRetrieverRun,
 )
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import Extra, root_validator
-from libs.core.langchain_core.retrievers import BaseRetriever
-from libs.core.langchain_core.utils import get_from_dict_or_env, get_from_env
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, root_validator
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env, get_from_env
 
 DEFAULT_URL_SUFFIX = "search.windows.net"
 """Default URL Suffix for endpoint connection - commercial cloud"""

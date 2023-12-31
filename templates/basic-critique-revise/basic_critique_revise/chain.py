@@ -7,8 +7,8 @@ from typing import Any, Dict, Sequence
 from langchain.chains.openai_functions import convert_to_openai_function
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field, ValidationError, conint
-from libs.core.langchain_core.runnables import (
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field, ValidationError, conint
+from langchain.libs.core.langchain_core.runnables import (
     Runnable,
     RunnableBranch,
     RunnableLambda,

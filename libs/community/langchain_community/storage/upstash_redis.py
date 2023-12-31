@@ -1,7 +1,7 @@
 from typing import Any, Iterator, List, Optional, Sequence, Tuple, cast
 
-from libs.core.langchain_core._api.deprecation import deprecated
-from libs.core.langchain_core.stores import BaseStore, ByteStore
+from langchain.libs.core.langchain_core._api.deprecation import deprecated
+from langchain.libs.core.langchain_core.stores import BaseStore, ByteStore
 
 
 class _UpstashRedisStore(BaseStore[str, str]):

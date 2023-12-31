@@ -1,7 +1,7 @@
 from typing import Any, Optional
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import ChatPromptTemplate
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
 
 from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain

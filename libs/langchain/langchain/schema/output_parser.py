@@ -1,5 +1,5 @@
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.output_parsers import (
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.output_parsers import (
     BaseCumulativeTransformOutputParser,
     BaseGenerationOutputParser,
     BaseLLMOutputParser,
@@ -7,7 +7,7 @@ from libs.core.langchain_core.output_parsers import (
     BaseTransformOutputParser,
     StrOutputParser,
 )
-from libs.core.langchain_core.output_parsers.base import T
+from langchain.libs.core.langchain_core.output_parsers.base import T
 
 # Backwards compatibility.
 NoOpOutputParser = StrOutputParser

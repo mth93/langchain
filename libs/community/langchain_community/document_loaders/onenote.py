@@ -3,8 +3,8 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Optional
 
 import requests
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import (
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import (
     BaseModel,
     BaseSettings,
     Field,

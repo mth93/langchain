@@ -1,8 +1,8 @@
 """Test Alibaba Tongyi Chat Model."""
 
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
-from libs.core.langchain_core.outputs import ChatGeneration, LLMResult
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, LLMResult
 
 from langchain_community.chat_models.tongyi import ChatTongyi
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

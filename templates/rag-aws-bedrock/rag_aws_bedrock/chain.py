@@ -4,9 +4,9 @@ from langchain.embeddings import BedrockEmbeddings
 from langchain.llms.bedrock import Bedrock
 from langchain.prompts import ChatPromptTemplate
 from langchain.vectorstores import FAISS
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 # Get region and profile from env
 region = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")

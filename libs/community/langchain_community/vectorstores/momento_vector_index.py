@@ -13,10 +13,10 @@ from typing import (
 from uuid import uuid4
 
 import numpy as np
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.utils import get_from_env
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.utils import get_from_env
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community.vectorstores.utils import (
     DistanceStrategy,

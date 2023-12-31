@@ -3,9 +3,9 @@ from datetime import datetime
 from typing import Dict, Iterator, List, Literal, Optional, Union
 
 import requests
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator, validator
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, root_validator, validator
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 from langchain_community.document_loaders.base import BaseLoader
 

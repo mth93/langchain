@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from libs.core.langchain_core.language_models import LanguageModelLike
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.retrievers import RetrieverLike, RetrieverOutputLike
-from libs.core.langchain_core.runnables import RunnableBranch
+from langchain.libs.core.langchain_core.language_models import LanguageModelLike
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.retrievers import RetrieverLike, RetrieverOutputLike
+from langchain.libs.core.langchain_core.runnables import RunnableBranch
 
 
 def create_history_aware_retriever(

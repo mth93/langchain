@@ -8,8 +8,8 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.tools.render import format_tool_to_openai_function
 from langchain.tools.tavily_search import TavilySearchResults
 from langchain.utilities.tavily_search import TavilySearchAPIWrapper
-from libs.core.langchain_core.messages import AIMessage, HumanMessage
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 # Create the tool
 search = TavilySearchAPIWrapper()

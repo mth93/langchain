@@ -5,9 +5,9 @@ import re
 import string
 from typing import Any, List, Optional, Sequence, Tuple
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import PromptTemplate
-from libs.core.langchain_core.pydantic_v1 import Extra
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra
 
 from langchain.callbacks.manager import Callbacks
 from langchain.chains.llm import LLMChain

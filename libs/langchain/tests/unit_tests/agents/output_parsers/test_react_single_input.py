@@ -1,6 +1,6 @@
 import pytest
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
 
 from langchain.agents.output_parsers.react_single_input import (
     ReActSingleInputOutputParser,

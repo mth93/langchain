@@ -1,5 +1,5 @@
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.prompts import PromptTemplate
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.prompts import PromptTemplate
 
 from langchain.chains import create_history_aware_retriever
 from langchain.llms.fake import FakeListLLM

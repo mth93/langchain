@@ -5,10 +5,10 @@ from abc import abstractmethod
 from typing import Any, Dict, List, Optional
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.tools import BaseTool
-from libs.core.langchain_core.utils import get_from_dict_or_env
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.utils import get_from_dict_or_env
 
 logger = logging.getLogger(__name__)
 

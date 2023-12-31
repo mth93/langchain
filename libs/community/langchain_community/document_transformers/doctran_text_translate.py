@@ -1,7 +1,7 @@
 from typing import Any, Optional, Sequence
 
-from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
-from libs.core.langchain_core.utils import get_from_env
+from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from langchain.libs.core.langchain_core.utils import get_from_env
 
 
 class DoctranTextTranslator(BaseDocumentTransformer):

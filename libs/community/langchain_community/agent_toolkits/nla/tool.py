@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Optional
 
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.tools import Tool
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.tools import Tool
 
 from langchain_community.tools.openapi.utils.api_models import APIOperation
 from langchain_community.tools.openapi.utils.openapi_utils import OpenAPISpec

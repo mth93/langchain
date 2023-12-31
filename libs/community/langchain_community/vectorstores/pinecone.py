@@ -6,10 +6,10 @@ import warnings
 from typing import TYPE_CHECKING, Any, Callable, Iterable, List, Optional, Tuple, Union
 
 import numpy as np
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.utils.iter import batch_iterate
-from libs.core.langchain_core.vectorstores import VectorStore
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.utils.iter import batch_iterate
+from langchain.libs.core.langchain_core.vectorstores import VectorStore
 
 from langchain_community.vectorstores.utils import (
     DistanceStrategy,

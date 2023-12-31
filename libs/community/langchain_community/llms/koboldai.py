@@ -2,8 +2,8 @@ import logging
 from typing import Any, Dict, List, Optional
 
 import requests
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
 
 logger = logging.getLogger(__name__)
 

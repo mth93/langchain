@@ -3,8 +3,8 @@ from time import sleep
 from typing import Any, Callable, List, Union
 from uuid import uuid4
 
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     message_to_dict,
     messages_from_dict,

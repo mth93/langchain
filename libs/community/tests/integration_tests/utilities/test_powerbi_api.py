@@ -1,6 +1,6 @@
 """Integration test for POWERBI API Wrapper."""
 import pytest
-from libs.core.langchain_core.utils import get_from_env
+from langchain.libs.core.langchain_core.utils import get_from_env
 
 from langchain_community.utilities.powerbi import PowerBIDataset
 

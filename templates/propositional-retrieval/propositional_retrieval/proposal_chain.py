@@ -2,8 +2,8 @@ import logging
 
 from langchain.output_parsers.openai_tools import JsonOutputToolsParser
 from langchain_community.chat_models import ChatOpenAI
-from libs.core.langchain_core.prompts import ChatPromptTemplate
-from libs.core.langchain_core.runnables import RunnableLambda
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
+from langchain.libs.core.langchain_core.runnables import RunnableLambda
 
 logging.basicConfig(level=logging.INFO)
 

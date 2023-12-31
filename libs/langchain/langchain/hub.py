@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Optional
 
-from libs.core.langchain_core.load.dump import dumps
-from libs.core.langchain_core.load.load import loads
+from langchain.libs.core.langchain_core.load.dump import dumps
+from langchain.libs.core.langchain_core.load.load import loads
 
 if TYPE_CHECKING:
     from langchainhub import Client

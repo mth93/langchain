@@ -1,4 +1,4 @@
-from libs.core.langchain_core.runnables.config import (
+from langchain.libs.core.langchain_core.runnables.config import (
     EmptyDict,
     RunnableConfig,
     acall_func_with_variable_args,

@@ -2,8 +2,8 @@ from typing import Iterator, List
 from uuid import uuid4
 
 import pytest
-from libs.core.langchain_core.messages import BaseMessage, HumanMessage
-from libs.core.langchain_core.prompts.chat import ChatPromptTemplate
+from langchain.libs.core.langchain_core.messages import BaseMessage, HumanMessage
+from langchain.libs.core.langchain_core.prompts.chat import ChatPromptTemplate
 from langsmith import Client as Client
 from langsmith.schemas import DataType
 

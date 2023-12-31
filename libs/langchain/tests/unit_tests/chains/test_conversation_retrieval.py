@@ -1,5 +1,5 @@
 """Test conversation chain and memory."""
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.chains.conversational_retrieval.base import (
     ConversationalRetrievalChain,

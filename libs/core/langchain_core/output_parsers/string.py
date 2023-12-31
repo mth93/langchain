@@ -1,6 +1,6 @@
 from typing import List
 
-from libs.core.langchain_core.output_parsers.transform import BaseTransformOutputParser
+from langchain.libs.core.langchain_core.output_parsers.transform import BaseTransformOutputParser
 
 
 class StrOutputParser(BaseTransformOutputParser[str]):

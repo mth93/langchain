@@ -2,10 +2,10 @@
 
 from typing import Any, Dict, List, Optional, Union
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 from langsmith import RunEvaluator
 
 from langchain.evaluation.criteria.eval_chain import CRITERIA_TYPE

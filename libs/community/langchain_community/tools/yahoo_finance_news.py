@@ -1,8 +1,8 @@
 from typing import Iterable, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForToolRun
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForToolRun
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.tools import BaseTool
 from requests.exceptions import HTTPError, ReadTimeout
 from urllib3.exceptions import ConnectionError
 

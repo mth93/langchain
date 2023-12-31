@@ -1,22 +1,22 @@
 """Module implements an agent that uses OpenAI's APIs function enabled API."""
 from typing import Any, List, Optional, Sequence, Tuple, Union
 
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.messages import (
     BaseMessage,
     SystemMessage,
 )
-from libs.core.langchain_core.prompts import BasePromptTemplate
-from libs.core.langchain_core.prompts.chat import (
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate
+from langchain.libs.core.langchain_core.prompts.chat import (
     BaseMessagePromptTemplate,
     ChatPromptTemplate,
     HumanMessagePromptTemplate,
     MessagesPlaceholder,
 )
-from libs.core.langchain_core.pydantic_v1 import root_validator
-from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.pydantic_v1 import root_validator
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain.agents import BaseSingleActionAgent
 from langchain.agents.format_scratchpad.openai_functions import (
@@ -254,7 +254,7 @@ def create_openai_functions_agent(
             agent_executor.invoke({"input": "hi"})
 
             # Using with chat history
-            from libs.core.langchain_core.messages import AIMessage, HumanMessage
+            from langchain.libs.core.langchain_core.messages import AIMessage, HumanMessage
             agent_executor.invoke(
                 {
                     "input": "what's my name?",

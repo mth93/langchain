@@ -1,10 +1,10 @@
 import logging
 from typing import Any, Dict, List, Mapping, Optional
 
-from libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
-from libs.core.langchain_core.language_models.llms import LLM
-from libs.core.langchain_core.pydantic_v1 import Extra, Field, SecretStr, root_validator
-from libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
+from langchain.libs.core.langchain_core.callbacks import CallbackManagerForLLMRun
+from langchain.libs.core.langchain_core.language_models.llms import LLM
+from langchain.libs.core.langchain_core.pydantic_v1 import Extra, Field, SecretStr, root_validator
+from langchain.libs.core.langchain_core.utils import convert_to_secret_str, get_from_dict_or_env
 
 from langchain_community.llms.utils import enforce_stop_tokens
 

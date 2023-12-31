@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional
 
 from langsmith.schemas import RunBase as BaseRunV2
 
-from libs.core.langchain_core.pydantic_v1 import Field, root_validator
+from langchain.libs.core.langchain_core.pydantic_v1 import Field, root_validator
 
 
 class Run(BaseRunV2):

@@ -71,7 +71,7 @@ def new(
     """
     Creates a new integration package.
 
-    Should be run from libs/partners
+    Should be run from langchain.libs/partners
     """
     # confirm that we are in the right directory
     if not Path.cwd().name == "partners" or not Path.cwd().parent.name == "libs":

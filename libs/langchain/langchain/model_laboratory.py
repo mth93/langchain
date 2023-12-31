@@ -3,9 +3,9 @@ from __future__ import annotations
 
 from typing import List, Optional, Sequence
 
-from libs.core.langchain_core.language_models.llms import BaseLLM
-from libs.core.langchain_core.prompts.prompt import PromptTemplate
-from libs.core.langchain_core.utils.input import get_color_mapping, print_text
+from langchain.libs.core.langchain_core.language_models.llms import BaseLLM
+from langchain.libs.core.langchain_core.prompts.prompt import PromptTemplate
+from langchain.libs.core.langchain_core.utils.input import get_color_mapping, print_text
 
 from langchain.chains.base import Chain
 from langchain.chains.llm import LLMChain

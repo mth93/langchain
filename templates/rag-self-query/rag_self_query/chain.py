@@ -7,9 +7,9 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.retrievers import SelfQueryRetriever
 from langchain.schema import format_document
 from langchain.vectorstores.elasticsearch import ElasticsearchStore
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
-from libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.runnables import RunnableParallel, RunnablePassthrough
 
 from .prompts import CONDENSE_QUESTION_PROMPT, DOCUMENT_PROMPT, LLM_CONTEXT_PROMPT
 

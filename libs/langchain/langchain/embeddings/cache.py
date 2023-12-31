@@ -14,8 +14,8 @@ import uuid
 from functools import partial
 from typing import Callable, List, Sequence, Union, cast
 
-from libs.core.langchain_core.embeddings import Embeddings
-from libs.core.langchain_core.stores import BaseStore, ByteStore
+from langchain.libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.stores import BaseStore, ByteStore
 
 from langchain.storage.encoder_backed import EncoderBackedStore
 

@@ -1,5 +1,5 @@
 """Test AwaDB functionality."""
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.vectorstores import AwaDB
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings

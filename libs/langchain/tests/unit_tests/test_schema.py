@@ -2,9 +2,9 @@
 from typing import Union
 
 import pytest
-from libs.core.langchain_core.agents import AgentAction, AgentActionMessageLog, AgentFinish
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentActionMessageLog, AgentFinish
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     AIMessageChunk,
     ChatMessage,
@@ -16,9 +16,9 @@ from libs.core.langchain_core.messages import (
     SystemMessage,
     SystemMessageChunk,
 )
-from libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, Generation
-from libs.core.langchain_core.prompt_values import ChatPromptValueConcrete, StringPromptValue
-from libs.core.langchain_core.pydantic_v1 import BaseModel, ValidationError
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatGenerationChunk, Generation
+from langchain.libs.core.langchain_core.prompt_values import ChatPromptValueConcrete, StringPromptValue
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, ValidationError
 
 
 def test_serialization_of_wellknown_objects() -> None:

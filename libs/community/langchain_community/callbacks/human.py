@@ -1,7 +1,7 @@
 from typing import Any, Awaitable, Callable, Dict, Optional
 from uuid import UUID
 
-from libs.core.langchain_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
+from langchain.libs.core.langchain_core.callbacks import AsyncCallbackHandler, BaseCallbackHandler
 
 
 def _default_approve(_input: str) -> bool:

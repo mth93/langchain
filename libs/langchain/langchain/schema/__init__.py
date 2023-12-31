@@ -1,11 +1,11 @@
 """**Schemas** are the LangChain Base Classes and Interfaces."""
-from libs.core.langchain_core.agents import AgentAction, AgentFinish
-from libs.core.langchain_core.caches import BaseCache
-from libs.core.langchain_core.chat_history import BaseChatMessageHistory
-from libs.core.langchain_core.documents import BaseDocumentTransformer, Document
-from libs.core.langchain_core.exceptions import LangChainException, OutputParserException
-from libs.core.langchain_core.memory import BaseMemory
-from libs.core.langchain_core.messages import (
+from langchain.libs.core.langchain_core.agents import AgentAction, AgentFinish
+from langchain.libs.core.langchain_core.caches import BaseCache
+from langchain.libs.core.langchain_core.chat_history import BaseChatMessageHistory
+from langchain.libs.core.langchain_core.documents import BaseDocumentTransformer, Document
+from langchain.libs.core.langchain_core.exceptions import LangChainException, OutputParserException
+from langchain.libs.core.langchain_core.memory import BaseMemory
+from langchain.libs.core.langchain_core.messages import (
     AIMessage,
     BaseMessage,
     ChatMessage,
@@ -17,23 +17,23 @@ from libs.core.langchain_core.messages import (
     messages_from_dict,
     messages_to_dict,
 )
-from libs.core.langchain_core.messages.base import message_to_dict
-from libs.core.langchain_core.output_parsers import (
+from langchain.libs.core.langchain_core.messages.base import message_to_dict
+from langchain.libs.core.langchain_core.output_parsers import (
     BaseLLMOutputParser,
     BaseOutputParser,
     StrOutputParser,
 )
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatResult,
     Generation,
     LLMResult,
     RunInfo,
 )
-from libs.core.langchain_core.prompt_values import PromptValue
-from libs.core.langchain_core.prompts import BasePromptTemplate, format_document
-from libs.core.langchain_core.retrievers import BaseRetriever
-from libs.core.langchain_core.stores import BaseStore
+from langchain.libs.core.langchain_core.prompt_values import PromptValue
+from langchain.libs.core.langchain_core.prompts import BasePromptTemplate, format_document
+from langchain.libs.core.langchain_core.retrievers import BaseRetriever
+from langchain.libs.core.langchain_core.stores import BaseStore
 
 RUN_KEY = "__run"
 

@@ -5,7 +5,7 @@ import uuid
 from typing import Generator, Union
 
 import pytest
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.embeddings.openai import OpenAIEmbeddings
 from langchain_community.vectorstores.weaviate import Weaviate

@@ -3,8 +3,8 @@ import logging
 from pathlib import Path
 from typing import Iterator, Union
 
-from libs.core.langchain_core.chat_sessions import ChatSession
-from libs.core.langchain_core.messages import HumanMessage
+from langchain.libs.core.langchain_core.chat_sessions import ChatSession
+from langchain.libs.core.langchain_core.messages import HumanMessage
 
 from langchain_community.chat_loaders.base import BaseChatLoader
 

@@ -2,15 +2,15 @@
 from typing import Any, Optional
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatResult,
     LLMResult,
 )
-from libs.core.langchain_core.prompts import ChatPromptTemplate
-from libs.core.langchain_core.pydantic_v1 import BaseModel, Field
+from langchain.libs.core.langchain_core.prompts import ChatPromptTemplate
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel, Field
 
 from langchain_community.chat_models.openai import ChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

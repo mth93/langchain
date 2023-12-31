@@ -2,8 +2,8 @@ import base64
 import re
 from typing import Any, Iterator
 
-from libs.core.langchain_core.chat_sessions import ChatSession
-from libs.core.langchain_core.messages import HumanMessage
+from langchain.libs.core.langchain_core.chat_sessions import ChatSession
+from langchain.libs.core.langchain_core.messages import HumanMessage
 
 from langchain_community.chat_loaders.base import BaseChatLoader
 

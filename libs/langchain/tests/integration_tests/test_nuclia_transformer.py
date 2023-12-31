@@ -3,7 +3,7 @@ import json
 from typing import Any
 from unittest import mock
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain.document_transformers.nuclia_text_transform import NucliaTextTransformer
 from langchain.tools.nuclia.tool import NucliaUnderstandingAPI

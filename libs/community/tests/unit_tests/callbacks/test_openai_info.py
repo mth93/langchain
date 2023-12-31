@@ -2,7 +2,7 @@ from unittest.mock import MagicMock
 from uuid import uuid4
 
 import pytest
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 from langchain_community.callbacks import OpenAICallbackHandler
 from langchain_community.llms.openai import BaseOpenAI

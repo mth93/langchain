@@ -5,7 +5,7 @@ Note: This test must be run with the GOOGLE_API_KEY environment variable set to 
 """
 
 import pytest
-from libs.core.langchain_core.outputs import LLMResult
+from langchain.libs.core.langchain_core.outputs import LLMResult
 
 libs.partners.google_genai.llms import GoogleGenerativeAI
 

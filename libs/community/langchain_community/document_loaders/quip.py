@@ -6,7 +6,7 @@ from io import BytesIO
 from typing import List, Optional, Sequence
 from xml.etree.ElementTree import ElementTree
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

@@ -1,6 +1,6 @@
 # flake8: noqa
 
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 from langchain_community.vectorstores.vearch import Vearch
 from tests.integration_tests.vectorstores.fake_embeddings import FakeEmbeddings
 

@@ -2,8 +2,8 @@
 from typing import Any, List
 
 import pytest
-from libs.core.langchain_core.documents import Document
-from libs.core.langchain_core.tools import BaseTool
+from langchain.libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.tools import BaseTool
 
 from langchain_community.tools import PubmedQueryRun
 from langchain_community.utilities import PubMedAPIWrapper

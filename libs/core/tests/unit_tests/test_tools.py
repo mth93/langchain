@@ -7,12 +7,12 @@ from typing import Any, List, Optional, Type, Union
 
 import pytest
 
-from libs.core.langchain_core.callbacks import (
+from langchain.libs.core.langchain_core.callbacks import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-from libs.core.langchain_core.pydantic_v1 import BaseModel
-from libs.core.langchain_core.tools import (
+from langchain.libs.core.langchain_core.pydantic_v1 import BaseModel
+from langchain.libs.core.langchain_core.tools import (
     BaseTool,
     SchemaAnnotationError,
     StructuredTool,

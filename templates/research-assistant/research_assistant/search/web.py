@@ -7,9 +7,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.retrievers.tavily_search_api import TavilySearchAPIRetriever
 from langchain.utilities import DuckDuckGoSearchAPIWrapper
-from libs.core.langchain_core.messages import SystemMessage
-from libs.core.langchain_core.output_parsers import StrOutputParser
-from libs.core.langchain_core.runnables import (
+from langchain.libs.core.langchain_core.messages import SystemMessage
+from langchain.libs.core.langchain_core.output_parsers import StrOutputParser
+from langchain.libs.core.langchain_core.runnables import (
     ConfigurableField,
     Runnable,
     RunnableLambda,

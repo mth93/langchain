@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import Any, Dict, Union
 
-from libs.core.langchain_core.retrievers import (
+from langchain.libs.core.langchain_core.retrievers import (
     BaseRetriever,
     RetrieverOutput,
 )
-from libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
+from langchain.libs.core.langchain_core.runnables import Runnable, RunnablePassthrough
 
 
 def create_retrieval_chain(

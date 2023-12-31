@@ -7,9 +7,9 @@ from enum import Enum
 from typing import Any, Optional, Sequence, Tuple, Union
 from warnings import warn
 
-from libs.core.langchain_core.agents import AgentAction
-from libs.core.langchain_core.language_models import BaseLanguageModel
-from libs.core.langchain_core.runnables.config import run_in_executor
+from langchain.libs.core.langchain_core.agents import AgentAction
+from langchain.libs.core.langchain_core.language_models import BaseLanguageModel
+from langchain.libs.core.langchain_core.runnables.config import run_in_executor
 
 from langchain.chains.base import Chain
 

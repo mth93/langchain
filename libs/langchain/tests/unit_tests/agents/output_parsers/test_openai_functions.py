@@ -1,10 +1,10 @@
 import pytest
-from libs.core.langchain_core.agents import (
+from langchain.libs.core.langchain_core.agents import (
     AgentActionMessageLog,
     AgentFinish,
 )
-from libs.core.langchain_core.exceptions import OutputParserException
-from libs.core.langchain_core.messages import AIMessage, SystemMessage
+from langchain.libs.core.langchain_core.exceptions import OutputParserException
+from langchain.libs.core.langchain_core.messages import AIMessage, SystemMessage
 
 from langchain.agents.output_parsers.openai_functions import (
     OpenAIFunctionsAgentOutputParser,

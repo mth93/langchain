@@ -6,7 +6,7 @@ from typing import Any, Dict, Iterator, List, Optional, Sequence, Union
 
 import aiohttp
 import requests
-from libs.core.langchain_core.documents import Document
+from langchain.libs.core.langchain_core.documents import Document
 
 from langchain_community.document_loaders.base import BaseLoader
 

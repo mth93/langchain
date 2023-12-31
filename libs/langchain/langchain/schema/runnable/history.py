@@ -1,4 +1,4 @@
-from libs.core.langchain_core.runnables.history import (
+from langchain.libs.core.langchain_core.runnables.history import (
     GetSessionHistoryCallable,
     MessagesOrDictWithMessages,
     RunnableWithMessageHistory,

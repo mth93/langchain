@@ -3,8 +3,8 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, Dict, List, Optional
 
-from libs.core.langchain_core.callbacks import BaseCallbackManager
-from libs.core.langchain_core.language_models.chat_models import BaseChatModel
+from langchain.libs.core.langchain_core.callbacks import BaseCallbackManager
+from langchain.libs.core.langchain_core.language_models.chat_models import BaseChatModel
 
 from langchain_community.agent_toolkits.powerbi.prompt import (
     POWERBI_CHAT_PREFIX,

@@ -1,9 +1,9 @@
 """Test PromptLayerChatOpenAI wrapper."""
 
 import pytest
-from libs.core.langchain_core.callbacks import CallbackManager
-from libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
-from libs.core.langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
+from langchain.libs.core.langchain_core.callbacks import CallbackManager
+from langchain.libs.core.langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from langchain.libs.core.langchain_core.outputs import ChatGeneration, ChatResult, LLMResult
 
 from langchain_community.chat_models.promptlayer_openai import PromptLayerChatOpenAI
 from tests.unit_tests.callbacks.fake_callback_handler import FakeCallbackHandler

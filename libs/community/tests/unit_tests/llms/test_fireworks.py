@@ -2,7 +2,7 @@
 import sys
 
 import pytest
-from libs.core.langchain_core.pydantic_v1 import SecretStr
+from langchain.libs.core.langchain_core.pydantic_v1 import SecretStr
 from pytest import CaptureFixture
 
 from langchain_community.llms import Fireworks

@@ -1,6 +1,6 @@
 from typing import Any, List, Literal
 
-from libs.core.langchain_core.messages.base import (
+from langchain.libs.core.langchain_core.messages.base import (
     BaseMessage,
     BaseMessageChunk,
     merge_content,

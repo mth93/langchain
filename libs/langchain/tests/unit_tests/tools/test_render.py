@@ -1,7 +1,7 @@
 from typing import List
 
 import pytest
-from libs.core.langchain_core.tools import BaseTool, tool
+from langchain.libs.core.langchain_core.tools import BaseTool, tool
 
 from langchain.tools.render import (
     render_text_description,

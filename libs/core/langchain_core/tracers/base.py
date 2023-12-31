@@ -20,19 +20,19 @@ from uuid import UUID
 
 from tenacity import RetryCallState
 
-from libs.core.langchain_core.callbacks.base import BaseCallbackHandler
-from libs.core.langchain_core.exceptions import TracerException
-from libs.core.langchain_core.load import dumpd
-from libs.core.langchain_core.outputs import (
+from langchain.libs.core.langchain_core.callbacks.base import BaseCallbackHandler
+from langchain.libs.core.langchain_core.exceptions import TracerException
+from langchain.libs.core.langchain_core.load import dumpd
+from langchain.libs.core.langchain_core.outputs import (
     ChatGeneration,
     ChatGenerationChunk,
     GenerationChunk,
     LLMResult,
 )
-from libs.core.langchain_core.tracers.schemas import Run
+from langchain.libs.core.langchain_core.tracers.schemas import Run
 
 if TYPE_CHECKING:
-    from libs.core.langchain_core.documents import Document
+    from langchain.libs.core.langchain_core.documents import Document
 
 logger = logging.getLogger(__name__)
 

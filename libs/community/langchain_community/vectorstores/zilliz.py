@@ -3,7 +3,7 @@ from __future__ import annotations
 import logging
 from typing import Any, Dict, List, Optional
 
-from libs.core.langchain_core.embeddings import Embeddings
+from langchain.libs.core.langchain_core.embeddings import Embeddings
 
 from langchain_community.vectorstores.milvus import Milvus
 

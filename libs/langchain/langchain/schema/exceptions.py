@@ -1,3 +1,3 @@
-from libs.core.langchain_core.exceptions import LangChainException
+from langchain.libs.core.langchain_core.exceptions import LangChainException
 
 __all__ = ["LangChainException"]
